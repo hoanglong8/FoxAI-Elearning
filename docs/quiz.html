@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Unit 1 Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <label>
+                    <input type="radio" name="question1" value="Paris"> Paris
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="London"> London
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="Berlin"> Berlin
+                </label>
+            </div>
+            <div class="question">
+                <p>2. What is 2 + 2?</p>
+                <label>
+                    <input type="radio" name="question2" value="3"> 3
+                </label><br>
+                <label>
+                    <input type="radio" name="question2" value="4"> 4
+                </label><br>
+                <label>
+                    <input type="radio" name="question2" value="5"> 5
+                </label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
