@@ -78,15 +78,15 @@ git push origin main
 
 **Cấu Trúc Thư Mục**
 
-/docs: Chứa các file HTML, CSS, JavaScript, và các tài nguyên trang web.
+**/docs:** Chứa các file HTML, CSS, JavaScript, và các tài nguyên trang web.
 
-index.html: Trang chủ của website, giới thiệu về các khóa học và quiz.
+**index.html:** Trang chủ của website, giới thiệu về các khóa học và quiz.
 
-quiz.html: Trang quiz, nơi người dùng làm bài kiểm tra.
+**quiz.html:** Trang quiz, nơi người dùng làm bài kiểm tra.
 
-styles.css: Tệp CSS để tùy chỉnh giao diện trang web.
+**styles.css:** Tệp CSS để tùy chỉnh giao diện trang web.
 
-quiz.js: JavaScript xử lý các câu hỏi và tính điểm.
+**quiz.js:** JavaScript xử lý các câu hỏi và tính điểm.
 
 **Kết luận**
 
