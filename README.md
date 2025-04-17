@@ -2,7 +2,11 @@
 
 ## Mục Đích
 
-FoxAI E-Learning Platform là hệ thống đào tạo nội bộ dành cho nhân viên tại FoxAI, giúp quản lý và cung cấp các khóa học trực tuyến, bài kiểm tra (quiz), và chứng chỉ cho người dùng. Hệ thống này nhằm nâng cao năng lực nhân viên thông qua các bài học, bài kiểm tra, và chứng nhận hoàn thành khóa học, đồng thời theo dõi tiến độ học tập của nhân viên trong công ty.
+FoxAI E-Learning Platform là hệ thống đào tạo nội bộ dành cho nhân viên tại FoxAI, giúp quản lý và cung cấp các khóa học trực tuyến, bài kiểm tra (quiz), và chứng chỉ cho người dùng. Hệ thống này nhằm nâng cao năng lực nhân viên thông qua `các bài học`, `bài kiểm tra`, và `chứng nhận hoàn thành khóa học`, đồng thời `theo dõi tiến độ học tập` của nhân viên trong công ty.
+
+Tài liệu này sẽ hướng dẫn cách tạo một website đào tạo nội bộ cho nhân viên, tương tự như trang [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction).
+
+![Hình](https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit0/thumbnail.jpg)
 
 ## Phạm Vi
 
@@ -35,6 +39,8 @@ Hệ thống này được xây dựng bằng các công nghệ sau:
 
 ### **GitHub Pages**:
 - Sử dụng **GitHub Pages** để triển khai website trên môi trường trực tuyến mà không cần server phức tạp. Dữ liệu và trang web được lưu trữ trong repository GitHub của bạn và có thể truy cập qua liên kết GitHub Pages.
+
+Chi tiết xem [tại đây](https://github.com/hoanglong8/Document-Data-science/blob/main/E-learning%20DS/2023-04-16-How-to-build-website-elearning-on-GitHub.md)
 
 ## Cách Sử Dụng
 
