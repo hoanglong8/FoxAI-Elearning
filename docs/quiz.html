@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit 1 Quiz</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Liên kết với tệp CSS -->
+    
+    <!-- Thêm CSS vào trong phần <style> -->
+    <style>
+        /* Hiệu ứng khi hover vào label */
+        label:hover {
+            background-color: #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hiệu ứng khi nhấn vào nút submit */
+        button:active {
+            transform: scale(0.98);
+            box-shadow: 0 5px #666, 0 -5px #666 inset;
+        }
+    </style>
 </head>
-   
 <body>
     <div class="quiz-container">
         <h1>Unit 1 Quiz</h1>
@@ -43,14 +55,4 @@
 
     <script src="quiz.js"></script>
 </body>
-    </html>
-
-label:hover {
-    background-color: #e0e0e0;
-    transition: background-color 0.3s ease;
-}
-
-button:active {
-    transform: scale(0.98);
-    box-shadow: 0 5px #666, 0 -5px #666 inset;
-}
+</html>
