@@ -3,12 +3,13 @@
 
 ![image](https://github.com/user-attachments/assets/9c8b08fc-af96-42c8-bc45-0749f5d17986)
 
-
 Link khóa học: https://www.udemy.com/course/python-introduction-to-data-science-and-machine-learning-a-z/?
 
 Coupon free: `5E5A4ECBF0462B1F7C23`
 
-2.
+**2.Linear Regression and Logistic Regression in Python**
+
+Link khóa học: https://www.udemy.com/course/linear-regression-and-logistic-regression-in-python-starttech/?couponCode=APRFREE
 
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
