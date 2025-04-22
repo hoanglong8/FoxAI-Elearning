@@ -13,6 +13,13 @@ Link khóa học: https://www.udemy.com/course/power-bi-microsoft-power-bi-certi
 
 Link khóa học: https://www.udemy.com/course/data-analyst-skill-path-in-hindi/?couponCode=APRFREE
 
+**3.Introduction to Business and Data Analysis**
+
+![image](https://github.com/user-attachments/assets/19d5b137-d16a-4cd2-86a9-bb7f47a451ac)
+
+Link khóa học: https://www.udemy.com/course/introduction-to-business-and-data-analysis/?couponCode=CA110CF90A1E1E9EFA4D
+
+---
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
 https://chromewebstore.google.com/detail/ph%E1%BB%A5-%C4%91%E1%BB%81-video-ai-d%E1%BB%8Bch-thu%E1%BA%AD/mjdbhokoopacimoekfgkcoogikbfgngb
