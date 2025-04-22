@@ -3,9 +3,13 @@
 
 ![image](https://github.com/user-attachments/assets/13eac29c-01f2-441b-941b-21819d1c77c1)
 
-Link khóa học: https://www.udemy.com/course/microsoft-power-platform-complete-course-a-to-z-no-code/?
+Link khóa học: https://www.udemy.com/course/microsoft-power-platform-complete-course-a-to-z-no-code/?couponCode=09D1D541C26734E0EE16
 
-Coupon free: `09D1D541C26734E0EE16`
+2.30 Days of Code: The Complete Python Bootcamp (Vietnamese)
+
+Link khóa học: https://www.udemy.com/course/30-days-of-code-the-complete-python-bootcamp-vietnamese/?couponCode=ST8MT220425G3
+
+---
 
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
