@@ -5,8 +5,6 @@
 
 Link khóa học: https://www.udemy.com/course/deepseek-ai-deepseek-generative-ai-complete-essentials/?couponCode=05F9BC2FB4AC3F2A5581
 
-Coupon free: `05F9BC2FB4AC3F2A5581`
-
 ---
 
 **2.AI Development with Qwen 2.5 & Ollama: Build AI Apps Locally**
