@@ -5,3 +5,8 @@
 ![image](https://github.com/user-attachments/assets/8dc40d9b-7be9-4966-a0fe-ddaf24d46100)
 
 Link khóa học: https://www.udemy.com/course/product-owner-certification-exam-prep/?couponCode=2939A7766C1AD4E57A59
+
+
+## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
+
+https://chromewebstore.google.com/detail/ph%E1%BB%A5-%C4%91%E1%BB%81-video-ai-d%E1%BB%8Bch-thu%E1%BA%AD/mjdbhokoopacimoekfgkcoogikbfgngb
