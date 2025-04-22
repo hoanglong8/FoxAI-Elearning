@@ -5,11 +5,19 @@
 
 Link khóa học: https://www.udemy.com/course/python-introduction-to-data-science-and-machine-learning-a-z/?couponCode=5E5A4ECBF0462B1F7C23
 
+---
+
 **2.Linear Regression and Logistic Regression in Python**
+
+![image](https://github.com/user-attachments/assets/50a0ac36-867a-42ac-b9f4-970163e7a347)
 
 Link khóa học: https://www.udemy.com/course/linear-regression-and-logistic-regression-in-python-starttech/?couponCode=APRFREE
 
+---
+
 **3.Decision Trees, Random Forests, AdaBoost & XGBoost in Python**
+
+![image](https://github.com/user-attachments/assets/00410fd5-8aa3-42f3-bfec-3d8cb11a793c)
 
 Link khóa học: https://www.udemy.com/course/machine-learning-advanced-decision-trees-in-python/?couponCode=APRFREE
 
