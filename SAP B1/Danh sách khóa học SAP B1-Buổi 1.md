@@ -491,7 +491,7 @@ Nội dung video trên YouTube qua đường dẫn sau:
    **Đáp án**: A) **Lựa chọn dải thời gian cụ thể từ ngày bắt đầu đến ngày kết thúc.**
 
 ---
-# Câu hỏi trắc nghiệm về tính linh hoạt trong việc truy xuất và sử dụng báo cáo công nợ
+# Câu hỏi trắc nghiệm về báo cáo và công nợ trên SAP Business One
 
 ### Câu hỏi 1:
 **Trong SAP, khi muốn kiểm tra công nợ theo các tiêu chí khác nhau (như khách hàng, loại phiếu, thời gian), tính linh hoạt của báo cáo cho phép bạn làm gì?**
@@ -511,4 +511,50 @@ Nội dung video trên YouTube qua đường dẫn sau:
 
    **Đáp án**: A) **Lọc báo cáo công nợ theo ngày và chọn khách hàng cụ thể để in báo cáo số dư công nợ của họ.**
 
+### Câu hỏi 3:
+**Khi làm việc với báo cáo công nợ chi tiết trên SAP, bạn có thể làm gì để xem số dư công nợ của một khách hàng cụ thể?**
+   - A) Sử dụng tính năng "Link" để truy xuất trực tiếp thông tin số dư công nợ của khách hàng trong báo cáo.
+   - B) Nhập lại thông tin khách hàng vào báo cáo và tái tính toán lại số dư công nợ.
+   - C) Xem báo cáo tổng hợp công nợ và lọc theo tên khách hàng.
+   - D) Không thể truy xuất thông tin công nợ chi tiết cho khách hàng trong báo cáo.
+
+   **Đáp án**: A) **Sử dụng tính năng "Link" để truy xuất trực tiếp thông tin số dư công nợ của khách hàng trong báo cáo.**
+
+### Câu hỏi 4:
+**Trong SAP, khi bạn muốn xem số dư công nợ chi tiết của một tài khoản 131, bạn có thể làm gì?**
+   - A) Chọn tài khoản 131 và chỉ định thời gian để xem báo cáo chi tiết công nợ liên quan đến tài khoản này.
+   - B) Lọc báo cáo theo khách hàng và nhập lại tất cả thông tin thủ công.
+   - C) Chỉ có thể xem công nợ tổng hợp mà không thể chi tiết tài khoản.
+   - D) Không có cách nào để xem công nợ chi tiết theo tài khoản 131.
+
+   **Đáp án**: A) **Chọn tài khoản 131 và chỉ định thời gian để xem báo cáo chi tiết công nợ liên quan đến tài khoản này.**
+
+### Câu hỏi 5:
+**Khi muốn lọc báo cáo công nợ theo thời gian và loại phiếu, bạn cần thực hiện bước nào?**
+   - A) Chọn đúng các tiêu chí như ngày tháng, loại phiếu trong báo cáo để dễ dàng lọc dữ liệu.
+   - B) Không thể lọc báo cáo theo thời gian và loại phiếu trong SAP.
+   - C) Lọc theo khách hàng và tự động lấy tất cả các phiếu trong khoảng thời gian đó.
+   - D) Lọc theo loại phiếu và tự động lấy các báo cáo chi tiết mà không cần thiết lập thêm.
+
+   **Đáp án**: A) **Chọn đúng các tiêu chí như ngày tháng, loại phiếu trong báo cáo để dễ dàng lọc dữ liệu.**
+
+### Câu hỏi 6:
+**Báo cáo tuổi nợ trên SAP giúp bạn làm gì?**
+   - A) Theo dõi các khoản công nợ chưa thanh toán của khách hàng và tính toán tuổi nợ dựa trên thời gian quá hạn.
+   - B) Chỉ xem các khoản công nợ đã thanh toán đầy đủ của khách hàng.
+   - C) Không thể tính toán tuổi nợ mà chỉ hiển thị số dư công nợ của các khách hàng.
+   - D) Báo cáo tuổi nợ không liên quan đến công nợ của khách hàng mà chỉ liên quan đến tài khoản ngân hàng.
+
+   **Đáp án**: A) **Theo dõi các khoản công nợ chưa thanh toán của khách hàng và tính toán tuổi nợ dựa trên thời gian quá hạn.**
+
+### Câu hỏi 7:
+**Khi cần in báo cáo công nợ, hệ thống SAP hỗ trợ bạn thực hiện như thế nào?**
+   - A) Báo cáo công nợ có thể in trực tiếp từ hệ thống SAP với các thông tin đã được lọc và sắp xếp.
+   - B) Bạn phải xuất báo cáo công nợ ra Excel và sau đó in từ Excel.
+   - C) SAP không hỗ trợ in báo cáo công nợ mà chỉ hiển thị trên màn hình.
+   - D) Chỉ có thể in báo cáo công nợ nếu bạn sử dụng phần mềm bên ngoài.
+
+   **Đáp án**: A) **Báo cáo công nợ có thể in trực tiếp từ hệ thống SAP với các thông tin đã được lọc và sắp xếp.**
+
 ---
+
