@@ -52,8 +52,56 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
 - Nhấn mạnh tính linh hoạt trong việc truy xuất, in ấn, và sử dụng báo cáo cho mục đích kiểm tra, xác nhận công nợ.
 
 ---
+## Câu hỏi kiểm tra về ERP và tự động hóa bút toán kế toán
 
-## Câu hỏi kiểm tra
+### Câu hỏi 1:
+**Một trong những lợi ích chính của hệ thống ERP trong quy trình kế toán là gì?**
+   - A) Tăng cường sự can thiệp thủ công trong việc ghi nhận công nợ.
+   - B) Giảm thiểu sự can thiệp thủ công và tự động hóa các bút toán kế toán.
+   - C) Không ảnh hưởng đến các bút toán kế toán.
+   - D) Không giúp cải thiện báo cáo tài chính.
+
+   **Đáp án**: B) **Giảm thiểu sự can thiệp thủ công và tự động hóa các bút toán kế toán.**
+
+### Câu hỏi 2:
+**Hệ thống ERP giúp tăng tính chính xác trong báo cáo tài chính bằng cách nào?**
+   - A) Cải thiện khả năng phân tích dữ liệu của kế toán.
+   - B) Hệ thống tự động tạo ra các báo cáo tài chính mà không cần can thiệp thủ công.
+   - C) Giảm bớt số lượng báo cáo tài chính cần thiết.
+   - D) Dữ liệu được nhập thủ công để đảm bảo tính chính xác.
+
+   **Đáp án**: B) **Hệ thống tự động tạo ra các báo cáo tài chính mà không cần can thiệp thủ công.**
+
+
+### Câu hỏi 3:
+**Hệ thống ERP trong doanh nghiệp giúp làm gì đối với các quy trình liên quan đến kế toán?**
+   - A) Đảm bảo rằng tất cả các quy trình kế toán được thực hiện thủ công để kiểm soát chính xác hơn.
+   - B) Tự động hóa các bút toán kế toán từ các quy trình khác nhau, giảm thiểu sự can thiệp thủ công.
+   - C) Hệ thống chỉ hỗ trợ ghi nhận doanh thu mà không liên quan đến các bút toán khác.
+   - D) Cung cấp báo cáo tài chính theo cách thủ công, không có sự tự động hóa.
+
+   **Đáp án**: B) **Tự động hóa các bút toán kế toán từ các quy trình khác nhau, giảm thiểu sự can thiệp thủ công.**
+
+### Câu hỏi 4:
+**Tính năng tự động hạch toán trong hệ thống ERP sẽ giúp kế toán thực hiện công việc như thế nào?**
+   - A) Kế toán cần kiểm tra thủ công từng bút toán một.
+   - B) Kế toán không cần phải nhập liệu thủ công vì hệ thống sẽ tự động hạch toán các bút toán cần thiết.
+   - C) Kế toán chỉ tham gia vào công việc báo cáo mà không phải làm việc với các bút toán.
+   - D) Kế toán sẽ cần phải xác nhận thủ công từng bước trong quy trình hạch toán.
+
+   **Đáp án**: B) **Kế toán không cần phải nhập liệu thủ công vì hệ thống sẽ tự động hạch toán các bút toán cần thiết.**
+
+### Câu hỏi 5:
+**Lợi ích của việc tự động hóa các bút toán kế toán trong hệ thống ERP đối với các báo cáo tài chính là gì?**
+   - A) Giảm thiểu sự chính xác trong việc lập báo cáo tài chính.
+   - B) Tăng sự can thiệp thủ công của các nhân viên kế toán vào báo cáo tài chính.
+   - C) Giảm thiểu lỗi và tăng tính chính xác trong các báo cáo tài chính.
+   - D) Không có ảnh hưởng đến tính chính xác của báo cáo tài chính.
+
+   **Đáp án**: C) **Giảm thiểu lỗi và tăng tính chính xác trong các báo cáo tài chính.**
+
+---
+## Câu hỏi kiểm tra về tự động hóa bút toán kế toán
 
 ### 1. **Trong quy trình mua hàng trên SAP Business One, phiếu nào sẽ sinh ra bút toán hạch toán tự động?**
    - A) Purchase Quotation
@@ -79,7 +127,10 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
 
    **Đáp án**: B) **Receipt for Production**
 
-### 4. **Trong công ty sử dụng ERP, việc liên kết dữ liệu giữa các phòng ban giúp ích gì?**
+---
+## Câu hỏi kiểm tra về liên kết dữ liệu, hạch toán tự động
+
+### 1. **Trong công ty sử dụng ERP, việc liên kết dữ liệu giữa các phòng ban giúp ích gì?**
    - A) Các phòng ban sẽ làm việc độc lập với nhau.
    - B) Dữ liệu được liên kết giúp giảm thiểu sai sót và tăng tính chính xác trong quy trình.
    - C) Các phòng ban phải nhập liệu thủ công vào hệ thống riêng biệt.
@@ -87,7 +138,7 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
 
    **Đáp án**: B) **Dữ liệu được liên kết giúp giảm thiểu sai sót và tăng tính chính xác trong quy trình.**
 
-### 5. **Kế toán trong công ty sử dụng ERP sẽ can thiệp vào những bước nào trong quy trình mua hàng?**
+### 2. **Kế toán trong công ty sử dụng ERP sẽ can thiệp vào những bước nào trong quy trình mua hàng?**
    - A) Kế toán can thiệp vào tất cả các bước từ báo giá đến thanh toán.
    - B) Kế toán chỉ tham gia vào việc ghi nhận công nợ khi có hóa đơn từ nhà cung cấp.
    - C) Kế toán chỉ theo dõi các bước cuối cùng của quy trình.
@@ -95,7 +146,7 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
 
    **Đáp án**: B) **Kế toán chỉ tham gia vào việc ghi nhận công nợ khi có hóa đơn từ nhà cung cấp.**
 
-### 6. **Lợi ích của việc sử dụng ERP trong quản lý bán hàng là gì?**
+### 3. **Lợi ích của việc sử dụng ERP trong quản lý bán hàng là gì?**
    - A) Giảm bớt sự can thiệp của kế toán trong toàn bộ quy trình bán hàng.
    - B) Tự động hạch toán công nợ và doanh thu ngay khi tạo hóa đơn cho khách hàng.
    - C) Các phòng ban trong công ty làm việc độc lập mà không cần sự liên kết dữ liệu.
@@ -103,3 +154,5 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
 
    **Đáp án**: B) **Tự động hạch toán công nợ và doanh thu ngay khi tạo hóa đơn cho khách hàng.**
 
+---
+## Câu hỏi về
