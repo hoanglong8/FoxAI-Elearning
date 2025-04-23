@@ -155,4 +155,231 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
    **Đáp án**: B) **Tự động hạch toán công nợ và doanh thu ngay khi tạo hóa đơn cho khách hàng.**
 
 ---
-## Câu hỏi về
+## Câu hỏi kiểm tra về nghiệp vụ mua hàng và bút toán kế toán trong SAP Business One
+
+### Câu hỏi 1:
+**Trong quy trình mua hàng, phiếu nào sẽ sinh ra bút toán hạch toán công nợ khi nhà cung cấp xuất hóa đơn?**
+   - A) Purchase Quotation
+   - B) Purchase Order
+   - C) AP Invoice
+   - D) Delivery
+
+   **Đáp án**: C) **AP Invoice**
+
+### Câu hỏi 2:
+**Khi nhập kho hàng từ nhà cung cấp, phiếu nào sẽ sinh ra bút toán hạch toán tăng tài sản (hàng tồn kho)?**
+   - A) Purchase Quotation
+   - B) Purchase Order
+   - C) Receipt of Goods (CPO)
+   - D) AP Invoice
+
+   **Đáp án**: C) **Receipt of Goods (CPO)**
+
+### Câu hỏi 3:
+**Trong quy trình mua hàng, để chi tiền cho nhà cung cấp, phiếu nào sẽ sinh ra bút toán hạch toán thanh toán?**
+   - A) AP Invoice
+   - B) Purchase Quotation
+   - C) Payment (Hourly Payment)
+   - D) Purchase Order
+
+   **Đáp án**: C) **Payment (Hourly Payment)**
+
+---
+
+## Câu hỏi kiểm tra về quy trình bán hàng và sản xuất trong SAP Business One
+
+### Câu hỏi 1:
+**Trong quy trình bán hàng, phiếu nào sẽ sinh ra bút toán hạch toán doanh thu và công nợ phải thu?**
+   - A) Sales Order
+   - B) Sales Quotation
+   - C) Sales Delivery
+   - D) A/R Invoice
+
+   **Đáp án**: D) **A/R Invoice**
+
+### Câu hỏi 2:
+**Khi tạo đơn hàng bán hàng trong SAP, phiếu nào sẽ được sử dụng để ghi nhận đơn đặt hàng với khách hàng?**
+   - A) Sales Quotation
+   - B) Sales Order
+   - C) Sales Delivery
+   - D) A/R Invoice
+
+   **Đáp án**: B) **Sales Order**
+
+### Câu hỏi 3:
+**Trong quy trình bán hàng, khi hàng hóa được giao cho khách hàng, phiếu nào sẽ sinh ra bút toán ghi nhận sự xuất kho?**
+   - A) Sales Quotation
+   - B) Sales Order
+   - C) Sales Delivery
+   - D) A/R Invoice
+
+   **Đáp án**: C) **Sales Delivery**
+
+### Câu hỏi 4:
+**Khi tiến hành sản xuất trong SAP, phiếu nào được sử dụng để ghi nhận lệnh sản xuất và yêu cầu xuất vật tư từ kho?**
+   - A) Production Order
+   - B) Receipt for Production
+   - C) Sales Delivery
+   - D) A/R Invoice
+
+   **Đáp án**: A) **Production Order**
+
+
+### Câu hỏi 5:
+**Trong quy trình sản xuất, phiếu nào được sử dụng để ghi nhận việc xuất vật tư từ kho để phục vụ cho quá trình sản xuất?**
+   - A) Production Order
+   - B) Receipt for Production
+   - C) Goods Issue for Production
+   - D) Goods Receipt for Production
+
+   **Đáp án**: C) **Goods Issue for Production**
+
+
+### Câu hỏi 6:
+**Khi thành phẩm được sản xuất và nhập kho, phiếu nào sẽ được sử dụng để ghi nhận việc nhập kho thành phẩm?**
+   - A) Production Order
+   - B) Receipt for Production
+   - C) Goods Issue for Production
+   - D) A/R Invoice
+
+   **Đáp án**: B) **Receipt for Production**
+
+---
+## Câu hỏi kiểm tra về nghiệp vụ kho và ảnh hưởng đến tài khoản tài sản (hàng tồn kho)
+
+### Câu hỏi 1:
+**Khi thực hiện nghiệp vụ "nhập kho khác" (nhập hàng từ các nguồn khác không phải mua hàng), nghiệp vụ này sẽ ảnh hưởng như thế nào đến tài khoản hàng tồn kho?**
+   - A) Tăng tài khoản hàng tồn kho và sinh ra bút toán hạch toán tài sản.
+   - B) Giảm tài khoản hàng tồn kho và không tạo ra bút toán kế toán.
+   - C) Tăng tài khoản hàng tồn kho nhưng không tạo ra bút toán kế toán.
+   - D) Không ảnh hưởng đến tài khoản hàng tồn kho.
+
+   **Đáp án**: A) **Tăng tài khoản hàng tồn kho và sinh ra bút toán hạch toán tài sản.**
+
+### Câu hỏi 2:
+**Trong quy trình điều chuyển kho (inventory transfer), khi hàng hóa được chuyển từ kho này sang kho khác, nghiệp vụ này sẽ ảnh hưởng như thế nào đến tài khoản hàng tồn kho?**
+   - A) Không ảnh hưởng đến tài khoản hàng tồn kho vì chỉ là điều chuyển giữa các kho.
+   - B) Tăng tài khoản hàng tồn kho tại kho đích và giảm tại kho xuất.
+   - C) Tăng tài khoản hàng tồn kho tại kho xuất và giảm tại kho đích.
+   - D) Giảm tài khoản hàng tồn kho và sinh ra bút toán hạch toán tài sản.
+
+   **Đáp án**: B) **Tăng tài khoản hàng tồn kho tại kho đích và giảm tại kho xuất.**
+
+### Câu hỏi 3:
+**Khi thực hiện nghiệp vụ kiểm kê kho và phát hiện có sự chênh lệch (thừa/thiếu hàng), nghiệp vụ này sẽ ảnh hưởng như thế nào đến tài khoản hàng tồn kho?**
+   - A) Chỉ thay đổi số lượng hàng tồn kho nhưng không ảnh hưởng đến tài khoản tài sản.
+   - B) Tăng hoặc giảm tài khoản hàng tồn kho tùy theo tình huống và sinh ra bút toán hạch toán tài sản.
+   - C) Không ảnh hưởng đến tài khoản hàng tồn kho vì chỉ là kiểm kê.
+   - D) Giảm tài khoản hàng tồn kho nhưng không sinh ra bút toán kế toán.
+
+   **Đáp án**: B) **Tăng hoặc giảm tài khoản hàng tồn kho tùy theo tình huống và sinh ra bút toán hạch toán tài sản.**
+
+---
+# Câu hỏi kiểm tra về Account Determination và Control Account trong SAP Business One
+
+### Câu hỏi 1:
+**Khái niệm "Account Determination" trong SAP Business One là gì?**
+   - A) Là quá trình tạo và thiết lập bảng tài khoản kế toán cho toàn bộ hệ thống.
+   - B) Là quá trình xác định tài khoản kế toán cho từng tình huống nghiệp vụ cụ thể như mua hàng, bán hàng, v.v.
+   - C) Là quá trình kiểm tra và điều chỉnh số dư tài khoản hàng tồn kho.
+   - D) Là quá trình hạch toán thủ công cho từng giao dịch kế toán.
+
+   **Đáp án**: B) **Là quá trình xác định tài khoản kế toán cho từng tình huống nghiệp vụ cụ thể như mua hàng, bán hàng, v.v.**
+
+### Câu hỏi 2:
+**Tài khoản "Control Account" trong SAP Business One có vai trò gì?**
+   - A) Theo dõi số dư của tài khoản công nợ phải thu và phải trả, giúp kế toán dễ dàng theo dõi công nợ của từng khách hàng, nhà cung cấp.
+   - B) Ghi nhận tất cả các giao dịch tài chính của công ty.
+   - C) Được sử dụng để phân bổ chi phí cho các bộ phận khác nhau trong công ty.
+   - D) Được dùng để ghi nhận tất cả các khoản thuế đầu vào và đầu ra.
+
+   **Đáp án**: A) **Theo dõi số dư của tài khoản công nợ phải thu và phải trả, giúp kế toán dễ dàng theo dõi công nợ của từng khách hàng, nhà cung cấp.**
+
+### Câu hỏi 3:
+**Khi thực hiện một giao dịch như lập hóa đơn bán hàng (A/R Invoice), SAP Business One sẽ sử dụng thông tin nào để tự động xác định tài khoản kế toán?**
+   - A) Tài khoản kế toán được thiết lập thủ công bởi kế toán mỗi lần nhập giao dịch.
+   - B) Thông tin từ "Account Determination" sẽ tự động xác định tài khoản kế toán dựa trên tình huống nghiệp vụ cụ thể, ví dụ như tài khoản phải thu 131.
+   - C) SAP sẽ yêu cầu người dùng nhập tài khoản kế toán mỗi khi thực hiện giao dịch.
+   - D) SAP không tự động hạch toán mà chỉ lưu trữ thông tin giao dịch.
+
+   **Đáp án**: B) **Thông tin từ "Account Determination" sẽ tự động xác định tài khoản kế toán dựa trên tình huống nghiệp vụ cụ thể, ví dụ như tài khoản phải thu 131.**
+
+---
+# Câu hỏi kiểm tra về thiết lập hạch toán tự động trong SAP qua các ví dụ phiếu nhập kho và hóa đơn bán hàng
+
+### Câu hỏi 1:
+**Khi thực hiện phiếu nhập kho (Receipt of Goods) trên SAP, hệ thống sẽ tự động hạch toán tài khoản nào liên quan đến tài sản (hàng tồn kho)?**
+   - A) Tài khoản phải thu khách hàng (131)
+   - B) Tài khoản phải trả nhà cung cấp (331)
+   - C) Tài khoản hàng tồn kho (Inventory)
+   - D) Tài khoản doanh thu (511)
+
+   **Đáp án**: C) **Tài khoản hàng tồn kho (Inventory)**
+
+### Câu hỏi 2:
+**Khi lập hóa đơn bán hàng (A/R Invoice) trong SAP, hệ thống sẽ tự động hạch toán tài khoản nào liên quan đến công nợ phải thu?**
+   - A) Tài khoản phải thu khách hàng (131) và tài khoản doanh thu (511)
+   - B) Tài khoản hàng tồn kho (Inventory) và tài khoản phải trả nhà cung cấp (331)
+   - C) Tài khoản chi phí (Expense) và tài khoản phải thu (132)
+   - D) Tài khoản phải trả nhà cung cấp (331) và tài khoản hàng tồn kho (Inventory)
+
+   **Đáp án**: A) **Tài khoản phải thu khách hàng (131) và tài khoản doanh thu (511)**
+
+---
+# Câu hỏi trắc nghiệm về thuế và hạch toán trên SAP
+
+### Câu hỏi 1: 
+**Giải thích cách hệ thống SAP tự động tính thuế và sinh bút toán phù hợp khi lập hóa đơn bán hàng.**
+   - A) SAP yêu cầu kế toán nhập thủ công tỷ lệ thuế vào mỗi hóa đơn.
+   - B) Hệ thống tự động tính thuế dựa trên tỷ lệ thuế đã thiết lập (10%, 5%, 0%) và tính toán tự động phần thuế vào tài khoản thuế.
+   - C) SAP không hỗ trợ tự động tính thuế mà chỉ ghi nhận giá trị thuế sau khi kế toán nhập vào.
+   - D) Hệ thống không tính thuế và cần phải tính toán thuế ngoài hệ thống SAP.
+
+   **Đáp án**: B) **Hệ thống tự động tính thuế dựa trên tỷ lệ thuế đã thiết lập (10%, 5%, 0%) và tính toán tự động phần thuế vào tài khoản thuế.**
+
+### Câu hỏi 2: 
+**Thông tin nào là yêu cầu bắt buộc khi lập hóa đơn đầu ra phù hợp với quy định thuế Việt Nam trên SAP?**
+   - A) Ngày hóa đơn, mã số thuế, số hóa đơn, mẫu số và ký hiệu.
+   - B) Chỉ cần số hóa đơn và tên công ty.
+   - C) Chỉ cần ngày hóa đơn và mã số thuế.
+   - D) Chỉ cần tên công ty và mẫu số hóa đơn.
+
+   **Đáp án**: A) **Ngày hóa đơn, mã số thuế, số hóa đơn, mẫu số và ký hiệu.**
+
+### Câu hỏi 3: 
+**Addon của AppZone giúp SAP phù hợp với chuẩn thuế Việt Nam như thế nào?**
+   - A) Nó cung cấp khả năng sử dụng SAP bằng tiếng Việt và báo cáo thuế VAT theo quy định của Việt Nam.
+   - B) Nó chỉ cung cấp báo cáo thuế VAT mà không thay đổi giao diện SAP.
+   - C) Nó chỉ hỗ trợ dịch SAP sang tiếng Việt nhưng không liên quan đến thuế.
+   - D) Nó chỉ giúp SAP tương thích với các loại thuế ở Úc và New Zealand.
+
+   **Đáp án**: A) **Nó cung cấp khả năng sử dụng SAP bằng tiếng Việt và báo cáo thuế VAT theo quy định của Việt Nam.**
+
+### Câu hỏi 4: 
+**Trong SAP, nhóm thuế được định nghĩa như thế nào?**
+   - A) Là một nhóm thuế được áp dụng cho tất cả các loại giao dịch không phân biệt tỷ lệ thuế.
+   - B) Là nhóm các thuế như 10%, 5%, 0% được sử dụng cho các sản phẩm và dịch vụ khác nhau.
+   - C) Là nhóm các thuế chỉ áp dụng cho doanh thu bán hàng quốc tế.
+   - D) Là một nhóm thuế duy nhất áp dụng cho tất cả các sản phẩm của công ty.
+
+   **Đáp án**: B) **Là nhóm các thuế như 10%, 5%, 0% được sử dụng cho các sản phẩm và dịch vụ khác nhau.**
+
+### Câu hỏi 5: 
+**Khi thiết lập thuế trong SAP, loại thuế nào được liên kết với tài khoản thuế 333-110?**
+   - A) Thuế suất 5%.
+   - B) Thuế suất 10% và 0%.
+   - C) Thuế suất 10% cho hóa đơn đầu ra.
+   - D) Thuế suất 5% cho hóa đơn đầu ra.
+
+   **Đáp án**: C) **Thuế suất 10% cho hóa đơn đầu ra.**
+
+### Câu hỏi 6: 
+**Tại sao tài khoản thuế 333-110 lại quan trọng trong SAP khi thiết lập thuế?**
+   - A) Tài khoản này được sử dụng để ghi nhận giá trị gia tăng đầu ra của thuế từ các giao dịch bán hàng.
+   - B) Tài khoản này dùng để ghi nhận chi phí thuế đầu vào từ các giao dịch mua hàng.
+   - C) Tài khoản này không được sử dụng trong SAP.
+   - D) Tài khoản này chỉ được dùng cho các báo cáo tài chính không liên quan đến thuế.
+
+   **Đáp án**: A) **Tài khoản này được sử dụng để ghi nhận giá trị gia tăng đầu ra của thuế từ các giao dịch bán hàng.**
+
+---
