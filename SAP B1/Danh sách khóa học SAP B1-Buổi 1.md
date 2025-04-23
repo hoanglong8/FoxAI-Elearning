@@ -383,3 +383,132 @@ Bài học này giúp bạn hiểu rõ cách SAP Business One tự động hóa 
    **Đáp án**: A) **Tài khoản này được sử dụng để ghi nhận giá trị gia tăng đầu ra của thuế từ các giao dịch bán hàng.**
 
 ---
+# Câu hỏi trắc nghiệm về báo cáo chuẩn của SAP và báo cáo VS của AppZone
+
+### Câu hỏi 1: 
+**Báo cáo chuẩn SAP liên quan đến công nợ phải thu phải trả được xem ở phân hệ nào?**
+   - A) Finance và Banking.
+   - B) Logistics và Warehouse.
+   - C) Sales và Purchases.
+   - D) HR và Payroll.
+
+   **Đáp án**: A) **Finance và Banking.**
+
+### Câu hỏi 2: 
+**Báo cáo VS của AppZone theo chuẩn của kế toán Việt Nam liên quan đến các báo cáo nào?**
+   - A) Báo cáo tài chính và báo cáo thuế VAT.
+   - B) Báo cáo công nợ phải thu, phải trả và bảng kê thuế.
+   - C) Báo cáo sản xuất và báo cáo thu nhập.
+   - D) Báo cáo chi phí và thu nhập.
+
+   **Đáp án**: B) **Báo cáo công nợ phải thu, phải trả và bảng kê thuế.**
+
+### Câu hỏi 3: 
+**Báo cáo nào trong SAP giúp theo dõi chi tiết công nợ của từng đối tượng khách hàng hoặc nhà cung cấp?**
+   - A) General Resources Report.
+   - B) Profit and Loss Report.
+   - C) Balance Sheet Report.
+   - D) Cash Flow Report.
+
+   **Đáp án**: A) **General Resources Report.**
+
+### Câu hỏi 4: 
+**Báo cáo nào trong SAP cung cấp thông tin tổng hợp về công nợ phải thu và phải trả theo tài khoản?**
+   - A) Balance Sheet Report.
+   - B) General Ledger Report.
+   - C) AR/AP Aging Report.
+   - D) Business Partner Report.
+
+   **Đáp án**: C) **AR/AP Aging Report.**
+
+### Câu hỏi 5: 
+**Báo cáo VS của AppZone theo chuẩn của Thông tư 200 cung cấp các thông tin gì?**
+   - A) Thông tin về tài sản cố định và doanh thu.
+   - B) Thông tin về bảng kê thuế VAT và công nợ phải thu, phải trả.
+   - C) Thông tin về chi phí sản xuất và giá trị hàng tồn kho.
+   - D) Thông tin về lương nhân viên và thu nhập.
+
+   **Đáp án**: B) **Thông tin về bảng kê thuế VAT và công nợ phải thu, phải trả.**
+
+---
+# Câu hỏi trắc nghiệm về các báo cáo công nợ
+
+### Câu hỏi 1: 
+**Báo cáo nào trong SAP cho phép theo dõi chi tiết các giao dịch công nợ của từng đối tượng khách hàng hoặc nhà cung cấp?**
+   - A) General Ledger Report.
+   - B) Aging Report.
+   - C) Balance Sheet Report.
+   - D) Profit and Loss Report.
+
+   **Đáp án**: A) **General Ledger Report.**
+
+### Câu hỏi 2: 
+**Báo cáo tổng hợp công nợ (AR/AP Aging Report) trong SAP giúp người sử dụng làm gì?**
+   - A) Theo dõi tổng số dư công nợ của các đối tượng công nợ.
+   - B) Xem thông tin chi tiết về công nợ phải thu hoặc phải trả của từng khách hàng hoặc nhà cung cấp.
+   - C) Xác định số dư tài khoản của tất cả các đối tượng trong báo cáo.
+   - D) Đánh giá tuổi nợ của các công nợ phải thu và phải trả.
+
+   **Đáp án**: D) **Đánh giá tuổi nợ của các công nợ phải thu và phải trả.**
+
+### Câu hỏi 3: 
+**Báo cáo tuổi nợ (Aging Report) trong SAP thường được sử dụng để làm gì?**
+   - A) Xem tổng số tiền phải thu của tất cả khách hàng.
+   - B) Xác định thời gian quá hạn của các công nợ phải thu và phải trả.
+   - C) Liệt kê tất cả các tài khoản ngân hàng của công ty.
+   - D) Theo dõi doanh thu của công ty trong từng kỳ.
+
+   **Đáp án**: B) **Xác định thời gian quá hạn của các công nợ phải thu và phải trả.**
+
+---
+# Câu hỏi trắc nghiệm về cách lọc và xem chi tiết công nợ
+
+### Câu hỏi 1:
+**Khi muốn lọc báo cáo công nợ theo từng khách hàng trong SAP, bạn cần làm gì?**
+   - A) Chọn tài khoản phải thu và nhập thông tin về khách hàng trong báo cáo.
+   - B) Lựa chọn "Business Partner" và chọn mã khách hàng cần theo dõi.
+   - C) Chỉ cần nhập số dư của khách hàng cần kiểm tra.
+   - D) Lọc theo số lượng phiếu giao dịch của khách hàng.
+
+   **Đáp án**: B) **Lựa chọn "Business Partner" và chọn mã khách hàng cần theo dõi.**
+
+### Câu hỏi 2:
+**Để xem chi tiết công nợ theo loại phiếu trong SAP, bạn cần chọn tiêu chí nào trong báo cáo?**
+   - A) Chọn thời gian và tài khoản liên quan đến công nợ.
+   - B) Chọn loại phiếu và loại công nợ cần theo dõi.
+   - C) Chọn mã số thuế của khách hàng và nhà cung cấp.
+   - D) Chọn loại báo cáo tổng hợp công nợ.
+
+   **Đáp án**: B) **Chọn loại phiếu và loại công nợ cần theo dõi.**
+
+### Câu hỏi 3:
+**Khi muốn xem chi tiết công nợ theo thời gian (tháng/năm) trong SAP, bạn cần làm gì?**
+   - A) Lựa chọn dải thời gian cụ thể từ ngày bắt đầu đến ngày kết thúc.
+   - B) Lọc theo số lượng phiếu giao dịch trong tháng.
+   - C) Sử dụng báo cáo tổng hợp công nợ mà không cần xác định thời gian.
+   - D) Đánh dấu các khoản công nợ chưa thanh toán.
+
+   **Đáp án**: A) **Lựa chọn dải thời gian cụ thể từ ngày bắt đầu đến ngày kết thúc.**
+
+---
+# Câu hỏi trắc nghiệm về tính linh hoạt trong việc truy xuất và sử dụng báo cáo công nợ
+
+### Câu hỏi 1:
+**Trong SAP, khi muốn kiểm tra công nợ theo các tiêu chí khác nhau (như khách hàng, loại phiếu, thời gian), tính linh hoạt của báo cáo cho phép bạn làm gì?**
+   - A) Lọc và truy xuất thông tin công nợ theo các tiêu chí riêng biệt mà không cần thay đổi cấu hình hệ thống.
+   - B) In báo cáo chỉ một lần duy nhất và không thể thay đổi các tiêu chí lọc.
+   - C) Chỉ có thể lọc thông tin công nợ theo một tiêu chí duy nhất tại một thời điểm.
+   - D) Không thể truy xuất báo cáo công nợ theo các tiêu chí khác nhau.
+
+   **Đáp án**: A) **Lọc và truy xuất thông tin công nợ theo các tiêu chí riêng biệt mà không cần thay đổi cấu hình hệ thống.**
+
+### Câu hỏi 2:
+**Khi sử dụng SAP để in báo cáo công nợ, bạn có thể làm gì để xác nhận số dư công nợ của khách hàng trong một khoảng thời gian nhất định?**
+   - A) Lọc báo cáo công nợ theo ngày và chọn khách hàng cụ thể để in báo cáo số dư công nợ của họ.
+   - B) In báo cáo công nợ một lần và không thể thay đổi phạm vi thời gian.
+   - C) Chỉ có thể xác nhận số dư công nợ cho tất cả khách hàng cùng lúc mà không phân biệt thời gian.
+   - D) Không thể in báo cáo công nợ cho từng khách hàng riêng biệt.
+
+   **Đáp án**: A) **Lọc báo cáo công nợ theo ngày và chọn khách hàng cụ thể để in báo cáo số dư công nợ của họ.**
+
+---
