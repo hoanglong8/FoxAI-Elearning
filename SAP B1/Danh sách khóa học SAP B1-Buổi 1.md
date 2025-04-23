@@ -9,6 +9,8 @@ Bài học này giúp bạn hiểu rõ `hạch toán tự động trên SAP`, `t
 Nội dung video trên YouTube qua đường dẫn sau:
 [Video Buổi 1 - SAP Business One TB1100](https://www.youtube.com/watch?v=DiLvkZ0aPbk&list=PLNomLztKzjUpMmsgtKoOKWsywDnT86bZL)
 
+Hoặc ở trên [Sharepoint](https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxAI/ErmZyUSLwINOnMl07xPugOUBXEf8v3Gdq4_OtyKs-3lJcQ?e=lAmQcF)
+
 ![Hình](https://i.ytimg.com/vi/DiLvkZ0aPbk/maxresdefault.jpg)
 
 ---
