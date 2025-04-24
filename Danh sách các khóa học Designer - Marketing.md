@@ -16,6 +16,15 @@ Link khóa học: https://www.udemy.com/course/mastering-social-media-marketing-
 
 Link khóa học: https://www.udemy.com/course/advanced-adobe-premiere-pro-add-hollywood-level-effects/?couponCode=7967B3E762E99EB4F63E
 
+## Photo Editing
+
+![image](https://github.com/user-attachments/assets/f365b6f2-90b2-4153-90d3-d00150e8b25b)
+
+Link khóa học: https://www.udemy.com/course/pro-photo-editing-with-photoshop-illustrator-lightroom-canva/?couponCode=D08D9AAADAD2CB10E514
+
+
+---
+
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
 https://chromewebstore.google.com/detail/ph%E1%BB%A5-%C4%91%E1%BB%81-video-ai-d%E1%BB%8Bch-thu%E1%BA%AD/mjdbhokoopacimoekfgkcoogikbfgngb
