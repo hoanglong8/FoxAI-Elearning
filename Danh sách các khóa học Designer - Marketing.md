@@ -22,6 +22,11 @@ Link khóa học: https://www.udemy.com/course/advanced-adobe-premiere-pro-add-h
 
 Link khóa học: https://www.udemy.com/course/pro-photo-editing-with-photoshop-illustrator-lightroom-canva/?couponCode=D08D9AAADAD2CB10E514
 
+## Designer - Adobe Premier
+
+![image](https://github.com/user-attachments/assets/a47f661b-bdb9-4781-b92a-1c99f0274609)
+
+Link khóa học: https://www.udemy.com/course/advanced-adobe-after-effects-become-vfx-motion-expert/?couponCode=EC325E0A0AC5E139EBD5
 
 ---
 
