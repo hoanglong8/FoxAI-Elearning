@@ -25,10 +25,9 @@ Hoặc ở trên [Sharepoint](https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxA
 ## Overview
 
 📅 **Giới thiệu khóa học & Yêu cầu nền tảng (00:02 - 07:33)**
-- Khóa học gồm 13 buổi, 11 unit về kế toán từ cơ bản đến nâng cao, học định kỳ thứ 3 hoặc thứ 6.
 - Yêu cầu học viên có kiến thức kế toán cơ bản, ưu tiên đã từng sử dụng phần mềm kế toán hoặc SAP.
 - Khuyến khích xem lại các video khóa học trước về Logistics, mua hàng, bán hàng, sản xuất trên kênh Youtube Axon Company để có nền tảng tốt hơn.
-- Nội dung buổi đầu: Giới thiệu phân hệ kế toán trong quy trình ERP, ví dụ thực tế về hạch toán tự động, cập nhật thông tin hóa đơn đầu ra/đầu vào.
+- Giới thiệu phân hệ kế toán trong quy trình ERP, ví dụ thực tế về hạch toán tự động, cập nhật thông tin hóa đơn đầu ra/đầu vào.
 
 🔗 **Vị trí & Vai trò của Kế toán trong ERP (07:33 - 15:16)**
 - Giải thích vị trí của kế toán trong chuỗi quy trình doanh nghiệp (mua hàng, kho, sản xuất, bán hàng, marketing, bảo trì).
