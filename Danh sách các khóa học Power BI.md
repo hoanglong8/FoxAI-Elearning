@@ -7,11 +7,11 @@
 Link khóa học: https://www.udemy.com/course/power-bi-microsoft-power-bi-certification/?couponCode=7E6FCE951A44EBA51CAE
 
 
-**2.Data Analyst Skillpath: Excel, SQL & ML with Python**
+**2.SAP BusinessObjects Essential Training 2025**
 
-![image](https://github.com/user-attachments/assets/5b40cefe-c5e6-4575-8b77-7ef72e6a3766)
+![image](https://github.com/user-attachments/assets/0e1caf30-bee2-445a-b2d0-848eae7392b3)
 
-Link khóa học: https://www.udemy.com/course/data-analyst-skill-path-in-hindi/?couponCode=APRFREE
+Link khóa học: https://www.udemy.com/course/sap-bi-bo/?couponCode=E6273C1F5BD3D0AD12CF
 
 **3.Introduction to Business and Data Analysis**
 
