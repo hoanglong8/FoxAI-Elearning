@@ -4,6 +4,18 @@
 
 Link khóa học: https://www.udemy.com/course/graphic-design-masterclass-master-illustrator-photoshop/?couponCode=A36E56D7B5B102D1B821
 
+## Marketing - Social media
+
+![image](https://github.com/user-attachments/assets/cbf8965d-1178-42e7-afed-783f6acfce93)
+
+Link khóa học: https://www.udemy.com/course/mastering-social-media-marketing-a-comprehensive-guide/?couponCode=514580FA9DACD8F9EB97
+
+## Designer - Adobe Premier
+
+![image](https://github.com/user-attachments/assets/817ff2b7-495f-4238-83b7-370a92a72691)
+
+Link khóa học: https://www.udemy.com/course/advanced-adobe-premiere-pro-add-hollywood-level-effects/?couponCode=7967B3E762E99EB4F63E
+
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
 https://chromewebstore.google.com/detail/ph%E1%BB%A5-%C4%91%E1%BB%81-video-ai-d%E1%BB%8Bch-thu%E1%BA%AD/mjdbhokoopacimoekfgkcoogikbfgngb
