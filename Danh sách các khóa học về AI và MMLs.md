@@ -13,6 +13,12 @@ Link khóa học: https://www.udemy.com/course/deepseek-ai-deepseek-generative-a
 
 Link khóa học: https://www.udemy.com/course/ai-development-with-qwen-ollama-build-ai-apps-locally/?couponCode=APRIL2025AA
 
+**3.AI Gen for Leader**
+
+![image](https://github.com/user-attachments/assets/ca91a5e9-0920-4ce4-af63-66555ff3e0e6)
+
+Link khóa học: https://www.udemy.com/course/generative-ai-and-artificial-intelligence-ai-for-leaders/?couponCode=D330F47487D5A4CB867E
+
 ---
 
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
