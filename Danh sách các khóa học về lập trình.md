@@ -1,11 +1,20 @@
 # Python
 
 1. Khóa 30 Days of Code: The Complete Python Bootcamp (Vietnamese)
+
 ![image](https://github.com/user-attachments/assets/88fbd5b4-979b-4a66-89cd-9b6c2e5192df)
 
 Link khóa học: https://www.udemy.com/course/30-days-of-code-the-complete-python-bootcamp-vietnamese/?couponCode=ST8MT220425G3
 
 # SQL
+
+1.Khóa học của Tek4.vn
+
+![image](https://github.com/user-attachments/assets/0597ef9e-9283-4b0b-b42d-3058f1cd81ee)
+
+Link khóa học: https://tek4.vn/khoa-hoc/co-so-du-lieu-va-ngon-ngu-sql
+
+---
 
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
