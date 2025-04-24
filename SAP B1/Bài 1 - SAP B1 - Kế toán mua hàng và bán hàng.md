@@ -1,4 +1,4 @@
-# Kế toán mua hàng và bán hàng SAP Business One - TB1100 - Bài 1
+# Bài 1 - Kế toán mua hàng và bán hàng trên SAP Business One - TB1100
 
 ## Tóm tắt nội dung
 
