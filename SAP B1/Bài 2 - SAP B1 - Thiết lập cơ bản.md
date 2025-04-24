@@ -43,6 +43,47 @@ Hoặc ở trên [Sharepoint](https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxA
 **Thời gian:** 01:02:47
 
 ---
+
+## Notes
+
+📚 Giới thiệu tổng quan và mục tiêu buổi học (00:01 - 10:40)
+- Giới thiệu ba nội dung chính: bảng tài khoản kế toán, thiết lập hạch toán tự động (GL Account Determination), thiết lập đơn vị tiền tệ trong SAP.
+- Giải thích sự liên kết giữa các phân hệ mua, bán, sản xuất và kế toán qua các bút toán tự động.
+- Phân biệt bút toán tự động và bút toán thủ công, nhấn mạnh vai trò của bảng tài khoản kế toán (chart of accounts).
+- Giới thiệu cấu trúc bảng tài khoản theo chuẩn Việt Nam (Thông tư 200), phân loại tài khoản tài sản, nguồn vốn, doanh thu, chi phí, v.v.
+
+🗂️ Chi tiết cấu trúc và quản lý bảng tài khoản (00:10:40 - 00:21:19) (10:40 - 21:19)
+- Phân biệt tài khoản Title Account và Active Account, chỉ Active Account mới được phép hạch toán.
+- Giải thích các thuộc tính tài khoản: mã, tên, tên tiếng Anh (Foreign Name), External Code (phục vụ hợp nhất báo cáo với công ty mẹ), cấp độ (level), số dư, đơn vị tiền tệ.
+- Hướng dẫn cách inactive tài khoản không còn sử dụng thay vì xóa.
+- Nhấn mạnh việc chuẩn bị bảng tài khoản đầy đủ ngay từ đầu để tránh khó khăn khi phát sinh nhu cầu mới.
+
+🛠️ Thao tác tạo, sửa, xóa và quản lý bảng tài khoản (00:21:19 - 00:32:23) (21:19 - 32:23)
+- Hướng dẫn thao tác thêm, xóa, sửa tài khoản trên SAP, tạo tài khoản cùng cấp hoặc tài khoản con.
+- Giới thiệu chức năng Edit Chart of Accounts để quản lý linh hoạt hơn.
+- Lưu ý chỉ xóa được tài khoản khi chưa phát sinh giao dịch.
+- Giải thích cách thay đổi vị trí tài khoản trong cây tài khoản để dễ quản lý.
+
+🔄 Thiết lập hạch toán tự động với GL Account Determination (00:32:23 - 00:42:57) (32:23 - 42:57)
+- Giới thiệu sơ đồ luồng thông tin từ GL Account Determination sang Business Partner và Transaction.
+- Hướng dẫn thiết lập tài khoản mặc định cho từng phân hệ (Sales, Purchasing, Inventory, General).
+- Giải thích cách tài khoản mặc định được tự động gán vào các giao dịch và có thể điều chỉnh khi cần.
+- Phân tích chi tiết cách lấy tài khoản mặc định cho từng nghiệp vụ, đặc biệt với hàng tồn kho (theo item group hoặc warehouse).
+
+💡 Ý nghĩa và hướng dẫn khai báo các tài khoản trong GL Account Determination (00:42:57 - 00:52:25) (42:57 - 52:25)
+- Giải thích chi tiết các trường hợp cần khai báo tài khoản trong từng tab (Sales, Purchasing, Inventory).
+- Nhấn mạnh các tài khoản bắt buộc như: phải thu, phải trả, doanh thu, chi phí, tài khoản trung gian, tài khoản chênh lệch tỷ giá, tài khoản allocation, price difference, negative inventory, v.v.
+- Giới thiệu cách hệ thống tự động sinh bút toán theo thiết lập tài khoản mặc định.
+- Lưu ý về các trường hợp đặc biệt như hàng mua đang đi đường, hàng bán giao trước, đánh giá lại giá trị hàng tồn kho.
+
+💱 Thiết lập và quản lý đơn vị tiền tệ trong SAP (01:02:47 - 01:11:20) (01:02:47 - 01:11:20)
+- Giới thiệu khái niệm local currency (đồng tiền hạch toán) và foreign currency (ngoại tệ).
+- Hướng dẫn cách khai báo đồng tiền trên hệ thống và gán currency cho từng tài khoản.
+- Giải thích ý nghĩa của việc chọn currency cho từng tài khoản (chỉ nhận giao dịch bằng loại tiền đó).
+- Lưu ý về việc thể hiện số dư cuối kỳ theo loại tiền và quy đổi sang đồng tiền hạch toán.
+- Giới thiệu cách hệ thống xử lý chênh lệch tỷ giá thực hiện và chưa thực hiện, liên kết với các tài khoản đã thiết lập.
+
+---
 ## Giải thích sự liên kết giữa các phân hệ mua, bán, sản xuất và kế toán qua các bút toán tự động.
 
 ### Câu hỏi 1:
@@ -341,5 +382,269 @@ Hoặc ở trên [Sharepoint](https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxA
 - D. Thay đổi cấp độ của tài khoản cha thành cấp độ 1.
 
 **Đáp án:** B. Sử dụng chức năng "Add Sub-Level Account" khi chọn tài khoản cha để tạo tài khoản con.
+
+---
+### Câu hỏi về chức năng Edit Chart of Accounts và thay đổi vị trí tài khoản
+
+**Câu 1:** Chức năng **Edit Chart of Accounts** trong SAP cho phép bạn thực hiện thao tác nào sau đây?
+
+- A. Thay đổi thông tin tài khoản trong cây tài khoản và thêm các tài khoản con.
+- B. Chỉ có thể xóa tài khoản và không thể thêm tài khoản mới.
+- C. Không thể thay đổi thông tin tài khoản nhưng cho phép xóa tài khoản đã tồn tại.
+- D. Tạo các tài khoản trong một mức độ riêng biệt mà không thay đổi cây tài khoản.
+
+**Đáp án:** A. **Edit Chart of Accounts** cho phép bạn thay đổi thông tin tài khoản trong cây tài khoản và thêm các tài khoản con.
+
+**Câu 2:** Để **thay đổi vị trí tài khoản** trong cây tài khoản, bạn cần làm gì?
+
+- A. Sử dụng chức năng "Edit Chart of Accounts" và thay đổi vị trí của tài khoản trực tiếp trong cây tài khoản.
+- B. Xóa tài khoản cũ và tạo tài khoản mới với vị trí mới.
+- C. Sử dụng tính năng "Move Account" trong "Business Partner".
+- D. Thay đổi trạng thái của tài khoản thành "Inactive" và tạo tài khoản mới ở vị trí cần thiết.
+
+**Đáp án:** A. Sử dụng chức năng **"Edit Chart of Accounts"** và thay đổi vị trí của tài khoản trực tiếp trong cây tài khoản.
+
+**Câu 3:** Khi sử dụng chức năng **Edit Chart of Accounts** để thay đổi vị trí tài khoản trong cây tài khoản, việc thay đổi vị trí này sẽ giúp bạn:
+
+- A. Tạo ra các tài khoản con mà không cần phải thay đổi cấu trúc tài khoản.
+- B. Quản lý tài khoản dễ dàng hơn bằng cách tổ chức lại các tài khoản theo cấp độ hoặc theo nhóm tài chính.
+- C. Thực hiện các báo cáo tài chính mà không cần phải thay đổi thông tin tài khoản.
+- D. Chỉ thay đổi mã số tài khoản mà không làm thay đổi cây tài khoản.
+
+**Đáp án:** B. Việc thay đổi vị trí tài khoản giúp **quản lý tài khoản dễ dàng hơn** bằng cách tổ chức lại các tài khoản theo cấp độ hoặc theo nhóm tài chính.
+
+---
+### Câu hỏi: Sơ đồ luồng thông tin từ GL Account Determination sang Business Partner & Transaction, thiết lập tài khoản mặc định
+
+**Câu 1:** Luồng thông tin từ **GL Account Determination** sang **Business Partner** và **Transaction** được mô tả như thế nào?
+
+- A. Thông tin từ GL Account Determination sẽ được chuyển trực tiếp vào báo cáo tài chính.
+- B. Thông tin từ GL Account Determination sẽ được chuyển vào Item Master Data và Business Partner, sau đó áp dụng vào các giao dịch như AI Invoice.
+- C. Thông tin từ GL Account Determination chỉ được sử dụng cho việc kiểm tra số dư tài khoản.
+- D. Thông tin từ GL Account Determination không liên quan đến Business Partner hay Transaction.
+
+**Đáp án:** B. Thông tin từ **GL Account Determination** sẽ được chuyển vào **Item Master Data** và **Business Partner**, sau đó áp dụng vào các giao dịch như AI Invoice.
+
+**Câu 2:** Khi thiết lập **tài khoản mặc định** trong SAP cho phân hệ **Sales**, thông tin tài khoản phải thu sẽ được lấy từ đâu?
+
+- A. Từ thông tin kho (Warehouse).
+- B. Từ thông tin Item Group.
+- C. Từ thông tin **Business Partner** và **GL Account Determination**.
+- D. Từ các tài khoản đã được thiết lập trong General Ledger.
+
+**Đáp án:** C. Từ thông tin **Business Partner** và **GL Account Determination**.
+
+**Câu 3:** Để thiết lập tài khoản mặc định cho các phân hệ như **Sales**, **Purchasing**, **Inventory**, và **General**, bạn cần làm gì trong SAP?
+
+- A. Thiết lập tài khoản trong **Item Master Data** cho từng phân hệ và chọn tài khoản phù hợp từ **GL Account Determination**.
+- B. Tạo tài khoản mới trong hệ thống mà không cần liên kết đến GL Account Determination.
+- C. Chỉ cần nhập tài khoản trong **Business Partner** mà không cần kết nối với GL Account Determination.
+- D. Thay đổi tài khoản mặc định trong các báo cáo tài chính và không cần thiết lập trong phân hệ.
+
+**Đáp án:** A. Thiết lập tài khoản trong **Item Master Data** cho từng phân hệ và chọn tài khoản phù hợp từ **GL Account Determination**.
+
+---
+### Câu hỏi: Tài khoản mặc định và cách gán tài khoản vào các giao dịch
+
+**Câu 1:** Tài khoản mặc định trong SAP được **tự động gán** vào giao dịch như thế nào?
+
+- A. Tài khoản mặc định chỉ được gán thủ công khi nhập liệu vào từng phiếu giao dịch.
+- B. Tài khoản mặc định được tự động gán từ **GL Account Determination** và có thể được thay đổi trong **Item Master Data** hoặc **Business Partner**.
+- C. Tài khoản mặc định không thể thay đổi sau khi thiết lập ban đầu.
+- D. Tài khoản mặc định chỉ được gán cho các giao dịch trong báo cáo tài chính.
+
+**Đáp án:** B. Tài khoản mặc định được tự động gán từ **GL Account Determination** và có thể được thay đổi trong **Item Master Data** hoặc **Business Partner**.
+
+**Câu 2:** Khi thực hiện giao dịch liên quan đến **hàng tồn kho**, tài khoản mặc định sẽ được lấy từ đâu?
+
+- A. Từ thông tin trong **Item Master Data** và **GL Account Determination**.
+- B. Từ thông tin được cấu hình trong các báo cáo tài chính.
+- C. Từ thông tin trong các **tài khoản phải thu** và **phải trả**.
+- D. Từ các thông tin trong **Business Partner** mà không liên quan đến hàng tồn kho.
+
+**Đáp án:** A. Tài khoản mặc định sẽ được lấy từ thông tin trong **Item Master Data** và **GL Account Determination**.
+
+**Câu 3:** Trong trường hợp một mặt hàng có thể thuộc nhiều kho, tài khoản mặc định sẽ được lấy từ đâu?
+
+- A. Từ thông tin trong **Item Group** mà không liên quan đến kho.
+- B. Từ thông tin kho (**warehouse**) nơi mặt hàng đó đang tồn kho, theo cấu hình trong **Inventory**.
+- C. Từ tài khoản liên kết trực tiếp với người cung cấp mặt hàng đó.
+- D. Từ báo cáo tài chính cuối kỳ.
+
+**Đáp án:** B. Tài khoản mặc định sẽ được lấy từ thông tin kho (**warehouse**) nơi mặt hàng đó đang tồn kho, theo cấu hình trong **Inventory**.
+
+**Câu 4:** Khi tài khoản mặc định được tự động gán cho một giao dịch, người dùng có thể điều chỉnh tài khoản đó không?
+
+- A. Không, tài khoản mặc định không thể thay đổi sau khi đã được thiết lập.
+- B. Có, người dùng có thể thay đổi tài khoản mặc định trực tiếp trong từng phiếu giao dịch.
+- C. Người dùng phải xóa và tạo lại tài khoản mặc định nếu muốn thay đổi.
+- D. Người dùng có thể thay đổi tài khoản mặc định chỉ khi giao dịch chưa hoàn tất.
+
+**Đáp án:** B. **Có**, người dùng có thể thay đổi tài khoản mặc định trực tiếp trong từng phiếu giao dịch.
+
+**Câu 5:** Khi thiết lập tài khoản mặc định cho **hàng tồn kho**, sự lựa chọn giữa việc sử dụng **item group** hay **warehouse** có ý nghĩa gì?
+
+- A. Việc lựa chọn giữa **item group** và **warehouse** chỉ ảnh hưởng đến báo cáo tài chính cuối kỳ.
+- B. Lựa chọn giữa **item group** và **warehouse** giúp xác định cách thức hạch toán cho mặt hàng khi nó thay đổi kho hoặc nhóm mặt hàng.
+- C. Lựa chọn này chỉ có tác dụng trong việc quản lý hàng hóa mà không liên quan đến hạch toán.
+- D. **Item group** và **warehouse** không ảnh hưởng đến tài khoản mặc định cho hàng tồn kho.
+
+**Đáp án:** B. Lựa chọn giữa **item group** và **warehouse** giúp xác định cách thức **hạch toán** cho mặt hàng khi nó thay đổi kho hoặc nhóm mặt hàng.
+
+---
+### Câu hỏi: Khai báo tài khoản trong các tab Sales, Purchasing, và Inventory
+
+**Câu 1:** Trong tab **Sales**, tài khoản phải thu mặc định là gì và tại sao nó quan trọng?
+
+- A. Tài khoản 131, tài khoản này là tài khoản phải thu và dùng để ghi nhận công nợ phải thu từ khách hàng.
+- B. Tài khoản 331, dùng để ghi nhận các khoản phải trả cho nhà cung cấp.
+- C. Tài khoản 711, dùng để ghi nhận doanh thu từ việc bán hàng.
+- D. Tài khoản 811, dùng để ghi nhận chi phí cho hàng hóa bán ra.
+
+**Đáp án:** A. Tài khoản **131** là tài khoản phải thu và dùng để ghi nhận công nợ phải thu từ khách hàng, đây là tài khoản quan trọng trong việc theo dõi công nợ trong tab **Sales**.
+
+**Câu 2:** Trong tab **Purchasing**, tài khoản phải trả mặc định là gì và mục đích của nó là gì?
+
+- A. Tài khoản 331, dùng để ghi nhận các khoản phải trả cho nhà cung cấp.
+- B. Tài khoản 711, dùng để ghi nhận doanh thu từ việc bán hàng.
+- C. Tài khoản 711, dùng để ghi nhận chi phí bán hàng.
+- D. Tài khoản 515, dùng để ghi nhận lãi từ tỷ giá ngoại tệ.
+
+**Đáp án:** A. Tài khoản **331** là tài khoản phải trả và dùng để ghi nhận các khoản phải trả cho nhà cung cấp, đây là tài khoản quan trọng trong tab **Purchasing**.
+
+**Câu 3:** Tại sao trong tab **Inventory**, tài khoản **Inventory Account** (tài khoản hàng tồn kho) lại rất quan trọng?
+
+- A. Nó dùng để ghi nhận tất cả các giao dịch nhập kho, xuất kho và theo dõi giá trị hàng tồn kho.
+- B. Nó dùng để ghi nhận doanh thu từ bán hàng.
+- C. Nó dùng để ghi nhận chi phí vận hành của kho.
+- D. Nó dùng để ghi nhận các khoản nợ phải trả cho nhà cung cấp.
+
+**Đáp án:** A. Tài khoản **Inventory Account** (tài khoản hàng tồn kho) dùng để ghi nhận tất cả các giao dịch nhập kho, xuất kho và theo dõi giá trị hàng tồn kho, giúp đảm bảo sự chính xác trong việc quản lý hàng hóa trong tab **Inventory**.
+
+**Câu 4:** Khi sử dụng **tài khoản trung gian** trong hệ thống, trường hợp nào sẽ sử dụng tài khoản này?
+
+- A. Khi bạn nhập hàng về nhưng chưa nhận được hóa đơn từ nhà cung cấp, tài khoản trung gian sẽ ghi nhận công nợ tạm thời.
+- B. Khi thanh toán chi phí vận chuyển cho nhà cung cấp, tài khoản trung gian sẽ được sử dụng để phân bổ chi phí.
+- C. Khi bạn hoàn tất thanh toán cho khách hàng và ghi nhận doanh thu, tài khoản trung gian không được sử dụng.
+- D. Khi bạn cần ghi nhận tỷ giá chênh lệch, tài khoản trung gian không được phép sử dụng.
+
+**Đáp án:** A. **Tài khoản trung gian** được sử dụng khi bạn nhập hàng về nhưng chưa nhận được hóa đơn từ nhà cung cấp, tài khoản này ghi nhận công nợ tạm thời cho đến khi nhận được hóa đơn và thực hiện bút toán chính thức.
+
+**Câu 5:** Tài khoản **Price Difference Account** trong tab **Inventory** được sử dụng trong trường hợp nào?
+
+- A. Khi có sự khác biệt giữa giá mua thực tế và giá chuẩn (Standard Cost) của hàng tồn kho, sự chênh lệch sẽ được ghi nhận vào tài khoản này.
+- B. Khi có sự chênh lệch giữa tỷ giá mua và tỷ giá bán của hàng hóa, tài khoản này sẽ ghi nhận sự khác biệt.
+- C. Khi bạn phải điều chỉnh giá trị hàng tồn kho vào cuối kỳ kế toán.
+- D. Khi bạn cần điều chỉnh tài khoản chi phí cho các mặt hàng đã xuất kho.
+
+**Đáp án:** A. **Price Difference Account** được sử dụng khi có sự khác biệt giữa giá mua thực tế và giá chuẩn (**Standard Cost**) của hàng tồn kho, sự chênh lệch này sẽ được ghi nhận vào tài khoản này.
+
+---
+### Câu hỏi: Hệ thống tự động sinh bút toán theo thiết lập tài khoản mặc định
+
+**Câu 1:** Hệ thống SAP tự động sinh bút toán như thế nào khi có một giao dịch nhập kho, xuất kho, hoặc bán hàng?
+
+- A. Hệ thống tự động sinh bút toán dựa trên thiết lập tài khoản mặc định trong **Item Master Data** và **GL Account Determination**.
+- B. Hệ thống yêu cầu người dùng nhập tất cả các tài khoản vào mỗi giao dịch.
+- C. Hệ thống không hỗ trợ sinh bút toán tự động trong các giao dịch nhập kho hay xuất kho.
+- D. Hệ thống tự động sinh bút toán nhưng không thể thay đổi tài khoản mặc định.
+
+**Đáp án:** A. Hệ thống tự động sinh bút toán dựa trên thiết lập tài khoản mặc định trong **Item Master Data** và **GL Account Determination**.
+
+**Câu 2:** Khi hàng hóa đang đi đường (chưa nhận được hóa đơn từ nhà cung cấp), tài khoản mặc định nào sẽ được sử dụng?
+
+- A. Tài khoản **33883** (hoặc tài khoản trung gian khác) sẽ được sử dụng để ghi nhận hàng hóa đang đi đường.
+- B. Tài khoản **331** (phải trả nhà cung cấp) sẽ được sử dụng ngay lập tức.
+- C. Tài khoản **811** (chi phí) sẽ được sử dụng để ghi nhận chi phí vận chuyển.
+- D. Tài khoản **711** (doanh thu) sẽ được ghi nhận vào khi hàng hóa đang đi đường.
+
+**Đáp án:** A. Tài khoản **33883** (hoặc tài khoản trung gian khác) sẽ được sử dụng để ghi nhận hàng hóa đang đi đường khi chưa nhận được hóa đơn từ nhà cung cấp.
+
+**Câu 3:** Khi hàng bán đã giao cho khách hàng nhưng chưa có hóa đơn (hàng bán giao trước), tài khoản nào sẽ được sử dụng trong hệ thống?
+
+- A. Hệ thống sẽ ghi nhận tài khoản **711** (doanh thu) khi hàng bán đã giao.
+- B. Tài khoản **131** (phải thu khách hàng) sẽ được ghi nhận khi hàng bán giao trước.
+- C. Tài khoản **33883** (tài khoản trung gian) sẽ được ghi nhận khi hàng bán giao trước.
+- D. Tài khoản **811** (chi phí) sẽ được ghi nhận khi hàng bán giao trước.
+
+**Đáp án:** C. Tài khoản **33883** (tài khoản trung gian) sẽ được ghi nhận khi hàng bán giao trước, chờ đến khi nhận được hóa đơn và thực hiện bút toán chính thức.
+
+**Câu 4:** Khi cần **đánh giá lại giá trị hàng tồn kho**, tài khoản nào sẽ được sử dụng để ghi nhận sự thay đổi?
+
+- A. Tài khoản **515** (lãi tỷ giá) sẽ được sử dụng để ghi nhận sự thay đổi giá trị hàng tồn kho.
+- B. Tài khoản **156** (hàng tồn kho) sẽ được điều chỉnh để ghi nhận sự thay đổi giá trị hàng tồn kho.
+- C. Tài khoản **811** (chi phí) sẽ được sử dụng để ghi nhận sự thay đổi trong giá trị hàng tồn kho.
+- D. Tài khoản **711** (doanh thu) sẽ được sử dụng để ghi nhận sự thay đổi giá trị hàng tồn kho.
+
+**Đáp án:** B. Tài khoản **156** (hàng tồn kho) sẽ được điều chỉnh để ghi nhận sự thay đổi giá trị hàng tồn kho trong trường hợp đánh giá lại giá trị hàng tồn kho.
+
+**Câu 5:** Khi hệ thống tự động sinh bút toán cho các giao dịch, có những trường hợp đặc biệt nào mà người dùng cần lưu ý khi sử dụng tài khoản mặc định?
+
+- A. Người dùng cần lưu ý khi có các tình huống như hàng mua đang đi đường, hàng bán giao trước, hoặc đánh giá lại giá trị hàng tồn kho.
+- B. Người dùng không cần phải lo lắng về các tình huống đặc biệt vì hệ thống sẽ tự động xử lý mọi trường hợp.
+- C. Tài khoản mặc định chỉ được sử dụng cho các giao dịch liên quan đến khách hàng và nhà cung cấp, không áp dụng cho hàng tồn kho.
+- D. Tất cả các giao dịch nhập kho và xuất kho đều sẽ sử dụng tài khoản mặc định mà không cần phải thay đổi gì.
+
+**Đáp án:** A. Người dùng cần lưu ý khi có các tình huống như **hàng mua đang đi đường**, **hàng bán giao trước**, hoặc **đánh giá lại giá trị hàng tồn kho** vì hệ thống sẽ cần điều chỉnh các tài khoản tương ứng cho từng tình huống.
+
+---
+### Câu hỏi: Khái niệm về local currency và foreign currency, khai báo currency cho tài khoản
+
+**Câu 1:** **Local currency** (đồng tiền hạch toán) là gì và có vai trò gì trong hệ thống SAP?
+
+- A. **Local currency** là đồng tiền ngoại tệ, dùng để ghi nhận tất cả các giao dịch quốc tế.
+- B. **Local currency** là đồng tiền được sử dụng trong hệ thống để hạch toán toàn bộ các giao dịch tài chính của công ty, thường là tiền Việt Nam đồng (VND).
+- C. **Local currency** là đồng tiền duy nhất được sử dụng cho các giao dịch liên quan đến ngân hàng.
+- D. **Local currency** là đồng tiền mà công ty sử dụng để ghi nhận tất cả các giao dịch thanh toán với khách hàng.
+
+**Đáp án:** B. **Local currency** là đồng tiền được sử dụng trong hệ thống để hạch toán toàn bộ các giao dịch tài chính của công ty, thường là tiền Việt Nam đồng (VND).
+
+**Câu 2:** Cách khai báo **foreign currency** (ngoại tệ) và gán **currency** cho từng tài khoản trong hệ thống SAP như thế nào?
+
+- A. Khi khai báo **foreign currency**, người dùng chỉ cần nhập tỷ giá và không cần liên kết với tài khoản nào.
+- B. **Foreign currency** được khai báo khi hệ thống yêu cầu và có thể gán vào tài khoản để chỉ nhận giao dịch với loại ngoại tệ đó. Cần xác định tỷ giá khi tạo tài khoản.
+- C. **Foreign currency** chỉ cần khai báo tại thời điểm ghi nhận giao dịch ngoại tệ, không cần thiết lập trước.
+- D. **Foreign currency** chỉ được gán cho các tài khoản liên quan đến thuế và không ảnh hưởng đến tài khoản ngân hàng.
+
+**Đáp án:** B. **Foreign currency** được khai báo khi hệ thống yêu cầu và có thể gán vào tài khoản để chỉ nhận giao dịch với loại ngoại tệ đó. Cần xác định tỷ giá khi tạo tài khoản.
+
+**Câu 3:** Ý nghĩa của việc **chọn currency** cho từng tài khoản là gì?
+
+- A. Khi chọn **currency** cho tài khoản, hệ thống sẽ tự động chuyển đổi tất cả các giao dịch sang **local currency**.
+- B. Việc chọn **currency** cho tài khoản đảm bảo rằng tài khoản chỉ nhận giao dịch bằng loại tiền đó. Nếu một giao dịch có loại tiền khác, hệ thống sẽ báo lỗi.
+- C. **Currency** chỉ có tác dụng khi giao dịch có giá trị trên một mức nhất định và không ảnh hưởng đến việc ghi nhận công nợ.
+- D. Chọn **currency** không ảnh hưởng đến tài khoản, chỉ có tác dụng trong các báo cáo tài chính cuối kỳ.
+
+**Đáp án:** B. Việc chọn **currency** cho tài khoản đảm bảo rằng tài khoản chỉ nhận giao dịch bằng loại tiền đó. Nếu một giao dịch có loại tiền khác, hệ thống sẽ báo lỗi.
+
+---
+### Câu hỏi: Thể hiện số dư cuối kỳ và xử lý chênh lệch tỷ giá
+
+**Câu 1:** Khi hệ thống SAP **thể hiện số dư cuối kỳ** cho tài khoản, nếu tài khoản có đồng tiền ngoại tệ, hệ thống sẽ:
+
+- A. Thể hiện số dư cuối kỳ bằng đồng tiền ngoại tệ và không quy đổi sang đồng tiền hạch toán.
+- B. Chỉ thể hiện số dư cuối kỳ bằng đồng tiền hạch toán, bỏ qua đồng tiền ngoại tệ.
+- C. Thể hiện số dư cuối kỳ bằng đồng tiền ngoại tệ và đồng tiền hạch toán, đồng thời chuyển đổi số dư ngoại tệ sang đồng tiền hạch toán.
+- D. Thể hiện số dư cuối kỳ bằng đồng tiền ngoại tệ, sau đó chuyển thành tiền Việt nhưng không hiển thị số dư ngoại tệ.
+
+**Đáp án:** C. Hệ thống sẽ **thể hiện số dư cuối kỳ bằng đồng tiền ngoại tệ** và **đồng tiền hạch toán**, đồng thời **chuyển đổi số dư ngoại tệ sang đồng tiền hạch toán**.
+
+**Câu 2:** Khi **xử lý chênh lệch tỷ giá thực hiện và chưa thực hiện**, hệ thống sẽ làm gì với các tài khoản liên quan?
+
+- A. Hệ thống sẽ tự động tính toán và chuyển chênh lệch tỷ giá vào tài khoản lợi nhuận hoặc lỗ và không yêu cầu thiết lập thêm tài khoản.
+- B. Hệ thống không xử lý chênh lệch tỷ giá mà yêu cầu người dùng phải tự tính toán và nhập bút toán.
+- C. Hệ thống sẽ ghi nhận **chênh lệch tỷ giá chưa thực hiện** vào tài khoản **chênh lệch tỷ giá** và **chênh lệch tỷ giá thực hiện** vào tài khoản lãi/lỗ tỷ giá.
+- D. Hệ thống sẽ tính toán chênh lệch tỷ giá nhưng chỉ áp dụng cho các giao dịch liên quan đến ngoại tệ và không ảnh hưởng đến tài khoản liên quan.
+
+**Đáp án:** C. Hệ thống sẽ ghi nhận **chênh lệch tỷ giá chưa thực hiện** vào tài khoản **chênh lệch tỷ giá** và **chênh lệch tỷ giá thực hiện** vào tài khoản lãi/lỗ tỷ giá.
+
+**Câu 3:** Ý nghĩa của việc liên kết các **tài khoản tỷ giá** trong hệ thống SAP với **các tài khoản đã thiết lập** là gì?
+
+- A. Các tài khoản tỷ giá chỉ phục vụ cho báo cáo tài chính cuối kỳ và không ảnh hưởng đến các giao dịch hàng ngày.
+- B. Các tài khoản tỷ giá giúp tự động tính toán và ghi nhận các **chênh lệch tỷ giá** khi tỷ giá thay đổi, giúp điều chỉnh số dư tài khoản phù hợp.
+- C. Các tài khoản tỷ giá chỉ được sử dụng cho các giao dịch mua bán ngoại tệ và không liên quan đến các giao dịch khác.
+- D. Các tài khoản tỷ giá chỉ được liên kết với các tài khoản trong phần quản lý hàng tồn kho và không ảnh hưởng đến các tài khoản khác.
+
+**Đáp án:** B. Các tài khoản tỷ giá giúp **tự động tính toán và ghi nhận các chênh lệch tỷ giá** khi tỷ giá thay đổi, giúp **điều chỉnh số dư tài khoản** phù hợp.
 
 ---
