@@ -1,10 +1,17 @@
 # Bài 1 - Kế toán mua hàng và bán hàng trên SAP Business One - TB1100
 
-## Tóm tắt nội dung
+## Mục tiêu buổi học
 
-Trong buổi đầu tiên của khóa học, chúng ta sẽ tìm hiểu về quy trình mua hàng và bán hàng trong SAP Business One. Các khái niệm chính như **mua hàng**, **bán hàng**, **hạch toán tự động**, và các loại phiếu trong quy trình mua hàng và bán hàng sẽ được giới thiệu và giải thích chi tiết. Chúng ta sẽ khám phá các bước cơ bản từ việc tạo báo giá, đơn đặt hàng, nhận hàng, ghi nhận công nợ cho đến việc thanh toán cho nhà cung cấp.
+Bao gồm: 
+- Quy trình mua hàng và bán hàng trong SAP Business One,
+- Hạch toán tự động,
+- Các loại phiếu trong quy trình mua hàng và bán hàng.
 
-Bài học này giúp bạn hiểu rõ `hạch toán tự động trên SAP`, `thiết lập tài khoản`, `ghi nhận hóa đơn`, `báo cáo công nợ`.
+## Timeline:
+- Từ **00:02 - 07:33**: Giới thiệu khóa học và yêu cầu nền tảng.
+- Từ **07:33 - 23:35**: Vị trí và vai trò của kế toán trong ERP và Quy trình mua hàng, bán hàng, sản xuất & kho trên SAP.
+- Từ **23:35 - 40:54**: Thiết lập hạch toán tự động & khái niệm trên SAP.
+- Từ **40:54 - 49:06**: Báo cáo công nợ & quản lý trên SAP.
 
 Nội dung video trên YouTube qua đường dẫn sau:
 [Video Buổi 1 - SAP Business One TB1100](https://www.youtube.com/watch?v=DiLvkZ0aPbk&list=PLNomLztKzjUpMmsgtKoOKWsywDnT86bZL)
