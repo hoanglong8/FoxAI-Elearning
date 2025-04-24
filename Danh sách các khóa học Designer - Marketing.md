@@ -28,6 +28,12 @@ Link khóa học: https://www.udemy.com/course/pro-photo-editing-with-photoshop-
 
 Link khóa học: https://www.udemy.com/course/advanced-adobe-after-effects-become-vfx-motion-expert/?couponCode=EC325E0A0AC5E139EBD5
 
+## Marketing - Social media
+
+![image](https://github.com/user-attachments/assets/0d076fe8-b988-4363-8493-aae8d6a03829)
+
+Link khóa học: https://www.udemy.com/course/social-media-mastery-comprehensive-social-media-success/?couponCode=47D26B938A92195A3B20
+
 ---
 
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
