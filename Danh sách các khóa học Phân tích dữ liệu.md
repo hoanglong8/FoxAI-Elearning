@@ -1,6 +1,12 @@
-## 02 khóa học về kỹ năng Data Analyst (lựa chọn học 1 trong 2 để lấy chứng chỉ)
+## 02 khóa học về kỹ năng Data Analyst (lựa chọn học 1 trong 3 để lấy chứng chỉ)
 
-**Google Data Analytics Professional Certificate**
+### Microsoft Data Visualization Professional Certificate
+
+![image](https://github.com/user-attachments/assets/7dc009ed-ec8c-4ad1-88fb-6fc8c80704c9)
+
+Link khóa học: [Coursera](https://www.coursera.org/professional-certificates/microsoft-data-visualization/paidmedia?utm_medium=sem&utm_source=gg&utm_campaign=b2c_apac_microsoft-data-visualization_microsoft_ftcof_professional-certificates_px_dr_bau_gg_sem_pr_s2_all_m_hyb_25-04_x&campaignid=22447085655&adgroupid=175418674262&device=c&keyword=data%20analysis%20online%20course&matchtype=p&network=g&devicemodel=&creativeid=746917729598&assetgroupid=&targetid=kwd-319501032899&extensionid=&placement=&gad_source=1&gbraid=0AAAAADdKX6abYdL4dVs_fzbu04bK5Jz0O&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGdPQRZrooRBpPnRMYPfBZyyisu1QE523xx3GhvMpyvCiEyu7QNYKsaAuMFEALw_wcB)
+
+### Google Data Analytics Professional Certificate
 
 ![image](https://github.com/user-attachments/assets/82daa95b-054c-4473-9a1c-c5ae04c47d4b)
 
@@ -10,7 +16,7 @@ Link khóa học: https://www.coursera.org/professional-certificates/google-data
 
 ---
 
-**IBM Data Science Professional Certificate**
+### IBM Data Science Professional Certificate
 
 ![image](https://github.com/user-attachments/assets/4efd5ca9-065a-4775-aafa-23def0b07535)
 
