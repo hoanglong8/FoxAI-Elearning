@@ -6,8 +6,14 @@
 
 Link khóa học: https://skillsbuild.org/students/course-catalog/artificial-intelligence
 
+## Artificial Intelligence Fundamentals (có chứng chỉ - bắt buộc)
+
+![image](https://github.com/user-attachments/assets/19e76c88-0056-4ac9-8c4d-9144fec4657d)
+
+Link khóa học: https://students.yourlearning.ibm.com/activity/PLAN-CC702B39D429
+
 ---
-## Một số khóa học của Udemy
+# Một số khóa học của Udemy
 **1.DeepSeek R1 AI: DeepSeek R1 Generative AI COMPLETE Course**
 
 ![image](https://github.com/user-attachments/assets/5cbe5160-d36a-486a-93fa-8a5fa6051659)
