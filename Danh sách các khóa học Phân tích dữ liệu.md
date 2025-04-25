@@ -6,6 +6,8 @@
 
 Link khóa học: [Coursera](https://www.coursera.org/professional-certificates/microsoft-data-visualization/paidmedia?utm_medium=sem&utm_source=gg&utm_campaign=b2c_apac_microsoft-data-visualization_microsoft_ftcof_professional-certificates_px_dr_bau_gg_sem_pr_s2_all_m_hyb_25-04_x&campaignid=22447085655&adgroupid=175418674262&device=c&keyword=data%20analysis%20online%20course&matchtype=p&network=g&devicemodel=&creativeid=746917729598&assetgroupid=&targetid=kwd-319501032899&extensionid=&placement=&gad_source=1&gbraid=0AAAAADdKX6abYdL4dVs_fzbu04bK5Jz0O&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGdPQRZrooRBpPnRMYPfBZyyisu1QE523xx3GhvMpyvCiEyu7QNYKsaAuMFEALw_wcB)
 
+---
+
 ### Google Data Analytics Professional Certificate
 
 ![image](https://github.com/user-attachments/assets/82daa95b-054c-4473-9a1c-c5ae04c47d4b)
@@ -95,7 +97,7 @@ Cần lưu ý rằng một trong những tính năng đáng chú ý của nó l�
 - Hình thành các quy trình tự động liên quan đến quy trình công việc kinh doanh và phân tích văn bản.
 
 ---
-
+## Các khóa học khác trên Udemy
 **Power BI 101 - Microsoft Power BI DUAL Certification Course**
 
 ![image](https://github.com/user-attachments/assets/1a48f231-f37b-4e48-893c-6c39cfb271f4)
