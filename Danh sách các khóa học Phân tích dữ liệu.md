@@ -162,6 +162,32 @@ Link khóa học: https://www.udemy.com/course/2023-data-visualization-in-tablea
 Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-science
 
 ---
+# Sách ebook
+## Microsoft Power BI Data Analyst Certification Companion
+
+![image](https://github.com/user-attachments/assets/f976607a-526c-40ae-8558-1f39a35fb88d)
+
+[Link tải](https://dokumen.pub/qdownload/microsoft-power-bi-data-analyst-certification-companion-preparation-for-exam-pl-300-certification-study-companion-series-9781484290125-9781484290132-1484290127.html)
+
+---
+
+## Microsoft Power BI Data Analyst Certification Guide
+
+![image](https://github.com/user-attachments/assets/e773905e-4d5f-4635-ba3c-54d49811e23a)
+
+Link GitHub: https://github.com/PacktPublishing/Microsoft-Power-BI-Data-Analyst-Certification-Guide
+
+---
+
+## Artificial Intelligence with Power BI
+
+![image](https://github.com/user-attachments/assets/4be89d3d-c053-43dd-a823-878372bc19a4)
+
+Link GitHub: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI
+
+Link ebook: https://bicourses.azurewebsites.net/eBooks/Artificial%20Intelligence%20with%20Microsoft%20Power%20BI.pdf
+
+---
 
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
