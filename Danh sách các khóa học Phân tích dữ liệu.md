@@ -36,6 +36,13 @@ Link GitHub tài liệu: https://github.com/BDFD-Learning-Ground/Coursera_IBM-Da
 Link khóa học: https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst
 
 ---
+## PL-300: Microsoft Power BI Data Analyst
+
+![image](https://github.com/user-attachments/assets/f0034508-0913-4eda-88e7-7e5caf51ea9e)
+
+Link khóa học: https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst
+
+---
 
 ## 05 Công cụ DA cho nhà phân tích dữ liệu
 
