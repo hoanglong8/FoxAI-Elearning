@@ -99,6 +99,13 @@ Cần lưu ý rằng một trong những tính năng đáng chú ý của nó l�
 - Hình thành các quy trình tự động liên quan đến quy trình công việc kinh doanh và phân tích văn bản.
 
 ---
+## Power-BI-PL-300-Study-Guide
+A study guide for the PL-300: Microsoft Power BI Data Analyst Certification Exam
+
+Link GitHub: https://github.com/AzAdminEVM/Power-BI-PL-300-Study-Guide
+
+---
+
 ## Các khóa học khác trên Udemy
 **Power BI 101 - Microsoft Power BI DUAL Certification Course**
 
