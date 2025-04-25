@@ -1,4 +1,13 @@
 # Các khóa học về AI - MMLs
+
+## IBM Artificial intelligence - Free learning and resources
+
+![image](https://github.com/user-attachments/assets/eb98dfed-0dd5-4caf-a995-9cbaf74b125f)
+
+Link khóa học: https://skillsbuild.org/students/course-catalog/artificial-intelligence
+
+---
+## Một số khóa học của Udemy
 **1.DeepSeek R1 AI: DeepSeek R1 Generative AI COMPLETE Course**
 
 ![image](https://github.com/user-attachments/assets/5cbe5160-d36a-486a-93fa-8a5fa6051659)
@@ -12,6 +21,8 @@ Link khóa học: https://www.udemy.com/course/deepseek-ai-deepseek-generative-a
 ![image](https://github.com/user-attachments/assets/5626f93f-295c-4005-9380-ea88f236582b)
 
 Link khóa học: https://www.udemy.com/course/ai-development-with-qwen-ollama-build-ai-apps-locally/?couponCode=APRIL2025AA
+
+---
 
 **3.AI Gen for Leader**
 
