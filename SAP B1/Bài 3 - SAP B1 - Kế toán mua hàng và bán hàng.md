@@ -1,4 +1,4 @@
-# Bài 1 - Kế toán mua hàng và bán hàng trên SAP Business One - TB1100
+# Bài 3 - Kế toán mua hàng và bán hàng trên SAP Business One - TB1100
 
 ## Mục tiêu buổi học
 
