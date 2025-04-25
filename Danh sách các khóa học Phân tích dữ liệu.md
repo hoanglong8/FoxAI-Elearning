@@ -18,13 +18,15 @@ Link khóa học: https://www.coursera.org/professional-certificates/google-data
 
 ---
 
-### IBM Data Science Professional Certificate
+### IBM Data Analyst Professional Certificate
 
 ![image](https://github.com/user-attachments/assets/4efd5ca9-065a-4775-aafa-23def0b07535)
 
 Một khóa học toàn diện cung cấp kiến thức từ cơ bản đến nâng cao về khoa học dữ liệu, bao gồm Python và các thư viện như Pandas, NumPy.
 
-Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-science
+Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-analyst
+
+Link GitHub tài liệu: https://github.com/BDFD-Learning-Ground/Coursera_IBM-Data-Analyst-Professional-Certificate_OP
 
 ---
 
@@ -127,6 +129,12 @@ Link khóa học: https://www.udemy.com/course/introduction-to-business-and-data
 ![image](https://github.com/user-attachments/assets/d428601a-3230-4f71-8a1a-d359c08ed33d)
 
 Link khóa học: https://www.udemy.com/course/2023-data-visualization-in-tableau-python-2-courses-in-1/?couponCode=4D26B02C08918BC67748
+
+---
+
+### IBM Data Science
+
+Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-science
 
 ---
 
