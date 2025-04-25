@@ -1,14 +1,13 @@
 # Các khóa học về Machine Learning - Deep Learning
 ## Data Science: Machine Learning của ĐH Harvard trên Edx (Sẽ đóng vào 18 June 2025 - Khuyến nghị học ngay để lấy chứng chỉ)
 
-![image](https://github.com/user-attachments/assets/5e3b7482-d616-4fa7-ba4d-fd764460d848)
+![image](https://github.com/user-attachments/assets/3fa3427d-4146-4b7c-963a-d05cc2ae3908)
 
 Link khóa học: https://pll.harvard.edu/course/data-science-machine-learning
 
 Giao diện trên Edx: 
-![image](https://github.com/user-attachments/assets/2f20b7c4-dcd9-4dc9-bf97-fa166908afda)
 
-![image](https://github.com/user-attachments/assets/3fa3427d-4146-4b7c-963a-d05cc2ae3908)
+![image](https://github.com/user-attachments/assets/5e3b7482-d616-4fa7-ba4d-fd764460d848)
 
 ---
 
