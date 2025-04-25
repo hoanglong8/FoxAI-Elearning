@@ -29,6 +29,13 @@ Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-an
 Link GitHub tài liệu: https://github.com/BDFD-Learning-Ground/Coursera_IBM-Data-Analyst-Professional-Certificate_OP
 
 ---
+## Chứng chỉ Chuyên môn Microsoft Power BI Data Analyst
+
+![image](https://github.com/user-attachments/assets/df0e6f86-8d65-48a8-aeb8-539359ade807)
+
+Link khóa học: https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst
+
+---
 
 ## 05 Công cụ DA cho nhà phân tích dữ liệu
 
