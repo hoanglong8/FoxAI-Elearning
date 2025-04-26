@@ -1,4 +1,5 @@
-## 02 khóa học về kỹ năng Data Analyst (lựa chọn học 1 trong 3 để lấy chứng chỉ)
+## Các khóa học dành cho Intern & Fresher DA
+03 khóa học về kỹ năng Data Analyst (Recomment - lựa chọn học 1 trong 3 để lấy chứng chỉ)
 
 ### Microsoft Data Visualization Professional Certificate
 
@@ -31,22 +32,26 @@ Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-an
 Link GitHub tài liệu: https://github.com/BDFD-Learning-Ground/Coursera_IBM-Data-Analyst-Professional-Certificate_OP
 
 ---
-## Chứng chỉ Chuyên môn Microsoft Power BI Data Analyst
+## Các khóa học dành cho Junior & Senior DA
+### Chứng chỉ Chuyên môn Microsoft Power BI Data Analyst
 
 ![image](https://github.com/user-attachments/assets/df0e6f86-8d65-48a8-aeb8-539359ade807)
 
 Link khóa học: https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst
 
 ---
-## PL-300: Microsoft Power BI Data Analyst
+### PL-300: Microsoft Power BI Data Analyst Study Guide
 
+A study guide for the PL-300: Microsoft Power BI Data Analyst Certification Exam
 ![image](https://github.com/user-attachments/assets/f0034508-0913-4eda-88e7-7e5caf51ea9e)
 
 Link khóa học: https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst
 
----
+Link GitHub: https://github.com/AzAdminEVM/Power-BI-PL-300-Study-Guide
 
-## 05 Công cụ DA cho nhà phân tích dữ liệu
+---
+## Tools - Công cụ
+### 05 Công cụ DA cho nhà phân tích dữ liệu
 
 ![Ảnh](https://www.techprofree.com/wp-content/webp-express/webp-images/uploads/2024/02/Optimal-AI-Tools-for-Data-Analysts-810x455.jpg.webp)
 
@@ -115,12 +120,6 @@ Cần lưu ý rằng một trong những tính năng đáng chú ý của nó l�
 - Hình thành các quy trình tự động liên quan đến quy trình công việc kinh doanh và phân tích văn bản.
 
 ---
-## Power-BI-PL-300-Study-Guide
-A study guide for the PL-300: Microsoft Power BI Data Analyst Certification Exam
-
-Link GitHub: https://github.com/AzAdminEVM/Power-BI-PL-300-Study-Guide
-
----
 
 ## Các khóa học khác trên Udemy
 **Power BI 101 - Microsoft Power BI DUAL Certification Course**
@@ -162,8 +161,8 @@ Link khóa học: https://www.udemy.com/course/2023-data-visualization-in-tablea
 Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-science
 
 ---
-# Sách ebook
-## Microsoft Power BI Data Analyst Certification Companion
+## Sách ebook
+### Microsoft Power BI Data Analyst Certification Companion
 
 ![image](https://github.com/user-attachments/assets/f976607a-526c-40ae-8558-1f39a35fb88d)
 
@@ -171,7 +170,7 @@ Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-sc
 
 ---
 
-## Microsoft Power BI Data Analyst Certification Guide
+### Microsoft Power BI Data Analyst Certification Guide
 
 ![image](https://github.com/user-attachments/assets/e773905e-4d5f-4635-ba3c-54d49811e23a)
 
@@ -179,13 +178,34 @@ Link GitHub: https://github.com/PacktPublishing/Microsoft-Power-BI-Data-Analyst-
 
 ---
 
-## Artificial Intelligence with Power BI
+### Artificial Intelligence with Power BI
 
 ![image](https://github.com/user-attachments/assets/4be89d3d-c053-43dd-a823-878372bc19a4)
 
 Link GitHub: https://github.com/PacktPublishing/Artificial-Intelligence-with-Power-BI
 
 Link ebook: https://bicourses.azurewebsites.net/eBooks/Artificial%20Intelligence%20with%20Microsoft%20Power%20BI.pdf
+
+---
+### Python-for-Data-Analysis 2nd
+
+![image](https://github.com/user-attachments/assets/64aa20ac-b8b0-472a-b901-fc9082d1f6a6)
+
+Link ebook: https://datapot.vn/wp-content/uploads/2023/12/datapot.vn-Python-for-Data-Analysis.pdf?srsltid=AfmBOoqI50xjT4ZX52rAOv-MAN7-T1HmM5i8LvMCycjB--nzydtfAd9d
+
+---
+### Python-for-Data-Analysis_-Data-Wrangling-with-pandas-NumPy-and-Jupyter-O'Reilly 3rd
+
+![image](https://github.com/user-attachments/assets/c53c92a9-fb8f-4ba8-8995-5790f845faf9)
+
+Link ebook: https://fasttacks.com/wp-content/uploads/2024/07/Wes-McKinney-Python-for-Data-Analysis_-Data-Wrangling-with-pandas-NumPy-and-Jupyter-OReilly-Media-2022.pdf
+
+---
+### Data Analysis and Science Using Pandas, matplotlib, and the Python Programming Language
+
+![image](https://github.com/user-attachments/assets/d62bd16b-6714-4639-8f75-09648a385025)
+
+Link ebook: https://github.com/Jffrank/Books/blob/master/Python%20Data%20Analytics_%20Data%20Analysis%20and%20Science%20Using%20Pandas%2C%20matplotlib%2C%20and%20the%20Python%20Programming%20Language.pdf
 
 ---
 
