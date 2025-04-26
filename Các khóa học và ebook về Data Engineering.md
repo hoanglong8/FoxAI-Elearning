@@ -1,4 +1,4 @@
-# Các khóa học về Machine Learning - Deep Learning
+# Các khóa học về Data Engineering (Machine Learning - Deep Learning)
 ## Data Science: Machine Learning của ĐH Harvard trên Edx (Sẽ đóng vào 18 June 2025 - Khuyến nghị học ngay để lấy chứng chỉ)
 
 ![image](https://github.com/user-attachments/assets/3fa3427d-4146-4b7c-963a-d05cc2ae3908)
@@ -35,7 +35,7 @@ Link khóa học: https://www.udemy.com/course/linear-regression-and-logistic-re
 Link khóa học: https://www.udemy.com/course/machine-learning-advanced-decision-trees-in-python/?couponCode=APRFREE
 
 ---
-## Ebook Data Engineering
+## Ebook về Data Engineering
 
 ### Open Source Data Pipelines for Intelligent Applications
 
@@ -48,6 +48,20 @@ Các pipeline này giúp tự động hóa quá trình xử lý dữ liệu, t�
 Cuốn sách giới thiệu nhiều công cụ mã nguồn mở phổ biến giúp xây dựng và triển khai data pipelines, bao gồm Apache Airflow, Kubernetes, Apache Kafka, Apache Spark, và dbt (Data Build Tool).
 
 Link ebook: https://www.delltechnologies.com/asset/zh-hk/solutions/infrastructure-solutions/industry-market/modern-enterprise-data-pipelines.pdf
+
+---
+
+### Fundamentals of Data Engineering: Plan and Build Robust Data Systems
+
+![image](https://github.com/user-attachments/assets/3a5ca8c6-bb10-4330-baca-7b41f60396bc)
+
+Cuốn sách bắt đầu bằng cách giải thích Data Engineering là gì và tại sao nó quan trọng trong thế giới hiện đại. Data Engineering đóng vai trò trung tâm trong việc xây dựng các hệ thống dữ liệu giúp phân tích và đưa ra quyết định dựa trên dữ liệu.
+
+Các tác giả giải thích sự khác biệt giữa Data Engineering và các mảng khác trong khoa học dữ liệu, như Data Science và Machine Learning.
+
+Link ebook: https://soclibrary.futa.edu.ng/books/Fundamentals%20of%20Data%20Engineering%20(Reis,%20JoeHousley,%20Matt)%20(Z-Library).pdf
+
+Link dự phòng: https://freecomputerbooks.com/Fundamentals-of-Data-Engineering.html
 
 ---
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
