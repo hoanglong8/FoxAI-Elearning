@@ -20,6 +20,18 @@ Link khóa học: https://www.udemy.com/course/product-owner-certification-exam-
 
 ---
 
+# Ebook
+
+## AI as a Service (Serverless machine learning with AWS)
+
+Cuốn sách đề cập đến AI hiện tại chủ yếu được chi phối bởi học có giám sát (supervised learning), trong đó dữ liệu có nhãn (labeled data) được sử dụng để huấn luyện mô hình. Tuy nhiên, một thách thức lớn là việc thiếu dữ liệu đầy đủ và đa dạng, dẫn đến các thuật toán có thể bị sai lệch hoặc không chính xác khi đối mặt với dữ liệu mới, chưa được huấn luyện. Vì vậy, việc phát triển các mô hình học không giám sát (unsupervised learning) đang trở thành một chủ đề nghiên cứu quan trọng.
+
+![Hình](https://m.media-amazon.com/images/I/61QlATgxI1L.jpg)
+
+Link ebook: https://www.manning.com/books/ai-as-a-service
+
+---
+
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
 https://chromewebstore.google.com/detail/ph%E1%BB%A5-%C4%91%E1%BB%81-video-ai-d%E1%BB%8Bch-thu%E1%BA%AD/mjdbhokoopacimoekfgkcoogikbfgngb
