@@ -64,6 +64,28 @@ Link ebook: https://soclibrary.futa.edu.ng/books/Fundamentals%20of%20Data%20Engi
 Link dự phòng: https://freecomputerbooks.com/Fundamentals-of-Data-Engineering.html
 
 ---
+
+### Data Engineering Cookbook
+
+![image](https://github.com/user-attachments/assets/9b346845-fed7-4a58-ad1b-07d17b36669f)
+
+Link ebook: https://cookbook.learndataengineering.com/
+
+Link dự phòng: https://freecomputerbooks.com/The-Data-Engineering-Cookbook-Mastering-The-Plumbing-Of-Data-Science.html
+
+---
+
+### Natural Language Processing with Transformers Building Language Applications with Hugging Face
+
+![image](https://github.com/user-attachments/assets/6f50f2f6-f3c3-40d8-83a2-b43c663cc131)
+
+Cuốn sách bắt đầu với việc giải thích về transformers, một kiến trúc mạng học sâu đã cách mạng hóa lĩnh vực NLP. Mô hình này khác biệt với các mô hình truyền thống như RNNs và LSTMs nhờ khả năng xử lý đồng thời toàn bộ văn bản và tập trung vào các mối quan hệ xa giữa các từ trong câu.
+
+Attention Mechanism là phần cốt lõi của transformers, cho phép mô hình "chú ý" đến các phần quan trọng trong văn bản khi xử lý.
+
+Link ebook: https://github.com/fanbyprinciple/Natural-Language-processing-with-transformers/blob/master/Natural%20Language%20Processing%20with%20Transformers%20Building%20Language%20Applications%20with%20Hugging%20Face%20by%20Lewis%20Tunstall%20%20Leandro%20von%20Werra%20%20Thomas%20Wolf.pdf
+
+---
 ## Cài đặt Trancy Extenstion - Dịch thuật cho Udemy, Coursera và Youtube...
 
 https://chromewebstore.google.com/detail/ph%E1%BB%A5-%C4%91%E1%BB%81-video-ai-d%E1%BB%8Bch-thu%E1%BA%AD/mjdbhokoopacimoekfgkcoogikbfgngb
