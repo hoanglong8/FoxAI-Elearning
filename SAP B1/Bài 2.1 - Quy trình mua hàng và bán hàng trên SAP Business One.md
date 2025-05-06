@@ -1,4 +1,4 @@
-# Tổng quan về SAP Business One - TB1000
+# Quy trình mua hàng và bán hàng trên SAP Business One - TB1000
 
 ## Mục tiêu buổi học
 
