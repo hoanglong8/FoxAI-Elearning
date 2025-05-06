@@ -8,14 +8,6 @@
 
 - **Phân quyền sử dụng**: Một tài khoản chỉ có thể đăng nhập một lần tại một thời điểm. Cần hướng dẫn cách sử dụng chức năng **Change Company** để chọn database phù hợp và **tùy chỉnh menu** theo từng vai trò của người dùng trong hệ thống.
 
-## Các ý chính cần nhấn mạnh
-
-1. **Vai trò của SAP Business One** trong việc kết nối các phòng ban và đảm bảo tính nhất quán trong việc sử dụng Master Data.
-2. **Tính năng tích hợp dữ liệu** của ERP và việc **hoạt động theo thời gian thực** trong doanh nghiệp.
-3. **Localization** của SAP Business One tại Việt Nam và các quốc gia khác, đặc biệt là sự khác biệt giữa các khu vực như Úc/Singapore.
-4. **Quản lý phân quyền người dùng** và cách **tùy chỉnh giao diện và chức năng** cho các vai trò khác nhau trong hệ thống.
-
-
 Nội dung video trên YouTube qua đường dẫn sau:
 
 [Video Buổi 1 - Tổng quan SAP Business One](https://youtu.be/_KHWgnDAYQc?si=nkx9fKJK60-ESJS1)
@@ -23,6 +15,55 @@ Nội dung video trên YouTube qua đường dẫn sau:
 Hoặc ở trên [Sharepoint](https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxAI/ErmZyUSLwINOnMl07xPugOUBXEf8v3Gdq4_OtyKs-3lJcQ?e=lAmQcF)
 
 ![Hình](https://i.ytimg.com/vi/_KHWgnDAYQc/maxresdefault.jpg)
+
+---
+## Overview
+
+1. **Vai trò của SAP Business One** trong việc kết nối các phòng ban và đảm bảo tính nhất quán trong việc sử dụng Master Data.
+2. **Tính năng tích hợp dữ liệu** của ERP và việc **hoạt động theo thời gian thực** trong doanh nghiệp.
+3. **Localization** của SAP Business One tại Việt Nam và các quốc gia khác, đặc biệt là sự khác biệt giữa các khu vực như Úc/Singapore.
+4. **Quản lý phân quyền người dùng** và cách **tùy chỉnh giao diện và chức năng** cho các vai trò khác nhau trong hệ thống.
+
+🖥️ Giới thiệu tổng quan về SAP Business One và nhu cầu triển khai ERP (00:01 - 10:24)
+- Giới thiệu SAP Business One và vai trò trong việc kết nối các phòng ban doanh nghiệp.
+- Mô tả cấu trúc tổ chức phổ biến: mua hàng, inbound logistics, quản lý kho, sản xuất, outbound logistics, marketing & sales, service, kế toán.
+- Nhấn mạnh tầm quan trọng của việc dùng chung dữ liệu nền tảng (Master Data) giữa các phòng ban.
+- Giải thích lợi ích của hệ thống ERP: tích hợp dữ liệu, kế thừa thông tin, hoạt động thời gian thực, tùy chỉnh theo ngành nghề.
+
+🌍 Phổ biến và localization của SAP Business One (10:24 - 13:30)
+- SAP Business One được sử dụng tại hơn 150 quốc gia, hỗ trợ 27 ngôn ngữ và 42 localization.
+- Việt Nam chưa có localization riêng, thường dùng localization của Úc hoặc Singapore khi triển khai.
+
+🔑 Các bước bắt đầu sử dụng SAP Business One & phân quyền người dùng (13:30 - 21:28)
+- Hướng dẫn đăng nhập hệ thống, giải thích về account super user và end user.
+- Chỉ một account có thể đăng nhập tại một thời điểm.
+- Giới thiệu chức năng Change Company để chọn database/pháp nhân khi đăng nhập.
+- Giải thích về cấu trúc menu chính: module (phân hệ), khung tìm kiếm, và các chức năng search menu/data.
+- Trả lời câu hỏi về phân quyền và tùy chỉnh menu theo vai trò người dùng.
+
+🛠️ Tùy chỉnh giao diện, MyMenu và các công cụ hỗ trợ người dùng (21:28 - 32:51)
+- Hướng dẫn sử dụng Form Setting để ẩn/hiện menu theo quyền user.
+- Giới thiệu MyMenu giúp người dùng cá nhân hóa các chức năng thường dùng.
+- Trình bày về các icon trên thanh công cụ: nhóm File (xuất dữ liệu, in, gửi email) và nhóm View (tìm kiếm, tạo mới, di chuyển giữa các bản ghi).
+- Giải đáp về việc import danh mục hàng hóa từ Excel và hỗ trợ online/offline help.
+
+📦 Khái niệm Master Data và Document trong Logistics & Accounting (32:51 - 43:19)
+- Giải thích chi tiết về Master Data: Business Partner (khách hàng, nhà cung cấp, lead), Item Master Data (vật tư, hàng hóa).
+- Trình bày các trường thông tin quan trọng: mã, tên, địa chỉ, điều khoản thanh toán, price list, tài khoản kế toán, kho chứa, đơn vị tính, nhóm vật tư.
+- Giải đáp về việc thiết lập nhiều bảng giá (giá mua, giá bán) và quản lý giá theo từng nhà cung cấp.
+- Giới thiệu cách tìm kiếm và sử dụng Master Data trong các nghiệp vụ giao dịch.
+
+📄 Cấu trúc và sử dụng Marketing Document (Document) trong SAP (43:19 - 53:25)
+- Trình bày cấu trúc chung của document: thông tin chung, content (chi tiết hàng hóa/dịch vụ), logistics, accounting, attachment.
+- Hướng dẫn sử dụng các tab trong document và cách đính kèm file.
+- Giải thích chức năng lưu document dạng nháp (draft) và tạo document từ document liên kết (copy to/copy from).
+- Giới thiệu Relationship Map để theo dõi mối liên kết giữa các chứng từ trong quy trình nghiệp vụ.
+
+⚡ Tính năng Drag & Relate, tổng kết và nhắc nhở buổi học tiếp theo (53:25 - 01:02:43)
+- Giới thiệu Drag & Relate giúp tra cứu nhanh các thông tin liên quan giữa các mã hàng, khách hàng, nhà cung cấp và các phân hệ.
+- Tổng kết: tạo document từ master data giúp tăng năng suất, đảm bảo nhất quán dữ liệu và giảm lỗi.
+- Nhắc lại ba loại business partner master data: customer, vendor, lead.
+- Nhấn mạnh cấu trúc chung của marketing document và chức năng lưu nháp.
 
 ---
 
