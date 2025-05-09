@@ -43,21 +43,21 @@
 
 Fireflies AI là một công cụ tuyệt vời giúp tối ưu hóa quy trình làm việc của bạn trong các cuộc họp và thảo luận trực tuyến. Với sự tích hợp các tính năng mạnh mẽ, Fireflies AI không chỉ giúp ghi chép và tóm tắt thông tin mà còn giúp bạn phân tích dữ liệu cuộc họp một cách chi tiết. Sau đây là các tính năng nổi bật của ứng dụng này:
 
-Note: Fireflies AI cho phép ghi chú tự động trong các cuộc họp, giúp bạn lưu lại thông tin quan trọng mà không cần phải lo lắng về việc bỏ sót chi tiết nào. Nó giúp ghi lại những điểm chính và những thông tin quan trọng được chia sẻ trong cuộc họp.
+**Note:** Fireflies AI cho phép ghi chú tự động trong các cuộc họp, giúp bạn lưu lại thông tin quan trọng mà không cần phải lo lắng về việc bỏ sót chi tiết nào. Nó giúp ghi lại những điểm chính và những thông tin quan trọng được chia sẻ trong cuộc họp.
 
-Summarize Video: Tính năng này hỗ trợ tóm tắt nội dung video cuộc họp, giúp bạn nhanh chóng nắm bắt các điểm chính mà không cần phải xem toàn bộ video. Điều này đặc biệt hữu ích khi bạn cần phải xử lý nhiều cuộc họp trong một ngày.
+**Summarize Video:** Tính năng này hỗ trợ tóm tắt nội dung video cuộc họp, giúp bạn nhanh chóng nắm bắt các điểm chính mà không cần phải xem toàn bộ video. Điều này đặc biệt hữu ích khi bạn cần phải xử lý nhiều cuộc họp trong một ngày.
 
-Thống kê Actions: Fireflies AI có thể tự động thống kê các hành động và quyết định quan trọng trong cuộc họp, giúp bạn theo dõi những nhiệm vụ cần thực hiện và những quyết định đã được đưa ra.
+**Thống kê Actions:** Fireflies AI có thể tự động thống kê các hành động và quyết định quan trọng trong cuộc họp, giúp bạn theo dõi những nhiệm vụ cần thực hiện và những quyết định đã được đưa ra.
 
-Transcript: Công cụ này cung cấp bản chép lại toàn bộ cuộc hội thoại trong cuộc họp, giúp bạn dễ dàng tra cứu lại nội dung cuộc họp khi cần thiết, đồng thời hỗ trợ trong việc tìm kiếm các chi tiết quan trọng.
+**Transcript:** Công cụ này cung cấp bản chép lại toàn bộ cuộc hội thoại trong cuộc họp, giúp bạn dễ dàng tra cứu lại nội dung cuộc họp khi cần thiết, đồng thời hỗ trợ trong việc tìm kiếm các chi tiết quan trọng.
 
-Đánh giá Sentiments: Fireflies AI còn có thể phân tích cảm xúc trong các cuộc thảo luận. Nó nhận diện được các cảm xúc tích cực, tiêu cực và trung tính trong các câu nói của người tham gia cuộc họp, giúp bạn hiểu rõ hơn về không khí của cuộc họp.
+**Đánh giá Sentiments:** Fireflies AI còn có thể phân tích cảm xúc trong các cuộc thảo luận. Nó nhận diện được các cảm xúc tích cực, tiêu cực và trung tính trong các câu nói của người tham gia cuộc họp, giúp bạn hiểu rõ hơn về không khí của cuộc họp.
 
-Topic Trackers: Tính năng này giúp theo dõi các chủ đề chính trong cuộc họp, giúp bạn dễ dàng nắm bắt được các vấn đề trọng tâm mà không bị bỏ lỡ bất kỳ thông tin quan trọng nào.
+**Topic Trackers:** Tính năng này giúp theo dõi các chủ đề chính trong cuộc họp, giúp bạn dễ dàng nắm bắt được các vấn đề trọng tâm mà không bị bỏ lỡ bất kỳ thông tin quan trọng nào.
 
-Create Soundbite: Fireflies AI cho phép tạo các đoạn âm thanh ngắn từ các cuộc họp, giúp bạn chia sẻ các thông tin quan trọng nhanh chóng mà không cần phải chia sẻ toàn bộ video hay bản chép lại.
+**Create Soundbite:** Fireflies AI cho phép tạo các đoạn âm thanh ngắn từ các cuộc họp, giúp bạn chia sẻ các thông tin quan trọng nhanh chóng mà không cần phải chia sẻ toàn bộ video hay bản chép lại.
 
-Thảo luận về Video: Bạn có thể thảo luận trực tiếp trên nền tảng Fireflies về các video cuộc họp, giúp nhóm dễ dàng chia sẻ và phân tích các phần cụ thể của cuộc họp.
+**Thảo luận về Video: **Bạn có thể thảo luận trực tiếp trên nền tảng Fireflies về các video cuộc họp, giúp nhóm dễ dàng chia sẻ và phân tích các phần cụ thể của cuộc họp.
 
 Với những tính năng này, Fireflies AI giúp tiết kiệm thời gian, cải thiện năng suất làm việc và tối ưu hóa quá trình ghi chép, phân tích cuộc họp. Đây là một công cụ lý tưởng cho các doanh nghiệp, đặc biệt là trong các môi trường làm việc hiện đại nơi các cuộc họp trực tuyến ngày càng trở nên phổ biến.
 
@@ -70,8 +70,10 @@ Link đăng ký dùng thử Fireflies AI [tại đây](https://app.fireflies.ai/
 ### 3.1.Sharepoint
 
 Nơi [lưu trữ](https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxAI/EsDZLWSaqn1Bk_Uo1aqXOIQBDXGbVYJanPV0oJZGlfS67g?e=DiapDF) từng video theo từng tuần của các thành viên phòng DA:
-- Tuần 1 tháng 5
+- [Tuần 1 tháng 5](https://github.com/hoanglong8/FoxAI-Elearning/blob/main/T%C3%B3m%20t%E1%BA%AFt%20kh%C3%B3a%20h%E1%BB%8Dc%20%26%20t%C3%A0i%20li%E1%BB%87u/Tu%E1%BA%A7n%201%20th%C3%A1ng%205.md)
 - Tuần 2 tháng 5
+- Tuần 3 tháng 5
+- Tuần 4 tháng 5
 
 ### 3.2.NotebookLM
 
