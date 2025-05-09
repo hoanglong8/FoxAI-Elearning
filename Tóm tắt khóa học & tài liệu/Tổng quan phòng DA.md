@@ -57,7 +57,7 @@ Fireflies AI là một công cụ tuyệt vời giúp tối ưu hóa quy trình 
 
 **Create Soundbite:** Fireflies AI cho phép tạo các đoạn âm thanh ngắn từ các cuộc họp, giúp bạn chia sẻ các thông tin quan trọng nhanh chóng mà không cần phải chia sẻ toàn bộ video hay bản chép lại.
 
-**Thảo luận về Video: **Bạn có thể thảo luận trực tiếp trên nền tảng Fireflies về các video cuộc họp, giúp nhóm dễ dàng chia sẻ và phân tích các phần cụ thể của cuộc họp.
+**Thảo luận về Video:** Bạn có thể thảo luận trực tiếp trên nền tảng Fireflies về các video cuộc họp, giúp nhóm dễ dàng chia sẻ và phân tích các phần cụ thể của cuộc họp.
 
 Với những tính năng này, Fireflies AI giúp tiết kiệm thời gian, cải thiện năng suất làm việc và tối ưu hóa quá trình ghi chép, phân tích cuộc họp. Đây là một công cụ lý tưởng cho các doanh nghiệp, đặc biệt là trong các môi trường làm việc hiện đại nơi các cuộc họp trực tuyến ngày càng trở nên phổ biến.
 
