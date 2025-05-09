@@ -39,6 +39,30 @@
 
 ### 2.2.Fireflies AI và Otter AI - Công cụ tạo ghi chú cuộc họp tự động
 
+![image](https://github.com/user-attachments/assets/e73c160d-3747-42b5-b781-fdc2917006cc)
+
+Fireflies AI là một công cụ tuyệt vời giúp tối ưu hóa quy trình làm việc của bạn trong các cuộc họp và thảo luận trực tuyến. Với sự tích hợp các tính năng mạnh mẽ, Fireflies AI không chỉ giúp ghi chép và tóm tắt thông tin mà còn giúp bạn phân tích dữ liệu cuộc họp một cách chi tiết. Sau đây là các tính năng nổi bật của ứng dụng này:
+
+Note: Fireflies AI cho phép ghi chú tự động trong các cuộc họp, giúp bạn lưu lại thông tin quan trọng mà không cần phải lo lắng về việc bỏ sót chi tiết nào. Nó giúp ghi lại những điểm chính và những thông tin quan trọng được chia sẻ trong cuộc họp.
+
+Summarize Video: Tính năng này hỗ trợ tóm tắt nội dung video cuộc họp, giúp bạn nhanh chóng nắm bắt các điểm chính mà không cần phải xem toàn bộ video. Điều này đặc biệt hữu ích khi bạn cần phải xử lý nhiều cuộc họp trong một ngày.
+
+Thống kê Actions: Fireflies AI có thể tự động thống kê các hành động và quyết định quan trọng trong cuộc họp, giúp bạn theo dõi những nhiệm vụ cần thực hiện và những quyết định đã được đưa ra.
+
+Transcript: Công cụ này cung cấp bản chép lại toàn bộ cuộc hội thoại trong cuộc họp, giúp bạn dễ dàng tra cứu lại nội dung cuộc họp khi cần thiết, đồng thời hỗ trợ trong việc tìm kiếm các chi tiết quan trọng.
+
+Đánh giá Sentiments: Fireflies AI còn có thể phân tích cảm xúc trong các cuộc thảo luận. Nó nhận diện được các cảm xúc tích cực, tiêu cực và trung tính trong các câu nói của người tham gia cuộc họp, giúp bạn hiểu rõ hơn về không khí của cuộc họp.
+
+Topic Trackers: Tính năng này giúp theo dõi các chủ đề chính trong cuộc họp, giúp bạn dễ dàng nắm bắt được các vấn đề trọng tâm mà không bị bỏ lỡ bất kỳ thông tin quan trọng nào.
+
+Create Soundbite: Fireflies AI cho phép tạo các đoạn âm thanh ngắn từ các cuộc họp, giúp bạn chia sẻ các thông tin quan trọng nhanh chóng mà không cần phải chia sẻ toàn bộ video hay bản chép lại.
+
+Thảo luận về Video: Bạn có thể thảo luận trực tiếp trên nền tảng Fireflies về các video cuộc họp, giúp nhóm dễ dàng chia sẻ và phân tích các phần cụ thể của cuộc họp.
+
+Với những tính năng này, Fireflies AI giúp tiết kiệm thời gian, cải thiện năng suất làm việc và tối ưu hóa quá trình ghi chép, phân tích cuộc họp. Đây là một công cụ lý tưởng cho các doanh nghiệp, đặc biệt là trong các môi trường làm việc hiện đại nơi các cuộc họp trực tuyến ngày càng trở nên phổ biến.
+
+Link đăng ký dùng thử Fireflies AI [tại đây](https://app.fireflies.ai/login?referralCode=01JQJKFR2VWMJW28XXAYY6K0SS)
+
 ---
 
 ## 3.Về Skillset - Nơi ghi lại các bài thực hành các kỹ năng, ứng dụng các công cụ vào công việc
