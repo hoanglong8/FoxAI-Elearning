@@ -170,18 +170,19 @@ Làm quen với các bước đầu tiên trong Power BI Desktop (Kết nối v�
 - Tích hợp Power Automate để tự động cảnh báo.
 
 ## 3. 🌐 Hệ Sinh Thái Power BI
-Thành phần	Mô tả
-Power BI Desktop	Phần mềm cài trên máy tính (Windows). Dùng để thiết kế báo cáo, thực hiện 4 bước đầu tiên của quy trình.
-Power BI Service	Nền tảng cloud để chia sẻ và phân quyền báo cáo. Giống như Google Drive cho báo cáo Power BI.
-Power BI Mobile	Ứng dụng di động để xem báo cáo mọi lúc mọi nơi. Có trên Android và iOS.
+|Thành phần|	Mô tả|
+|Power BI Desktop|	Phần mềm cài trên máy tính (Windows). Dùng để thiết kế báo cáo, thực hiện 4 bước đầu tiên của quy trình.|
+|Power BI Service|	Nền tảng cloud để chia sẻ và phân quyền báo cáo. Giống như Google Drive cho báo cáo Power BI.|
+|Power BI Mobile	|Ứng dụng di động để xem báo cáo mọi lúc mọi nơi. Có trên Android và iOS.|
 
 ## 4. 📊 So Sánh Power BI và Excel
-Tiêu chí	Power BI	Excel
-Kết nối dữ liệu	>100 loại nguồn dữ liệu	Hạn chế hơn
-Làm sạch dữ liệu	Power Query Editor	Có Power Query add-in
-Mô hình hóa	Có (Data Model)	Power Pivot
-Trực quan hóa	Nhiều loại biểu đồ nâng cao	Có hạn chế
-Chia sẻ báo cáo	Rất mạnh: phân quyền, cập nhật tự động, cloud-based	Chia sẻ thủ công, không phân quyền
+|Tiêu chí	|Power BI	|Excel|
+|---|---|---|
+|Kết nối dữ liệu	|>100 loại nguồn dữ liệu|	Hạn chế hơn|
+|Làm sạch dữ liệu|	Power Query Editor	|Có Power Query add-in
+|Mô hình hóa	|Có (Data Model)|	Power Pivot|
+|Trực quan hóa	|Nhiều loại biểu đồ nâng cao	|Có hạn chế|
+|Chia sẻ báo cáo	Rất mạnh:| phân quyền, cập nhật tự động, cloud-based	|Chia sẻ thủ công, không phân quyền|
 
 5. 🛠️ Chuẩn Bị và Thực Hành Cơ Bản (Từ Buổi 1)
 5.1 Cài đặt Power BI Desktop
