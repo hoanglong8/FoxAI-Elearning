@@ -1,3 +1,15 @@
+# PL-300 - Lab 0: Làm quen với Data Analysis và Power BI
+
+[![Hình](https://i.ytimg.com/vi/IiVEJN7cL1Q/maxresdefault.jpg)](https://youtu.be/IiVEJN7cL1Q?si=VlckCFg8H6XKwG14)
+
+👉👉👉 Tải file [Power BI mẫu](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEl6YW03b0FDZ0dpaVRSOTJydGZTSUFNSk1sQXxBQ3Jtc0tsYVN5TTdyc1NYVnAtdTJqdnQ2QVZsUDd6Nnp4MENDa3Z1RnJJSXMzRGs3azR6WFdoQ3J2Y01jQVBZQ3p2RHZRLUs0VHVrQlhMWjY2MXNKVHZidkRLcnFoTjMtbmRKQVhjN0N5ZDF4b0VMOUw4Q213UQ&q=https%3A%2F%2Fgithub.com%2FDatapotAnalytics%2Fdatapot-powerbi-practice%2Fblob%2Fmain%2FPL300%2520-%2520Power%2520BI%2520Lab%2FAll%2520Resources%2FAllfiles%2FPL-300%2520Lab%2FLab%25200%2FSales%2520performance.pbix&v=IiVEJN7cL1Q)
+
+👉👉👉 Tải [dataset](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWxDcnI4Umh2cWh0SU9ZUXJ4eFFOTW5kZUdmZ3xBQ3Jtc0trRk9FSlE4Q3BTWGV1dU00WGpmOTdUeFRrYzlFQ3Q1U1dCcUZkRm0tSndhcGY5R1lzTm85eDhFVHg0WldGQXB0SVJVUFFxMDhQNUpncVJUdGZXUk40YUozMC1aQTRVa2FBSFBRUTljOGhHcmZ0d0NpRQ&q=https%3A%2F%2Fgithub.com%2FDatapotAnalytics%2Fdatapot-powerbi-practice%2Fblob%2Fmain%2FPL300%2520-%2520Power%2520BI%2520Lab%2FAll%2520Resources%2FAllfiles%2FPL-300%2520Lab%2FLab%25200%2Fdata_financial_sample.xlsx&v=IiVEJN7cL1Q)
+
+
+
+---
+
 # Power BI cơ bản | Phân tích dữ liệu | Part 1
 
 Link video [tại đây](https://youtu.be/Zg13Ax3jt1Y?si=aLtwRvSra4r_wKGl)
@@ -179,78 +191,54 @@ Làm quen với các bước đầu tiên trong Power BI Desktop (Kết nối v�
 |Tiêu chí	|Power BI	|Excel|
 |---|---|---|
 |Kết nối dữ liệu	|>100 loại nguồn dữ liệu|	Hạn chế hơn|
-|Làm sạch dữ liệu|	Power Query Editor	|Có Power Query add-in
+|Làm sạch dữ liệu|	Power Query Editor	|Có Power Query add-in|
 |Mô hình hóa	|Có (Data Model)|	Power Pivot|
 |Trực quan hóa	|Nhiều loại biểu đồ nâng cao	|Có hạn chế|
-|Chia sẻ báo cáo	Rất mạnh:| phân quyền, cập nhật tự động, cloud-based	|Chia sẻ thủ công, không phân quyền|
+|Chia sẻ báo cáo|	Rất mạnh: phân quyền, cập nhật tự động, cloud-based	|Chia sẻ thủ công, không phân quyền|
 
-5. 🛠️ Chuẩn Bị và Thực Hành Cơ Bản (Từ Buổi 1)
-5.1 Cài đặt Power BI Desktop
-Dùng Windows 10 trở lên (nên cài máy ảo nếu dùng macOS/Linux).
+## 5. 🛠️ Chuẩn Bị và Thực Hành Cơ Bản (Từ Buổi 1)
+### 5.1 Cài đặt Power BI Desktop
+- Dùng Windows 10 trở lên (nên cài máy ảo nếu dùng macOS/Linux).
+- Tải từ Microsoft Store hoặc trang chính thức.
 
-Tải từ Microsoft Store hoặc trang chính thức.
+### 5.2 Chuẩn bị dữ liệu
+- Tải file Excel mẫu.
+- Lưu vào thư mục dễ tìm trên máy.
 
-5.2 Chuẩn bị dữ liệu
-Tải file Excel mẫu.
+### 5.3 Kết nối dữ liệu
+- Mở Power BI Desktop.
+- Chọn Get Data → Excel workbook.
+- Chọn file Excel.
+- Trong Navigator, chọn sheet muốn lấy.
+- Bấm Transform data để chuyển sang Power Query Editor.
 
-Lưu vào thư mục dễ tìm trên máy.
-
-5.3 Kết nối dữ liệu
-Mở Power BI Desktop.
-
-Chọn Get Data → Excel workbook.
-
-Chọn file Excel.
-
-Trong Navigator, chọn sheet muốn lấy.
-
-Bấm Transform data để chuyển sang Power Query Editor.
-
-5.4 Làm sạch dữ liệu (Power Query Editor)
+### 5.4 Làm sạch dữ liệu (Power Query Editor)
 Giao diện chính:
-
-Queries (bên trái)
-
-Data View (giữa)
-
-Applied Steps (bên phải)
+- Queries (bên trái)
+- Data View (giữa)
+- Applied Steps (bên phải)
 
 Thực hiện thao tác:
+- Xoá một cột không cần → chuột phải → Remove
+- Xem bước được ghi lại trong Applied Steps
+- Bấm Close & Apply để nạp dữ liệu
 
-Ví dụ: Xoá một cột không cần → chuột phải → Remove
+### 5.5 Kiểm tra dữ liệu đã nạp
+- Mở Tab Data (icon thứ 2 bên trái) để xem bảng.
+- Kiểm tra số cột đã thay đổi sau khi làm sạch.
 
-Xem bước được ghi lại trong Applied Steps
+### 5.6 Xem qua mô hình hóa và trực quan hóa
+- Tab Model: Kiểm tra quan hệ giữa bảng (nếu có).
+- Tab Report: Tạo biểu đồ và dashboard.
 
-Bấm Close & Apply để nạp dữ liệu
+### 5.7 Tạo biểu đồ đơn giản
+- Trong Report View, chọn biểu đồ (Line chart, Column chart,...).
+- Kéo cột dữ liệu từ Fields vào biểu đồ.
+- Ví dụ: Kéo Ngày và Tổng quãng đường.
+- Xem biểu đồ → phân tích điểm bất thường.
 
-5.5 Kiểm tra dữ liệu đã nạp
-Mở Tab Data (icon thứ 2 bên trái) để xem bảng.
+### 5.8 Lưu báo cáo
+- File → Save As
+- Lưu với đuôi .pbix
 
-Kiểm tra số cột đã thay đổi sau khi làm sạch.
-
-5.6 Xem qua mô hình hóa và trực quan hóa
-Tab Model: Kiểm tra quan hệ giữa bảng (nếu có).
-
-Tab Report: Tạo biểu đồ và dashboard.
-
-5.7 Tạo biểu đồ đơn giản
-Trong Report View, chọn biểu đồ (Line chart, Column chart,...).
-
-Kéo cột dữ liệu từ Fields vào biểu đồ.
-
-Ví dụ: Kéo Ngày và Tổng quãng đường.
-
-Xem biểu đồ → phân tích điểm bất thường.
-
-5.8 Lưu báo cáo
-File → Save As
-
-Lưu với đuôi .pbix
-
----
-
-# Danh sách 9 video bài giảng Power BI
-
-Video tại đây
-
-[Bộ dữ liệu](https://drive.google.com/drive/folders/16fFqlNFpceg4_EG-EFRCYWB5AINVaFMG?usp=sharing) dùng trong toàn bộ khóa học 
+[Bộ dữ liệu](https://drive.google.com/drive/folders/16fFqlNFpceg4_EG-EFRCYWB5AINVaFMG?usp=sharing) dùng trong toàn bộ khóa học 9 video
