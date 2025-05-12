@@ -17,3 +17,4 @@
 - Chia sẻ Video: Bạn có thể thảo luận trực tiếp trên nền tảng Fireflies về các video cuộc họp, giúp nhóm dễ dàng chia sẻ và phân tích các phần cụ thể của cuộc họp.
 
 => Chi tiết xem tại video sau: https://tinyurl.com/y6s2azcw
+- Nội dung học tuần 1 tháng 5: Nguyen Hong Son - DA: https://drive.google.com/file/d/1WG2nHxs8N78lMxAHDJzAlE7gC4sV_MjF/view?usp=sharing
