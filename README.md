@@ -4,7 +4,25 @@
 
 FoxAI E-Learning Platform là hệ thống đào tạo nội bộ dành cho nhân viên tại FoxAI, giúp quản lý và cung cấp các khóa học trực tuyến, bài kiểm tra (quiz), và chứng chỉ cho người dùng. Hệ thống này nhằm nâng cao năng lực nhân viên thông qua `các bài học`, `bài kiểm tra`, và `chứng nhận hoàn thành khóa học`, đồng thời `theo dõi tiến độ học tập` của nhân viên trong công ty.
 
-Tài liệu này sẽ hướng dẫn cách tạo một website đào tạo nội bộ cho nhân viên, tương tự như trang [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction).
+Tài liệu này bao gồm:
+- Công cụ học tập: ChatGPT, K-Hoot, Quizlet...
+- Tài liệu học tập: Ebooks trên GitHub và khóa học trên Coursera, Udemy, Youtube...
+- Giáo án và khung đào tạo:...
+
+---
+
+## Thông tin đăng nhập ChatGPT chung của Công ty FoxAI
+
+![image](https://github.com/user-attachments/assets/746761a1-4eab-4c6f-9dc1-2ca1eacdf98b)
+
+Tài khoản đăng nhập: `congtycophan001@gmail.com`
+Pass: `Fox@12345678`
+
+Nếu cần CODE thì nhắn tin liên hệ với Zalo Mr.Long - `0967566988`
+
+---
+
+Hướng dẫn cách tạo một website đào tạo nội bộ cho nhân viên, tương tự như trang [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction).
 
 ![Hình](https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit0/thumbnail.jpg)
 
