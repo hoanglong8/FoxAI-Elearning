@@ -22,3 +22,6 @@
 
 ## Nguyen Hong Son - DA:
 - https://drive.google.com/file/d/1WG2nHxs8N78lMxAHDJzAlE7gC4sV_MjF/view?usp=sharing
+
+## Nguyễn Đăng Khoa
+- https://drive.google.com/drive/folders/1dSl1waTETwYDdL9cbv4ZrM7tf-7hzXS2?usp=sharing
