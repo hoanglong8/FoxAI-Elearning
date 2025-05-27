@@ -18,6 +18,12 @@ Link khóa học: https://www.udemy.com/course/project-management-methodologies-
 
 Link khóa học: https://www.udemy.com/course/product-owner-certification-exam-prep/?couponCode=2939A7766C1AD4E57A59
 
+**4.Professional Certificate of Agile and Scrum Business Analyst**
+
+![image](https://github.com/user-attachments/assets/ecfd60be-bd4d-4cae-9bb8-60d32ca8c296)
+
+Link khóa học: https://www.udemy.com/course/professional-certificate-of-agile-and-scrum-business-analyst/?couponCode=B807B0EF735C9B5964A3
+
 ---
 
 # Ebook
