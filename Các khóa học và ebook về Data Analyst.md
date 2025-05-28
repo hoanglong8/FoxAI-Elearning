@@ -126,7 +126,7 @@ Cần lưu ý rằng một trong những tính năng đáng chú ý của nó l�
 
 ![image](https://github.com/user-attachments/assets/1a48f231-f37b-4e48-893c-6c39cfb271f4)
 
-Link khóa học: https://www.udemy.com/course/power-bi-microsoft-power-bi-certification/?couponCode=7E6FCE951A44EBA51CAE
+Link khóa học: https://www.udemy.com/course/power-bi-microsoft-power-bi-certification/?couponCode=5771BFC600B678620F4B
 
 ---
 
@@ -159,6 +159,18 @@ Link khóa học: https://www.udemy.com/course/2023-data-visualization-in-tablea
 ![image](https://github.com/user-attachments/assets/4efd5ca9-065a-4775-aafa-23def0b07535)
 
 Link khóa học: https://www.coursera.org/professional-certificates/ibm-data-science
+
+---
+
+### Mastering Power BI Report Design - Beginner to Advanced
+
+![image](https://github.com/user-attachments/assets/40242f38-e02b-4e8d-a614-25ea0bd68ca5)
+
+Link khóa học 1: https://www.udemy.com/course/mastering-power-bi-report-design-beginner-to-advanced/?couponCode=65176D4D232F3DF6F7B7
+
+Link khóa học 2: https://www.udemy.com/course/microsoft-power-bi-essential-for-beginners/?couponCode=07FCDE2B27D0A932A9F8
+
+Link khóa học 3: https://www.udemy.com/course/power-bi-dax-mastery-advanced-formulas-and-data-analysis/?couponCode=F2CCECB2B0C6EB06E4A8
 
 ---
 ## Sách ebook
