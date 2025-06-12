@@ -16,11 +16,11 @@ Cho dù bạn mới bắt đầu hay đang cố gắng mở rộng quy mô các 
 
 Các cấp độ là:
 
-- Cấp độ 1: Đại lý có Công cụ và Hướng dẫn
-- Cấp độ 2: Đặc vụ có kiến ​​thức và trí nhớ
-- Cấp độ 3: Tác nhân có trí nhớ dài hạn và lý luận
-- Cấp độ 4: Nhóm nhiều tác nhân
-- Cấp độ 5: Hệ thống Agentic
+- Cấp độ 1: Đại lý có Công cụ và Hướng dẫn (Tools and Instructions Agent)
+- Cấp độ 2: Đặc vụ có kiến ​​thức và trí nhớ (Knowledge and Memory Agent)
+- Cấp độ 3: Tác nhân có trí nhớ dài hạn và lý luận (Long-Term Memory and Reasoning Agent)
+- Cấp độ 4: Nhóm nhiều tác nhân (Multi-Agent)
+- Cấp độ 5: Hệ thống Agentic (Agentic Systems)
 
 Chúng ta hãy bắt đầu nhé.
 
