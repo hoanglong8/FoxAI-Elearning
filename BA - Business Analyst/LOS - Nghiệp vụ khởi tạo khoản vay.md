@@ -33,112 +33,112 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 Đây là hai hệ thống quản lý quy trình khởi tạo khoản vay, nhưng chúng phục vụ cho các mục đích khác nhau và có những đặc điểm riêng biệt. Dưới đây là sự khác biệt giữa RLOS và CLOS:
 
 1. Định nghĩa
-RLOS (Retail Loan Origination System): Là hệ thống được thiết kế để quản lý quy trình khởi tạo khoản vay cho khách hàng cá nhân, bao gồm các sản phẩm như vay mua nhà, vay tiêu dùng, và vay tín chấp. Hệ thống này thường tập trung vào việc cung cấp trải nghiệm người dùng tốt cho khách hàng cá nhân.
+- RLOS (Retail Loan Origination System): Là hệ thống được thiết kế để quản lý quy trình khởi tạo khoản vay cho khách hàng cá nhân, bao gồm các sản phẩm như vay mua nhà, vay tiêu dùng, và vay tín chấp. Hệ thống này thường tập trung vào việc cung cấp trải nghiệm người dùng tốt cho khách hàng cá nhân.
 
-CLOS (Commercial Loan Origination System): Là hệ thống được thiết kế để quản lý quy trình khởi tạo khoản vay cho khách hàng doanh nghiệp. Các khoản vay này thường có quy mô lớn hơn và phức tạp hơn, bao gồm các sản phẩm như vay kinh doanh, vay đầu tư, và các khoản tín dụng thương mại.
+- CLOS (Commercial Loan Origination System): Là hệ thống được thiết kế để quản lý quy trình khởi tạo khoản vay cho khách hàng doanh nghiệp. Các khoản vay này thường có quy mô lớn hơn và phức tạp hơn, bao gồm các sản phẩm như vay kinh doanh, vay đầu tư, và các khoản tín dụng thương mại.
 
 2. Đối tượng Khách hàng
-RLOS: Hướng đến khách hàng cá nhân, như người tiêu dùng hoặc hộ gia đình. Các sản phẩm thường đơn giản hơn và có quy trình phê duyệt nhanh chóng.
+- RLOS: Hướng đến khách hàng cá nhân, như người tiêu dùng hoặc hộ gia đình. Các sản phẩm thường đơn giản hơn và có quy trình phê duyệt nhanh chóng.
 
-CLOS: Hướng đến khách hàng doanh nghiệp, bao gồm các công ty nhỏ, vừa và lớn. Các khoản vay thường yêu cầu nhiều thông tin và tài liệu hơn do tính chất phức tạp và quy mô lớn.
+- CLOS: Hướng đến khách hàng doanh nghiệp, bao gồm các công ty nhỏ, vừa và lớn. Các khoản vay thường yêu cầu nhiều thông tin và tài liệu hơn do tính chất phức tạp và quy mô lớn.
 
 3. Quy trình Khởi tạo Khoản Vay
-RLOS: Quy trình thường đơn giản và nhanh chóng, với các bước như điền đơn trực tuyến, xác minh thông tin cá nhân, và đánh giá tín dụng. Hệ thống thường tích hợp các công cụ tự động hóa để giảm thiểu thời gian xử lý.
+- RLOS: Quy trình thường đơn giản và nhanh chóng, với các bước như điền đơn trực tuyến, xác minh thông tin cá nhân, và đánh giá tín dụng. Hệ thống thường tích hợp các công cụ tự động hóa để giảm thiểu thời gian xử lý.
 
-CLOS: Quy trình phức tạp hơn, bao gồm việc thu thập nhiều thông tin tài chính, phân tích rủi ro, và đánh giá khả năng trả nợ của doanh nghiệp. Hệ thống CLOS thường yêu cầu sự tham gia của nhiều bộ phận trong ngân hàng để hoàn tất quy trình.
+- CLOS: Quy trình phức tạp hơn, bao gồm việc thu thập nhiều thông tin tài chính, phân tích rủi ro, và đánh giá khả năng trả nợ của doanh nghiệp. Hệ thống CLOS thường yêu cầu sự tham gia của nhiều bộ phận trong ngân hàng để hoàn tất quy trình.
 
 4. Tính Năng và Công Cụ
-RLOS: Thường có các tính năng như giao diện người dùng thân thiện, khả năng tự động hóa quy trình, và tích hợp với các hệ thống thanh toán và quản lý khách hàng.
+- RLOS: Thường có các tính năng như giao diện người dùng thân thiện, khả năng tự động hóa quy trình, và tích hợp với các hệ thống thanh toán và quản lý khách hàng.
 
-CLOS: Thường có các tính năng phức tạp hơn, bao gồm phân tích tài chính, quản lý tài sản thế chấp, và khả năng theo dõi các khoản vay trong thời gian dài.
+- CLOS: Thường có các tính năng phức tạp hơn, bao gồm phân tích tài chính, quản lý tài sản thế chấp, và khả năng theo dõi các khoản vay trong thời gian dài.
 
 5. Mục tiêu và Kết quả
-RLOS: Mục tiêu chính là cung cấp trải nghiệm khách hàng tốt nhất và xử lý nhanh chóng các khoản vay cá nhân.
+- RLOS: Mục tiêu chính là cung cấp trải nghiệm khách hàng tốt nhất và xử lý nhanh chóng các khoản vay cá nhân.
 
-CLOS: Mục tiêu là tối ưu hóa quy trình phê duyệt khoản vay cho doanh nghiệp, giảm thiểu rủi ro và đảm bảo rằng các khoản vay được cấp phát một cách hiệu quả và an toàn.
+- CLOS: Mục tiêu là tối ưu hóa quy trình phê duyệt khoản vay cho doanh nghiệp, giảm thiểu rủi ro và đảm bảo rằng các khoản vay được cấp phát một cách hiệu quả và an toàn.
 
 ---
 
 ## Các ngành nghề kinh doanh được hỗ trợ
 
 1.Các khoản cho vay bán lẻ
-Xử lý các khoản cho vay bán lẻ trên thị trường đại chúng thường có nghĩa là phải ứng phó với số lượng lớn các yêu cầu điển hình đối vớicác khoản vay tương đối nhỏ. Để xử lý hiệu quả luồng ứng dụng quan trọng và duy trì tính cạnh tranh, người cho vay cần tạo ra một nền tảng công nghệ đáng tin cậy có thể hỗ trợtự động hóa thủ tục khởi tạo khoản vay, quản lý rủi ro qua các danh mục tín dụng, nhanh chóng đưa ra quyết định cho vay, tạo sản phẩm mới và tùy chỉnh bảo hiểm khởi tạo thông minh.
+- Xử lý các khoản cho vay bán lẻ trên thị trường đại chúng thường có nghĩa là phải ứng phó với số lượng lớn các yêu cầu điển hình đối vớicác khoản vay tương đối nhỏ. Để xử lý hiệu quả luồng ứng dụng quan trọng và duy trì tính cạnh tranh, người cho vay cần tạo ra một nền tảng công nghệ đáng tin cậy có thể hỗ trợtự động hóa thủ tục khởi tạo khoản vay, quản lý rủi ro qua các danh mục tín dụng, nhanh chóng đưa ra quyết định cho vay, tạo sản phẩm mới và tùy chỉnh bảo hiểm khởi tạo thông minh.
 
 2.Các khoản cho vay kinh doanh
-Trường hợp bộ phận cho vay của doanh nghiệp cung cấp các sản phẩm tín dụng tiêu chuẩn – khách hàng doanh nghiệp vay số lượng lớn hơn và yêu cầu phương pháp riêng hiếm khi xảy ra, và ngân hàng cần tùy chỉnh và đề xuất ra các giải pháp tốt nhất cho từng nhiệm vụ kinh doanh cụ thể. Mức độ rủi ro cao hơn do số tiền vay lớn hơn là một đặc thù quan trọng khác của hoạt động cho vay doanh nghiệp. Dựa vào giải pháp FOXAI LOS hiện đại để xử lý rủi ro đúng cách và cung cấp cho khách hàng của bạn các dịch vụ chất lượng cao cá nhân hóa.
+- Trường hợp bộ phận cho vay của doanh nghiệp cung cấp các sản phẩm tín dụng tiêu chuẩn – khách hàng doanh nghiệp vay số lượng lớn hơn và yêu cầu phương pháp riêng hiếm khi xảy ra, và ngân hàng cần tùy chỉnh và đề xuất ra các giải pháp tốt nhất cho từng nhiệm vụ kinh doanh cụ thể. Mức độ rủi ro cao hơn do số tiền vay lớn hơn là một đặc thù quan trọng khác của hoạt động cho vay doanh nghiệp. Dựa vào giải pháp FOXAI LOS hiện đại để xử lý rủi ro đúng cách và cung cấp cho khách hàng của bạn các dịch vụ chất lượng cao cá nhân hóa.
 
 3.Các khoản cho vay SME 
-Các khoản cho vay Doanh nghiệp vừa và nhỏ tương đối nhỏ, nhưng chúng gây ra chi phí hành chính cao hơn và yêu cầu nguồn nhân lực nhiều hơn so với các hình thức cho vay khác. Nhiều chủ sở hữu của các doanh nghiệp vừa và nhỏ rất khó tiếp cận vì họ sinh sống ở các vùng nông thôn hẻo lánh. Ngoài ra, người cho vay phải xử lý nhiều thông tin tài chính để đưa ra quyết định đúng đắn và giảm thiểu rủi ro. Hợp lý hóa các thủ tục này, tiếp cận khách hàng từ xa và tạo thuận lợi cho toàn bộ quy trình cho vay Doanh nghiệp vừa và nhỏ với các công cụ và tính năng công nghệ hiện đại do FOXAI LOS cung cấp.
+- Các khoản cho vay Doanh nghiệp vừa và nhỏ tương đối nhỏ, nhưng chúng gây ra chi phí hành chính cao hơn và yêu cầu nguồn nhân lực nhiều hơn so với các hình thức cho vay khác. Nhiều chủ sở hữu của các doanh nghiệp vừa và nhỏ rất khó tiếp cận vì họ sinh sống ở các vùng nông thôn hẻo lánh. Ngoài ra, người cho vay phải xử lý nhiều thông tin tài chính để đưa ra quyết định đúng đắn và giảm thiểu rủi ro. Hợp lý hóa các thủ tục này, tiếp cận khách hàng từ xa và tạo thuận lợi cho toàn bộ quy trình cho vay Doanh nghiệp vừa và nhỏ với các công cụ và tính năng công nghệ hiện đại do FOXAI LOS cung cấp.
 
 4.Các khoản cho vay tài chính vi mô 
-Dịch vụ tài chính vi mô cho các hộ nghèo và thu nhập thấp và các doanh nghiệp của họ, thường được gọi là doanh nghiệp siêu nhỏ, đóng một vai trò quan trọng trong việc giảm nghèo. Nắm bắt nhóm khách hàng rộng lớn này, tiếp cận khách hàng từ xa của bạn và thiết lập việc khởi tạo khoản vay một cách thông minh và các quy trình quản lý với nhiều công cụ tiên tiến nhất được cung cấp bởi giải pháp FOXAI LOS.
+- Dịch vụ tài chính vi mô cho các hộ nghèo và thu nhập thấp và các doanh nghiệp của họ, thường được gọi là doanh nghiệp siêu nhỏ, đóng một vai trò quan trọng trong việc giảm nghèo. Nắm bắt nhóm khách hàng rộng lớn này, tiếp cận khách hàng từ xa của bạn và thiết lập việc khởi tạo khoản vay một cách thông minh và các quy trình quản lý với nhiều công cụ tiên tiến nhất được cung cấp bởi giải pháp FOXAI LOS.
 
 ---
-## Khâu "Tư vấn bên vay" với các nội dung sau:
+## FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn bên vay" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
 
-Xác định nhu cầu của khách hàng: Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
+- Xác định nhu cầu của khách hàng: Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
 
-Lựa chọn các sản phẩm ngân hàng phù hợp: Chọn sản phẩm vay thích hợp dựa trên nhu cầu và điều kiện của khách hàng.
+- Lựa chọn các sản phẩm ngân hàng phù hợp: Chọn sản phẩm vay thích hợp dựa trên nhu cầu và điều kiện của khách hàng.
 
-Tính toán các thông số khoản vay bằng cách cấu hình việc tính toán khoản vay: Tính toán các thông số cần thiết như lãi suất, thời gian vay, số tiền vay, v.v.
+- Tính toán các thông số khoản vay bằng cách cấu hình việc tính toán khoản vay: Tính toán các thông số cần thiết như lãi suất, thời gian vay, số tiền vay, v.v.
 
-Tạo ra đề nghị cho vay: Soạn thảo và đưa ra các đề nghị vay cho khách hàng.
+- Tạo ra đề nghị cho vay: Soạn thảo và đưa ra các đề nghị vay cho khách hàng.
 
-Đánh giá và đưa ra quyết định của khách hàng: Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
-
----
-## Khâu "Khởi tạo hồ sơ" với các nội dung sau:
-
-Nhận dạng khách hàng: Xác định thông tin khách hàng để tiến hành khởi tạo hồ sơ vay.
-
-Tập hợp trước các thông tin hồ sơ với dữ liệu từ máy tính: Thu thập dữ liệu cần thiết từ hệ thống và máy tính để chuẩn bị hồ sơ vay.
-
-Nhập thông tin chi tiết về khách hàng: Nhập các thông tin cụ thể và chi tiết của khách hàng vào hệ thống.
-
-Nhận dạng tài liệu: Xác định và xử lý các tài liệu cần thiết cho hồ sơ vay.
-
-Đính kèm bản sao điện tử của tài liệu: Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
+- Đánh giá và đưa ra quyết định của khách hàng: Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
 
 ---
-## Khâu "Xử lý hồ sơ" với các nội dung sau:
+## FoxAI LOS hỗ trợ cán bộ ngân hàng "Khởi tạo hồ sơ" trong bước "2.Xác minh thông tin khách hàng" như sau:
 
-Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.
+- Nhận dạng khách hàng: Xác định thông tin khách hàng để tiến hành khởi tạo hồ sơ vay.
 
-Scoring: Đánh giá điểm tín dụng của khách hàng.
+- Tập hợp trước các thông tin hồ sơ với dữ liệu từ máy tính: Thu thập dữ liệu cần thiết từ hệ thống và máy tính để chuẩn bị hồ sơ vay.
 
-Tính toán tự động các thang số khoản vay: Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
+- Nhập thông tin chi tiết về khách hàng: Nhập các thông tin cụ thể và chi tiết của khách hàng vào hệ thống.
 
----
-## Khâu "Đưa ra quyết định" với các nội dung sau:
+- Nhận dạng tài liệu: Xác định và xử lý các tài liệu cần thiết cho hồ sơ vay.
 
-Hoàn toàn tự động hoặc quyết định thủ công: Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
-
-Kiểm tra an ninh: Đảm bảo các quy trình an ninh được tuân thủ trong quá trình xét duyệt.
-
-Kiểm tra pháp lý: Đảm bảo rằng khoản vay đáp ứng tất cả các yêu cầu pháp lý cần thiết.
-
-Đánh giá rủi ro: Đánh giá các yếu tố rủi ro liên quan đến khoản vay và khả năng trả nợ của khách hàng.
-
-Kiểm tra tài sản đảm bảo bởi Người quản lý Tài sản đảm bảo của ngân hàng: Xác minh tài sản đảm bảo của khách hàng, đảm bảo rằng tài sản đủ giá trị để bảo vệ khoản vay.
-
-Chỉnh sửa các thông số khoản vay bởi Tái thẩm định nhân viên: Các nhân viên sẽ kiểm tra và chỉnh sửa thông số khoản vay nếu cần thiết.
-
-Thông báo tới khách hàng về quyết định: Thông báo cho khách hàng kết quả quyết định vay.
+- Đính kèm bản sao điện tử của tài liệu: Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
 
 ---
-## Khâu "Giải ngân khoản vay" với các nội dung như sau:
+## FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
 
-Tự động tạo hồ sơ khách hàng trong hệ thống core banking.
+- Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.
 
-Tự động tạo hợp đồng cho vay trong hệ thống cốt lõi core banking.
+- Scoring: Đánh giá điểm tín dụng của khách hàng.
 
-Tự động tạo thoả thuận tài sản đảm bảo trong hệ thống core banking.
+- Tính toán tự động các thang số khoản vay: Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
 
-Mở tài khoản cho vay trong hệ thống core banking.
+---
+## FoxAI LOS hỗ trợ cán bộ ngân hàng "Đưa ra quyết định" trong bước "4.Quyết định cấp vay" như sau:
 
-Ký hồ sơ tài liệu.
+- Hoàn toàn tự động hoặc quyết định thủ công: Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
 
-Đính kèm tài liệu đã scan vào hồ sơ cho vay.
+- Kiểm tra an ninh: Đảm bảo các quy trình an ninh được tuân thủ trong quá trình xét duyệt.
+
+- Kiểm tra pháp lý: Đảm bảo rằng khoản vay đáp ứng tất cả các yêu cầu pháp lý cần thiết.
+
+- Đánh giá rủi ro: Đánh giá các yếu tố rủi ro liên quan đến khoản vay và khả năng trả nợ của khách hàng.
+
+- Kiểm tra tài sản đảm bảo bởi Người quản lý Tài sản đảm bảo của ngân hàng: Xác minh tài sản đảm bảo của khách hàng, đảm bảo rằng tài sản đủ giá trị để bảo vệ khoản vay.
+
+- Chỉnh sửa các thông số khoản vay bởi Tái thẩm định nhân viên: Các nhân viên sẽ kiểm tra và chỉnh sửa thông số khoản vay nếu cần thiết.
+
+- Thông báo tới khách hàng về quyết định: Thông báo cho khách hàng kết quả quyết định vay.
+
+---
+## FoxAI LOS hỗ trợ cán bộ ngân hàng "Giải ngân khoản vay" trong bước "5.Ký hợp đồng" & bước "6.Giải ngân" như sau:
+
+- Tự động tạo hồ sơ khách hàng trong hệ thống core banking.
+
+- Tự động tạo hợp đồng cho vay trong hệ thống cốt lõi core banking.
+
+- Tự động tạo thoả thuận tài sản đảm bảo trong hệ thống core banking.
+
+- Mở tài khoản cho vay trong hệ thống core banking.
+
+- Ký hồ sơ tài liệu.
+
+- Đính kèm tài liệu đã scan vào hồ sơ cho vay.
 
 ---
 ## Outline cho bài trình bày về chuyển đổi số trong ngành ngân hàng, ứng dụng RPA (Robotic Process Automation) trong quy trình khởi tạo khoản vay - FoxAI LOS
