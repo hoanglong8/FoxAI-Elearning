@@ -231,7 +231,7 @@ Nâng cao khả năng cạnh tranh: Các ngân hàng có thể cung cấp dịch
 ---
 
 ## 2.2.Chi tiết các tính năng RPA trong FoxAI LOS
-### 2.2.1.FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn cho khách hàng" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
+### 2.2.1.FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn cho khách hàng" trong bước "1.Tiếp nhận yêu cầu vay" (Slide 6)
 
 - **Xác định nhu cầu của khách hàng:** Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
 ```
@@ -287,7 +287,7 @@ Hệ thống RPA có thể sử dụng quy tắc logic, mô hình học máy, v�
 Các công cụ và thuật toán này giúp tự động hóa quy trình ra quyết định, giảm thiểu sai sót, tiết kiệm thời gian và đảm bảo rằng khách hàng nhận được quyết định vay chính xác và công bằng.
 ```
 ---
-### 2.2.2.FoxAI LOS hỗ trợ cán bộ ngân hàng "Khởi tạo hồ sơ" trong bước "2.Xác minh thông tin khách hàng" như sau:
+### 2.2.2.FoxAI LOS hỗ trợ cán bộ ngân hàng "Khởi tạo hồ sơ" trong bước "2.Xác minh thông tin khách hàng" (Slide 7)
 
 - **Nhập thông tin chi tiết về khách hàng:** Nhập các thông tin cụ thể và chi tiết của khách hàng vào hệ thống.
 ```
@@ -320,7 +320,7 @@ Sau khi trích xuất, RPA tự động điền các thông tin vào hệ thốn
 - **Đính kèm bản sao điện tử của tài liệu:** Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
 
 ---
-### 2.2.3.FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
+### 2.2.3.FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" (Slide 8)
 
 - **Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.**
 ```
@@ -363,7 +363,7 @@ Hệ thống RPA sử dụng các công cụ tính toán điểm tín dụng, m�
 + Các thuật toán để đánh giá rủi ro của khách hàng và tính toán các điều kiện vay: Risk-based pricing, Random Forest, XGBoost...
 ```
 ---
-### 2.2.4.FoxAI LOS hỗ trợ cán bộ ngân hàng "Đưa ra quyết định" trong bước "4.Quyết định cấp vay" như sau:
+### 2.2.4.FoxAI LOS hỗ trợ cán bộ ngân hàng "Đưa ra quyết định" trong bước "4.Quyết định cấp vay" (Slide 9)
 
 - **Hoàn toàn tự động hoặc quyết định thủ công:** Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
 ```
@@ -413,7 +413,7 @@ Hệ thống RPA hỗ trợ thông báo cho khách hàng về kết quả quyế
 - Gửi Thông Báo Qua Kênh Web Portal (Web-based Notification): Zendesk, Freshdesk
 ```
 ---
-### 2.2.5.FoxAI LOS hỗ trợ cán bộ ngân hàng "Giải ngân khoản vay" trong bước "5.Ký hợp đồng" & bước "6.Giải ngân" như sau:
+### 2.2.5.FoxAI LOS hỗ trợ cán bộ ngân hàng "Giải ngân khoản vay" trong bước "5.Ký hợp đồng" (Slide 10) & bước "6.Giải ngân" (Slide 11)
 
 - **Tự động tạo hồ sơ khách hàng** trong hệ thống core banking.
 ```
