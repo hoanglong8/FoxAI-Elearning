@@ -1,4 +1,4 @@
-# LOS - Nghiệp vụ khởi tạo khoản vay
+# Phần 1 - LOS Nghiệp vụ khởi tạo khoản vay
 
 ## Quy trình nghiệp vụ
 Khởi tạo khoản vay trong bối cảnh chuyển đổi số (digital transformation) là một quá trình quan trọng trong ngành tài chính, đặc biệt là trong lĩnh vực ngân hàng và cho vay. Dưới đây là một cái nhìn tổng quan về khái niệm này, các bước thực hiện, và lợi ích của việc áp dụng công nghệ số trong quy trình khởi tạo khoản vay.
@@ -8,12 +8,33 @@ Khởi tạo khoản vay là quá trình mà khách hàng (cá nhân hoặc doan
 
 ### 2. Các Bước Khởi Tạo Khoản Vay
 Quá trình khởi tạo khoản vay thường bao gồm các bước sau:
-- Tiếp nhận yêu cầu vay: Khách hàng điền thông tin vào mẫu đơn vay trực tuyến hoặc trực tiếp tại ngân hàng.
-- Xác minh thông tin: Ngân hàng kiểm tra thông tin cá nhân và tài chính của khách hàng.
-- Đánh giá tín dụng: Sử dụng các công cụ phân tích dữ liệu để đánh giá khả năng trả nợ của khách hàng.
-- Quyết định cấp vay: Dựa trên kết quả đánh giá, ngân hàng sẽ quyết định có cấp khoản vay hay không.
-- Ký hợp đồng: Nếu được chấp thuận, khách hàng và ngân hàng sẽ ký hợp đồng vay.
-- Giải ngân: Khoản vay sẽ được giải ngân cho khách hàng.
+```mermaid
+flowchart TD
+    A[Tiếp nhận yêu cầu vay] --> B[Xác minh thông tin]
+    B --> C[Đánh giá tín dụng]
+    C --> D[Quyết định cấp vay]
+    D --> E[Ký hợp đồng]
+    E --> F[Giải ngân]
+
+    %% Ghi chú cho từng bước
+    A:::note
+    B:::note
+    C:::note
+    D:::note
+    E:::note
+    F:::note
+
+    classDef note stroke:#333,stroke-width:2px;
+
+    %% Các ghi chú
+    A["1.Tiếp nhận yêu cầu vay: Khách hàng điền thông tin vào mẫu đơn vay trực tuyến hoặc trực tiếp tại ngân hàng"]
+    B["2.Xác minh thông tin: Ngân hàng kiểm tra thông tin cá nhân và tài chính của khách hàng"]
+    C["3.Đánh giá tín dụng: Sử dụng các công cụ phân tích dữ liệu để đánh giá khả năng trả nợ của khách hàng"]
+    D["4.Quyết định cấp vay: Dựa trên kết quả đánh giá, ngân hàng quyết định có cấp khoản vay hay không"]
+    E["5.Ký hợp đồng: Nếu được chấp thuận, khách hàng và ngân hàng ký hợp đồng vay"]
+    F["6.Giải ngân: Khoản vay được giải ngân cho khách hàng"]
+
+```
 
 ### 3. Chuyển Đổi Số trong Khởi Tạo Khoản Vay
 Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo khoản vay, bao gồm:
@@ -30,32 +51,15 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 
 ---
 ## Phân biệt RLOS (Retail Loan Origination System) và CLOS (Commercial Loan Origination System) 
-Đây là hai hệ thống quản lý quy trình khởi tạo khoản vay, nhưng chúng phục vụ cho các mục đích khác nhau và có những đặc điểm riêng biệt. Dưới đây là sự khác biệt giữa RLOS và CLOS:
+Đây là hai hệ thống quản lý quy trình khởi tạo khoản vay, nhưng chúng phục vụ cho các mục đích khác nhau và có những đặc điểm riêng biệt.
 
-1. Định nghĩa
-- RLOS (Retail Loan Origination System): Là hệ thống được thiết kế để quản lý quy trình khởi tạo khoản vay cho khách hàng cá nhân, bao gồm các sản phẩm như vay mua nhà, vay tiêu dùng, và vay tín chấp. Hệ thống này thường tập trung vào việc cung cấp trải nghiệm người dùng tốt cho khách hàng cá nhân.
-
-- CLOS (Commercial Loan Origination System): Là hệ thống được thiết kế để quản lý quy trình khởi tạo khoản vay cho khách hàng doanh nghiệp. Các khoản vay này thường có quy mô lớn hơn và phức tạp hơn, bao gồm các sản phẩm như vay kinh doanh, vay đầu tư, và các khoản tín dụng thương mại.
-
-2. Đối tượng Khách hàng
-- RLOS: Hướng đến khách hàng cá nhân, như người tiêu dùng hoặc hộ gia đình. Các sản phẩm thường đơn giản hơn và có quy trình phê duyệt nhanh chóng.
-
-- CLOS: Hướng đến khách hàng doanh nghiệp, bao gồm các công ty nhỏ, vừa và lớn. Các khoản vay thường yêu cầu nhiều thông tin và tài liệu hơn do tính chất phức tạp và quy mô lớn.
-
-3. Quy trình Khởi tạo Khoản Vay
-- RLOS: Quy trình thường đơn giản và nhanh chóng, với các bước như điền đơn trực tuyến, xác minh thông tin cá nhân, và đánh giá tín dụng. Hệ thống thường tích hợp các công cụ tự động hóa để giảm thiểu thời gian xử lý.
-
-- CLOS: Quy trình phức tạp hơn, bao gồm việc thu thập nhiều thông tin tài chính, phân tích rủi ro, và đánh giá khả năng trả nợ của doanh nghiệp. Hệ thống CLOS thường yêu cầu sự tham gia của nhiều bộ phận trong ngân hàng để hoàn tất quy trình.
-
-4. Tính Năng và Công Cụ
-- RLOS: Thường có các tính năng như giao diện người dùng thân thiện, khả năng tự động hóa quy trình, và tích hợp với các hệ thống thanh toán và quản lý khách hàng.
-
-- CLOS: Thường có các tính năng phức tạp hơn, bao gồm phân tích tài chính, quản lý tài sản thế chấp, và khả năng theo dõi các khoản vay trong thời gian dài.
-
-5. Mục tiêu và Kết quả
-- RLOS: Mục tiêu chính là cung cấp trải nghiệm khách hàng tốt nhất và xử lý nhanh chóng các khoản vay cá nhân.
-
-- CLOS: Mục tiêu là tối ưu hóa quy trình phê duyệt khoản vay cho doanh nghiệp, giảm thiểu rủi ro và đảm bảo rằng các khoản vay được cấp phát một cách hiệu quả và an toàn.
+| **Tiêu chí**                  | **RLOS (Retail Loan Origination System)**                             | **CLOS (Commercial Loan Origination System)**                             |
+|-------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Định nghĩa**                 | Hệ thống quản lý quy trình khởi tạo khoản vay cho khách hàng cá nhân như vay mua nhà, vay tiêu dùng, vay tín chấp. | Hệ thống quản lý quy trình khởi tạo khoản vay cho khách hàng doanh nghiệp như vay kinh doanh, vay đầu tư, tín dụng thương mại. |
+| **Đối tượng Khách hàng**       | Hướng đến khách hàng cá nhân, bao gồm người tiêu dùng và hộ gia đình. | Hướng đến khách hàng doanh nghiệp, bao gồm công ty nhỏ, vừa và lớn. |
+| **Quy trình Khởi tạo Khoản Vay** | Quy trình đơn giản và nhanh chóng với các bước điền đơn, xác minh thông tin cá nhân, và đánh giá tín dụng. | Quy trình phức tạp hơn với thu thập nhiều thông tin tài chính, phân tích rủi ro và đánh giá khả năng trả nợ của doanh nghiệp. |
+| **Tính Năng và Công Cụ**      | Giao diện người dùng thân thiện, tự động hóa quy trình, tích hợp với các hệ thống thanh toán và quản lý khách hàng. | Các tính năng phức tạp như phân tích tài chính, quản lý tài sản thế chấp, theo dõi các khoản vay trong thời gian dài. |
+| **Mục tiêu và Kết quả**       | Cung cấp trải nghiệm khách hàng tốt và xử lý nhanh chóng các khoản vay cá nhân. | Tối ưu hóa quy trình phê duyệt khoản vay cho doanh nghiệp, giảm thiểu rủi ro và đảm bảo hiệu quả trong việc cấp phát khoản vay. |
 
 ---
 
@@ -74,57 +78,56 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 - Dịch vụ tài chính vi mô cho các hộ nghèo và thu nhập thấp và các doanh nghiệp của họ, thường được gọi là doanh nghiệp siêu nhỏ, đóng một vai trò quan trọng trong việc giảm nghèo. Nắm bắt nhóm khách hàng rộng lớn này, tiếp cận khách hàng từ xa của bạn và thiết lập việc khởi tạo khoản vay một cách thông minh và các quy trình quản lý với nhiều công cụ tiên tiến nhất được cung cấp bởi giải pháp FOXAI LOS.
 
 ---
+# Phần 2 - Ứng dụng công nghệ RPA (Robotic Process Automation) trong quy trình khởi tạo khoản vay của FoxAI LOS
 ## 1.FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn bên vay" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
 
 - **Xác định nhu cầu của khách hàng:** Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
 ```
-Cụ thể về công cụ: RPA có thể tích hợp với các form trực tuyến hoặc chatbot (Chatbase, Dialogflow, ChatGPT) để thu thập thông tin chi tiết từ khách hàng về yêu cầu vay.
+- Về công cụ: RPA có thể tích hợp với các form trực tuyến hoặc chatbot (Chatbase, Dialogflow, ChatGPT) để thu thập thông tin chi tiết từ khách hàng về yêu cầu vay.
 
-Các Dữ liệu thu thập: Các thông tin cần thiết bao gồm mục đích vay, số tiền vay yêu cầu, thời gian vay, thu nhập, và các yếu tố tài chính khác.
-
+- Về Dữ liệu thu thập: Các thông tin cần thiết bao gồm mục đích vay, số tiền vay yêu cầu, thời gian vay, thu nhập, và các yếu tố tài chính khác.
 Sau khi thu thập thông tin, hệ thống RPA có thể sử dụng quy tắc logic (Rule-based Logic) để phân loại và xử lý yêu cầu vay của khách hàng.
-
 Ví dụ: Nếu khách hàng yêu cầu vay để mua nhà, hệ thống sẽ tự động nhận diện và đưa ra các sản phẩm vay thế chấp nhà ở. Nếu mục đích vay là vay tiêu dùng, hệ thống sẽ gợi ý các khoản vay tiêu dùng không cần tài sản thế chấp.
 
-Thuật toán phân tích: Các thuật toán phân loại (Classification Algorithms) như Decision Trees hoặc Random Forest có thể được áp dụng để phân loại mục đích vay và các yếu tố khác. Dựa vào các thuộc tính này, hệ thống sẽ xác định sản phẩm vay phù hợp.
-
+- Về Thuật toán phân tích: Các thuật toán phân loại (Classification Algorithms) như Decision Trees hoặc Random Forest có thể được áp dụng để phân loại mục đích vay và các yếu tố khác. Dựa vào các thuộc tính này, hệ thống sẽ xác định sản phẩm vay phù hợp.
 Ví dụ: Dựa trên mức thu nhập của khách hàng, hệ thống có thể chọn ra các sản phẩm vay tiêu dùng hoặc vay mua ô tô với điều kiện tín dụng khác nhau.
 
-Hệ thống RPA có thể kết hợp với các công cụ phân tích dữ liệu lớn (Big Data tools) và các mô hình học máy (Machine Learning) để phân tích các hành vi và lịch sử tín dụng của khách hàng.
-
+- Hệ thống RPA có thể kết hợp với các công cụ phân tích dữ liệu lớn (Big Data tools) và các mô hình học máy (Machine Learning) để phân tích các hành vi và lịch sử tín dụng của khách hàng.
 Ví dụ: Sử dụng các công cụ phân tích dữ liệu như Apache Spark, Hadoop, hoặc Python Pandas để xử lý và phân tích các dữ liệu lịch sử từ các khách hàng trước đó. Việc phân tích này có thể giúp dự đoán và hiểu rõ nhu cầu vay của khách hàng.
 ```
 
 - **Lựa chọn các sản phẩm ngân hàng phù hợp:** Chọn sản phẩm vay thích hợp dựa trên nhu cầu và điều kiện của khách hàng.
 ```
-Hệ thống RPA có thể xác định các sản phẩm vay phù hợp từ danh sách sản phẩm của ngân hàng thông qua một quy trình kết hợp giữa RPA và các công cụ phân tích dữ liệu như thuật toán học máy (Machine Learning) và quy tắc (rule-based logic).
+- Hệ thống RPA có thể xác định các sản phẩm vay phù hợp từ danh sách sản phẩm của ngân hàng thông qua một quy trình kết hợp giữa RPA và các công cụ phân tích dữ liệu như thuật toán học máy (Machine Learning) và quy tắc (rule-based logic).
 
-Hệ thống RPA có thể sử dụng các quy tắc cố định (rule-based) được lập trình sẵn để xác định các sản phẩm vay phù hợp. Các quy tắc này dựa trên những yếu tố cụ thể mà ngân hàng đã định sẵn.
+- Thứ nhất, các quy tắc cố định (rule-based) được lập trình sẵn để xác định các sản phẩm vay phù hợp. Các quy tắc này dựa trên những yếu tố cụ thể mà ngân hàng đã định sẵn.
+Ví dụ:
++ Nếu mục đích vay là mua nhà, thì sản phẩm vay phù hợp có thể là vay thế chấp nhà ở.
++ Nếu mức thu nhập của khách hàng vượt quá một ngưỡng cụ thể (ví dụ: 20 triệu đồng/tháng), hệ thống có thể gợi ý các khoản vay vốn lưu động hoặc vay tiêu dùng với số tiền lớn hơn.
 
-Ví dụ: - Nếu mục đích vay là mua nhà, thì sản phẩm vay phù hợp có thể là vay thế chấp nhà ở.
+- Thứ hai, các thuật toán khuyến nghị bao gồm:
++ Collaborative Filtering: Dựa trên các đặc điểm tương tự của các khách hàng khác, hệ thống có thể gợi ý các sản phẩm vay phù hợp.
++ Content-Based Filtering: Dựa trên các đặc điểm của khách hàng (thu nhập, mục đích vay, khả năng trả nợ), hệ thống có thể gợi ý các khoản vay có kỳ hạn và lãi suất phù hợp dựa trên cấu trúc if-else.
++ Thuật toán phân loại (Classification Algorithm): Các thuật toán như Decision Trees hoặc Random Forest có thể được sử dụng để phân loại khách hàng vào các nhóm khác nhau (ví dụ: vay mua nhà, vay mua xe, vay tiêu dùng) dựa trên các yếu tố như thu nhập, lịch sử tín dụng và mục đích vay.
 
-- Nếu mức thu nhập của khách hàng vượt quá một ngưỡng cụ thể (ví dụ: 20 triệu đồng/tháng), hệ thống có thể gợi ý các khoản vay vốn lưu động hoặc vay tiêu dùng với số tiền lớn hơn.
-
-Thuật toán khuyến nghị: - Collaborative Filtering: Dựa trên các đặc điểm tương tự của các khách hàng khác, hệ thống có thể gợi ý các sản phẩm vay phù hợp.
-
-- Content-Based Filtering: Dựa trên các đặc điểm của khách hàng (thu nhập, mục đích vay, khả năng trả nợ), hệ thống có thể gợi ý các khoản vay có kỳ hạn và lãi suất phù hợp dựa trên cấu trúc if-else.
-
-- Thuật toán phân loại (Classification Algorithm): Các thuật toán như Decision Trees hoặc Random Forest có thể được sử dụng để phân loại khách hàng vào các nhóm khác nhau (ví dụ: vay mua nhà, vay mua xe, vay tiêu dùng) dựa trên các yếu tố như thu nhập, lịch sử tín dụng và mục đích vay.
-
-Quy trình:
-
-- Dữ liệu huấn luyện: Sử dụng dữ liệu lịch sử của khách hàng để huấn luyện mô hình học máy. Các thông tin như mức thu nhập, khoản vay trước đó, và sản phẩm vay mà họ đã chọn trước đây có thể được sử dụng để xây dựng mô hình.
-
-- Dự đoán sản phẩm vay: Sau khi mô hình học máy được huấn luyện, khi khách hàng cung cấp thông tin mới, hệ thống RPA sẽ sử dụng mô hình này để dự đoán và chọn sản phẩm vay phù hợp dựa trên các yếu tố của khách hàng.
+- Thứ ba, quy trình thực hiện:
++ Dữ liệu huấn luyện: Sử dụng dữ liệu lịch sử của khách hàng để huấn luyện mô hình học máy. Các thông tin như mức thu nhập, khoản vay trước đó, và sản phẩm vay mà họ đã chọn trước đây có thể được sử dụng để xây dựng mô hình.
++ Dự đoán sản phẩm vay: Sau khi mô hình học máy được huấn luyện, khi khách hàng cung cấp thông tin mới, hệ thống RPA sẽ sử dụng mô hình này để dự đoán và chọn sản phẩm vay phù hợp dựa trên các yếu tố của khách hàng.
 ```
 - **Tính toán các thông số khoản vay bằng cách cấu hình việc tính toán khoản vay:** Tính toán các thông số cần thiết như lãi suất, thời gian vay, số tiền vay, v.v.
 ```
-Hệ thống RPA sử dụng các thuật toán tài chính chuẩn như công thức tính lãi suất thông thường, lãi kép, Kỳ Hạn Vay (Amortization) và tổng chi phí vay (Total Loan Cost)... và công cụ tài chính tích hợp như Python, LOS, Loan Calculator API... để tự động tính toán các thông số vay. Ngoài ra, các nền tảng tài chính đám mây (Cloud-based Financial Services) như AWS, Google Cloud cũng cung cấp các công cụ để tính toán lãi suất và kỳ hạn vay cho ngân hàng.
+Hệ thống RPA sử dụng:
+- Các công thức tài chính chuẩn như công thức tính lãi suất thông thường, lãi kép, Kỳ Hạn Vay (Amortization) và tổng chi phí vay (Total Loan Cost)...
+- Các công cụ tài chính tích hợp như Python, LOS, Loan Calculator API... để tự động tính toán các thông số vay.
+- Các nền tảng tài chính đám mây (Cloud-based Financial Services) như AWS, Google Cloud cũng cung cấp các công cụ để tính toán lãi suất và kỳ hạn vay cho ngân hàng.
 Các công cụ và thuật toán này giúp giảm thiểu sai sót, tiết kiệm thời gian, và tối ưu hóa quy trình xử lý vay, tạo ra một hệ thống hiệu quả và chính xác.
 ```
 - **Tạo ra đề nghị cho vay:** Soạn thảo và đưa ra các đề nghị vay cho khách hàng.
 ```
-
+- Hệ thống RPA có thể sử dụng các công cụ soạn thảo văn bản tự động (như Google Docs API, Microsoft Word API) để tự động tạo ra các đề nghị vay dựa trên các thông tin đã thu thập từ khách hàng và các phân tích trước đó.
+Ví dụ, nội dung văn bản có thể bao gồm các thông tin như số tiền vay, lãi suất, kỳ hạn vay, các điều kiện vay, và thông tin thanh toán hàng tháng.
+- Cấu trúc của đề nghị vay sẽ được tùy chỉnh theo yêu cầu của ngân hàng và ngân hàng có thể cài đặt các mẫu văn bản chuẩn cho các loại vay khác nhau (vay mua nhà, vay tiêu dùng, v.v.).
+Sau khi soạn thảo xong văn bản đề nghị vay, hệ thống có thể tự động gởi đi để khách hàng xác nhận hoặc ký hợp đồng vay, nếu ngân hàng yêu cầu chữ ký điện tử. Hệ thống có thể tích hợp với các công cụ ký hợp đồng điện tử như DocuSign hoặc Adobe Sign.
 ```
 - Đánh giá và đưa ra quyết định của khách hàng: Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
 
