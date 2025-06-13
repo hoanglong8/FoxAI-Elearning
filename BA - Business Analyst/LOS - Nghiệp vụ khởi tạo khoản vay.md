@@ -61,33 +61,75 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 
 ## Các ngành nghề kinh doanh được hỗ trợ
 
-1.Các khoản cho vay bán lẻ
+**1.Các khoản cho vay bán lẻ**
 - Xử lý các khoản cho vay bán lẻ trên thị trường đại chúng thường có nghĩa là phải ứng phó với số lượng lớn các yêu cầu điển hình đối vớicác khoản vay tương đối nhỏ. Để xử lý hiệu quả luồng ứng dụng quan trọng và duy trì tính cạnh tranh, người cho vay cần tạo ra một nền tảng công nghệ đáng tin cậy có thể hỗ trợtự động hóa thủ tục khởi tạo khoản vay, quản lý rủi ro qua các danh mục tín dụng, nhanh chóng đưa ra quyết định cho vay, tạo sản phẩm mới và tùy chỉnh bảo hiểm khởi tạo thông minh.
 
-2.Các khoản cho vay kinh doanh
+**2.Các khoản cho vay kinh doanh**
 - Trường hợp bộ phận cho vay của doanh nghiệp cung cấp các sản phẩm tín dụng tiêu chuẩn – khách hàng doanh nghiệp vay số lượng lớn hơn và yêu cầu phương pháp riêng hiếm khi xảy ra, và ngân hàng cần tùy chỉnh và đề xuất ra các giải pháp tốt nhất cho từng nhiệm vụ kinh doanh cụ thể. Mức độ rủi ro cao hơn do số tiền vay lớn hơn là một đặc thù quan trọng khác của hoạt động cho vay doanh nghiệp. Dựa vào giải pháp FOXAI LOS hiện đại để xử lý rủi ro đúng cách và cung cấp cho khách hàng của bạn các dịch vụ chất lượng cao cá nhân hóa.
 
-3.Các khoản cho vay SME 
+**3.Các khoản cho vay SME**
 - Các khoản cho vay Doanh nghiệp vừa và nhỏ tương đối nhỏ, nhưng chúng gây ra chi phí hành chính cao hơn và yêu cầu nguồn nhân lực nhiều hơn so với các hình thức cho vay khác. Nhiều chủ sở hữu của các doanh nghiệp vừa và nhỏ rất khó tiếp cận vì họ sinh sống ở các vùng nông thôn hẻo lánh. Ngoài ra, người cho vay phải xử lý nhiều thông tin tài chính để đưa ra quyết định đúng đắn và giảm thiểu rủi ro. Hợp lý hóa các thủ tục này, tiếp cận khách hàng từ xa và tạo thuận lợi cho toàn bộ quy trình cho vay Doanh nghiệp vừa và nhỏ với các công cụ và tính năng công nghệ hiện đại do FOXAI LOS cung cấp.
 
-4.Các khoản cho vay tài chính vi mô 
+**4.Các khoản cho vay tài chính vi mô** 
 - Dịch vụ tài chính vi mô cho các hộ nghèo và thu nhập thấp và các doanh nghiệp của họ, thường được gọi là doanh nghiệp siêu nhỏ, đóng một vai trò quan trọng trong việc giảm nghèo. Nắm bắt nhóm khách hàng rộng lớn này, tiếp cận khách hàng từ xa của bạn và thiết lập việc khởi tạo khoản vay một cách thông minh và các quy trình quản lý với nhiều công cụ tiên tiến nhất được cung cấp bởi giải pháp FOXAI LOS.
 
 ---
-## FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn bên vay" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
+## 1.FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn bên vay" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
 
-- Xác định nhu cầu của khách hàng: Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
+- **Xác định nhu cầu của khách hàng:** Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
+```
+Cụ thể về công cụ: RPA có thể tích hợp với các form trực tuyến hoặc chatbot (Chatbase, Dialogflow, ChatGPT) để thu thập thông tin chi tiết từ khách hàng về yêu cầu vay.
 
-- Lựa chọn các sản phẩm ngân hàng phù hợp: Chọn sản phẩm vay thích hợp dựa trên nhu cầu và điều kiện của khách hàng.
+Các Dữ liệu thu thập: Các thông tin cần thiết bao gồm mục đích vay, số tiền vay yêu cầu, thời gian vay, thu nhập, và các yếu tố tài chính khác.
 
-- Tính toán các thông số khoản vay bằng cách cấu hình việc tính toán khoản vay: Tính toán các thông số cần thiết như lãi suất, thời gian vay, số tiền vay, v.v.
+Sau khi thu thập thông tin, hệ thống RPA có thể sử dụng quy tắc logic (Rule-based Logic) để phân loại và xử lý yêu cầu vay của khách hàng.
 
-- Tạo ra đề nghị cho vay: Soạn thảo và đưa ra các đề nghị vay cho khách hàng.
+Ví dụ: Nếu khách hàng yêu cầu vay để mua nhà, hệ thống sẽ tự động nhận diện và đưa ra các sản phẩm vay thế chấp nhà ở. Nếu mục đích vay là vay tiêu dùng, hệ thống sẽ gợi ý các khoản vay tiêu dùng không cần tài sản thế chấp.
 
+Thuật toán phân tích: Các thuật toán phân loại (Classification Algorithms) như Decision Trees hoặc Random Forest có thể được áp dụng để phân loại mục đích vay và các yếu tố khác. Dựa vào các thuộc tính này, hệ thống sẽ xác định sản phẩm vay phù hợp.
+
+Ví dụ: Dựa trên mức thu nhập của khách hàng, hệ thống có thể chọn ra các sản phẩm vay tiêu dùng hoặc vay mua ô tô với điều kiện tín dụng khác nhau.
+
+Hệ thống RPA có thể kết hợp với các công cụ phân tích dữ liệu lớn (Big Data tools) và các mô hình học máy (Machine Learning) để phân tích các hành vi và lịch sử tín dụng của khách hàng.
+
+Ví dụ: Sử dụng các công cụ phân tích dữ liệu như Apache Spark, Hadoop, hoặc Python Pandas để xử lý và phân tích các dữ liệu lịch sử từ các khách hàng trước đó. Việc phân tích này có thể giúp dự đoán và hiểu rõ nhu cầu vay của khách hàng.
+```
+
+- **Lựa chọn các sản phẩm ngân hàng phù hợp:** Chọn sản phẩm vay thích hợp dựa trên nhu cầu và điều kiện của khách hàng.
+```
+Hệ thống RPA có thể xác định các sản phẩm vay phù hợp từ danh sách sản phẩm của ngân hàng thông qua một quy trình kết hợp giữa RPA và các công cụ phân tích dữ liệu như thuật toán học máy (Machine Learning) và quy tắc (rule-based logic).
+
+Hệ thống RPA có thể sử dụng các quy tắc cố định (rule-based) được lập trình sẵn để xác định các sản phẩm vay phù hợp. Các quy tắc này dựa trên những yếu tố cụ thể mà ngân hàng đã định sẵn.
+
+Ví dụ: - Nếu mục đích vay là mua nhà, thì sản phẩm vay phù hợp có thể là vay thế chấp nhà ở.
+
+- Nếu mức thu nhập của khách hàng vượt quá một ngưỡng cụ thể (ví dụ: 20 triệu đồng/tháng), hệ thống có thể gợi ý các khoản vay vốn lưu động hoặc vay tiêu dùng với số tiền lớn hơn.
+
+Thuật toán khuyến nghị: - Collaborative Filtering: Dựa trên các đặc điểm tương tự của các khách hàng khác, hệ thống có thể gợi ý các sản phẩm vay phù hợp.
+
+- Content-Based Filtering: Dựa trên các đặc điểm của khách hàng (thu nhập, mục đích vay, khả năng trả nợ), hệ thống có thể gợi ý các khoản vay có kỳ hạn và lãi suất phù hợp dựa trên cấu trúc if-else.
+
+- Thuật toán phân loại (Classification Algorithm): Các thuật toán như Decision Trees hoặc Random Forest có thể được sử dụng để phân loại khách hàng vào các nhóm khác nhau (ví dụ: vay mua nhà, vay mua xe, vay tiêu dùng) dựa trên các yếu tố như thu nhập, lịch sử tín dụng và mục đích vay.
+
+Quy trình:
+
+- Dữ liệu huấn luyện: Sử dụng dữ liệu lịch sử của khách hàng để huấn luyện mô hình học máy. Các thông tin như mức thu nhập, khoản vay trước đó, và sản phẩm vay mà họ đã chọn trước đây có thể được sử dụng để xây dựng mô hình.
+
+- Dự đoán sản phẩm vay: Sau khi mô hình học máy được huấn luyện, khi khách hàng cung cấp thông tin mới, hệ thống RPA sẽ sử dụng mô hình này để dự đoán và chọn sản phẩm vay phù hợp dựa trên các yếu tố của khách hàng.
+```
+- **Tính toán các thông số khoản vay bằng cách cấu hình việc tính toán khoản vay:** Tính toán các thông số cần thiết như lãi suất, thời gian vay, số tiền vay, v.v.
+```
+Hệ thống RPA sử dụng các thuật toán tài chính chuẩn như công thức tính lãi suất thông thường, lãi kép, Kỳ Hạn Vay (Amortization) và tổng chi phí vay (Total Loan Cost)... và công cụ tài chính tích hợp như Python, LOS, Loan Calculator API... để tự động tính toán các thông số vay. Ngoài ra, các nền tảng tài chính đám mây (Cloud-based Financial Services) như AWS, Google Cloud cũng cung cấp các công cụ để tính toán lãi suất và kỳ hạn vay cho ngân hàng.
+Các công cụ và thuật toán này giúp giảm thiểu sai sót, tiết kiệm thời gian, và tối ưu hóa quy trình xử lý vay, tạo ra một hệ thống hiệu quả và chính xác.
+```
+- **Tạo ra đề nghị cho vay:** Soạn thảo và đưa ra các đề nghị vay cho khách hàng.
+```
+
+```
 - Đánh giá và đưa ra quyết định của khách hàng: Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
 
 ---
-## FoxAI LOS hỗ trợ cán bộ ngân hàng "Khởi tạo hồ sơ" trong bước "2.Xác minh thông tin khách hàng" như sau:
+## 2.FoxAI LOS hỗ trợ cán bộ ngân hàng "Khởi tạo hồ sơ" trong bước "2.Xác minh thông tin khách hàng" như sau:
 
 - Nhận dạng khách hàng: Xác định thông tin khách hàng để tiến hành khởi tạo hồ sơ vay.
 
@@ -100,7 +142,7 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 - Đính kèm bản sao điện tử của tài liệu: Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
 
 ---
-## FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
+## 3.FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
 
 - Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.
 
@@ -109,7 +151,7 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 - Tính toán tự động các thang số khoản vay: Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
 
 ---
-## FoxAI LOS hỗ trợ cán bộ ngân hàng "Đưa ra quyết định" trong bước "4.Quyết định cấp vay" như sau:
+## 4.FoxAI LOS hỗ trợ cán bộ ngân hàng "Đưa ra quyết định" trong bước "4.Quyết định cấp vay" như sau:
 
 - Hoàn toàn tự động hoặc quyết định thủ công: Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
 
@@ -126,7 +168,7 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 - Thông báo tới khách hàng về quyết định: Thông báo cho khách hàng kết quả quyết định vay.
 
 ---
-## FoxAI LOS hỗ trợ cán bộ ngân hàng "Giải ngân khoản vay" trong bước "5.Ký hợp đồng" & bước "6.Giải ngân" như sau:
+## 5.FoxAI LOS hỗ trợ cán bộ ngân hàng "Giải ngân khoản vay" trong bước "5.Ký hợp đồng" & bước "6.Giải ngân" như sau:
 
 - Tự động tạo hồ sơ khách hàng trong hệ thống core banking.
 
@@ -141,8 +183,8 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 - Đính kèm tài liệu đã scan vào hồ sơ cho vay.
 
 ---
-## Outline cho bài trình bày về chuyển đổi số trong ngành ngân hàng, ứng dụng RPA (Robotic Process Automation) trong quy trình khởi tạo khoản vay - FoxAI LOS
-Bài trình bày này được chia thành nhiều slide với mục đích giúp người tham gia hiểu rõ các vấn đề và giải pháp công nghệ, cũng như kết quả thực tế của việc ứng dụng RPA trong ngân hàng, sử dụng một số công cụ AI như UiPath.
+## 6.Outline cho bài trình bày về chuyển đổi số trong ngành ngân hàng - Ứng dụng công nghệ RPA (Robotic Process Automation) trong quy trình khởi tạo khoản vay của FoxAI LOS
+Bài trình bày này được chia thành nhiều slide với mục đích giúp người tham gia hiểu rõ các vấn đề và giải pháp công nghệ, cũng như kết quả thực tế của việc ứng dụng RPA trong ngân hàng, sử dụng một số công cụ AI như [UiPath](https://www.uipath.com/), [Blue Prism](https://www.blueprism.com/), [Automation Anywhere](https://www.automationanywhere.com/), [Kofax](https://www.kofax.com/), [WorkFusion](https://www.workfusion.com/)...
 
 ### Slide 1: Tiêu đề và Giới thiệu
 Tiêu đề: Chuyển Đổi Số Trong Ngành Ngân Hàng: Ứng Dụng RPA Trong Quy Trình Khởi Tạo Khoản Vay
