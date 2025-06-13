@@ -74,3 +74,208 @@ Các khoản cho vay Doanh nghiệp vừa và nhỏ tương đối nhỏ, nhưng
 Dịch vụ tài chính vi mô cho các hộ nghèo và thu nhập thấp và các doanh nghiệp của họ, thường được gọi là doanh nghiệp siêu nhỏ, đóng một vai trò quan trọng trong việc giảm nghèo. Nắm bắt nhóm khách hàng rộng lớn này, tiếp cận khách hàng từ xa của bạn và thiết lập việc khởi tạo khoản vay một cách thông minh và các quy trình quản lý với nhiều công cụ tiên tiến nhất được cung cấp bởi giải pháp FOXAI LOS.
 
 ---
+## Khâu "Tư vấn bên vay" với các nội dung sau:
+
+Xác định nhu cầu của khách hàng: Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
+
+Lựa chọn các sản phẩm ngân hàng phù hợp: Chọn sản phẩm vay thích hợp dựa trên nhu cầu và điều kiện của khách hàng.
+
+Tính toán các thông số khoản vay bằng cách cấu hình việc tính toán khoản vay: Tính toán các thông số cần thiết như lãi suất, thời gian vay, số tiền vay, v.v.
+
+Tạo ra đề nghị cho vay: Soạn thảo và đưa ra các đề nghị vay cho khách hàng.
+
+Đánh giá và đưa ra quyết định của khách hàng: Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
+
+---
+## Khâu "Khởi tạo hồ sơ" với các nội dung sau:
+
+Nhận dạng khách hàng: Xác định thông tin khách hàng để tiến hành khởi tạo hồ sơ vay.
+
+Tập hợp trước các thông tin hồ sơ với dữ liệu từ máy tính: Thu thập dữ liệu cần thiết từ hệ thống và máy tính để chuẩn bị hồ sơ vay.
+
+Nhập thông tin chi tiết về khách hàng: Nhập các thông tin cụ thể và chi tiết của khách hàng vào hệ thống.
+
+Nhận dạng tài liệu: Xác định và xử lý các tài liệu cần thiết cho hồ sơ vay.
+
+Đính kèm bản sao điện tử của tài liệu: Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
+
+---
+## Khâu "Xử lý hồ sơ" với các nội dung sau:
+
+Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.
+
+Scoring: Đánh giá điểm tín dụng của khách hàng.
+
+Tính toán tự động các thang số khoản vay: Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
+
+---
+## Khâu "Đưa ra quyết định" với các nội dung sau:
+
+Hoàn toàn tự động hoặc quyết định thủ công: Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
+
+Kiểm tra an ninh: Đảm bảo các quy trình an ninh được tuân thủ trong quá trình xét duyệt.
+
+Kiểm tra pháp lý: Đảm bảo rằng khoản vay đáp ứng tất cả các yêu cầu pháp lý cần thiết.
+
+Đánh giá rủi ro: Đánh giá các yếu tố rủi ro liên quan đến khoản vay và khả năng trả nợ của khách hàng.
+
+Kiểm tra tài sản đảm bảo bởi Người quản lý Tài sản đảm bảo của ngân hàng: Xác minh tài sản đảm bảo của khách hàng, đảm bảo rằng tài sản đủ giá trị để bảo vệ khoản vay.
+
+Chỉnh sửa các thông số khoản vay bởi Tái thẩm định nhân viên: Các nhân viên sẽ kiểm tra và chỉnh sửa thông số khoản vay nếu cần thiết.
+
+Thông báo tới khách hàng về quyết định: Thông báo cho khách hàng kết quả quyết định vay.
+
+---
+## Khâu "Giải ngân khoản vay" với các nội dung như sau:
+
+Tự động tạo hồ sơ khách hàng trong hệ thống core banking.
+
+Tự động tạo hợp đồng cho vay trong hệ thống cốt lõi core banking.
+
+Tự động tạo thoả thuận tài sản đảm bảo trong hệ thống core banking.
+
+Mở tài khoản cho vay trong hệ thống core banking.
+
+Ký hồ sơ tài liệu.
+
+Đính kèm tài liệu đã scan vào hồ sơ cho vay.
+
+---
+## Outline cho bài trình bày về chuyển đổi số trong ngành ngân hàng, ứng dụng RPA (Robotic Process Automation) trong quy trình khởi tạo khoản vay - FoxAI LOS
+Bài trình bày này được chia thành nhiều slide với mục đích giúp người tham gia hiểu rõ các vấn đề và giải pháp công nghệ, cũng như kết quả thực tế của việc ứng dụng RPA trong ngân hàng, sử dụng một số công cụ AI như UiPath.
+
+### Slide 1: Tiêu đề và Giới thiệu
+Tiêu đề: Chuyển Đổi Số Trong Ngành Ngân Hàng: Ứng Dụng RPA Trong Quy Trình Khởi Tạo Khoản Vay
+
+Giới thiệu ngắn gọn về mục tiêu bài học:
+
+Tại sao chuyển đổi số quan trọng trong ngành ngân hàng?
+
+Cách RPA có thể tối ưu hóa quy trình khởi tạo khoản vay.
+
+### Slide 2: Thực Trạng (Pain Points) Của Ngân Hàng
+Vấn đề trong quy trình khởi tạo khoản vay truyền thống:
+
+Thời gian xử lý lâu (từ 5 đến 7 ngày).
+
+Quy trình thủ công dẫn đến sai sót (đặc biệt trong việc nhập liệu và xác minh thông tin).
+
+Khối lượng công việc lớn và khó kiểm soát.
+
+Dễ gặp phải lỗi quyết định do thiếu dữ liệu hoặc phân tích không chính xác.
+
+Hậu quả:
+
+Khách hàng không hài lòng vì chờ đợi lâu.
+
+Quản lý quy trình kém, tốn kém chi phí.
+
+### Slide 3: Trình Tự Quy Trình Khởi Tạo Khoản Vay
+Các bước trong quy trình khởi tạo khoản vay truyền thống:
+
+Thu thập và xác minh tài liệu: Nhân viên nhập liệu thông tin từ các tài liệu khách hàng.
+
+Phân tích và đánh giá tín dụng: Nhân viên đánh giá khả năng vay dựa trên lịch sử tín dụng và thu nhập.
+
+Ra quyết định vay: Nhân viên ra quyết định cấp vay hoặc từ chối.
+
+Giải ngân khoản vay: Giải ngân qua các bước thủ công.
+
+### Slide 4: Giới Thiệu về UiPath và RPA
+UiPath là công cụ RPA (Robotic Process Automation) mạnh mẽ giúp tự động hóa quy trình kinh doanh.
+
+Tính năng nổi bật của UiPath:
+
+OCR (Optical Character Recognition) để nhận diện và trích xuất thông tin từ tài liệu giấy.
+
+Bot tự động để thực hiện các tác vụ như nhập liệu, phân tích dữ liệu, và quyết định vay.
+
+Tích hợp AI giúp cải thiện quá trình ra quyết định tín dụng nhanh chóng và chính xác hơn.
+
+### Slide 5: Quy Trình Tự Động Hóa Với UiPath
+Bước 1: Thu thập thông tin tự động:
+
+Sử dụng OCR của UiPath để quét và trích xuất thông tin từ các tài liệu như CMND, hợp đồng vay, bảng lương.
+
+Bước 2: Xác minh thông tin khách hàng:
+
+Tự động xác minh các dữ liệu tài chính qua các hệ thống bên ngoài (ngân hàng, cơ quan tín dụng).
+
+Bước 3: Phân tích và tính toán tín dụng tự động:
+
+Sử dụng các mô hình AI tích hợp để đánh giá khả năng tín dụng của khách hàng.
+
+Bước 4: Ra quyết định vay tự động:
+
+Dựa trên dữ liệu phân tích, bot tự động đưa ra quyết định cấp vay hoặc từ chối.
+
+Bước 5: Giải ngân khoản vay tự động:
+
+Sau khi quyết định vay được phê duyệt, bot tự động giải ngân khoản vay vào tài khoản của khách hàng.
+
+### Slide 6: Các Chức Năng Mà UiPath Thực Hiện
+Nhập liệu tự động: Bot sử dụng OCR để quét và trích xuất dữ liệu từ các tài liệu giấy.
+
+Xác minh thông tin khách hàng: Bot tự động liên kết với các nguồn dữ liệu để xác minh thông tin tín dụng.
+
+Tự động tính toán tín dụng và phân tích rủi ro: Các công cụ AI phân tích điểm tín dụng và khả năng trả nợ.
+
+Ra quyết định vay tự động: Quyết định về khoản vay được đưa ra nhanh chóng mà không cần sự can thiệp của nhân viên.
+
+Giải ngân tự động: Tự động thực hiện giải ngân và cập nhật thông tin giao dịch.
+
+### Slide 7: Kết Quả Đo Lường và Tính Hiệu Quả
+Giảm thời gian xử lý đơn vay:
+
+Thời gian xử lý giảm từ 5-7 ngày xuống còn 1-2 ngày.
+
+Giảm 60-70% thời gian.
+
+Tăng tỷ lệ quyết định tự động:
+
+80% quyết định vay được xử lý tự động, giảm thiểu sự can thiệp của nhân viên.
+
+Giảm thiểu sai sót:
+
+Tỷ lệ sai sót giảm từ 10-15% xuống chỉ còn 1-2%.
+
+Tăng cường sự hài lòng của khách hàng:
+
+40% sự hài lòng của khách hàng tăng lên nhờ quy trình nhanh chóng và chính xác.
+
+Tiết kiệm chi phí nhân sự:
+
+Ngân hàng tiết kiệm được 30% chi phí nhân sự trong quy trình xử lý vay.
+
+### Slide 8: Lợi Ích Tổng Thể
+Tăng cường hiệu quả công việc:
+
+Tự động hóa giúp giảm tải công việc cho nhân viên và cải thiện năng suất.
+
+Cải thiện chính xác và tính minh bạch:
+
+Giảm thiểu sai sót trong việc nhập liệu và ra quyết định.
+
+Tối ưu hóa trải nghiệm khách hàng:
+
+Khách hàng nhận được quyết định nhanh chóng và chính xác.
+
+Tiết kiệm chi phí:
+
+Ngân hàng giảm thiểu chi phí vận hành và tăng cường hiệu quả quy trình.
+
+### Slide 9: Tương Lai Của Chuyển Đổi Số Trong Ngành Ngân Hàng
+Ứng dụng RPA và AI trong tất cả các bước của quy trình LOS.
+
+Tự động hóa toàn bộ chuỗi quy trình cho vay.
+
+Mở rộng các ứng dụng AI để nâng cao khả năng phân tích và ra quyết định.
+
+### Slide 10: Kết Luận và Câu Hỏi
+Tóm tắt các điểm chính: UiPath và RPA đã giúp ngân hàng tăng cường hiệu quả, giảm chi phí và nâng cao trải nghiệm khách hàng trong quy trình khởi tạo khoản vay.
+
+Mở ra cơ hội cho các ứng dụng AI khác trong ngành ngân hàng, từ tư vấn vay đến giải ngân khoản vay.
+
+### Slide 11: Câu Hỏi và Thảo Luận
+Mời các học viên đặt câu hỏi và thảo luận về cách triển khai RPA trong quy trình ngân hàng tại các tổ chức của mình.
+
