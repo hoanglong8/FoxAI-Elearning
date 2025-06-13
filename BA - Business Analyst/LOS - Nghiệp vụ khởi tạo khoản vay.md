@@ -170,7 +170,7 @@ Sau khi trích xuất, RPA tự động điền các thông tin vào hệ thốn
 ---
 ## 3.FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
 
-- Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.
+- **Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.**
 ```
 Hệ thống RPA có thể hỗ trợ Pre-scoring và đánh giá tín dụng bằng cách sử dụng các công cụ kiểm tra AML, kiểm tra danh sách đen, và mô hình phân tích rủi ro như Decision Trees, FICO Score, và Risk Scoring Models.
 - RPA sử dụng các công cụ và thuật toán chống rửa tiền để kiểm tra các yếu tố liên quan đến rửa tiền trong quy trình Pre-scoring, bao gồm việc kiểm tra xem khách hàng có liên quan đến các tổ chức hoặc cá nhân bị liệt kê trong danh sách đen của ngân hàng hoặc các tổ chức tài chính quốc tế hay không thông qua:
@@ -181,7 +181,8 @@ Hệ thống RPA có thể hỗ trợ Pre-scoring và đánh giá tín dụng b�
 + Custom Blacklist (Danh sách đen nội bộ): RPA có thể tích hợp với hệ thống Blacklists của ngân hàng, là nơi lưu trữ các cá nhân và tổ chức có vấn đề về tín dụng hoặc những khách hàng đã vi phạm các điều kiện của ngân hàng (số CMND, địa chỉ, số điện thoại, số tài khoản).
 + Decision Trees và Classification Models: Sử dụng các mô hình Decision Trees hoặc Random Forest để phân loại khách hàng vào các nhóm khác nhau, giúp hệ thống quyết định liệu khách hàng có nằm trong nhóm có rủi ro cao hay không dựa trên các yếu tố như lịch sử tín dụng, số lần nợ xấu, và mức độ tương tác trước đó với ngân hàng.
 ```
-- Scoring: Đánh giá điểm tín dụng của khách hàng.
+
+- **Scoring: Đánh giá điểm tín dụng của khách hàng.**
 ```
 Hệ thống RPA có thể sử dụng các công cụ tín dụng (FICO, VantageScore), mô hình học máy (như Logistic Regression, Random Forest) và các công cụ phân tích rủi ro như SAS Credit Scoring, Oracle Credit Scoring để đánh giá điểm tín dụng của khách hàng trong quy trình scoring:
 - Sử Dụng Các Thuật Toán Tính Điểm Tín Dụng (Credit Scoring Models):
@@ -196,36 +197,88 @@ Hệ thống RPA có thể sử dụng các công cụ tín dụng (FICO, Vantag
 + SAS Credit Scoring: SAS cung cấp các công cụ để tính toán điểm tín dụng dựa trên các yếu tố tài chính của khách hàng.
 + Oracle Credit Scoring: Công cụ này giúp phân tích dữ liệu tín dụng và tính toán điểm tín dụng dựa trên các yếu tố như lịch sử tín dụng, mức độ nợ, thu nhập, v.v.
 ```
-- Tính toán tự động các thang số khoản vay: Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
 
+- **Tính toán tự động các thang số khoản vay:** Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
+```
+Hệ thống RPA sử dụng các công cụ tính toán điểm tín dụng, mô hình phân tích tài chính như FICO Score, VantageScore, Logistic Regression, Loan Amortization Calculators, và Risk-based Pricing để tính toán tự động các thang số khoản vay:
+- Tính Toán Khả Năng Trả Nợ (Debt-to-Income Ratio - DTI):
++ Công thức tính DTI: Tỷ lệ DTI được tính bằng tổng số nợ phải trả của khách hàng chia cho thu nhập hàng tháng của khách hàng.
++ Thuật toán: Decision Trees có thể được sử dụng để phân loại khách hàng dựa trên các yếu tố tài chính, bao gồm DTI, thu nhập, và các khoản nợ. Thuật toán này giúp xác định mức độ phù hợp của khách hàng với các khoản vay.
+
+- Tính Toán Các Điều Kiện Vay (Loan Terms):
++ Các công cụ như Loan Amortization Calculator API giúp tính toán số tiền thanh toán hàng tháng của khách hàng dựa trên số tiền vay, lãi suất và thời gian vay.
++ Các thuật toán để đánh giá rủi ro của khách hàng và tính toán các điều kiện vay: Risk-based pricing, Random Forest, XGBoost...
+```
 ---
 ## 4.FoxAI LOS hỗ trợ cán bộ ngân hàng "Đưa ra quyết định" trong bước "4.Quyết định cấp vay" như sau:
 
-- Hoàn toàn tự động hoặc quyết định thủ công: Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
+- **Hoàn toàn tự động hoặc quyết định thủ công:** Quyết định có thể được đưa ra tự động hoặc qua một quy trình thủ công dựa trên các thông tin và đánh giá sẵn có.
+```
+- Quyết Định Cấp Vay Tự Động (Automatic Loan Decisioning):
++ Decision Trees (Cây Quyết Định) giúp đưa ra quyết định dựa trên các yếu tố đầu vào như thu nhập, lịch sử tín dụng, tỷ lệ nợ, v.v.
++ Random Forest là một phương pháp học máy sử dụng nhiều cây quyết định để phân loại và đưa ra quyết định chính xác hơn.
++ Logistic Regression có thể được sử dụng để dự đoán xác suất khách hàng có khả năng trả nợ dựa trên các yếu tố tài chính như thu nhập, lịch sử tín dụng, v.v.
 
-- Kiểm tra an ninh: Đảm bảo các quy trình an ninh được tuân thủ trong quá trình xét duyệt.
+- Quyết Định Cấp Vay Qua Quy Trình Thủ Công (Manual Decisioning):
++ Business Rules Engine (BRE) giúp xác định các quy tắc và chính sách của ngân hàng để đưa ra quyết định cấp vay. BRE cho phép ngân hàng thiết lập các quy tắc cho việc cấp vay, như các yêu cầu về điểm tín dụng, tỷ lệ nợ thu nhập (DTI), hoặc các yêu cầu tài chính khác.
++ Decision Support Systems (DSS) là hệ thống hỗ trợ ra quyết định giúp ngân hàng phân tích dữ liệu và đưa ra quyết định vay dựa trên các tiêu chí đã được xác định trước.
 
-- Kiểm tra pháp lý: Đảm bảo rằng khoản vay đáp ứng tất cả các yêu cầu pháp lý cần thiết.
+- Quyết Định Cấp Vay Tùy Chỉnh (Custom Loan Decisioning):
++ Adaptive Decision Models (Mô Hình Quyết Định Thích Ứng) sử dụng các mô hình học máy để tạo ra các quyết định linh hoạt dựa trên các yếu tố đặc thù của khách hàng (ví dụ: khách hàng có điểm tín dụng thấp nhưng có tài sản thế chấp giá trị cao).
++ Credit Policy Engine (Công Cụ Chính Sách Tín Dụng) giúp ngân hàng thiết lập và duy trì các chính sách tín dụng để đưa ra quyết định vay phù hợp với chiến lược của ngân hàng.
+```
+- **Kiểm tra an ninh:** Đảm bảo các quy trình an ninh được tuân thủ trong quá trình xét duyệt.
 
-- Đánh giá rủi ro: Đánh giá các yếu tố rủi ro liên quan đến khoản vay và khả năng trả nợ của khách hàng.
+- **Kiểm tra pháp lý:** Đảm bảo rằng khoản vay đáp ứng tất cả các yêu cầu pháp lý cần thiết.
+```
+- Kiểm Tra Tuân Thủ Quy Định Pháp Lý (Regulatory Compliance Check):
++ Regulatory Compliance Engines (Công Cụ Tuân Thủ Quy Định): Các công cụ như Thomson Reuters Compliance Learning, ComplyAdvantage, và Wolters Kluwer cung cấp các nền tảng để kiểm tra tuân thủ các quy định pháp lý và các yêu cầu liên quan đến các khoản vay, bao gồm các quy định về KYC (Know Your Customer), AML (Anti-Money Laundering), chống tài trợ khủng bố, và các luật tài chính khác.
+- Kiểm Tra Tính Hợp Pháp của Tài Liệu (Document Legality Check)
+- Kiểm Tra Điều Khoản Pháp Lý Của Hợp Đồng Vay (Contract Legal Term Verification):
++ Natural Language Processing (NLP) và Text Analytics: TextRazor, spaCy, IBM Watson NLP, và Google Cloud Natural Language có thể được sử dụng để phân tích và kiểm tra các điều khoản trong hợp đồng vay
+- Kiểm Tra Tuân Thủ Quy Định Về Dữ Liệu Cá Nhân (Data Privacy Compliance)
+```
+- **Đánh giá rủi ro:** Đánh giá các yếu tố rủi ro liên quan đến khoản vay và khả năng trả nợ của khách hàng.
+```
+- Đánh Giá Rủi Ro Từ Các Tài Sản Thế Chấp (Collateral Risk Assessment):
++ Property Valuation Tools: Các công cụ định giá tài sản như Zillow, Kelley Blue Book (KBB) hoặc Redfin có thể cung cấp dữ liệu về giá trị của tài sản thế chấp, chẳng hạn như nhà cửa, đất đai, v.v.
++ Loan-to-Value Ratio (LTV): Loan-to-Value Ratio (LTV) là tỷ lệ giữa khoản vay và giá trị tài sản thế chấp. Nếu tỷ lệ LTV quá cao (thường > 80%), ngân hàng có thể yêu cầu tài sản thế chấp bổ sung hoặc giảm số tiền vay. Hệ thống RPA sẽ tự động tính toán và cảnh báo nếu tỷ lệ LTV vượt quá giới hạn cho phép.
++ Market Risk Models: Các công cụ phân tích rủi ro thị trường như Value-at-Risk (VaR) hoặc Monte Carlo Simulation có thể được sử dụng để dự đoán và đánh giá biến động giá trị tài sản trong tương lai.
++ Property and Title Verification Tools: Các công cụ như Title Insurance Verification và Property Title Search giúp xác minh tính hợp pháp của tài sản thế chấp.
+```
+- **Kiểm tra tài sản đảm bảo bởi Người quản lý Tài sản đảm bảo của ngân hàng:** Xác minh tài sản đảm bảo của khách hàng, đảm bảo rằng tài sản đủ giá trị để bảo vệ khoản vay.
 
-- Kiểm tra tài sản đảm bảo bởi Người quản lý Tài sản đảm bảo của ngân hàng: Xác minh tài sản đảm bảo của khách hàng, đảm bảo rằng tài sản đủ giá trị để bảo vệ khoản vay.
+- **Chỉnh sửa các thông số khoản vay bởi Tái thẩm định nhân viên:** Các thẩm định viên sẽ kiểm tra và chỉnh sửa thông số khoản vay nếu cần thiết.
 
-- Chỉnh sửa các thông số khoản vay bởi Tái thẩm định nhân viên: Các nhân viên sẽ kiểm tra và chỉnh sửa thông số khoản vay nếu cần thiết.
-
-- Thông báo tới khách hàng về quyết định: Thông báo cho khách hàng kết quả quyết định vay.
-
+- **Thông báo tới khách hàng về quyết định:** Thông báo cho khách hàng kết quả quyết định vay.
+```
+Hệ thống RPA hỗ trợ thông báo cho khách hàng về kết quả quyết định vay bằng cách tự động gửi thông báo thông qua các kênh giao tiếp như email, SMS, hoặc ứng dụng di động:
+- Tự Động Gửi Thông Báo Qua Email và SMS: các dịch vụ MailChimp, SendGrid, Amazon SES hoặc SMTP Server để gửi email, các dịch vụ như Twilio, Nexmo, hoặc Plivo để gửi SMS.
+- Tạo Thư Thông Báo Tự Động (Automated Notification Letters): DocuSign, HelloSign, hoặc Adobe Sign có thể được sử dụng để tạo và gửi các thư thông báo qua email cho khách hàng.
+- Cập Nhật Trạng Thái Hồ Sơ Vay Và Thông Báo Qua Ứng Dụng Di Động (Mobile app)
+- Gửi Thông Báo Quyết Định Vay Qua Hệ Thống Quản Lý Khách Hàng (CRM): Salesforce, HubSpot, Zoho CRM
+- Gửi Thông Báo Qua Kênh Web Portal (Web-based Notification): Zendesk, Freshdesk
+```
 ---
 ## 5.FoxAI LOS hỗ trợ cán bộ ngân hàng "Giải ngân khoản vay" trong bước "5.Ký hợp đồng" & bước "6.Giải ngân" như sau:
 
-- Tự động tạo hồ sơ khách hàng trong hệ thống core banking.
+- **Tự động tạo hồ sơ khách hàng** trong hệ thống core banking.
+```
+- RPA tích hợp Integration with Core Banking System (CBS) thông qua công cụ: UiPath, Blue Prism, Automation Anywhere hoặc WorkFusion...
+```
+- **Tự động tạo hợp đồng cho vay** trong hệ thống cốt lõi core banking.
 
-- Tự động tạo hợp đồng cho vay trong hệ thống cốt lõi core banking.
-
-- Tự động tạo thoả thuận tài sản đảm bảo trong hệ thống core banking.
-
-- Mở tài khoản cho vay trong hệ thống core banking.
-
+- **Tự động tạo thoả thuận tài sản đảm bảo** trong hệ thống core banking.
+```
+- Sau khi hợp đồng vay được ký kết, hệ thống RPA tự động tạo và lưu trữ các tài liệu hợp đồng vay vào hệ thống core banking thông qua công cụ: ABBYY FlexiCapture, Kofax, DocuSign để tự động quét, nhận diện và lưu trữ hợp đồng vay và các tài liệu liên quan vào Document Management Systems (DMS).
+- RPA tự động đồng bộ hóa thông tin từ hồ sơ vay vào các hệ thống liên quan của ngân hàng: APIs từ Core Banking Systems (CBS) như Temenos, Finacle, hoặc Oracle FLEXCUBE
+```
+- **Mở tài khoản cho vay** trong hệ thống core banking.
+```
+Sau khi hồ sơ vay được tạo trong hệ thống core banking, RPA sẽ tự động tạo và gửi các yêu cầu giải ngân (lệnh thanh toán) tới các hệ thống thanh toán nội bộ hoặc đối tác thanh toán (ví dụ: chuyển khoản qua ngân hàng, dịch vụ thanh toán điện tử). RPA sẽ xác minh tính hợp lệ của lệnh thanh toán và đảm bảo rằng số tiền vay được chuyển đến đúng tài khoản khách hàng.
++ Automated Payment Authorization: Temenos Payment Suite, SWIFT, và RPA có thể tự động tạo và gửi yêu cầu giải ngân khoản vay qua hệ thống thanh toán của ngân hàng.
++ Tạo Báo Cáo và Theo Dõi Tiến Trình Giải Ngân bằng công cụ: Power BI, Tableau, QlikView...
+```
 - Ký hồ sơ tài liệu.
 
 - Đính kèm tài liệu đã scan vào hồ sơ cho vay.
