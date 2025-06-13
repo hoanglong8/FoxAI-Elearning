@@ -177,6 +177,7 @@ Hệ thống RPA có thể hỗ trợ Pre-scoring và đánh giá tín dụng b�
 + Actimize AML (NICE Actimize): Đây là công cụ phổ biến trong việc kiểm tra rửa tiền (AML), có khả năng phân tích hành vi tài chính và phát hiện các dấu hiệu khả nghi, như giao dịch bất thường, chuyển tiền giữa các tài khoản hoặc tổ chức đáng ngờ.
 + World-Check (Refinitiv): Đây là công cụ giúp kiểm tra các cá nhân hoặc tổ chức có liên quan đến các danh sách đen như tổ chức tội phạm, danh sách của chính phủ hoặc các tổ chức có liên quan đến rửa tiền.
 + Algorithmic Risk Scoring: Sử dụng thuật toán như logistic regression hoặc decision trees để đánh giá các yếu tố rủi ro, xác định khả năng khách hàng tham gia vào các hoạt động rửa tiền.
+
 - RPA tự động kiểm tra xem khách hàng có bị liệt kê trong danh sách đen nội bộ của ngân hàng hay không, như các khách hàng có lịch sử xấu về tín dụng, hoặc các khách hàng đã từng có các khoản vay không được thanh toán hoặc nợ xấu.
 + Custom Blacklist (Danh sách đen nội bộ): RPA có thể tích hợp với hệ thống Blacklists của ngân hàng, là nơi lưu trữ các cá nhân và tổ chức có vấn đề về tín dụng hoặc những khách hàng đã vi phạm các điều kiện của ngân hàng (số CMND, địa chỉ, số điện thoại, số tài khoản).
 + Decision Trees và Classification Models: Sử dụng các mô hình Decision Trees hoặc Random Forest để phân loại khách hàng vào các nhóm khác nhau, giúp hệ thống quyết định liệu khách hàng có nằm trong nhóm có rủi ro cao hay không dựa trên các yếu tố như lịch sử tín dụng, số lần nợ xấu, và mức độ tương tác trước đó với ngân hàng.
@@ -288,137 +289,143 @@ Sau khi hồ sơ vay được tạo trong hệ thống core banking, RPA sẽ t�
 Bài trình bày này được chia thành nhiều slide với mục đích giúp người tham gia hiểu rõ các vấn đề và giải pháp công nghệ, cũng như kết quả thực tế của việc ứng dụng RPA trong ngân hàng, sử dụng một số công cụ AI như [UiPath](https://www.uipath.com/), [Blue Prism](https://www.blueprism.com/), [Automation Anywhere](https://www.automationanywhere.com/), [Kofax](https://www.kofax.com/), [WorkFusion](https://www.workfusion.com/)...
 
 ### Slide 1: Tiêu đề và Giới thiệu
-Tiêu đề: Chuyển Đổi Số Trong Ngành Ngân Hàng: Ứng Dụng RPA Trong Quy Trình Khởi Tạo Khoản Vay
+- Tiêu đề: Chuyển Đổi Số Trong Ngành Ngân Hàng: Ứng Dụng RPA Trong Quy Trình Khởi Tạo Khoản Vay
 
-Giới thiệu ngắn gọn về mục tiêu bài học:
+- Giới thiệu ngắn gọn về mục tiêu bài học:
 
-Tại sao chuyển đổi số quan trọng trong ngành ngân hàng?
++ Tại sao chuyển đổi số quan trọng trong ngành ngân hàng?
 
-Cách RPA có thể tối ưu hóa quy trình khởi tạo khoản vay.
++ Cách RPA có thể tối ưu hóa quy trình khởi tạo khoản vay.
 
-### Slide 2: Thực Trạng (Pain Points) Của Ngân Hàng
-Vấn đề trong quy trình khởi tạo khoản vay truyền thống:
+### Slide 2: Giới thiệu về Chuyển Đổi Số trong Ngành Ngân Hàng
+- Khái niệm chuyển đổi số: Tích hợp công nghệ số vào tất cả các lĩnh vực trong ngân hàng.
 
-Thời gian xử lý lâu (từ 5 đến 7 ngày).
+- Lợi ích của chuyển đổi số: Tăng hiệu quả, giảm chi phí, nâng cao trải nghiệm khách hàng, cải thiện sự tuân thủ và khả năng cạnh tranh.
 
-Quy trình thủ công dẫn đến sai sót (đặc biệt trong việc nhập liệu và xác minh thông tin).
+### Slide 3: Pain Point của Ngành Ngân Hàng (Vấn Đề Đang Gặp Phải)
+- Quy trình thủ công, tốn thời gian: Quản lý hồ sơ khách hàng, nhập liệu thủ công, xử lý giấy tờ (thường từ 5 đến 7 ngày).
 
-Khối lượng công việc lớn và khó kiểm soát.
+- Khó khăn trong việc đảm bảo tính chính xác và tuân thủ: Các sai sót trong việc đánh giá tín dụng và kiểm tra thông tin khách hàng.
 
-Dễ gặp phải lỗi quyết định do thiếu dữ liệu hoặc phân tích không chính xác.
+- Trải nghiệm khách hàng không tối ưu: Quá trình vay vốn kéo dài và thiếu minh bạch => Khách hàng không hài lòng vì chờ đợi lâu.
 
-Hậu quả:
+- Chi phí vận hành cao: Chi phí liên quan đến nhân sự và tài liệu.
 
-Khách hàng không hài lòng vì chờ đợi lâu.
+### Slide 4: Quy Trình LOS – Khởi Tạo Khoản Vay
+- Bước 1: Tiếp nhận yêu cầu vay: Xác định nhu cầu vay của khách hàng.
 
-Quản lý quy trình kém, tốn kém chi phí.
+- Bước 2: Khởi tạo hồ sơ: Thu thập và nhập thông tin khách hàng.
 
-### Slide 3: Trình Tự Quy Trình Khởi Tạo Khoản Vay
-Các bước trong quy trình khởi tạo khoản vay truyền thống:
+- Bước 3: Xử lý hồ sơ: Đánh giá tín dụng và phân tích rủi ro.
 
-Thu thập và xác minh tài liệu: Nhân viên nhập liệu thông tin từ các tài liệu khách hàng.
+- Bước 4: Ra quyết định cấp vay: Đánh giá và ra quyết định vay.
 
-Phân tích và đánh giá tín dụng: Nhân viên đánh giá khả năng vay dựa trên lịch sử tín dụng và thu nhập.
+- Bước 5: Ký hợp đồng: Ký kết hợp đồng vay.
 
-Ra quyết định vay: Nhân viên ra quyết định cấp vay hoặc từ chối.
+- Bước 6: Giải ngân khoản vay: Chuyển tiền cho khách hàng.
 
-Giải ngân khoản vay: Giải ngân qua các bước thủ công.
+### Slide 5: Công Nghệ RPA (Robotic Process Automation)
+- Khái niệm RPA: Là công nghệ tự động hóa quy trình bằng phần mềm (bot).
 
-### Slide 4: Giới Thiệu về UiPath và RPA
-UiPath là công cụ RPA (Robotic Process Automation) mạnh mẽ giúp tự động hóa quy trình kinh doanh.
+- Lợi ích của RPA:
 
-Tính năng nổi bật của UiPath:
++ Giảm thiểu công việc thủ công
 
-OCR (Optical Character Recognition) để nhận diện và trích xuất thông tin từ tài liệu giấy.
++ Tăng năng suất và hiệu quả
 
-Bot tự động để thực hiện các tác vụ như nhập liệu, phân tích dữ liệu, và quyết định vay.
++ Đảm bảo chính xác và tuân thủ
 
-Tích hợp AI giúp cải thiện quá trình ra quyết định tín dụng nhanh chóng và chính xác hơn.
++ Cải thiện trải nghiệm khách hàng
 
-### Slide 5: Quy Trình Tự Động Hóa Với UiPath
-Bước 1: Thu thập thông tin tự động:
+### Slide 6: RPA Tích Hợp Trong FoxAI LOS – Hỗ Trợ Bước 1: Tiếp nhận yêu cầu vay:
 
-Sử dụng OCR của UiPath để quét và trích xuất thông tin từ các tài liệu như CMND, hợp đồng vay, bảng lương.
+- RPA tự động phân loại yêu cầu vay dựa trên thông tin đầu vào của khách hàng (chatbot, form trực tuyến).
 
-Bước 2: Xác minh thông tin khách hàng:
+- Tự động xác định sản phẩm vay phù hợp dựa trên thuật toán phân tích nhu cầu.
 
-Tự động xác minh các dữ liệu tài chính qua các hệ thống bên ngoài (ngân hàng, cơ quan tín dụng).
 
-Bước 3: Phân tích và tính toán tín dụng tự động:
+### Slide 7: RPA Tích Hợp Trong FoxAI LOS – Hỗ Trợ Bước 2: Khởi tạo hồ sơ:
 
-Sử dụng các mô hình AI tích hợp để đánh giá khả năng tín dụng của khách hàng.
+- RPA sử dụng OCR (Optical Character Recognition) để quét và tự động nhập thông tin từ tài liệu giấy vào hệ thống.
 
-Bước 4: Ra quyết định vay tự động:
+- Xác minh thông tin khách hàng tự động từ các cơ sở dữ liệu.
 
-Dựa trên dữ liệu phân tích, bot tự động đưa ra quyết định cấp vay hoặc từ chối.
 
-Bước 5: Giải ngân khoản vay tự động:
+### Slide 8: RPA Tích Hợp Trong FoxAI LOS – Hỗ Trợ Bước 3: Xử lý hồ sơ:
 
-Sau khi quyết định vay được phê duyệt, bot tự động giải ngân khoản vay vào tài khoản của khách hàng.
+- RPA thực hiện pre-scoring và scoring tự động.
 
-### Slide 6: Các Chức Năng Mà UiPath Thực Hiện
-Nhập liệu tự động: Bot sử dụng OCR để quét và trích xuất dữ liệu từ các tài liệu giấy.
+- Phân tích rủi ro từ dữ liệu tài chính của khách hàng để hỗ trợ quyết định vay.
 
-Xác minh thông tin khách hàng: Bot tự động liên kết với các nguồn dữ liệu để xác minh thông tin tín dụng.
 
-Tự động tính toán tín dụng và phân tích rủi ro: Các công cụ AI phân tích điểm tín dụng và khả năng trả nợ.
+### Slide 9: RPA Tích Hợp Trong FoxAI LOS – Hỗ Trợ Bước 4: Ra quyết định cấp vay:
 
-Ra quyết định vay tự động: Quyết định về khoản vay được đưa ra nhanh chóng mà không cần sự can thiệp của nhân viên.
+- RPA đưa ra quyết định tự động hoặc hỗ trợ nhân viên ra quyết định dựa trên các quy tắc được lập trình sẵn và dữ liệu phân tích.
 
-Giải ngân tự động: Tự động thực hiện giải ngân và cập nhật thông tin giao dịch.
 
-### Slide 7: Kết Quả Đo Lường và Tính Hiệu Quả
-Giảm thời gian xử lý đơn vay:
+### Slide 10: RPA Tích Hợp Trong FoxAI LOS – Hỗ Trợ Bước 5: Ký hợp đồng:
 
-Thời gian xử lý giảm từ 5-7 ngày xuống còn 1-2 ngày.
+- RPA tự động tạo và lưu trữ các hợp đồng vay.
 
-Giảm 60-70% thời gian.
+- Tự động thông báo cho khách hàng qua email hoặc SMS.
 
-Tăng tỷ lệ quyết định tự động:
 
-80% quyết định vay được xử lý tự động, giảm thiểu sự can thiệp của nhân viên.
+### Slide 11: RPA Tích Hợp Trong FoxAI LOS – Hỗ Trợ Bước 6: Giải ngân khoản vay:
 
-Giảm thiểu sai sót:
+- RPA tự động tạo lệnh giải ngân và thực hiện thanh toán.
 
-Tỷ lệ sai sót giảm từ 10-15% xuống chỉ còn 1-2%.
+### Slide 12: Kết Quả Đo Lường và Tính Hiệu Quả
+- Giảm thời gian xử lý đơn vay:
 
-Tăng cường sự hài lòng của khách hàng:
++ Thời gian xử lý giảm từ 5-7 ngày xuống còn 1-2 ngày.
 
-40% sự hài lòng của khách hàng tăng lên nhờ quy trình nhanh chóng và chính xác.
++ Giảm 60-70% thời gian.
 
-Tiết kiệm chi phí nhân sự:
+- Tăng tỷ lệ quyết định tự động:
 
-Ngân hàng tiết kiệm được 30% chi phí nhân sự trong quy trình xử lý vay.
++ 80% quyết định vay được xử lý tự động, giảm thiểu sự can thiệp của nhân viên.
 
-### Slide 8: Lợi Ích Tổng Thể
-Tăng cường hiệu quả công việc:
+- Giảm thiểu sai sót:
 
-Tự động hóa giúp giảm tải công việc cho nhân viên và cải thiện năng suất.
++ Tỷ lệ sai sót giảm từ 10-15% xuống chỉ còn 1-2%.
 
-Cải thiện chính xác và tính minh bạch:
+- Tăng cường sự hài lòng của khách hàng:
 
-Giảm thiểu sai sót trong việc nhập liệu và ra quyết định.
++ 40% sự hài lòng của khách hàng tăng lên nhờ quy trình nhanh chóng và chính xác.
 
-Tối ưu hóa trải nghiệm khách hàng:
+- Tiết kiệm chi phí nhân sự:
 
-Khách hàng nhận được quyết định nhanh chóng và chính xác.
++ Ngân hàng tiết kiệm được 30% chi phí nhân sự trong quy trình xử lý vay.
 
-Tiết kiệm chi phí:
+### Slide 13: Lợi Ích Tổng Thể của RPA Trong Ngành Ngân Hàng
+Tăng hiệu quả công việc: Tiết kiệm thời gian và chi phí.
 
-Ngân hàng giảm thiểu chi phí vận hành và tăng cường hiệu quả quy trình.
+Cải thiện trải nghiệm khách hàng: Quy trình nhanh chóng, chính xác và minh bạch.
 
-### Slide 9: Tương Lai Của Chuyển Đổi Số Trong Ngành Ngân Hàng
-Ứng dụng RPA và AI trong tất cả các bước của quy trình LOS.
+Tối ưu hóa quy trình và nâng cao năng suất: Tự động hóa các bước trong quy trình vay vốn.
 
-Tự động hóa toàn bộ chuỗi quy trình cho vay.
+Đảm bảo tuân thủ và giảm rủi ro: Giảm thiểu sai sót và tối ưu hóa tuân thủ quy định pháp lý.
 
-Mở rộng các ứng dụng AI để nâng cao khả năng phân tích và ra quyết định.
+Nâng cao khả năng cạnh tranh: Các ngân hàng có thể cung cấp dịch vụ nhanh chóng và hiệu quả hơn.
 
-### Slide 10: Kết Luận và Câu Hỏi
-Tóm tắt các điểm chính: UiPath và RPA đã giúp ngân hàng tăng cường hiệu quả, giảm chi phí và nâng cao trải nghiệm khách hàng trong quy trình khởi tạo khoản vay.
+### Slide 14: Tương Lai Của Chuyển Đổi Số Trong Ngành Ngân Hàng
+- Phát triển các công nghệ AI và RPA trong tất cả các quy trình ngân hàng.
 
-Mở ra cơ hội cho các ứng dụng AI khác trong ngành ngân hàng, từ tư vấn vay đến giải ngân khoản vay.
+- Tăng cường tự động hóa và tích hợp dữ liệu giữa các hệ thống ngân hàng.
 
-### Slide 11: Câu Hỏi và Thảo Luận
-Mời các học viên đặt câu hỏi và thảo luận về cách triển khai RPA trong quy trình ngân hàng tại các tổ chức của mình.
+- Sự đổi mới trong sản phẩm dịch vụ: Các sản phẩm tín dụng, cho vay được tùy chỉnh dựa trên dữ liệu khách hàng.
+
+### Slide 15: Kết Luận
+- Tầm quan trọng của chuyển đổi số trong ngân hàng: Là chìa khóa để nâng cao hiệu quả và khả năng cạnh tranh.
+
+- RPA là công nghệ quan trọng giúp ngân hàng tự động hóa quy trình, giảm thiểu sai sót và nâng cao trải nghiệm khách hàng.
+
+- Tương lai sáng sủa cho ngành ngân hàng với ứng dụng công nghệ cao và tự động hóa trong mọi quy trình.
+
+### Slide 16: Hỏi Đáp và Thảo Luận
+- Mở rộng thảo luận: Các câu hỏi từ khán giả về việc áp dụng công nghệ RPA vào quy trình LOS tại ngân hàng.
+
+- Chia sẻ kinh nghiệm: Các ví dụ thực tế và triển khai thành công công nghệ RPA trong các ngân hàng khác.
+
+---
 
