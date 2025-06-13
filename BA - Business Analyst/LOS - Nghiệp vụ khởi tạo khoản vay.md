@@ -79,7 +79,7 @@ Chuyển đổi số mang lại nhiều cải tiến cho quy trình khởi tạo
 
 ---
 # Phần 2 - Ứng dụng công nghệ RPA (Robotic Process Automation) trong quy trình khởi tạo khoản vay của FoxAI LOS
-## 1.FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn bên vay" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
+## 1.FoxAI LOS hỗ trợ cán bộ ngân hàng "Tư vấn cho khách hàng" trong bước "1.Tiếp nhận yêu cầu vay" như sau:
 
 - **Xác định nhu cầu của khách hàng:** Hiểu rõ yêu cầu vay của khách hàng để đưa ra giải pháp phù hợp.
 ```
@@ -129,20 +129,46 @@ Ví dụ, nội dung văn bản có thể bao gồm các thông tin như số ti
 - Cấu trúc của đề nghị vay sẽ được tùy chỉnh theo yêu cầu của ngân hàng và ngân hàng có thể cài đặt các mẫu văn bản chuẩn cho các loại vay khác nhau (vay mua nhà, vay tiêu dùng, v.v.).
 Sau khi soạn thảo xong văn bản đề nghị vay, hệ thống có thể tự động gởi đi để khách hàng xác nhận hoặc ký hợp đồng vay, nếu ngân hàng yêu cầu chữ ký điện tử. Hệ thống có thể tích hợp với các công cụ ký hợp đồng điện tử như DocuSign hoặc Adobe Sign.
 ```
-- Đánh giá và đưa ra quyết định của khách hàng: Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
-
+- **Đánh giá và đưa ra quyết định của khách hàng:** Đánh giá các yếu tố liên quan và đưa ra quyết định về khoản vay.
+```
+Hệ thống RPA có thể sử dụng quy tắc logic, mô hình học máy, và hệ thống quyết định tự động để đánh giá và đưa ra quyết định vay cho khách hàng.
+Các công cụ và thuật toán này giúp tự động hóa quy trình ra quyết định, giảm thiểu sai sót, tiết kiệm thời gian và đảm bảo rằng khách hàng nhận được quyết định vay chính xác và công bằng.
+```
 ---
 ## 2.FoxAI LOS hỗ trợ cán bộ ngân hàng "Khởi tạo hồ sơ" trong bước "2.Xác minh thông tin khách hàng" như sau:
 
-- Nhận dạng khách hàng: Xác định thông tin khách hàng để tiến hành khởi tạo hồ sơ vay.
+- **Nhập thông tin chi tiết về khách hàng:** Nhập các thông tin cụ thể và chi tiết của khách hàng vào hệ thống.
+```
+Khách hàng nộp các tài liệu hoặc chụp ảnh (CMND, hộ khẩu, giấy xác nhận thu nhập, v.v.).
+Sử Dụng Công Nghệ Nhận Dạng Văn Bản (OCR) như FlexiCapture OCR, Kofax, Tesseract OCR...
+Hệ thống OCR quét tài liệu và trích xuất các thông tin quan trọng như họ tên, số CMND, ngày cấp, địa chỉ, thông tin liên lạc, v.v.
+Sau khi trích xuất, RPA tự động điền các thông tin vào hệ thống quản lý khách hàng của ngân hàng, giúp chuẩn bị hồ sơ vay.
+```
+- **Nhận dạng tài liệu:** Xác định và xử lý các tài liệu cần thiết cho hồ sơ vay.
 
-- Tập hợp trước các thông tin hồ sơ với dữ liệu từ máy tính: Thu thập dữ liệu cần thiết từ hệ thống và máy tính để chuẩn bị hồ sơ vay.
+- **Tập hợp trước các thông tin hồ sơ với dữ liệu từ máy tính:** Thu thập dữ liệu cần thiết từ hệ thống và máy tính để chuẩn bị hồ sơ vay.
 
-- Nhập thông tin chi tiết về khách hàng: Nhập các thông tin cụ thể và chi tiết của khách hàng vào hệ thống.
+- **Nhận dạng khách hàng:** Xác định thông tin khách hàng trước khi tiến hành khởi tạo hồ sơ vay.
+```
+- Chu trình thực hiện:
++ Thu thập: 
++ Xử lý so sánh:
++ Xác minh: Nếu tất cả thông tin trùng khớp với dữ liệu trong hệ thống, hệ thống RPA sẽ tiếp tục bước tiếp theo trong quy trình khởi tạo hồ sơ vay. Nếu có sự không khớp, hệ thống sẽ yêu cầu xác minh thêm từ khách hàng.
 
-- Nhận dạng tài liệu: Xác định và xử lý các tài liệu cần thiết cho hồ sơ vay.
+- Thứ hai là Xác Minh Danh Tính Khách Hàng Qua Cơ Sở Dữ Liệu hoặc kết nối tới các API tài chính như TrueLayer, Experian, FICO... theo chu trình:
++ Trích xuất thông tin khách hàng: Sau khi RPA quét tài liệu giấy, hệ thống sẽ tự động thu thập và xử lý các thông tin liên quan đến khách hàng.
++ Kết nối API với các nguồn dữ liệu: Hệ thống RPA sẽ kết nối với các API tài chính như TrueLayer, Experian, FICO để xác minh danh tính khách hàng, so sánh các thông tin đã nhập với dữ liệu thực tế.
 
-- Đính kèm bản sao điện tử của tài liệu: Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
+
+- Thứ ba là Xác Minh Thông Tin Khách Hàng Qua Công Nghệ Nhận Diện Khuôn Mặt (Facial Recognition) bởi các công cụ Amazon Rekognition, Face++, Microsoft Azure Face API... theo chu trình:
++ Khách hàng chụp ảnh: Khách hàng sẽ sử dụng điện thoại hoặc máy tính để chụp ảnh khuôn mặt của mình.
++ So sánh ảnh: Hệ thống RPA sẽ sử dụng công cụ nhận diện khuôn mặt để so sánh hình ảnh này với ảnh trong tài liệu giấy của khách hàng (ví dụ: CMND hoặc hộ chiếu).
++ Xác minh thành công: Nếu khuôn mặt khớp với ảnh trong cơ sở dữ liệu, RPA sẽ tiếp tục xác minh thông tin và điền vào hồ sơ vay của khách hàng. Nếu không khớp, hệ thống sẽ yêu cầu khách hàng chụp lại ảnh hoặc cung cấp thêm thông tin.
+
+- Thứ 4 là Sử Dụng Công Cụ Kiểm Tra Danh Tính Từ Các Nguồn Thứ Ba như Jumio, Onfido...
+```
+
+- **Đính kèm bản sao điện tử của tài liệu:** Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
 
 ---
 ## 3.FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
