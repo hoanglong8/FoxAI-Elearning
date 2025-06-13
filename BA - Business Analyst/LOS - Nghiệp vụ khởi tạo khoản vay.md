@@ -147,25 +147,22 @@ Sau khi trích xuất, RPA tự động điền các thông tin vào hệ thốn
 - **Nhận dạng tài liệu:** Xác định và xử lý các tài liệu cần thiết cho hồ sơ vay.
 
 - **Tập hợp trước các thông tin hồ sơ với dữ liệu từ máy tính:** Thu thập dữ liệu cần thiết từ hệ thống và máy tính để chuẩn bị hồ sơ vay.
-
+```
+- Kết nối hệ thống: RPA sẽ kết nối với các hệ thống ngân hàng như CRM hoặc LOS để thu thập các thông tin liên quan đến khách hàng, bao gồm các thông tin về khoản vay trước đó, tài sản thế chấp (nếu có), thu nhập, lịch sử tín dụng, v.v.
+- Trích xuất dữ liệu: RPA sẽ tự động trích xuất các dữ liệu cần thiết từ các hệ thống ngân hàng (CRM, LOS) và chuẩn bị thông tin cho bước tiếp theo trong quy trình vay.
+- Tập hợp hồ sơ vay: Sau khi dữ liệu được thu thập, RPA sẽ tự động điền thông tin vào các mẫu hồ sơ vay trong hệ thống ngân hàng, tạo ra một hồ sơ vay đầy đủ và chính xác.
+```
 - **Nhận dạng khách hàng:** Xác định thông tin khách hàng trước khi tiến hành khởi tạo hồ sơ vay.
 ```
-- Chu trình thực hiện:
-+ Thu thập: 
-+ Xử lý so sánh:
-+ Xác minh: Nếu tất cả thông tin trùng khớp với dữ liệu trong hệ thống, hệ thống RPA sẽ tiếp tục bước tiếp theo trong quy trình khởi tạo hồ sơ vay. Nếu có sự không khớp, hệ thống sẽ yêu cầu xác minh thêm từ khách hàng.
-
-- Thứ hai là Xác Minh Danh Tính Khách Hàng Qua Cơ Sở Dữ Liệu hoặc kết nối tới các API tài chính như TrueLayer, Experian, FICO... theo chu trình:
+- Xác Minh Danh Tính Khách Hàng Qua Cơ Sở Dữ Liệu hoặc kết nối tới các API tài chính như TrueLayer, Experian, FICO...
 + Trích xuất thông tin khách hàng: Sau khi RPA quét tài liệu giấy, hệ thống sẽ tự động thu thập và xử lý các thông tin liên quan đến khách hàng.
 + Kết nối API với các nguồn dữ liệu: Hệ thống RPA sẽ kết nối với các API tài chính như TrueLayer, Experian, FICO để xác minh danh tính khách hàng, so sánh các thông tin đã nhập với dữ liệu thực tế.
++ Xác minh: Nếu tất cả thông tin trùng khớp với dữ liệu trong hệ thống, hệ thống RPA sẽ tiếp tục bước tiếp theo trong quy trình khởi tạo hồ sơ vay. Nếu có sự không khớp, hệ thống sẽ yêu cầu xác minh thêm từ khách hàng.
 
-
-- Thứ ba là Xác Minh Thông Tin Khách Hàng Qua Công Nghệ Nhận Diện Khuôn Mặt (Facial Recognition) bởi các công cụ Amazon Rekognition, Face++, Microsoft Azure Face API... theo chu trình:
+- Xác Minh Thông Tin Khách Hàng Qua Công Nghệ Nhận Diện Khuôn Mặt (Facial Recognition) bởi các công cụ Amazon Rekognition, Face++, Microsoft Azure Face API...
 + Khách hàng chụp ảnh: Khách hàng sẽ sử dụng điện thoại hoặc máy tính để chụp ảnh khuôn mặt của mình.
 + So sánh ảnh: Hệ thống RPA sẽ sử dụng công cụ nhận diện khuôn mặt để so sánh hình ảnh này với ảnh trong tài liệu giấy của khách hàng (ví dụ: CMND hoặc hộ chiếu).
 + Xác minh thành công: Nếu khuôn mặt khớp với ảnh trong cơ sở dữ liệu, RPA sẽ tiếp tục xác minh thông tin và điền vào hồ sơ vay của khách hàng. Nếu không khớp, hệ thống sẽ yêu cầu khách hàng chụp lại ảnh hoặc cung cấp thêm thông tin.
-
-- Thứ 4 là Sử Dụng Công Cụ Kiểm Tra Danh Tính Từ Các Nguồn Thứ Ba như Jumio, Onfido...
 ```
 
 - **Đính kèm bản sao điện tử của tài liệu:** Đính kèm bản sao điện tử của các tài liệu đã nhận vào hồ sơ vay.
@@ -174,9 +171,31 @@ Sau khi trích xuất, RPA tự động điền các thông tin vào hệ thốn
 ## 3.FoxAI LOS hỗ trợ cán bộ ngân hàng "Xử lý hồ sơ" trong bước "3.Đánh giá tín dụng" như sau:
 
 - Pre-scoring: Kiểm tra tự động để tuân thủ các yêu cầu của Ngân hàng, kiểm soát các yếu tố sử dụng và danh sách theo dõi, bao gồm kiểm tra AML (chống rửa tiền) và danh sách đen nội bộ.
-
+```
+Hệ thống RPA có thể hỗ trợ Pre-scoring và đánh giá tín dụng bằng cách sử dụng các công cụ kiểm tra AML, kiểm tra danh sách đen, và mô hình phân tích rủi ro như Decision Trees, FICO Score, và Risk Scoring Models.
+- RPA sử dụng các công cụ và thuật toán chống rửa tiền để kiểm tra các yếu tố liên quan đến rửa tiền trong quy trình Pre-scoring, bao gồm việc kiểm tra xem khách hàng có liên quan đến các tổ chức hoặc cá nhân bị liệt kê trong danh sách đen của ngân hàng hoặc các tổ chức tài chính quốc tế hay không thông qua:
++ Actimize AML (NICE Actimize): Đây là công cụ phổ biến trong việc kiểm tra rửa tiền (AML), có khả năng phân tích hành vi tài chính và phát hiện các dấu hiệu khả nghi, như giao dịch bất thường, chuyển tiền giữa các tài khoản hoặc tổ chức đáng ngờ.
++ World-Check (Refinitiv): Đây là công cụ giúp kiểm tra các cá nhân hoặc tổ chức có liên quan đến các danh sách đen như tổ chức tội phạm, danh sách của chính phủ hoặc các tổ chức có liên quan đến rửa tiền.
++ Algorithmic Risk Scoring: Sử dụng thuật toán như logistic regression hoặc decision trees để đánh giá các yếu tố rủi ro, xác định khả năng khách hàng tham gia vào các hoạt động rửa tiền.
+- RPA tự động kiểm tra xem khách hàng có bị liệt kê trong danh sách đen nội bộ của ngân hàng hay không, như các khách hàng có lịch sử xấu về tín dụng, hoặc các khách hàng đã từng có các khoản vay không được thanh toán hoặc nợ xấu.
++ Custom Blacklist (Danh sách đen nội bộ): RPA có thể tích hợp với hệ thống Blacklists của ngân hàng, là nơi lưu trữ các cá nhân và tổ chức có vấn đề về tín dụng hoặc những khách hàng đã vi phạm các điều kiện của ngân hàng (số CMND, địa chỉ, số điện thoại, số tài khoản).
++ Decision Trees và Classification Models: Sử dụng các mô hình Decision Trees hoặc Random Forest để phân loại khách hàng vào các nhóm khác nhau, giúp hệ thống quyết định liệu khách hàng có nằm trong nhóm có rủi ro cao hay không dựa trên các yếu tố như lịch sử tín dụng, số lần nợ xấu, và mức độ tương tác trước đó với ngân hàng.
+```
 - Scoring: Đánh giá điểm tín dụng của khách hàng.
+```
+Hệ thống RPA có thể sử dụng các công cụ tín dụng (FICO, VantageScore), mô hình học máy (như Logistic Regression, Random Forest) và các công cụ phân tích rủi ro như SAS Credit Scoring, Oracle Credit Scoring để đánh giá điểm tín dụng của khách hàng trong quy trình scoring:
+- Sử Dụng Các Thuật Toán Tính Điểm Tín Dụng (Credit Scoring Models):
++ FICO Score - công cụ tính điểm tín dụng phổ biến nhất, được sử dụng rộng rãi trong ngành ngân hàng và tài chính. Điểm tín dụng FICO được tính toán dựa trên 5 yếu tố chính: Lịch sử thanh toán (35%), Số dư nợ (30%), Lịch sử tín dụng (15%), Các loại tín dụng (10%), Mới mở tài khoản tín dụng (10%).
++ VantageScore là một hệ thống tính điểm tín dụng khác, tương tự như FICO, nhưng được phát triển bởi ba công ty tín dụng lớn là Experian, TransUnion, và Equifax.
++ Hệ thống RPA sử dụng các mô hình học máy (Machine Learning Models) như Random Forest, Logistic Regression, và XGBoost để tính toán điểm tín dụng dựa trên nhiều yếu tố tài chính.
 
+- Tự Động Hóa Quy Trình Tính Điểm Tín Dụng:
++ Sử dụng các API tín dụng từ các công ty như Experian, FICO, hoặc TransUnion để thu thập và xử lý các dữ liệu tín dụng từ khách hàng.
+
+- Tích Hợp Các Công Cụ Phân Tích Rủi Ro:
++ SAS Credit Scoring: SAS cung cấp các công cụ để tính toán điểm tín dụng dựa trên các yếu tố tài chính của khách hàng.
++ Oracle Credit Scoring: Công cụ này giúp phân tích dữ liệu tín dụng và tính toán điểm tín dụng dựa trên các yếu tố như lịch sử tín dụng, mức độ nợ, thu nhập, v.v.
+```
 - Tính toán tự động các thang số khoản vay: Tính toán tự động các thông số liên quan đến khoản vay, như mức độ tín dụng, khả năng trả nợ, v.v.
 
 ---
