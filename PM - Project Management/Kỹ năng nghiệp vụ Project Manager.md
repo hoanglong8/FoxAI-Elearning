@@ -178,4 +178,9 @@ SDLC Models
 | KR5.3      | Điểm hài lòng từ stakeholder (internal/external) ≥ **8/10**                        |
 | KR5.4      | Có **bản Release Plan và Rollback Plan đầy đủ** cho tất cả các bản phát hành chính |
 
+🧩 Gợi ý công cụ theo dõi OKRs cho PM tại FoxAI:
+- Trello / Jira Dashboards: Track tiến độ OKRs theo từng team
+- Notion hoặc Google Sheet: Theo dõi tiến độ từng KR
+- Retrospective Docs: Gắn với KR của các Objective cải tiến
+
 ---
