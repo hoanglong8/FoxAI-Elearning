@@ -119,3 +119,84 @@
 - Áp dụng cho chu kỳ đánh giá quý (3 tháng)
 - Có thể gắn với Jira/Notion/Google Sheet để theo dõi tiến độ
 - Dễ mở rộng thành career roadmap hoặc làm baseline đánh giá thăng cấp từ Fresher → Junior → Middle → Senior
+
+---
+# 📊 Vai trò Data Analyst tại FoxAI – Chuẩn nghiệp vụ theo vòng đời phần mềm
+## 🎯 Mục tiêu
+- Biến dữ liệu thành insight hỗ trợ quyết định sản phẩm, kỹ thuật và kinh doanh
+- Giao tiếp chặt chẽ với PO/PM để khai thác yêu cầu và phân tích hành vi người dùng, hiệu quả tính năng
+- Trực tiếp xây dựng dashboard, báo cáo trực quan, kiểm thử giả thuyết, tìm kiếm vấn đề trong sản phẩm/dịch vụ
+- Góp phần định hướng phát triển sản phẩm bằng các chỉ số thực chứng
+
+## 📚 Phương pháp luận (Lý thuyết hiện tại cần nắm)
+| Chủ đề                     | Nội dung cần nắm vững                                          |
+| -------------------------- | -------------------------------------------------------------- |
+| **Product Analytics**      | Funnel, Retention, Cohort, Activation, Event-based model       |
+| **A/B Testing**            | Hypothesis testing, Statistical significance, Power analysis   |
+| **Exploratory Analysis**   | EDA, dữ liệu bị lệch, missing, correlation, causation          |
+| **Business Metrics**       | KPI, CAC, LTV, Churn Rate, Conversion Rate                     |
+| **Decision Science**       | Causal Inference, Experiment Design, Driver Tree               |
+| **Storytelling with Data** | Khả năng chọn biểu đồ, diễn giải và trình bày dữ liệu hiệu quả |
+
+## 🧠 Tư duy (Mindset)
+| Mindset                   | Diễn giải cụ thể                                                       |
+| ------------------------- | ---------------------------------------------------------------------- |
+| **Problem-first mindset** | Luôn hiểu kỹ bài toán trước khi bắt đầu phân tích                      |
+| **Business-aware**        | Đưa ra insight có giá trị thực tiễn, không sa đà vào kỹ thuật vô nghĩa |
+| **Outcome-driven**        | Ưu tiên dữ liệu phục vụ quyết định sản phẩm/chức năng cụ thể           |
+| **Tư duy phản biện**      | Biết đặt câu hỏi ngược chiều: Tại sao số liệu như vậy? Có sai không?   |
+| **Tự động hóa**           | Đưa các phân tích thường xuyên về dashboard, hạn chế làm tay lại       |
+
+## 🧰 Công cụ sử dụng (Toolset)
+| Nhóm công cụ          | Công cụ thường dùng tại FoxAI hoặc tương đương               |
+| --------------------- | ------------------------------------------------------------ |
+| **Truy vấn dữ liệu**  | PostgreSQL, BigQuery, Snowflake                              |
+| **Phân tích**         | Python (Pandas, Numpy, Matplotlib, Seaborn), Excel nâng cao  |
+| **Visualization**     | Power BI, Tableau, Metabase, Google Looker Studio            |
+| **A/B testing**       | Optimizely, in-house tool, Python/Excel + kiểm định thống kê |
+| **Quản lý công việc** | Jira, Notion, Git (đối với notebook & dashboard versioning)  |
+
+## 🛠 Kỹ năng cần có (Skillset)
+### 📌 Kỹ năng cứng
+- Thành thạo viết SQL phân tích: JOIN, CTE, subquery, window functions
+- Kỹ năng xử lý dữ liệu với Excel và/hoặc Python (Pandas)
+- Biết sử dụng biểu đồ phù hợp cho từng loại insight (Bar, Heatmap, Cohort, Funnel, TreeMap…)
+- Thiết lập KPI & report tracking sản phẩm định kỳ
+- Đọc hiểu dữ liệu từ mô hình star/snowflake schema
+- Biết thiết kế & phân tích A/B Test (tối thiểu T-Test, chi-squared, z-test)
+
+### 💬 Kỹ năng mềm
+- Giao tiếp với PO/PM để clarify bài toán trước khi phân tích
+- Giải thích dữ liệu cho người không chuyên (PO/CEO/Stakeholder)
+- Viết insight logic, ngắn gọn và actionable
+- Trình bày qua dashboard/storytelling hiệu quả
+
+## 📥 Thông tin đầu vào cần có (Tiêu chuẩn)
+| Thành phần đầu vào                   | Vai trò khi phân tích                                          |
+| ------------------------------------ | -------------------------------------------------------------- |
+| Event log hoặc tracking spec         | Biết được hành vi nào đang được ghi lại, sự kiện nào có sẵn    |
+| Schema database + mô tả bảng         | Hiểu đúng cột dữ liệu, đơn vị, loại dữ liệu                    |
+| Yêu cầu phân tích (Analysis Request) | Hiểu mục tiêu phân tích là gì (AI model, tính năng, marketing) |
+| Các mốc thời gian sản phẩm           | Biết phiên bản, campaign nào đang chạy trong mỗi giai đoạn     |
+| Thông tin business liên quan         | Biết nội dung chương trình, mục tiêu kinh doanh                |
+
+## 📤 Kết quả đầu ra (Format)
+| Đầu ra                | Mô tả                                                      |
+| --------------------- | ---------------------------------------------------------- |
+| 📊 Report/Insight     | File `.md`, `.pdf`, hoặc slide trình bày kết quả phân tích |
+| 📈 Dashboard          | Trực quan hóa dữ liệu phục vụ PO/CEO/Marketing/Tech        |
+| 📍 Decision Log       | Đề xuất hành động (next step) từ kết quả phân tích         |
+| 📂 Notebook phân tích | Script hoặc file `.ipynb` (đẩy Git hoặc lưu Google Drive)  |
+| 🔁 Review document    | Log chi tiết các lần phân tích lặp (với kết quả khác nhau) |
+
+## 🔄 Giai đoạn áp dụng theo SDLC
+| Giai đoạn             | Vai trò Data Analyst                                          |
+| --------------------- | ------------------------------------------------------------- |
+| **Idea/Initiation**   | Phân tích hành vi user, đề xuất tính năng/segment/kpi mới     |
+| **Requirement**       | Hỗ trợ định nghĩa metric, xác định tracking cần thiết         |
+| **Development**       | Viết query test hành vi, kiểm thử dữ liệu đầu ra              |
+| **Testing/QA**        | So sánh dữ liệu tracking với hành vi thực tế                  |
+| **Release**           | Theo dõi chỉ số post-release, đo lường impact tính năng       |
+| **Operation/Improve** | Làm báo cáo định kỳ, phân tích root cause khi chỉ số tụt giảm |
+
+---
