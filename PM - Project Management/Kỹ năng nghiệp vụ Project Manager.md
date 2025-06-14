@@ -137,3 +137,45 @@ SDLC Models
 ```
 
 ---
+# 🧭 OKRs dành cho Project Manager – FoxAI
+## ✅ Objective 1: Đảm bảo dự án được quản lý hiệu quả, đúng tiến độ và đúng phạm vi
+| Key Result | Chỉ số đo lường cụ thể                                                                       |
+| ---------- | -------------------------------------------------------------------------------------------- |
+| KR1.1      | 100% dự án có **Project Plan** được duyệt và truyền thông đầy đủ trước khi kick-off          |
+| KR1.2      | Tối thiểu **90% milestone đúng hạn** theo timeline đã cam kết                                |
+| KR1.3      | Tối thiểu **95% task được cập nhật trạng thái đúng thực tế trong Jira/Trello**               |
+| KR1.4      | Tối đa **5% số lượng yêu cầu vượt scope ban đầu mà không được phê duyệt qua Change Request** |
+
+## ✅ Objective 2: Tăng cường giao tiếp, minh bạch và phối hợp đa chức năng
+| Key Result | Chỉ số đo lường cụ thể                                                               |
+| ---------- | ------------------------------------------------------------------------------------ |
+| KR2.1      | Tổ chức **100% Daily Standup, Sprint Review và Retro đúng lịch**                     |
+| KR2.2      | Có ít nhất **1 bản tổng hợp tiến độ và rủi ro gửi Stakeholders/tuần**                |
+| KR2.3      | Đạt **điểm trung bình ≥ 8/10** trong khảo sát nội bộ về “PM Communication & Clarity” |
+| KR2.4      | 100% Dev/QA/PO đều hiểu rõ mục tiêu Sprint trước khi bắt đầu (theo khảo sát ngắn)    |
+
+## ✅ Objective 3: Chủ động quản trị rủi ro và tối ưu nguồn lực dự án
+| Key Result | Chỉ số đo lường cụ thể                                                                               |
+| ---------- | ---------------------------------------------------------------------------------------------------- |
+| KR3.1      | Thiết lập **bản đồ rủi ro (Risk Register)** cho 100% dự án có độ phức tạp trung bình trở lên         |
+| KR3.2      | Phát hiện và xử lý ít nhất **80% rủi ro trước khi xảy ra (preventive)**                              |
+| KR3.3      | Đạt tỷ lệ **tận dụng nguồn lực (resource utilization) ≥ 85%** mà không quá tải                       |
+| KR3.4      | Có **tối thiểu 1 phiên retrospective phân tích bài học dự án (Lessons Learned)** sau mỗi release lớn |
+
+## ✅ Objective 4: Nâng cao hiệu suất thực thi & cải tiến liên tục trong team
+| Key Result | Chỉ số đo lường cụ thể                                                              |
+| ---------- | ----------------------------------------------------------------------------------- |
+| KR4.1      | Tỷ lệ story point hoàn thành / plan ≥ **90%** trong ít nhất **3 sprint liên tiếp**  |
+| KR4.2      | Có ít nhất **2 cải tiến quy trình được ghi nhận và áp dụng/thử nghiệm mỗi quý**     |
+| KR4.3      | Đạt **chỉ số Sprint Predictability ≥ 80%**                                          |
+| KR4.4      | Có ít nhất **1 đề xuất cải tiến quy trình được áp dụng ở cấp team/project** mỗi quý |
+
+## ✅ Objective 5: Đảm bảo chất lượng sản phẩm và sự hài lòng của khách hàng nội bộ/ngoài
+| Key Result | Chỉ số đo lường cụ thể                                                             |
+| ---------- | ---------------------------------------------------------------------------------- |
+| KR5.1      | Tỷ lệ bug blocker sau release ≤ **2%** trên tổng số issue phát sinh                |
+| KR5.2      | Tối thiểu **1 buổi UAT (User Acceptance Test) chính thức** trước mỗi bản phát hành |
+| KR5.3      | Điểm hài lòng từ stakeholder (internal/external) ≥ **8/10**                        |
+| KR5.4      | Có **bản Release Plan và Rollback Plan đầy đủ** cho tất cả các bản phát hành chính |
+
+---
