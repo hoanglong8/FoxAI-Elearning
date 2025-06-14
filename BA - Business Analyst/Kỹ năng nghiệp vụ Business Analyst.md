@@ -1,3 +1,80 @@
+# 🎯 Yêu cầu kỹ năng và nghiệp vụ đối với Business Analyst tại FoxAI
+
+## 🎯 Mục tiêu
+- Là cầu nối giữa business (nghiệp vụ) và development team (kỹ thuật)
+- Xác định và mô tả chính xác vấn đề, yêu cầu và kỳ vọng của người dùng cuối
+- Chuyển đổi yêu cầu nghiệp vụ thành tài liệu rõ ràng, có thể kiểm thử và phát triển
+- Góp phần đảm bảo sản phẩm thỏa mãn mục tiêu kinh doanh và dễ triển khai thực tế
+
+## 📚 Phương pháp luận (Lý thuyết hiện tại cần nắm)
+| Giai đoạn SDLC (Software Development Life Cycle) | Phương pháp / Framework quan trọng                    |
+| ----------------------------- | ----------------------------------------------------- |
+| Phân tích yêu cầu             | BABOK, UML, BPMN, Event Storming                      |
+| Quản lý yêu cầu               | MoSCoW Prioritization, Kano Model, User Story Mapping |
+| Thiết kế nghiệp vụ (solution) | Use-case, Flow Diagram, Prototyping, DDD sơ cấp       |
+| Kiểm thử yêu cầu (validation) | Acceptance Criteria, Test Scenario Mapping            |
+| Agile Framework               | Scrum, Kanban, SAFe                                   |
+
+## 🧠 Tư duy (Mindset)
+| Tư duy cần có               | Mô tả cụ thể                                                       |
+| --------------------------- | ------------------------------------------------------------------ |
+| **Customer-first thinking** | Luôn đứng về phía người dùng cuối, hiểu nhu cầu sâu sắc            |
+| **Analytical thinking**     | Khả năng bóc tách vấn đề, nhìn từ nhiều chiều để phân tích rõ ràng |
+| **Bridge mindset**          | Là người “phiên dịch” giữa business và dev                         |
+| **Curiosity-driven**        | Luôn đặt câu hỏi “tại sao?”, “vì sao cần tính năng này?”           |
+| **Empathy**                 | Hiểu rõ pain point của người dùng để gợi đúng giải pháp            |
+| **Change-resilient**        | Dễ thích nghi với thay đổi yêu cầu nhanh trong môi trường Agile    |
+
+## 🧰 Công cụ sử dụng (Toolset)
+| Mục đích                       | Công cụ được dùng tại FoxAI hoặc tương đương            |
+| ------------------------------ | ------------------------------------------------------- |
+| **Tài liệu & cộng tác**        | Notion, Confluence, Google Docs                         |
+| **Mô hình hóa nghiệp vụ**      | Draw\.io, Lucidchart, Whimsical, Bizagi, UMLet          |
+| **Giao tiếp & task tracking**  | Jira, Slack, Gmail, Zoom                                |
+| **Wireframe & Prototype**      | Figma, Balsamiq, Axure RP                               |
+| **Quản lý yêu cầu & story**    | Jira (user story, backlog), Trello                      |
+| **Data exploration (nếu cần)** | Excel, Google Sheets, Power BI (basic), SQL (read-only) |
+
+## 🛠 Kỹ năng cần có (Skillset)
+### 📌 Kỹ năng cứng
+- Viết user story, use-case, acceptance criteria rõ ràng
+- Kỹ năng mô hình hóa quy trình: UML, BPMN
+- Thiết kế sơ lược wireframe/prototype để diễn đạt yêu cầu
+- Trình bày quy trình nghiệp vụ bằng biểu đồ (activity, sequence, state)
+- Quản lý backlog, gắn nhãn ưu tiên (MoSCoW/Kano)
+- Đọc hiểu cơ bản dữ liệu: field, schema, flow (từ dev/DBA)
+- Viết tài liệu BRD, SRS, PRD
+
+### 💬 Kỹ năng mềm
+- Kỹ năng phỏng vấn, lắng nghe, đặt câu hỏi gợi mở
+- Kỹ năng truyền đạt rõ ràng giữa các bên kỹ thuật – nghiệp vụ
+- Kỹ năng giải quyết xung đột yêu cầu
+- Kỹ năng thuyết trình, training end-user
+- Giao tiếp linh hoạt với client, dev, tester, product owner
+
+## 📥 Thông tin đầu vào cần có (Tiêu chuẩn)
+| Đầu ra                                  | Mô tả                                                         |
+| --------------------------------------- | ------------------------------------------------------------- |
+| **BRD** – Business Requirement Document | Mô tả tổng quan nhu cầu nghiệp vụ & mục tiêu kinh doanh       |
+| **Use-case / Flowchart / BPMN**         | Minh họa dòng quy trình hoặc hệ thống                         |
+| **User Story / Backlog**                | Định nghĩa các yêu cầu cụ thể theo định dạng: *As a… I want…* |
+| **Acceptance Criteria**                 | Tiêu chuẩn để Dev/QA kiểm thử tính năng                       |
+| **Wireframe/Prototype**                 | Minh họa giao diện mong muốn (low-fidelity hoặc clickable)    |
+| **Traceability Matrix**                 | Đảm bảo mọi yêu cầu đều được test/check đầy đủ                |
+
+## 🔄 Theo từng giai đoạn vòng đời phát triển phần mềm (SDLC)
+| Giai đoạn          | Vai trò chính của BA                                               |
+| ------------------ | ------------------------------------------------------------------ |
+| **Initiation**     | Hiểu mục tiêu sản phẩm, thu thập insight ban đầu                   |
+| **Analysis**       | Làm rõ yêu cầu, mô hình hóa quy trình, xác định phạm vi            |
+| **Design**         | Hỗ trợ thiết kế logic nghiệp vụ, UX đầu tiên                       |
+| **Development**    | Giải thích logic cho Dev, hỗ trợ xử lý khi bị blocker              |
+| **Testing**        | Viết & xác nhận acceptance test, test case mapping                 |
+| **Deployment**     | Hỗ trợ release note, demo sản phẩm, hướng dẫn sử dụng ban đầu      |
+| **Review/Improve** | Tổng hợp feedback, tạo backlog cải tiến, chuẩn bị Sprint tiếp theo |
+
+---
+
 # Kỹ năng nghiệp vụ BA (FB Nguyễn Bá Phú - BA Mentor chia sẻ)
 
 🧠 Mình là một BA đã làm nghề hơn 10 năm, từng làm cả outsource lẫn product.
