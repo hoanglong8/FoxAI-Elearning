@@ -1,4 +1,4 @@
-# Vai trò và yêu cầu đối với Product Owner tại FoxAI
+# 🎯 Vai trò và yêu cầu đối với Product Owner tại FoxAI
 
 Vai trò của Product Owner (PO) tại FoxAI tập trung vào cách PO định hướng sản phẩm trong 3 giai đoạn của vòng đời sản phẩm: 
 - Nghiên cứu & Khám phá,
