@@ -1,11 +1,13 @@
 # Phân biệt Data Warehouse và Data Lake
-Khi làm việc với dữ liệu ở quy mô lớn, bạn chắc chắn sẽ nghe đến hai khái niệm cực kỳ phổ biến: Data Warehouse và Data Lake. Dù nghe có vẻ giống nhau – đều là nơi lưu trữ dữ liệu – nhưng thật ra chúng phục vụ hai mục đích rất khác nhau, và được thiết kế với triết lý hoàn toàn trái ngược.
+Khi làm việc với dữ liệu ở quy mô lớn, bạn chắc chắn sẽ nghe đến hai khái niệm cực kỳ phổ biến: `Data Warehouse` và `Data Lake`. Dù nghe có vẻ giống nhau – đều là nơi lưu trữ dữ liệu – nhưng thật ra chúng phục vụ hai mục đích rất khác nhau, và được thiết kế với triết lý hoàn toàn trái ngược.
 
 ![image](https://github.com/user-attachments/assets/ffccaa0c-6d03-4bbf-9a0a-0529bb8ac739)
 
 ## 1. Mục tiêu sử dụng
 Data Warehouse được thiết kế để phục vụ phân tích dữ liệu đã xử lý, đặc biệt trong các môi trường yêu cầu dữ liệu chính xác, có cấu trúc cao – như báo cáo tài chính, phân tích KPI, dashboard BI,...
 Ngược lại, Data Lake được tạo ra với mục đích lưu trữ mọi loại dữ liệu thô, dù là structured (dữ liệu bảng), semi-structured (JSON, XML), hay unstructured (ảnh, video, file log,...). Nó là “bể chứa” khổng lồ cho mọi dữ liệu mà bạn có thể phân tích trong tương lai.
+
+![image](https://github.com/user-attachments/assets/b98dc586-a666-4e1d-8718-875b5a5c907c)
 
 ## 2. Cấu trúc dữ liệu
 Trong Data Warehouse, dữ liệu luôn được làm sạch, xử lý và chuyển đổi (`ETL – Extract, Transform, Load`) trước khi lưu vào hệ thống. Điều này đảm bảo tính nhất quán và tối ưu truy vấn, nhưng đồng thời khiến việc tích hợp dữ liệu mới tốn thời gian và tài nguyên.
@@ -19,6 +21,8 @@ Data Lake thì rẻ hơn, lưu trữ nhiều hơn, và thích hợp cho các h�
 Các hệ thống Data Warehouse phổ biến hiện nay gồm: Snowflake, Amazon Redshift, Google BigQuery, Microsoft Synapse,... hoặc nền tảng open-source như ClickHouse, Apache Druid...
 Trong khi đó, Data Lake thường dùng các giải pháp như: Amazon S3 + Athena, Azure Data Lake, Hadoop HDFS, hoặc nền tảng open-source như Apache Iceberg, Delta Lake (Databricks)...
 
+![image](https://github.com/user-attachments/assets/926284de-5fbe-4a06-9975-76effef87af0)
+
 ## 5. Ai nên dùng cái nào?
 Nếu bạn là doanh nghiệp truyền thống, cần dashboard, BI tools, và báo cáo chính xác, thì Data Warehouse là lựa chọn tối ưu.
 Nếu bạn làm AI/ML, phân tích log, xử lý big data phi cấu trúc, hoặc muốn lưu tất cả mọi thứ để phân tích dần, thì Data Lake chính là lựa chọn phù hợp hơn.
@@ -30,6 +34,9 @@ Hiểu đúng sự khác biệt giữa Data Warehouse và Data Lake giúp bạn 
 
 ---
 # Hệ thống Data Warehouse mã nguồn mở
+
+![image](https://github.com/user-attachments/assets/c10b5b78-93dc-4acc-8c31-6b222b442063)
+
 Dưới đây là danh sách các hệ thống Data Warehouse mã nguồn mở phổ biến hiện nay, kèm theo mô tả ngắn gọn và liên kết đến trang chính thức của từng công cụ:
 
 ## 1. [ClickHouse](https://clickhouse.com)
@@ -53,6 +60,8 @@ Hỗ trợ xử lý dữ liệu batch lớn. Sử dụng cho các tác vụ ETL 
 Trang chính thức: 
 hive.apache.org
 
+![image](https://github.com/user-attachments/assets/d103cbd9-e6ae-4ba3-9b40-7b0eee54c162)
+
 ## 4. [Apache Kylin](https://kylin.apache.org)
 Mô tả: Công cụ phân tích OLAP phân tán, cung cấp truy vấn SQL nhanh trên dữ liệu lớn. Hỗ trợ tích hợp với BI tools như Tableau.
 Xây dựng cube dữ liệu để tăng tốc truy vấn. Hữu ích cho việc tạo báo cáo kinh doanh và phân tích đa chiều trên dữ liệu lớn.
@@ -73,6 +82,8 @@ Lựa chọn tốt khi cần kết hợp giữa xử lý giao dịch và phân t
 Trang chính thức: 
 mariadb.com
 
+![image](https://github.com/user-attachments/assets/4adc7e3a-1825-4f19-8c74-06733ed2bcde)
+
 ## 7. [Apache Pinot](https://pinot.apache.org)
 Mô tả: Nền tảng phân tích dữ liệu thời gian thực, tối ưu cho truy vấn nhanh với độ trễ thấp. Hỗ trợ ingest dữ liệu streaming. Truy vấn nhanh chóng trên dữ liệu lớn.
 Tối ưu cho các ứng dụng yêu cầu phân tích dữ liệu thời gian thực với độ trễ thấp.
@@ -82,6 +93,9 @@ pinot.apache.org
 
 ---
 # Danh sách các hệ thống Data Lake mã nguồn mở
+
+![image](https://github.com/user-attachments/assets/064493e0-fe7c-4c72-978d-db055d9ae411)
+
 ## 1. [Apache Iceberg](https://iceberg.apache.org)
 Mô tả: Apache Iceberg là một định dạng bảng mã nguồn mở được thiết kế để xử lý các tập dữ liệu phân tích quy mô lớn trên các hệ thống lưu trữ phân tán. Nó hỗ trợ các tính năng như quản lý schema linh hoạt, time travel, và tương thích với nhiều công cụ xử lý dữ liệu như Apache Spark, Trino, Flink, Presto, Hive và Impala.
 
@@ -102,6 +116,8 @@ Mô tả: Apache Hudi là một nền tảng data lakehouse mã nguồn mở, cu
 Trang chính thức: 
 hudi.apache.org
 
+![image](https://github.com/user-attachments/assets/c91da882-8c56-4f51-ac52-d16a6273f1e2)
+
 ## 4. [Apache Hadoop](https://hadoop.apache.org/)
 Mô tả: Apache Hadoop là một framework mã nguồn mở cho phép xử lý và lưu trữ dữ liệu lớn trên các cụm máy tính phân tán. Nó bao gồm HDFS (Hadoop Distributed File System) và MapReduce để xử lý dữ liệu song song.
 
@@ -111,5 +127,7 @@ Trang chính thức: https://hadoop.apache.org/
 Mô tả: Apache Spark là một công cụ xử lý dữ liệu mã nguồn mở, hỗ trợ xử lý dữ liệu in-memory, batch và streaming. Nó thường được sử dụng kết hợp với các hệ thống data lake để thực hiện các tác vụ phân tích dữ liệu lớn.
 
 Trang chính thức: https://spark.apache.org/
+
+![image](https://github.com/user-attachments/assets/47fec5ae-f039-47be-9405-c93e4a6a0bc5)
 
 ---
