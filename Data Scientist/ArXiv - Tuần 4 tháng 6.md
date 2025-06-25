@@ -1,11 +1,14 @@
 # Tạp chí khoa học ArXiv - Tuần 4 tháng 6 năm 2025
 ## Table of Contents
- 1. [Subheading 1](#AgentDistill:-Training-Free-Agent-Distillation-with-Generalizable-MCP-Boxes)
- 2. [Subheading 2](#subheading-2)
- 3. [Subheading 3](#subheading-3)
+ 1. [AgentDistill: Training-Free Agent Distillation with Generalizable MCP Boxes](#subheading-1)
+ 2. [Optimizing RAG Pipelines for Arabic: A Systematic Analysis of Core Components](#subheading-2)
+ 3. [KG-Infused RAG: Augmenting Corpus-Based RAG with External Knowledge Graphs](#subheading-3)
+ 4. [Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger](#subheading-4)
+ 5. [SceneRAG: Scene-level Retrieval-Augmented Generation for Video Understanding](#subheading-5)
+ 6. [LlamaRec-LKG-RAG: A Single-Pass, Learnable Knowledge Graph-RAG Framework for LLM-Based Ranking](#subheading-6)
 
 
-## AgentDistill: Training-Free Agent Distillation with Generalizable MCP Boxes
+## 1.AgentDistill: Training-Free Agent Distillation with Generalizable MCP Boxes
 _(AgentDistill: Chưng cất tác nhân AI mà không cần đào tạo với MCP tổng quát)_
 
 Link nguồn: https://arxiv.org/html/2506.14728v1
@@ -35,7 +38,7 @@ Link nguồn: https://arxiv.org/html/2506.14728v1
 - AgentDistill cung cấp một phương pháp hiệu quả và tiết kiệm chi phí để chuyển giao kiến thức giữa các tác nhân, cho phép xây dựng các tác nhân thông minh có thể mở rộng mà không cần huấn luyện tốn kém. Phương pháp này mở ra khả năng phát triển các tác nhân học máy nhỏ có khả năng giải quyết các tác vụ phức tạp mà không cần tài nguyên tính toán lớn.
 
 ---
-## Optimizing RAG Pipelines for Arabic: A Systematic Analysis of Core Components
+## 2.Optimizing RAG Pipelines for Arabic: A Systematic Analysis of Core Components
 _(Tối ưu hóa đường ống RAG cho tiếng Ả Rập: Phân tích có hệ thống các thành phần cốt lõi)_
 
 Link nguồn: https://arxiv.org/abs/2506.06339
@@ -61,7 +64,7 @@ Link nguồn: https://arxiv.org/abs/2506.06339
 - Nghiên cứu này cung cấp những hiểu biết quan trọng về việc xây dựng các hệ thống RAG chất lượng cao cho tiếng Ả Rập và đưa ra hướng dẫn thực tế để chọn lựa các thành phần tối ưu cho từng loại tài liệu khác nhau.
 
 ---
-## KG-Infused RAG: Augmenting Corpus-Based RAG with External Knowledge Graphs
+## 3.KG-Infused RAG: Augmenting Corpus-Based RAG with External Knowledge Graphs
 _(RAG truyền KG - đồ thị tri thức: Tăng cường RAG dựa trên ngữ liệu với đồ thị tri ​​thức bên ngoài)_
 
 Link nguồn: https://arxiv.org/html/2506.09542v1
@@ -89,7 +92,7 @@ KG-Infused RAG bao gồm ba giai đoạn chính:
 KG-Infused RAG cung cấp một phương pháp tiếp cận mạnh mẽ để cải thiện khả năng trả lời câu hỏi của các mô hình ngôn ngữ lớn, đặc biệt trong việc tích hợp thông tin từ các nguồn có cấu trúc như đồ thị tri thức. Phương pháp này không chỉ nâng cao độ chính xác mà còn cải thiện khả năng giải thích và tính minh bạch trong quá trình suy luận của mô hình.
 
 ---
-## Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger
+## 4.Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger
 (Kỹ thuật re-ranking dựa trên bối cảnh kết hợp với kỹ thuật tìm kiếm dạng cây làm cho các mô hình ngôn ngữ thị giác trở nên mạnh hơn)
 
 Link nguồn: https://arxiv.org/html/2506.07785v1
@@ -121,7 +124,7 @@ Khung RCTS bao gồm hai thành phần chính:
 Khung RCTS cung cấp một phương pháp hiệu quả để cải thiện khả năng trả lời câu hỏi của các mô hình LVLMs, đặc biệt trong các tác vụ yêu cầu suy luận đa bước. Việc xây dựng cơ sở dữ liệu kiến thức với ngữ cảnh suy luận và phân loại lại các ví dụ truy xuất bằng MCTS-HR giúp mô hình sử dụng các ngữ cảnh suy luận chất lượng cao, từ đó nâng cao độ chính xác và nhất quán trong phản hồi.
 
 ---
-## SceneRAG: Scene-level Retrieval-Augmented Generation for Video Understanding
+## 5.SceneRAG: Scene-level Retrieval-Augmented Generation for Video Understanding
 (SceneRAG: Kỹ thuật tăng cường truy xuất cấp độ phân cảnh để hiểu nội dung của dữ liệu video)
 
 Link nguồn: https://arxiv.org/html/2506.07600v1
@@ -161,7 +164,7 @@ Truy xuất và sinh câu trả lời dựa trên RAG:
 SceneRAG cung cấp một phương pháp mạnh mẽ và hiệu quả để hiểu nội dung video dài, giúp cải thiện khả năng trả lời câu hỏi và tóm tắt video. Việc phân đoạn video thành các cảnh có tính nhất quán về mặt kể chuyện và xây dựng đồ thị tri thức động cho phép mô hình hiểu được các phụ thuộc dài hạn trong video, từ đó cung cấp câu trả lời chính xác và nhất quán hơn.
 
 ---
-## LlamaRec-LKG-RAG: A Single-Pass, Learnable Knowledge Graph-RAG Framework for LLM-Based Ranking
+## 6.LlamaRec-LKG-RAG: A Single-Pass, Learnable Knowledge Graph-RAG Framework for LLM-Based Ranking
 (LlamaRec-LKG-RAG: Kỹ thuật Khung đồ thị tri ​​thức tự học dùng để xếp hạng dựa trên LLM)
 
 Link nguồn: https://arxiv.org/html/2506.07449v1
