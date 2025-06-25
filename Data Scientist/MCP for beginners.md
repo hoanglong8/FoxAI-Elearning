@@ -1,6 +1,8 @@
-# 🚀 Chương Trình Đào Tạo Model Context Protocol (MCP) Dành Cho Người Mới Bắt Đầu
+# 🚀 [Chương Trình Đào Tạo Model Context Protocol (MCP) Dành Cho Người Mới Bắt Đầu](https://github.com/microsoft/mcp-for-beginners)
 
 ![image](https://github.com/user-attachments/assets/2a86bf26-a8ff-44ec-8dc0-49b739fccc3f)
+
+Link nguồn: https://github.com/microsoft/mcp-for-beginners
 
 🧠 Tổng Quan về Chương Trình Đào Tạo Model Context Protocol
 Model Context Protocol (MCP) là một framework tiên tiến được thiết kế để chuẩn hóa các tương tác giữa các mô hình AI và ứng dụng khách. Chương trình đào tạo mã nguồn mở này cung cấp một lộ trình học tập có cấu trúc, đi kèm với các ví dụ mã thực tế và các trường hợp sử dụng trong đời thực, trên các ngôn ngữ lập trình phổ biến như C#, Java, JavaScript, TypeScript và Python.
