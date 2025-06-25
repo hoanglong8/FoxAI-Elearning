@@ -1,4 +1,4 @@
-# Project Management
+# Project Management và Business Analyst
 
 ## Git & GitHub
 
@@ -29,6 +29,12 @@ Link khóa học: https://www.udemy.com/course/professional-certificate-of-agile
 ![image](https://github.com/user-attachments/assets/e395cef7-0134-4220-a1b7-2a02d7a23543)
 
 Link khóa học: https://www.udemy.com/course/financial-services-overview-of-retail-banking/?couponCode=4TH_WK_JUNE
+
+**6. Financial Services - Overview of Central Banks**
+
+![image](https://github.com/user-attachments/assets/c07ead86-ce56-4500-a410-d84d0bbc509e)
+
+Link khóa học: https://www.udemy.com/course/financial-services-overview-of-central-banks/?couponCode=4TH_WK_JUNE
 
 ---
 
