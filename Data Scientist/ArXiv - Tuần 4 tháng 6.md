@@ -1,4 +1,4 @@
-# ArXiv
+# Tạp chí khoa học ArXiv - Tuần 4 tháng 6 năm 2025
 ## AgentDistill: Training-Free Agent Distillation with Generalizable MCP Boxes
 _(AgentDistill: Chưng cất tác nhân AI mà không cần đào tạo với MCP tổng quát)_
 
@@ -113,3 +113,71 @@ Khung RCTS bao gồm hai thành phần chính:
 
 **🧭 Kết luận**
 Khung RCTS cung cấp một phương pháp hiệu quả để cải thiện khả năng trả lời câu hỏi của các mô hình LVLMs, đặc biệt trong các tác vụ yêu cầu suy luận đa bước. Việc xây dựng cơ sở dữ liệu kiến thức với ngữ cảnh suy luận và phân loại lại các ví dụ truy xuất bằng MCTS-HR giúp mô hình sử dụng các ngữ cảnh suy luận chất lượng cao, từ đó nâng cao độ chính xác và nhất quán trong phản hồi.
+
+---
+## SceneRAG: Scene-level Retrieval-Augmented Generation for Video Understanding
+(SceneRAG: Kỹ thuật tăng cường truy xuất cấp độ phân cảnh để hiểu nội dung của dữ liệu video)
+
+Link nguồn: https://arxiv.org/html/2506.07600v1
+
+![image](https://github.com/user-attachments/assets/828a16e3-8366-47ea-8e79-e78bcf2bb681)
+
+**🧠 Tổng quan**
+Bài báo giới thiệu SceneRAG, một khung phương pháp Retrieval-Augmented Generation (RAG) mới, được thiết kế để hiểu nội dung video dài bằng cách phân đoạn video thành các cảnh có tính nhất quán về mặt kể chuyện. SceneRAG sử dụng mô hình ngôn ngữ lớn (LLM) để phân tích bản chép tự động (ASR) và siêu dữ liệu thời gian, kết hợp với các phương pháp heuristics nhẹ và sửa lỗi lặp lại để xác định ranh giới cảnh chính xác. Sau đó, nó xây dựng đồ thị tri thức động từ thông tin hình ảnh và văn bản, cho phép truy xuất và sinh câu trả lời dựa trên nhiều bước, giúp mô hình hiểu được các phụ thuộc dài hạn trong video.
+
+**⚙️ Phương pháp**
+Phân đoạn cảnh tự động:
+
+- Sử dụng LLM để phân tích bản chép ASR và siêu dữ liệu thời gian, xác định các ranh giới cảnh có tính nhất quán về mặt kể chuyện.
+
+- Áp dụng các phương pháp heuristics và sửa lỗi lặp lại để cải thiện độ chính xác của phân đoạn.
+
+Xây dựng đồ thị tri thức đa phương thức:
+
+- Kết hợp thông tin từ hình ảnh và văn bản để trích xuất quan hệ giữa các thực thể.
+
+- Xây dựng đồ thị tri thức động, cho phép truy xuất và sinh câu trả lời dựa trên nhiều bước.
+
+Truy xuất và sinh câu trả lời dựa trên RAG:
+
+- Sử dụng đồ thị tri thức để truy xuất các cảnh liên quan đến câu hỏi.
+
+- Kết hợp thông tin từ các cảnh truy xuất được để sinh câu trả lời chính xác và nhất quán.
+
+**📊 Kết quả thực nghiệm**
+- Hiệu suất vượt trội: SceneRAG đạt được tỷ lệ thắng lên đến 72,5% trên các nhiệm vụ sinh câu trả lời, vượt qua các phương pháp RAG truyền thống và các mô hình ngôn ngữ thị giác lớn hiện có.
+
+- Khả năng tổng quát: Phương pháp này cho thấy khả năng tổng quát tốt trên nhiều loại nội dung video khác nhau, bao gồm các bài giảng, tài liệu và giải trí.
+
+- Hiệu quả trong việc duy trì tính nhất quán của câu chuyện: SceneRAG duy trì tính nhất quán của câu chuyện và theo dõi các thực thể xuyên suốt video, điều mà các phương pháp RAG truyền thống không làm được.
+
+**🧭 Kết luận**
+SceneRAG cung cấp một phương pháp mạnh mẽ và hiệu quả để hiểu nội dung video dài, giúp cải thiện khả năng trả lời câu hỏi và tóm tắt video. Việc phân đoạn video thành các cảnh có tính nhất quán về mặt kể chuyện và xây dựng đồ thị tri thức động cho phép mô hình hiểu được các phụ thuộc dài hạn trong video, từ đó cung cấp câu trả lời chính xác và nhất quán hơn.
+
+---
+## LlamaRec-LKG-RAG: A Single-Pass, Learnable Knowledge Graph-RAG Framework for LLM-Based Ranking
+(LlamaRec-LKG-RAG: Kỹ thuật Khung đồ thị tri ​​thức tự học dùng để xếp hạng dựa trên LLM)
+
+Link nguồn: https://arxiv.org/html/2506.07449v1
+
+![image](https://github.com/user-attachments/assets/b63669cf-1a86-4f32-bf9b-c105eca0b18c)
+
+**🧠 Tổng quan**
+Bài báo này giới thiệu LlamaRec-LKG-RAG, một khung phương pháp mới kết hợp giữa Retrieval-Augmented Generation (RAG) và đồ thị tri thức (KG) để cải thiện hiệu suất xếp hạng trong hệ thống gợi ý sử dụng mô hình ngôn ngữ lớn (LLM). Phương pháp này vượt qua hạn chế của các phương pháp RAG truyền thống bằng cách tích hợp thông tin cá nhân hóa từ đồ thị tri thức vào quá trình suy luận của mô hình.
+
+**⚙️ Phương pháp**
+- Mô-đun sở thích người dùng: Xây dựng một mô-đun học sâu nhẹ giúp xác định các đường quan hệ quan trọng trong đồ thị tri thức, phản ánh sở thích người dùng.
+
+- Truy xuất một bước: Sử dụng mô-đun trên để truy xuất các đồ thị con cá nhân hóa từ đồ thị tri thức, tích hợp trực tiếp vào đầu vào của mô hình Llama-2 đã được tinh chỉnh.
+
+- Khung suy luận duy nhất: Kết hợp thông tin từ đồ thị tri thức và lịch sử tương tác của người dùng để tạo ra các đề xuất hiệu quả và dễ giải thích trong một bước suy luận duy nhất.
+
+**📊 Kết quả thực nghiệm**
+- Dữ liệu: Thí nghiệm được thực hiện trên hai bộ dữ liệu: ML-100K và Amazon Beauty.
+
+- Đo lường: Hiệu suất được đánh giá qua các chỉ số xếp hạng: MRR (Mean Reciprocal Rank), NDCG (Normalized Discounted Cumulative Gain), và Recall.
+
+- Kết quả: LlamaRec-LKG-RAG đạt được cải thiện đáng kể so với phương pháp LlamaRec ban đầu trên tất cả các chỉ số, chứng minh hiệu quả của việc tích hợp đồ thị tri thức vào quá trình suy luận của mô hình.
+
+**🧭 Kết luận**
+Phương pháp LlamaRec-LKG-RAG cung cấp một cách tiếp cận mạnh mẽ và hiệu quả để cải thiện hệ thống gợi ý sử dụng LLM, đặc biệt trong việc xử lý các vấn đề như khởi tạo nguội (cold-start), dữ liệu thưa thớt và sự mơ hồ trong ý định của người dùng. Việc tích hợp đồ thị tri thức vào quá trình suy luận giúp mô hình hiểu rõ hơn về ngữ cảnh và sở thích của người dùng, từ đó đưa ra các đề xuất chính xác và cá nhân hóa hơn.
