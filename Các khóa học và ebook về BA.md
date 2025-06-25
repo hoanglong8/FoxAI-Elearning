@@ -24,6 +24,12 @@ Link khóa học: https://www.udemy.com/course/product-owner-certification-exam-
 
 Link khóa học: https://www.udemy.com/course/professional-certificate-of-agile-and-scrum-business-analyst/?couponCode=B807B0EF735C9B5964A3
 
+**5. Financial Services - Overview of Retail Banking**
+
+![image](https://github.com/user-attachments/assets/e395cef7-0134-4220-a1b7-2a02d7a23543)
+
+Link khóa học: https://www.udemy.com/course/financial-services-overview-of-retail-banking/?couponCode=4TH_WK_JUNE
+
 ---
 
 # Ebook
