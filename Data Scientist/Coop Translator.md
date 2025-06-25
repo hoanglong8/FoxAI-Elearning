@@ -41,7 +41,7 @@ Co-op Translator giúp thu hẹp khoảng cách ngôn ngữ cho các sáng kiế
 
 ## Cách thức hoạt động
 
-![Architecture](../../translated_images/architecture_241019.15de09d63bf3f7065d5da8ac1e08948c9d3bf795aae3b7f6f8d3cce53c95d00b.vi.png)
+![image](https://github.com/user-attachments/assets/248a27f2-dace-451a-96ba-88ed3c0f9aa9)
 
 Co-op Translator lấy các file Markdown và hình ảnh từ thư mục dự án của bạn và xử lý như sau:
 
