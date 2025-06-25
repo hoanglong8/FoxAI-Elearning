@@ -1,4 +1,10 @@
 # Tạp chí khoa học ArXiv - Tuần 4 tháng 6 năm 2025
+## Table of Contents
+ 1. [Subheading 1](## AgentDistill:-Training-Free-Agent-Distillation-with-Generalizable-MCP-Boxes)
+ 2. [Subheading 2](#subheading-2)
+ 3. [Subheading 3](#sub-heading-3)
+
+
 ## AgentDistill: Training-Free Agent Distillation with Generalizable MCP Boxes
 _(AgentDistill: Chưng cất tác nhân AI mà không cần đào tạo với MCP tổng quát)_
 
