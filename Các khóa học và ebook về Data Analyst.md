@@ -122,6 +122,15 @@ Cần lưu ý rằng một trong những tính năng đáng chú ý của nó l�
 ---
 
 ## Các khóa học khác trên Udemy
+
+**Advanced Power BI: Expert Data Analysis and Visualization**
+
+![image](https://github.com/user-attachments/assets/7c3ef7fa-9b0d-474b-8dbc-3005abcce34b)
+
+Link khóa học: https://www.udemy.com/course/advanced-power-bi-expert-data-analysis-and-visualization/?couponCode=87A5CE22E81955B7546B
+
+---
+
 **Power BI 101 - Microsoft Power BI DUAL Certification Course**
 
 ![image](https://github.com/user-attachments/assets/1a48f231-f37b-4e48-893c-6c39cfb271f4)
