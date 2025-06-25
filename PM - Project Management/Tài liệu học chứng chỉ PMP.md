@@ -1,12 +1,12 @@
 # Tài liệu học chứng chỉ PMP
 
 ## Nội dung bài học
-•	Nắm vững toàn bộ 49 quy trình quản lý dự án trong PMBOK
-•	Hiểu sâu 10 Knowledge Areas và 5 Process Groups
-•	Vận dụng các công cụ như EVM, Critical Path Method, Stakeholder Management, Risk Analysis…
-•	Làm quen với mô hình đề thi PMP mới (tình huống thực tế, Agile/Hybrid/Predictive)
-•	Thành thạo kỹ thuật làm bài thi: phân tích keyword, quản lý thời gian, giảm thiểu sai sót
-•	Luyện tập thông qua bộ đề mô phỏng PMP đầy đủ (180 câu) và các mini-test theo domain
+-	Nắm vững toàn bộ 49 quy trình quản lý dự án trong PMBOK
+-	Hiểu sâu 10 Knowledge Areas và 5 Process Groups
+-	Vận dụng các công cụ như EVM, Critical Path Method, Stakeholder Management, Risk Analysis…
+-	Làm quen với mô hình đề thi PMP mới (tình huống thực tế, Agile/Hybrid/Predictive)
+-	Thành thạo kỹ thuật làm bài thi: phân tích keyword, quản lý thời gian, giảm thiểu sai sót
+-	Luyện tập thông qua bộ đề mô phỏng PMP đầy đủ (180 câu) và các mini-test theo domain
 
 ## Yêu cầu
 •	Có kinh nghiệm làm việc trong lĩnh vực quản lý dự án (tối thiểu 3 năm là lý tưởng)
@@ -31,6 +31,7 @@ Do khóa học thiết kế tiếng Việt và tiếng Anh kết hợp nên các
 
 ## Link tài liệu
 https://www.scribd.com/document/804007527/PMP-7th-Edition
+
 https://drive.google.com/file/d/1Y5AuHCMuqjdjDOdDbzTnBxcB0vi_IO3I/view
 
 ## Nội dung khóa học
