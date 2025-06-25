@@ -36,6 +36,12 @@ Link khóa học: https://www.udemy.com/course/financial-services-overview-of-re
 
 Link khóa học: https://www.udemy.com/course/financial-services-overview-of-central-banks/?couponCode=4TH_WK_JUNE
 
+**7. Financial Services - Basics of Business & Corporate Banking**
+
+![image](https://github.com/user-attachments/assets/46671cbb-01fc-46a8-9aff-ec8252aee250)
+
+Link khóa học: https://www.udemy.com/course/financial-services-basics-of-business-corporate-banking/?couponCode=4TH_WK_JUNE
+
 ---
 
 # Ebook
