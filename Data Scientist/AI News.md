@@ -1,4 +1,4 @@
-# AI Wikipedia
+# AI News - Tổng hợp các bài viết hay về AI
 
 ![image](https://github.com/user-attachments/assets/0629dca5-bee9-4455-8a00-cd106c620da2)
 
