@@ -18,3 +18,16 @@ Tài liệu [tại đây](https://drive.google.com/file/d/1H-fzY1Cs9lS4KeoNI4rUU
 
 ![image](https://github.com/user-attachments/assets/a5423346-72b8-4f36-8603-efe4adae7045)
 
+---
+## NHẬT KÝ AIO 2025 từ Cộng đồng AI Việt Nam
+
+Link: https://www.notion.so/NH-T-K-AIO-2025-GRID056-20cb7abc5523802dbd65d65a04244570
+
+![image](https://github.com/user-attachments/assets/4b8e1309-034c-4484-9e44-39720c6d3b67)
+
+## AI Blog 2025
+
+Link: https://hung2124.github.io/blog/
+
+![image](https://github.com/user-attachments/assets/5d1d12ef-bdc7-4fd4-9ce0-28f172da5f5a)
+
