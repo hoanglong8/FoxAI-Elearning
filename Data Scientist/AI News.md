@@ -25,6 +25,8 @@ Link: https://www.notion.so/NH-T-K-AIO-2025-GRID056-20cb7abc5523802dbd65d65a0424
 
 ![image](https://github.com/user-attachments/assets/4b8e1309-034c-4484-9e44-39720c6d3b67)
 
+![image](https://github.com/user-attachments/assets/cd51cf40-ef07-48c4-b3d9-d295aabdb8de)
+
 ## AI Blog 2025
 
 Link: https://hung2124.github.io/blog/
