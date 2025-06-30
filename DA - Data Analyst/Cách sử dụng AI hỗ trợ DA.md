@@ -1,4 +1,7 @@
 # Cách sử dụng AI hỗ trợ DA
+
+![image](https://github.com/user-attachments/assets/b77c2004-ddd2-4b7b-aa72-eb4e9b63104c)
+
 ## 🤖Biến Số Liệu Khô Khan Thành Báo Cáo "Biết Nói" Trong 5 Phút
 Bạn mất hàng giờ để làm một cái báo cáo, nhưng sếp và đồng nghiệp xem xong chỉ... gật gù cho qua. Vì sao? Vì những con số đơn thuần không biết kể chuyện! Những báo cáo của bạn có thể trông nhàm chán, và tệ hơn là bạn đang bỏ lỡ những "mỏ vàng" insight ẩn sau các con số đó.
 
