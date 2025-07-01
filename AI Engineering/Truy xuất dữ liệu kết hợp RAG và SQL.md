@@ -5,19 +5,21 @@ Hầu hết ứng dụng GenAI không chỉ làm việc với dữ liệu phi c�
 ### 🎯 Bài toán minh họa:
 Bạn làm việc tại Kitty Vogue – một cửa hàng thương mại điện tử chuyên thời trang cho mèo, có bảng Sales lưu thông tin đơn hàng:
 
+```
 Order ID	Timestamp	Product ID	Product	Unit price ($)	Units	Total
 1	…	2044	Meow Mix Seasoning	10.99	1	10.99
 2	…	3492	Purr & Shake	25	2	50
 3	…	2045	Fruity Fedora	18	1	18
 …	…	…	…	…	…	…
+```
 Người dùng hỏi:
 
 “Trong 7 ngày qua đã bán được bao nhiêu đơn Fruity Fedora?”
 
 Để trả lời, hệ thống cần:
-✅ Lọc đơn hàng sản phẩm Fruity Fedora
-✅ Trong 7 ngày qua
-✅ Cộng tổng số lượng bán.
+- ✅ Lọc đơn hàng sản phẩm Fruity Fedora
+- ✅ Trong 7 ngày qua
+- ✅ Cộng tổng số lượng bán.
 
 🔍 SQL Query cần thực hiện:
 
@@ -28,7 +30,7 @@ WHERE product_name = 'Fruity Fedora'
 AND timestamp >= DATE_SUB(CURDATE(), INTERVAL 7 DAY);
 ```
 
-⚙️ Workflow RAG with Tabular Data
+### ⚙️ Workflow RAG with Tabular Data
 ⚡ Khác với RAG truyền thống (retriever + generator), quy trình augment context từ tabular data gồm:
 
 1️⃣ Text-to-SQL (Semantic Parsing):
@@ -46,11 +48,13 @@ Chạy query trên cơ sở dữ liệu.
 Sinh câu trả lời dựa trên kết quả SQL + câu hỏi gốc.
 
 🪄 Minh họa luồng xử lý:
+```
 📥 User Query ➔ 🧠 Text-to-SQL ➔ 🗂️ Execute SQL ➔ ✍️ Generate Response
+```
 
 Hình dung đơn giản: GenAI không tự đoán "Fruity Fedora bán bao nhiêu", mà biết cách tạo câu SQL, chạy, lấy kết quả, rồi trả lời.
 
-🚧 Hạn chế của RAG với dữ liệu dạng bảng
+### 🚧 Hạn chế của RAG với dữ liệu dạng bảng
 1️⃣ Hiểu sai cấu trúc dữ liệu
 
 Mô hình ngôn ngữ mạnh về xử lý văn bản tự nhiên nhưng không hiểu logic quan hệ giữa các bảng nếu không có sơ đồ (schema) rõ ràng.
@@ -96,11 +100,11 @@ Với truy vấn lặp lại (ví dụ KPI ngày, tuần), lưu kết quả trun
 
 Cho phép LLM gọi nhiều công cụ: SQL Executor, API cập nhật dữ liệu mới, Python script tính toán bổ sung.
 
-🚩 Lợi ích khi kết hợp RAG với tabular data:
-✅ Truy vấn có căn cứ, đúng dữ liệu nghiệp vụ
-✅ Giảm hallucination, trả lời đúng con số, không phỏng đoán
-✅ Linh hoạt cho các ứng dụng BI GenAI, chatbot nội bộ, GenAI analytics
-✅ Là bước đệm để phát triển agentic pattern, cho phép mô hình dùng công cụ SQL, API, automation.
+### 🚩 Lợi ích khi kết hợp RAG với tabular data:
+- ✅ Truy vấn có căn cứ, đúng dữ liệu nghiệp vụ
+- ✅ Giảm hallucination, trả lời đúng con số, không phỏng đoán
+- ✅ Linh hoạt cho các ứng dụng BI GenAI, chatbot nội bộ, GenAI analytics
+- ✅ Là bước đệm để phát triển agentic pattern, cho phép mô hình dùng công cụ SQL, API, automation.
 
 ### 💡 Ghi nhớ:
 RAG không chỉ dừng ở “tìm và sinh” trên text, mà còn làm việc với dữ liệu bảng.
