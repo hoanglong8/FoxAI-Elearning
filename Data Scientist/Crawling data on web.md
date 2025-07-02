@@ -2,7 +2,7 @@
 
 Link nguồn data cần crawl: https://plo.vn/tra-cuu-chi-tiet-3321-phuong-xa-dac-khu-cua-34-tinh-thanh-pho-sau-sap-xep-post856550.html
 
-Link nguồn data cần crawl: shb.com.vn
+Link nguồn data cần crawl: https://shb.com.vn
 
 ## 🧠 1. [AutoScraper](https://github.com/AutoScraper/AutoScraper) – Tự động tạo trình thu thập dữ liệu web bằng LLM
 Tóm tắt: AutoScraper là một khung làm việc hai giai đoạn sử dụng mô hình ngôn ngữ lớn (LLM) để tạo ra các trình thu thập dữ liệu web có khả năng thích ứng với nhiều môi trường web khác nhau. Khung này tận dụng cấu trúc phân cấp của HTML và sự tương đồng giữa các trang web để tạo ra các trình thu thập dữ liệu hiệu quả. 
@@ -47,3 +47,14 @@ Scrapy: Một framework thu thập dữ liệu web mã nguồn mở bằng Pytho
 Apache Nutch: Một dự án phần mềm thu thập dữ liệu web mã nguồn mở có khả năng mở rộng cao, được phát triển bởi Apache Software Foundation. 
 
 YaCy: Một công cụ tìm kiếm phân tán mã nguồn mở, nơi mỗi người dùng là một nút trong mạng lưới P2P, giúp thu thập và lập chỉ mục dữ liệu web một cách phi tập trung. 
+
+---
+Một số nguồn crawl dữ liệu hành chính Việt Nam từ các hệ thống công như:
+
+![image](https://github.com/user-attachments/assets/5b932c42-0579-44b9-9839-80ee2db1e6b1)
+
+https://github.com/vietmap-company/vietnam_administrative_address
+
+https://github.com/daohoangson/dvhcvn
+
+https://github.com/linhmtran168
