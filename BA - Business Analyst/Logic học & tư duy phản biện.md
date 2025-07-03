@@ -182,12 +182,12 @@ Viết lại phiên bản tốt hơn.
 | Phân tích đa chiều | Không chỉ đúng – còn phải công bằng, hiệu quả, hợp lý |
 
 ## 🔧 TÀI LIỆU THAM KHẢO NÊN CÓ
-- [] Checklist “Kiểm tra logic của yêu cầu BA”
+-[] Checklist “Kiểm tra logic của yêu cầu BA”
 
-- [] Template “Đánh giá Validity / Soundness”
+-[] Template “Đánh giá Validity / Soundness”
 
-- [] Bảng từ khóa nhận diện Fallacy trong phân tích nghiệp vụ
+-[] Bảng từ khóa nhận diện Fallacy trong phân tích nghiệp vụ
 
-- [] Video minh họa tình huống phản biện BRD sai logic
+-[] Video minh họa tình huống phản biện BRD sai logic
 
 ---
