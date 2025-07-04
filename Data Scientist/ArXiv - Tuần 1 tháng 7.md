@@ -1,4 +1,4 @@
-# From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows
+# Phần 1 - From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows
 (Từ việc tiêm lệnh độc đến khai thác lỗ hổng giao thức: Các mối đe dọa trong quy trình làm việc của các tác nhân AI được hỗ trợ bởi LLM)
 
 Link bài báo: https://arxiv.org/abs/2506.23260v1
@@ -85,6 +85,7 @@ Cuối cùng, tài liệu này vừa là một lời cảnh báo vừa là một
 ![image](https://github.com/user-attachments/assets/61c16b5a-e755-4203-be31-c1174a45152c)
 
 ---
+# Phần 2 - Các thuật ngữ quan trọng
 ## Cách học thuật ngữ tiếng Anh hiệu quả, dễ hiểu và nhớ lâu
 ### 1. Hiểu khái niệm cơ bản (Basic Concept)
 Bắt đầu bằng việc hiểu rõ định nghĩa chính xác và cơ bản của thuật ngữ.
@@ -122,7 +123,7 @@ Giúp kết nối kiến thức với cảm xúc và kinh nghiệm, tăng hiệu
 Sử dụng thuật ngữ trong câu, viết đoạn văn hoặc thảo luận.
 
 ---
-## Các thuật ngữ quan trọng trong bài báo
+## Thẻ học thuật ngữ Flashcard
 ### Flashcard 1: Input Manipulation
 | **Front**                                                               | **Back**                                                                                                                                                                                                                                                                                                                                                        |
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -133,3 +134,49 @@ Sử dụng thuật ngữ trong câu, viết đoạn văn hoặc thảo luận.
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Prompt Injection**<br>/prɒmpt ɪnˈdʒɛkʃən/<br>Tiêm lệnh (vào AI) | **Khái niệm:** Chèn câu lệnh hoặc mã độc vào prompt, làm sai lệch hoặc kiểm soát AI.<br>**Từ đồng nghĩa:** tiêm lệnh, chèn lệnh.<br>**Hình ảnh:** ![minh họa](https://tse3.mm.bing.net/th/id/OIP.sTkoD95gzBLVLUXB16VEQgHaEE?pid=Api)<br>**Câu chuyện:** Kẻ tấn công chèn câu lệnh độc hại để chatbot tiết lộ dữ liệu bảo mật. |
 
+### Flashcard 3: Model Compromise
+| **Front**                                  | **Back**                                                                                                                                                                                                                                                        |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Model Compromise**<br>/ˈmɒdəl kɒmˈpraɪz/ | **Khái niệm:** Mô hình AI bị tấn công hoặc thay đổi không mong muốn gây mất an toàn.<br>**Từ đồng nghĩa:** model tampering, model poisoning.<br>**Hình ảnh:** Hacker xâm nhập mô hình AI.<br>**Câu chuyện:** Hacker tiêm dữ liệu độc làm mô hình nhận diện sai. |
+
+### Flashcard 4: System and Privacy Attacks
+| **Front**                                                      | **Back**                                                                                                                                                                                                                                              |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System and Privacy Attacks**<br>/ˈsɪstəm ənd ˈprɪvəsi əˈtæk/ | **Khái niệm:** Tấn công làm hỏng hệ thống hoặc đánh cắp thông tin cá nhân.<br>**Từ đồng nghĩa:** data breach, privacy violation.<br>**Hình ảnh:** Hacker thu thập dữ liệu cá nhân.<br>**Câu chuyện:** Rò rỉ dữ liệu khách hàng ngân hàng gây lừa đảo. |
+
+### Flashcard 5: Protocol Vulnerabilities
+| **Front**                                                     | **Back**                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Protocol Vulnerabilities**<br>/ˈproʊtəkɒl ˌvʌlnərəˈbɪlɪtiz/ | **Khái niệm:** Lỗ hổng trong giao thức truyền thông dễ bị tấn công.<br>**Từ đồng nghĩa:** protocol flaws, security loopholes.<br>**Hình ảnh:** Cánh cửa hở trên đường truyền mạng.<br>**Câu chuyện:** Hacker khai thác lỗ hổng để chiếm quyền hệ thống. |
+
+### Flashcard 6: Hidden Backdoor
+| **Front**                                 | **Back**                                                                                                                                                                                                                |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hidden Backdoor**<br>/ˈhɪdən ˈbækˌdɔːr/ | **Khái niệm:** Cửa hậu bí mật cho phép truy cập trái phép.<br>**Từ đồng nghĩa:** secret backdoor.<br>**Hình ảnh:** Cửa bí mật trong hệ thống.<br>**Câu chuyện:** Hacker giấu cửa hậu để truy cập hệ thống bất hợp pháp. |
+
+### Flashcard 7: Agent Communication Protocol
+| **Front**                                                                  | **Back**                                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Agent Communication Protocol**<br>/ˈeɪdʒənt kəˌmjuːnɪˈkeɪʃən ˈproʊtəkɒl/ | **Khái niệm:** Quy tắc giao tiếp giữa các tác nhân phần mềm AI.<br>**Từ đồng nghĩa:** communication standard.<br>**Hình ảnh:** Robot giao tiếp với nhau qua mạng.<br>**Câu chuyện:** Các agent phối hợp thực hiện nhiệm vụ chung. |
+
+### Flashcard 8: Threats Taxonomy
+| **Front**                                  | **Back**                                                                                                                                                                                                              |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Threats Taxonomy**<br>/θrɛts tæksˈɒnəmi/ | **Khái niệm:** Hệ thống phân loại các loại mối đe dọa.<br>**Từ đồng nghĩa:** threat classification.<br>**Hình ảnh:** Cây phân loại các mối đe dọa.<br>**Câu chuyện:** Chuyên gia dùng taxonomy để phân tích tấn công. |
+
+### Flashcard 9: Cryptographic Provenance Tracking
+| **Front**                                                                   | **Back**                                                                                                                                                                                                               |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cryptographic Provenance Tracking**<br>/ˌkrɪptəˈɡræfɪk prɒvənəns ˈtrækɪŋ/ | **Khái niệm:** Theo dõi nguồn gốc dữ liệu bằng mã hóa.<br>**Từ đồng nghĩa:** secure data lineage.<br>**Hình ảnh:** Dấu vân tay mã hóa trên dữ liệu.<br>**Câu chuyện:** Xác minh dữ liệu chưa bị thay đổi hoặc giả mạo. |
+
+### Flashcard 10: Designing and Hardening
+| **Front**                                               | **Back**                                                                                                                                                                                                                        |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Designing and Hardening**<br>/dɪˈzaɪnɪŋ ænd ˈhɑrdnɪŋ/ | **Khái niệm:** Thiết kế và củng cố hệ thống để tăng bảo mật.<br>**Từ đồng nghĩa:** system reinforcement.<br>**Hình ảnh:** Tòa nhà kiên cố với nhiều lớp bảo vệ.<br>**Câu chuyện:** Kỹ sư thiết kế hệ thống AI nhiều lớp bảo vệ. |
+
+### Flashcard 11: Achieving Resilience
+| **Front**                                          | **Back**                                                                                                                                                                                                |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Achieving Resilience**<br>/əˈtʃiːvɪŋ rɪˈzɪliəns/ | **Khái niệm:** Khả năng hệ thống phục hồi sau sự cố.<br>**Từ đồng nghĩa:** robustness.<br>**Hình ảnh:** Cây bị gió bẻ nhưng vẫn đứng vững.<br>**Câu chuyện:** Hệ thống AI vẫn hoạt động dù bị tấn công. |
+
+---
