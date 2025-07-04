@@ -68,9 +68,7 @@ Tận dụng các lỗ hổng trong các giao thức như Model Context Protocol
 
 ![image](https://github.com/user-attachments/assets/a49a1817-a54a-4181-a2bf-5a4dca346635)
 
----
-
-Tiếp theo, tài liệu cũng điểm qua những thách thức chính và hướng nghiên cứu tương lai, như bảo mật các triển khai MCP thông qua việc:
+Trong phần tiếp theo, tài liệu cũng điểm qua những thách thức chính và hướng nghiên cứu tương lai, cách thức bảo mật các MCP thông qua việc:
 - Quản lý niềm tin động và theo dõi nguồn gốc mã hóa;
 - Thiết kế và gia cố các giao diện web đại lý;
 - Đạt được khả năng phục hồi trong môi trường đa đại lý và liên kết.
@@ -87,3 +85,51 @@ Cuối cùng, tài liệu này vừa là một lời cảnh báo vừa là một
 ![image](https://github.com/user-attachments/assets/61c16b5a-e755-4203-be31-c1174a45152c)
 
 ---
+## Cách học thuật ngữ tiếng Anh hiệu quả, dễ hiểu và nhớ lâu
+### 1. Hiểu khái niệm cơ bản (Basic Concept)
+Bắt đầu bằng việc hiểu rõ định nghĩa chính xác và cơ bản của thuật ngữ.
+
+Tóm tắt lại ý chính bằng ngôn ngữ đơn giản, tránh dùng thuật ngữ phức tạp ngay từ đầu.
+
+### 2. Từ đồng nghĩa (Synonyms) và cụm từ liên quan (Collocation)
+Tìm các từ đồng nghĩa, từ gần nghĩa để mở rộng vốn từ và hình dung thuật ngữ theo nhiều khía cạnh.
+
+Học các cụm từ thường đi kèm (collocations) để hiểu cách thuật ngữ được sử dụng trong ngữ cảnh.
+
+### 3. Chia tách từ (Word Breakdown)
+Phân tích thuật ngữ thành các thành phần nhỏ, hiểu ý nghĩa từng phần.
+
+Giúp liên tưởng dễ dàng và nhớ ý nghĩa tổng thể.
+
+### 4. Phát âm tương đồng (Phonetic Association)
+Luyện phát âm chuẩn để ghi nhớ qua âm thanh.
+
+Dùng kỹ thuật liên tưởng âm thanh gần giống để tăng khả năng ghi nhớ.
+
+### 5. Hình ảnh tương tự (Visual Association)
+Tìm hoặc tạo hình ảnh minh họa cho thuật ngữ, giúp bộ não dễ ghi nhớ hơn bằng thị giác.
+
+Hình ảnh càng liên quan và sinh động càng tốt.
+
+### 6. Kể câu chuyện (Storytelling)
+Tạo một câu chuyện, ví dụ thực tế hoặc tình huống liên quan đến thuật ngữ.
+
+Giúp kết nối kiến thức với cảm xúc và kinh nghiệm, tăng hiệu quả ghi nhớ.
+
+### 7. Lặp lại và thực hành (Repetition and Practice)
+Ôn tập thường xuyên, dùng flashcards, quiz, hoặc giải thích lại cho người khác.
+
+Sử dụng thuật ngữ trong câu, viết đoạn văn hoặc thảo luận.
+
+---
+## Các thuật ngữ quan trọng trong bài báo
+### Flashcard 1: Input Manipulation
+| **Front**                                                               | **Back**                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Input Manipulation**<br>/ˈɪnpʊt ˌmænɪpjʊˈleɪʃən/<br>Khai thác đầu vào | **Khái niệm:** Thao túng, điều khiển dữ liệu đầu vào của hệ thống AI để gây sai lệch kết quả.<br>**Từ đồng nghĩa:** dữ liệu bị thao túng, khai thác đầu vào.<br>**Hình ảnh:** ![minh họa](https://tse1.mm.bing.net/th/id/OIP.YDI-ElHsBUOzE3rHy9gUgQHaEK?pid=Api)<br>**Câu chuyện:** Hacker thay đổi dữ liệu gửi cho AI, khiến AI trả kết quả sai gây thiệt hại. |
+
+### Flashcard 2: Prompt Injection
+| **Front**                                                         | **Back**                                                                                                                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Prompt Injection**<br>/prɒmpt ɪnˈdʒɛkʃən/<br>Tiêm lệnh (vào AI) | **Khái niệm:** Chèn câu lệnh hoặc mã độc vào prompt, làm sai lệch hoặc kiểm soát AI.<br>**Từ đồng nghĩa:** tiêm lệnh, chèn lệnh.<br>**Hình ảnh:** ![minh họa](https://tse3.mm.bing.net/th/id/OIP.sTkoD95gzBLVLUXB16VEQgHaEE?pid=Api)<br>**Câu chuyện:** Kẻ tấn công chèn câu lệnh độc hại để chatbot tiết lộ dữ liệu bảo mật. |
+
