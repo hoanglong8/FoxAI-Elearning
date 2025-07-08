@@ -1,5 +1,10 @@
 # Tương lai công việc với AI Agents: Tự động hóa việc kiểm tra và tăng cường năng lực cho lực lượng lao động tại Hoa Kỳ
 (Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce)
+
+Link bài báo: https://arxiv.org/html/2506.06576v2
+
+Link bài Standford: https://futureofwork.saltlab.stanford.edu/
+
 ## Giới thiệu
 Nhóm các nhà nghiên cứu SALT của Stanford đã thực hiện cuộc khảo sát toàn diện nhất từ ​​trước đến nay về mức độ sẵn sàng sử dụng tác nhân AI trên thị trường lao động Hoa Kỳ.
 
@@ -18,10 +23,6 @@ Nhóm các nhà nghiên cứu SALT của Stanford đã thực hiện cuộc kh�
 - **Auditing Automation and Augmentation Potential (Tự động hóa việc kiểm tra và tăng cường năng lực)**: bài nghiên cứu tập trung vào việc đánh giá khả năng của AI trong việc tự động hóa các công việc và việc tăng cường năng lực làm việc của con người (augmentation).
 
 - **Across the U.S. Workforce (trong lực lượng lao động Mỹ)**: nghiên cứu này có phạm vi địa lý cụ thể, liên quan đến thị trường lao động tại Hoa Kỳ, với sự chú trọng vào cách mà AI có thể ảnh hưởng đến nhiều lĩnh vực nghề nghiệp khác nhau.
-
-Link nguồn Standford: https://arxiv.org/html/2506.06576v2
-
-Link bài báo: https://futureofwork.saltlab.stanford.edu/
 
 ![image](https://github.com/user-attachments/assets/b613592e-4460-46a8-b52a-28bb66fd5b92)
 
@@ -65,10 +66,15 @@ Khoảng 46,1% nhiệm vụ được khảo sát, người lao động bày tỏ
 ### 4.Mismatch giữa mong muốn và khả năng công nghệ
 Phân tích cho thấy có sự không khớp giữa mong muốn của người lao động và khả năng công nghệ hiện tại. Ví dụ, 41,0% nhiệm vụ được phân loại vào Low Priority Zone và Automation “Red Light” Zone, trong khi đầu tư và nghiên cứu hiện tại lại tập trung vào những khu vực này, bỏ qua nhiều nhiệm vụ tiềm năng trong Green Light Zone và R&D Opportunity Zone.
 
-![image](https://github.com/user-attachments/assets/4fa47fae-2ca3-44cd-8f24-59f97e817423)
+![image](https://github.com/user-attachments/assets/f15c520e-c7d8-4f58-be7b-255628467121)
+
 
 ### 5.Xu hướng thay đổi kỹ năng con người
 Báo cáo chỉ ra rằng sự tích hợp của AI agents có thể dẫn đến sự chuyển dịch trong các kỹ năng cốt lõi của con người, từ các kỹ năng xử lý thông tin sang các kỹ năng giao tiếp và tổ chức. Điều này phản ánh sự cần thiết phải chuẩn bị cho người lao động đối mặt với những thay đổi trong môi trường làm việc.
+
+![image](https://github.com/user-attachments/assets/4fa47fae-2ca3-44cd-8f24-59f97e817423)
+
+
 
 ![image](https://github.com/user-attachments/assets/e61b2a25-7bee-4150-b067-57ee6253793a)
 
