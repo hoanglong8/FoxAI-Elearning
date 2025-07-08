@@ -94,10 +94,42 @@ Link tài liệu: [Agentic AI in Financial Services](https://drive.google.com/fi
 Đây là những tài liệu dành cho các nhà phát triển muốn bắt tay vào code ngay lập tức.
 
 ### 5.1. OpenAI: Hướng dẫn Thực hành Xây dựng AI Agents
-
 Hướng dẫn thực hành với mã nguồn cụ thể để xây dựng các Tác nhân AI có khả năng mở rộng bằng công cụ của OpenAI.
 
 Link tài liệu: [A practical guide to building agents](https://drive.google.com/file/d/1Qcw1LW2n7XuUHGQQ1nSwP-ry92Zk-8mc/view?usp=sharing)
+
+## 6. Làm Chủ Tự Động Hóa Mạng Bằng Python: “Mastering Python Network Automation” (ebook)
+![image](https://github.com/user-attachments/assets/e576224b-e0b0-431d-b079-3517fdda99e0)
+
+Cuốn sách được cấu trúc thành 10 chương, dẫn dắt người đọc từ những khái niệm cơ bản đến các chủ đề phức tạp và chuyên sâu. Link tài liệu: [Mastering Python Network Automation](https://drive.google.com/file/d/1zBthQfGEA3UiAFx2t8CTAwT-X4t3C8gV/view)
+
+### Chương 1 & 2: Nền Tảng Python Vững Chắc Cho Kỹ Sư Mạng
+- Python Essentials for Networks: Giới thiệu vai trò của Python trong lập trình mạng. Bạn sẽ được ôn tập các kiến thức nền như kiểu dữ liệu, vòng lặp, hàm, xử lý lỗi – tất cả đều hướng đến ứng dụng trong tự động hóa mạng.
+- File Handling and Modules: Học cách thao tác với tệp, tổ chức mã nguồn bằng module và thư viện – kỹ năng cốt lõi để viết code sạch và có thể tái sử dụng
+tu-dong-hoa-mang-bang-python
+
+### Chương 3 & 4: Xây Dựng Lab Tự Động Hóa và Làm Chủ Các Thư Viện
+- Preparing the Lab: Hướng dẫn thiết lập môi trường lab thực hành. Từ cài đặt trình giả lập NS3, cấu hình Python, tạo môi trường ảo đến sử dụng VS Code.
+
+- Library Configuration: Làm quen với các thư viện quan trọng:
+  – Nornir: Framework thuần Python dành cho tự động hóa mạng quy mô lớn
+  – Paramiko & Netmiko: Kết nối và điều khiển thiết bị mạng qua SSH
+  – PyEZ: Tối ưu cho thiết bị Juniper
+
+### Chương 5 & 6: Thực Chiến Viết Code, Kiểm Thử và Quản Lý Cấu Hình
+- Code, Test & Validate Network Automation: Hướng dẫn quy trình viết, kiểm thử và xác thực kịch bản tự động hóa. Bạn cũng học cách debug lỗi hiệu quả.
+
+- Automation of Configuration Management: Tìm hiểu lý do cần quản lý cấu hình. Sách hướng dẫn cấp phép máy chủ với Terraform. Bạn cũng học cách dùng Python để tự động hóa các thiết lập hệ thống.
+
+### Chương 7 & 8: Tự Động Hóa Container và Điều Phối Workload
+- Managing Docker and Container Networks: Cung cấp kiến thức nền tảng về Docker và container. Hướng dẫn cách dùng Python để xây dựng và quản lý Docker image, container.
+
+- Orchestrating Container & Workloads: Khám phá về điều phối container. Tìm hiểu về khám phá dịch vụ (Service Discovery) với etcd. Sách cũng giới thiệu về Kubernetes Load Balancers và HAProxy.
+
+### Chương 9 & 10: Các Chủ Đề Mạng Nâng Cao
+- Pod Networking: Tìm hiểu về Pod và mạng trong Pod. Khám phá Calico và các giao thức định tuyến như BGP, OSPF.
+
+- Implementing Service Mesh: Đi sâu vào Service Mesh. Khám phá, cài đặt và sử dụng Istio để định tuyến traffic. Sách cũng hướng dẫn dùng Grafana để thu thập metrics.
 
 ## 7. Hỏi & Đáp (FAQ) về Xây dựng AI Agent
 ### 7.1. AI Agent khác gì so với chatbot thông thường?
