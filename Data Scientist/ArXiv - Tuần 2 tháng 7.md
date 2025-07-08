@@ -1,4 +1,9 @@
-# Tương lai công việc với AI Agents: Tự động hóa việc kiểm tra và tăng cường năng lực cho lực lượng lao động tại Hoa Kỳ
+# Nội dung
+- Bài báo "Tương lai công việc với AI Agents" và định hướng cho sản phẩm AI Agents tại Việt Nam
+- Tổng hợp 6 pattern AI Agent
+
+---
+# Phần 1 - Tương lai công việc với AI Agents: Tự động hóa việc kiểm tra và tăng cường năng lực cho lực lượng lao động tại Hoa Kỳ
 (Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce)
 
 Link bài báo: https://arxiv.org/html/2506.06576v2
@@ -159,3 +164,85 @@ Dựa trên những phát hiện từ nghiên cứu tại Hoa Kỳ và bối c�
 
   + Đảm bảo có sự giám sát của con người và phản hồi khi cần thiết, để AI luôn bổ trợ mà không thay thế hoàn toàn con người trong các quyết định quan trọng.
 
+---
+## Phần 2 - 6 Mẫu Thiết Kế AI Agent phổ biến
+
+Dưới đây là 6 mẫu thiết kế AI Agent phổ biến, giúp tối ưu hóa hiệu suất và khả năng tự chủ của hệ thống AI trong các tác vụ phức tạp.
+
+![image](https://github.com/user-attachments/assets/0ca86b1c-b167-4d0d-a6a6-36830d81d6dd)
+
+## 1. **ReAct Pattern (Reasoning + Acting)**
+### Mô tả:
+- **Mô hình kết hợp** giữa suy luận chuỗi (chain-of-thought) và hành động thực tế.
+- AI sẽ vừa suy nghĩ, vừa hành động để giải quyết các vấn đề phức tạp theo từng bước.
+
+### Ứng dụng:
+- Giải quyết các vấn đề như lập kế hoạch chiến lược, phân tích dữ liệu hoặc xử lý yêu cầu khách hàng.
+
+### Ví dụ:
+- Trong một cuộc trò chuyện, AI suy nghĩ về câu hỏi, thực hiện hành động như tìm kiếm thông tin, sau đó phản hồi dựa trên kết quả.
+
+## 2. **Tool Use Pattern**
+### Mô tả:
+- AI sử dụng các công cụ bên ngoài như API, cơ sở dữ liệu, hoặc công cụ lập trình để mở rộng khả năng và thực hiện các tác vụ phức tạp.
+
+### Ứng dụng:
+- Tự động hóa quy trình công việc, phân tích dữ liệu lớn, hoặc tích hợp với các hệ thống doanh nghiệp.
+
+### Ví dụ:
+- AI truy vấn cơ sở dữ liệu để lấy thông tin khách hàng, sau đó sử dụng dữ liệu đó để tạo báo cáo.
+
+## 3. **Planning Pattern**
+### Mô tả:
+- AI xây dựng kế hoạch hành động chi tiết dựa trên mục tiêu và bối cảnh hiện tại.
+
+### Ứng dụng:
+- Quản lý dự án, lập kế hoạch sản xuất, hoặc tối ưu hóa chuỗi cung ứng.
+
+### Ví dụ:
+- AI phân tích các bước cần thiết để hoàn thành một dự án, xác định nguồn lực và thời gian cần thiết, sau đó triển khai kế hoạch.
+
+![image](https://github.com/user-attachments/assets/613b4f28-865a-4808-9f08-6398a70e499d)
+
+## 4. **Multi-Agent Collaboration Pattern**
+### Mô tả:
+- Nhiều AI agents hợp tác với nhau, mỗi agent đảm nhận một vai trò chuyên biệt để hoàn thành nhiệm vụ chung.
+
+### Ứng dụng:
+- Hệ thống hỗ trợ khách hàng, phân tích dữ liệu đa chiều, hoặc điều phối logistics.
+
+### Ví dụ:
+- Trong một hệ thống hỗ trợ khách hàng, một agent xử lý yêu cầu kỹ thuật, trong khi agent khác giải quyết vấn đề thanh toán.
+
+## 5. **Reflection Pattern**
+### Mô tả:
+- AI tự đánh giá và cải thiện hành động của mình thông qua phản hồi và học hỏi.
+
+### Ứng dụng:
+- Phát triển phần mềm, tối ưu hóa quy trình, hoặc cải thiện trải nghiệm người dùng.
+
+### Ví dụ:
+- AI phân tích kết quả của một chiến dịch marketing, nhận diện điểm mạnh và yếu, sau đó điều chỉnh chiến lược cho phù hợp.
+
+## 6. **CodeAct Pattern**
+### Mô tả:
+- AI có khả năng hiểu và thực thi mã lập trình, đặc biệt là Python, để tương tác với môi trường và thực hiện các tác vụ tự động.
+
+### Ứng dụng:
+- Phát triển phần mềm, phân tích dữ liệu, hoặc tự động hóa quy trình công việc.
+
+### Ví dụ:
+- AI nhận yêu cầu từ người dùng, tạo mã Python để truy xuất dữ liệu từ API, sau đó xử lý và trả kết quả.
+
+## **So Sánh Các Mẫu Thiết Kế AI Agent**
+
+| Mẫu Thiết Kế               | Mức Độ Tự Chủ | Ứng Dụng Chính                     | Ví Dụ Điển Hình                          |
+|----------------------------|---------------|------------------------------------|------------------------------------------|
+| **ReAct**                  | Cao           | Giải quyết vấn đề phức tạp         | Trợ lý ảo, phân tích dữ liệu             |
+| **Tool Use**               | Trung Bình    | Tích hợp với công cụ bên ngoài      | Hệ thống CRM, phân tích dữ liệu lớn      |
+| **Planning**               | Cao           | Lập kế hoạch và tối ưu hóa          | Quản lý dự án, chuỗi cung ứng            |
+| **Multi-Agent Collaboration** | Rất Cao      | Hệ thống phân tán, hợp tác nhóm     | Hệ thống hỗ trợ khách hàng đa kênh       |
+| **Reflection**             | Trung Bình    | Cải thiện và tối ưu hóa liên tục    | Phát triển phần mềm, tối ưu hóa quy trình|
+| **CodeAct**                | Cao           | Tự động hóa qua mã lập trình        | Phân tích dữ liệu, tự động hóa quy trình|
+
+---
