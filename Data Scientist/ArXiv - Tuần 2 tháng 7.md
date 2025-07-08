@@ -117,7 +117,45 @@ Dựa trên những phát hiện từ nghiên cứu tại Hoa Kỳ và bối c�
 - Làm thế nào để các công ty phần mềm Việt Nam tận dụng tối đa tiềm năng của tác nhân AI để tăng cường năng suất trong các ngành công nghiệp truyền thống (ví dụ: dệt may, giày da, nông nghiệp) mà vẫn giảm thiểu nỗi lo mất việc làm cho người lao động?
 - Chúng ta có thể thiết kế các mô hình kinh doanh và triển khai AI nào để đảm bảo lợi ích được chia sẻ và sự chuyển đổi công việc diễn ra một cách công bằng và có hỗ trợ?
 
-### 7. Vai trò trong chính sách và quy định:
-- Các đơn vị phần mềm Việt Nam có thể đóng góp như thế nào vào việc xây dựng khuôn khổ pháp lý và đạo đức cho việc triển khai AI có trách nhiệm tại Việt Nam, đặc biệt là trong việc bảo vệ "quyền tự quyết của con người" (human agency) và đảm bảo tính minh bạch của AI?
+---
+# Dựa trên xu hướng Human × AI và các tín hiệu chuyển dịch trong doanh nghiệp Việt Nam, FoxAI sẽ định vị các phase phát triển sản phẩm RPA, AI và OCR theo hướng sau:
 
-Những câu hỏi này không chỉ là thách thức mà còn là cơ hội lớn để các đơn vị phần mềm Việt Nam định hình tương lai công việc, tạo ra những giải pháp AI mang lại giá trị thực sự cho người lao động và xã hội, đồng thời khẳng định vị thế trên bản đồ công nghệ toàn cầu.
+## 1. Phase 1 – Automation-First (H1–H2): Tự động hóa quy trình back-office
+- Mục tiêu: Triển khai tự động hóa các tác vụ đơn giản và lặp đi lặp lại như nhập liệu, đối soát chứng từ, thanh toán, chấm công, quản lý hồ sơ khách hàng thông qua RPA và OCR.
+
+- Lợi ích: Tiết kiệm thời gian, giảm thiểu sai sót, chuẩn hóa quy trình và tăng năng suất.
+
+- Hành động:
+
+  + Lựa chọn các quy trình có tính lặp lại cao và có thể chuẩn hóa như việc nhập dữ liệu từ hóa đơn, chứng từ, hay báo cáo.
+
+  + Áp dụng OCR để số hóa tài liệu giấy, dễ dàng lưu trữ và truy xuất thông tin.
+
+  + Đảm bảo rằng hệ thống RPA được tích hợp với các phần mềm ERP, CRM hiện có trong doanh nghiệp.
+
+## 2. Phase 2 – Agentic AI & Equal Partnership (H3): Cộng tác giữa AI và con người
+- Mục tiêu: Tăng cường tính sáng tạo và lập kế hoạch trong các quy trình đòi hỏi sự tham gia đồng thời của AI và con người, ví dụ như marketing campaign, chuỗi cung ứng, lập kế hoạch sản xuất, phân tích dữ liệu lớn.
+
+- Lợi ích: Tăng khả năng ra quyết định và sáng tạo, giúp tối ưu hóa quy trình, gia tăng khả năng cạnh tranh và thích ứng linh hoạt với thay đổi thị trường.
+
+- Hành động:
+
+  + Tích hợp AI agent vào các công việc sáng tạo, cung cấp ý tưởng, và đề xuất A/B test trong marketing hoặc dự báo nhu cầu trong chuỗi cung ứng.
+
+  + Đảm bảo rằng AI không chỉ là công cụ hỗ trợ mà còn có khả năng tự học và cải thiện dựa trên dữ liệu thực tế.
+
+  + Xây dựng các giao thức hợp tác giữa người và AI (protocol) để tránh xung đột và đảm bảo rằng quyết định luôn có sự kiểm soát của con người.
+
+## 3. Phase 3 – Human-in-Command Augmentation (H4–H5): AI bổ trợ cho quyết định chiến lược
+- Mục tiêu: Phát triển các hệ thống AI hỗ trợ quyết định chiến lược trong các lĩnh vực như đầu tư, tín dụng, y tế, nơi con người vẫn đóng vai trò quyết định nhưng AI hỗ trợ với khả năng tổng hợp dữ liệu, phân tích mô phỏng kịch bản và phản biện.
+
+- Lợi ích: Cải thiện chất lượng quyết định, giảm thiểu rủi ro và tăng hiệu quả trong các lĩnh vực nhạy cảm.
+
+- Hành động:
+
+  + Xây dựng các hệ thống AI có thể cung cấp mô phỏng kịch bản, giúp người quản lý hoặc các chuyên gia đưa ra quyết định chính xác hơn (ví dụ: phân tích tín dụng hoặc đánh giá rủi ro đầu tư).
+
+  + Áp dụng các mô hình explainability và confidence scoring để giúp người dùng hiểu rõ hơn về các quyết định mà AI đưa ra.
+
+  + Đảm bảo có sự giám sát của con người và phản hồi khi cần thiết, để AI luôn bổ trợ mà không thay thế hoàn toàn con người trong các quyết định quan trọng.
+
