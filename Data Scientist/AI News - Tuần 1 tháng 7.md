@@ -99,9 +99,12 @@ Hướng dẫn thực hành với mã nguồn cụ thể để xây dựng các 
 Link tài liệu: [A practical guide to building agents](https://drive.google.com/file/d/1Qcw1LW2n7XuUHGQQ1nSwP-ry92Zk-8mc/view?usp=sharing)
 
 ## 6. Làm Chủ Tự Động Hóa Mạng Bằng Python: “Mastering Python Network Automation” (ebook)
-![image](https://github.com/user-attachments/assets/e576224b-e0b0-431d-b079-3517fdda99e0)
 
-Cuốn sách được cấu trúc thành 10 chương, dẫn dắt người đọc từ những khái niệm cơ bản đến các chủ đề phức tạp và chuyên sâu. Link tài liệu: [Mastering Python Network Automation](https://drive.google.com/file/d/1zBthQfGEA3UiAFx2t8CTAwT-X4t3C8gV/view)
+<img src="https://github.com/user-attachments/assets/e576224b-e0b0-431d-b079-3517fdda99e0" alt="Hình ảnh" width="60%" />
+
+Cuốn sách được cấu trúc thành 10 chương, dẫn dắt người đọc từ những khái niệm cơ bản đến các chủ đề phức tạp và chuyên sâu. 
+
+Link tài liệu: [Mastering Python Network Automation](https://drive.google.com/file/d/1zBthQfGEA3UiAFx2t8CTAwT-X4t3C8gV/view)
 
 ### Chương 1 & 2: Nền Tảng Python Vững Chắc Cho Kỹ Sư Mạng
 - Python Essentials for Networks: Giới thiệu vai trò của Python trong lập trình mạng. Bạn sẽ được ôn tập các kiến thức nền như kiểu dữ liệu, vòng lặp, hàm, xử lý lỗi – tất cả đều hướng đến ứng dụng trong tự động hóa mạng.
