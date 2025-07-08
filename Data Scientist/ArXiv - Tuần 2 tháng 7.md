@@ -74,7 +74,11 @@ Báo cáo chỉ ra rằng sự tích hợp của AI agents có thể dẫn đế
 
 ![image](https://github.com/user-attachments/assets/4fa47fae-2ca3-44cd-8f24-59f97e817423)
 
+Bằng cách so sánh thứ hạng kỹ năng dựa trên hai chiều hướng của "Mức độ tác nhân của con người trong tương lai" và "Mức lương trung bình hiện tại", nhóm nghiên cứu đã khám phá ra ba xu hướng mới nổi có khả năng định hình tương lai của công việc con người:
 
+- **Nhu cầu về kỹ năng xử lý thông tin đang giảm**: Các kỹ năng liên quan đến phân tích dữ liệu và cập nhật kiến ​​thức—mặc dù phổ biến trong các ngành nghề lương cao ngày nay nhưng lại ít nổi bật hơn trong các nhiệm vụ đòi hỏi tính chủ động của con người cao.
+- **Tập trung nhiều hơn vào các kỹ năng giao tiếp và tổ chức**: Các kỹ năng liên quan đến tương tác giữa con người, phối hợp và giám sát tài nguyên thường liên quan nhiều hơn đến các nhiệm vụ HAS cao, ngay cả khi chúng hiện không được ưu tiên trong các đánh giá dựa trên tiền lương.
+- **Kỹ năng đại lý cao bao gồm nhiều khía cạnh khác nhau**: 10 kỹ năng hàng đầu có mức trung bình cao nhất cần có đại lý con người bao gồm nhiều phạm vi, từ khả năng giao tiếp giữa các cá nhân và tổ chức đến khả năng ra quyết định và phán đoán chất lượng.
 
 ![image](https://github.com/user-attachments/assets/e61b2a25-7bee-4150-b067-57ee6253793a)
 
