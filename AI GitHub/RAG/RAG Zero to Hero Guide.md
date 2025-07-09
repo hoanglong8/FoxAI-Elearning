@@ -616,7 +616,7 @@ Hướng dẫn chi tiết từ cơ bản đến nâng cao, bao gồm:
 - Đánh giá và giám sát hiệu suất của hệ thống RAG.
 
 ---
-## 🧪 Khóa Học Đánh Giá RAG
+## 🧪 Hệ thống Đánh Giá RAG
 ### 1. Giới thiệu về các chỉ số đánh giá RAG
 Tổng quan về các chỉ số đánh giá hiệu suất của hệ thống RAG, bao gồm:
 
@@ -630,11 +630,11 @@ Tổng quan về các chỉ số đánh giá hiệu suất của hệ thống RA
 
 ##### Đánh giá bộ tạo câu trả lời (Generator):
 
-Độ trung thực (Faithfulness).
+- Độ trung thực (Faithfulness).
 
-Tỷ lệ "ảo giác" (Hallucination).
+- Tỷ lệ "ảo giác" (Hallucination).
 
-Độ liên quan của câu trả lời (Response Relevancy).
+- Độ liên quan của câu trả lời (Response Relevancy).
 
 ### 2. Đánh giá RAG bằng RAGAS
 Hướng dẫn sử dụng thư viện RAGAS để đánh giá hiệu suất của hệ thống RAG thông qua các chỉ số đã đề cập.
@@ -711,5 +711,49 @@ Tổng hợp các bài báo khảo sát toàn diện về RAG, bao gồm:
 [Top 10 RAG Use Cases and 17 Essential Tools for Implementation](https://www.chatbees.ai/blog/rag-use-cases)
 
 [Top 9 RAG Tools to Boost Your LLM Workflows](https://lakefs.io/blog/rag-tools/)
+
+---
+## 🔗 Giao thức và tiêu chuẩn giao tiếp giữa các bước trong pipeline
+Để đảm bảo tính linh hoạt và khả năng mở rộng, các bước trong pipeline RAG nên giao tiếp với nhau thông qua các giao thức và tiêu chuẩn sau:
+
+### 🔹 Giao thức giao tiếp
+HTTP/HTTPS với RESTful API: Phù hợp cho các hệ thống phân tán và dễ dàng tích hợp với các dịch vụ khác.
+
+gRPC: Cung cấp hiệu suất cao và hỗ trợ truyền dữ liệu nhị phân, thích hợp cho các hệ thống yêu cầu tốc độ và hiệu quả.
+
+Message Queues (e.g., Kafka, RabbitMQ): Hữu ích cho việc xử lý dữ liệu bất đồng bộ và đảm bảo độ tin cậy trong truyền thông tin.
+
+### 🔹 Tiêu chuẩn định dạng dữ liệu
+JSON: Định dạng phổ biến, dễ đọc và dễ xử lý, phù hợp cho hầu hết các API.
+
+Protocol Buffers (Protobuf): Định dạng nhị phân hiệu quả, phù hợp cho các hệ thống yêu cầu hiệu suất cao.
+
+### 🔹 Tiêu chuẩn giao tiếp
+OpenAPI Specification (Swagger): Giúp định nghĩa rõ ràng các API và tự động hóa việc tạo tài liệu và mã nguồn.
+
+AsyncAPI: Phù hợp cho việc mô tả các API bất đồng bộ, đặc biệt hữu ích khi sử dụng message queues.
+
+## 🔄 Cách thay thế từng công cụ/thư viện/core lõi mà không cần thay đổi pipeline
+Để đảm bảo khả năng thay thế linh hoạt các thành phần trong pipeline mà không ảnh hưởng đến toàn bộ hệ thống, bạn nên áp dụng các chiến lược sau:
+
+### 🔹 Thiết kế theo kiến trúc mô-đun
+Định nghĩa rõ ràng các giao diện (interfaces): Mỗi thành phần trong pipeline nên có một giao diện rõ ràng, định nghĩa các phương thức và định dạng dữ liệu đầu vào/đầu ra.
+
+Tách biệt logic xử lý và giao tiếp: Giúp dễ dàng thay thế logic xử lý mà không ảnh hưởng đến cách các thành phần giao tiếp với nhau.
+
+### 🔹 Sử dụng các công cụ và framework hỗ trợ
+LangChain: Hỗ trợ xây dựng các pipeline RAG với khả năng thay thế linh hoạt các thành phần như retriever, LLM, và vector store.
+
+Haystack: Cung cấp kiến trúc modular, cho phép dễ dàng thay thế và kết hợp các thành phần khác nhau trong pipeline.
+
+### 🔹 Áp dụng các mẫu thiết kế phần mềm
+Factory Pattern: Cho phép tạo ra các đối tượng mà không cần chỉ định lớp cụ thể, giúp dễ dàng thay thế các thành phần.
+
+Adapter Pattern: Cho phép các thành phần không tương thích làm việc cùng nhau bằng cách chuyển đổi giao diện của một lớp thành giao diện khác.
+
+### 🔹 Sử dụng cấu hình thay vì mã hóa cứng
+Tệp cấu hình (e.g., YAML, JSON): Lưu trữ thông tin về các thành phần được sử dụng, cho phép thay đổi mà không cần sửa mã nguồn.
+
+Biến môi trường: Cho phép cấu hình linh hoạt trong các môi trường triển khai khác nhau.
 
 ---
