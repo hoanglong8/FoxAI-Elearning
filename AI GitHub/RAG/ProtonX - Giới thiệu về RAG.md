@@ -122,3 +122,59 @@ Nội dung Slide: https://drive.google.com/file/d/1a88Skfkp8OhpLndvbmwTE07N9PsM-
 
 Agent ReAct framework - Slide: https://drive.google.com/file/d/1inr_rNzNDhhW09e4KroaQ4VnvWhFDfzT/view
 
+---
+## Multimodal RAG
+
+![image](https://github.com/user-attachments/assets/4be6bd14-effe-44b5-87f6-d81e147c08f5)
+
+---
+## Đánh giá chất lượng hệ thống RAG
+
+![image](https://github.com/user-attachments/assets/45b01ec6-6b4f-4671-90b6-f4a3bd4f8610)
+
+- Hệ thống retrieval có truy xuất đúng các documents chứa thông tin cần thiết để trả lời query hay không?
+
+- Mô hình rerank có sắp xếp đúng mức độ ưu tiên của các tài liệu liên quan nhất, để đưa bằng chứng tốt nhất lên đầu cho mô hình ngôn ngữ sử dụng không?
+
+- Dựa trên các documents đã được truy xuất, language model có tạo ra response đúng và đủ để trả lời query hay không?
+
+### Các nhóm chỉ số đánh giá phổ biến nhất hiện nay
+#### 1. LLM-Judged Metrics (Dùng LLM để chấm điểm)
+
+Đánh giá độ phù hợp và tính đúng đắn của câu trả lời:
+
+- Context Relevance / Precision / Recall / Entities Recall: Truy xuất có đúng tài liệu không?
+
+- Response Relevancy: Câu trả lời có liên quan tới câu hỏi?
+
+- Groundedness: Câu trả lời có dựa đúng vào tài liệu?
+
+- Noise Sensitivity: Câu trả lời có bị nhiễu khi tài liệu không liên quan?
+
+#### 2. Automatic Metrics (Tự động, không cần LLM)
+
+**2.1 Semantic (dựa trên vector embeddings):**
+
+- Precision / Recall
+
+- Similarity giữa câu hỏi và tài liệu
+
+**2.2 Rule-based (dựa trên matching rules):**
+
+- BLEU, ROUGE: Đo mức độ trùng khớp n-gram với câu trả lời mẫu
+
+- Exact Match, String Presence: So sánh từ khoá, trùng chuỗi
+
+- Hit@K, Recall@K: Truy xuất đúng tài liệu nằm trong Top-K
+
+- nDCG@K, MRR, MAP: Đánh giá thứ tự sắp xếp tài liệu
+
+**Ghi chú thêm:**
+
+- LLM Answer: Đánh giá chất lượng câu trả lời cuối cùng của mô hình
+
+- Retrieval: Đánh giá giai đoạn truy xuất tài liệu
+
+- Rerank: Đánh giá khả năng xếp hạng lại các tài liệu đã truy xuất
+
+---
