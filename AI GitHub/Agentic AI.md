@@ -1,4 +1,25 @@
-## Nghiên cứu ReAct (Reason và Action) trong Agent
+# Agent
+## LLMs trong Agent
+
+### Giới thiệu tổng quan về Agent
+Nội dung Slide: https://drive.google.com/file/d/1h9Nyw973Xpx-WWMMjUl-Jx0F3fh66aJ9/view
+
+---
+### Lập trình Agent sử dụng thư viện OpenAI Agents SDK
+- Agents: Các mô hình LLM được thiết lập với hướng dẫn, công cụ, quy tắc an toàn và khả năng chuyển giao nhiệm vụ.
+
+- Handoffs: Cho phép các agent chuyển giao quyền kiểm soát cho agent khác để thực hiện các nhiệm vụ cụ thể.
+
+- Guardrails: Các cơ chế kiểm tra an toàn có thể tùy chỉnh để xác thực đầu vào và đầu ra.
+
+- Tracing: Hệ thống theo dõi tự động quá trình hoạt động của agent, giúp bạn quan sát, gỡ lỗi và tối ưu hóa quy trình làm việc.
+
+RAG Agent
+![image](https://github.com/user-attachments/assets/ba3a3317-18e7-446a-af4c-1312c9f064a3)
+
+
+---
+## ReAct (Reason và Action) trong Agent
 
 Link nguồn: https://arxiv.org/pdf/2210.03629
 
