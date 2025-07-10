@@ -67,8 +67,10 @@ Hướng dẫn chi tiết tạo khóa học: https://blog.protonx.io/vi/docs/Cla
 
 Video hướng dẫn sử dụng CourseMind: https://youtu.be/voM9ZPjI5L0
 
+![image](https://github.com/user-attachments/assets/72c31646-8376-4cd7-b05c-1d4bfe70cfa0)
+
 ---
-# Hugging Face
+# [Hugging Face](https://huggingface.co/learn/agents-course/unit0/introduction)
 Hướng dẫn cách tạo một website đào tạo nội bộ cho nhân viên, tương tự như trang [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction).
 
 ![Hình](https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit0/thumbnail.jpg)
