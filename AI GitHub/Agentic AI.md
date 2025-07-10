@@ -13,6 +13,8 @@ ReAct (viết tắt của Reason + Act) là một kỹ thuật cho phép mô hì
 
 Thay vì tách biệt hai quá trình này, ReAct cho phép mô hình xen kẽ giữa suy nghĩ và hành động, tạo ra một chuỗi các bước: Suy nghĩ → Hành động → Quan sát → Suy nghĩ..., giúp mô hình xử lý nhiệm vụ một cách linh hoạt và thích ứng hơn.
 
+Nội dung Slide: https://drive.google.com/file/d/1inr_rNzNDhhW09e4KroaQ4VnvWhFDfzT/view
+
 ### 🔍 Cách hoạt động của ReAct
 ReAct sử dụng một chiến lược nhắc nhở (prompting) đặc biệt, trong đó mô hình được cung cấp các ví dụ về cách xen kẽ giữa suy nghĩ và hành động. Khi đối mặt với một nhiệm vụ, mô hình sẽ:
 
@@ -95,3 +97,15 @@ Thiết lập cơ chế để mô hình xử lý các trường hợp ngoại l�
 Áp dụng các biện pháp bảo mật để bảo vệ thông tin khách hàng và tuân thủ các quy định liên quan đến dữ liệu.
 
 ---
+# Function Calling và Tools Calling
+
+Thực hành lập trình Function Calling và Tools với Gemini 2.0: https://colab.research.google.com/drive/17ZNwxDwhXt9SZfdQtuQ1DzTLIFzt2oFL?usp=sharing
+
+Function Calling với Open AI: https://colab.research.google.com/drive/1_ludopQhe2EDG-FC1HwU6W6kadwwKb8q#scrollTo=VJkMXZEJlOIY
+
+Agents theo ReactFramework: https://colab.research.google.com/drive/1i6FrgSXsWXLTEq00x4KtemQXFQtNiyFX#scrollTo=oLidoJGTQkrC&uniqifier=1
+
+Pandas Agents - Truy xuất dữ liệu bảng sử dụng Agents: https://colab.research.google.com/drive/1yvv0VQnRU_LKezs00aL1vBDjkyoYRuvW?usp=sharing
+
+Agents tìm kiếm thông tin + tính toán số học: https://colab.research.google.com/drive/1s1o9bQxbX4h0UA6AA-p71wSNpvPATr-t?usp=sharing
+
