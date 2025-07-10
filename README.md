@@ -1,5 +1,4 @@
 # FoxAI E-Learning Platform
-
 ## Mục Đích
 
 FoxAI E-Learning Platform là hệ thống đào tạo nội bộ dành cho nhân viên tại FoxAI, giúp quản lý và cung cấp các khóa học trực tuyến, bài kiểm tra (quiz), và chứng chỉ cho người dùng. Hệ thống này nhằm nâng cao năng lực nhân viên thông qua `các bài học`, `bài kiểm tra`, và `chứng nhận hoàn thành khóa học`, đồng thời `theo dõi tiến độ học tập` của nhân viên trong công ty.
@@ -10,7 +9,6 @@ Tài liệu này bao gồm:
 - Giáo án và khung đào tạo:...
 
 ---
-
 ## Thông tin đăng nhập ChatGPT chung của Công ty FoxAI
 
 ![image](https://github.com/user-attachments/assets/746761a1-4eab-4c6f-9dc1-2ca1eacdf98b)
@@ -21,7 +19,56 @@ Pass: `Fox@12345678`
 Nếu cần CODE thì nhắn tin liên hệ với Zalo Mr.Long - `0967566988`
 
 ---
+# [CourseMind](https://coursemind.io/?lang=vi)
 
+## 🧑‍🏫 Hướng dẫn tạo khóa học miễn phí trên CourseMind
+
+![image](https://github.com/user-attachments/assets/017a1bae-28b8-4f0b-9f27-09115feec65b)
+
+### Bước 1: Đăng ký hoặc đăng nhập tài khoản
+Truy cập https://coursemind.io và đăng ký tài khoản miễn phí nếu bạn chưa có.
+
+Sau khi đăng nhập, bạn sẽ được chuyển đến bảng điều khiển cá nhân.
+
+### Bước 2: Tạo khóa học mới
+Vào mục “Khoá học” hoặc truy cập trực tiếp https://coursemind.io/courses.
+
+Nhấn nút “Thêm” để bắt đầu tạo khóa học mới.
+
+Nhập tên khóa học và nhấn “Sau” để tiếp tục.
+
+### Bước 3: Viết mô tả khóa học
+Bạn có thể tự viết phần giới thiệu hoặc sử dụng tính năng “Sinh tự động” để AI hỗ trợ tạo mô tả chi tiết và hấp dẫn cho khóa học của bạn.
+
+### Bước 4: Chọn chế độ học
+Mở khóa tuần tự: Học viên phải hoàn thành chủ đề hiện tại trước khi chuyển sang chủ đề tiếp theo.
+
+Mở khóa toàn bộ: Học viên có thể truy cập tất cả các chủ đề bất kỳ lúc nào.
+
+### Bước 5: Chọn tổ chức cho khóa học
+Nếu bạn chưa có tổ chức, hệ thống sẽ hướng dẫn bạn tạo mới.
+
+### Bước 6: Hoàn tất tạo khóa học
+Nhấn “Hoàn tất” để hoàn thành quá trình tạo khóa học.
+
+Khóa học của bạn sẽ xuất hiện trong mục “Khoá học của bạn” để bạn quản lý và chỉnh sửa khi cần.
+
+## 🛠️ Các tính năng nổi bật khác của CourseMind
+- Quản lý nội dung: Thêm bài học, bài tập, và tài liệu một cách linh hoạt.
+
+- Tự động hóa email: Gửi email thông báo hoặc nhắc nhở học viên tự động.
+
+- Theo dõi tiến độ học tập: Xem báo cáo chi tiết về hoạt động và tiến độ của học viên.
+
+- Tạo chiến dịch marketing: Tăng cường quảng bá khóa học của bạn đến nhiều đối tượng hơn.
+
+## 📚 Tài nguyên hỗ trợ
+Hướng dẫn chi tiết tạo khóa học: https://blog.protonx.io/vi/docs/Class/Teacher/create-course/
+
+Video hướng dẫn sử dụng CourseMind: https://youtu.be/voM9ZPjI5L0
+
+---
+# Hugging Face
 Hướng dẫn cách tạo một website đào tạo nội bộ cho nhân viên, tương tự như trang [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction).
 
 ![Hình](https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit0/thumbnail.jpg)
