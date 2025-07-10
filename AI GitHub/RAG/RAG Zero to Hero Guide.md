@@ -758,69 +758,46 @@ Biến môi trường: Cho phép cấu hình linh hoạt trong các môi trườ
 
 ---
 ## 🧭 Phân loại giao diện người dùng và giám sát theo từng bước trong pipeline RAG
-| Bước                 | Mô tả                  | Giao diện người dùng (End-user UI) | Giao diện quản trị (Admin UI) | Ghi chú                                                                            |   |
+| Bước                 | Mô tả                  | Giao diện người dùng (End-user UI) | Giao diện quản trị (Admin UI) | Giao diện Dev                                                                            |   |
 | -------------------- | ---------------------- | ---------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------- | - |
-| 1️⃣ Extract          | Trích xuất dữ liệu thô | ❌                                  | ✅                             | Chạy ngầm; cần giao diện quản trị để theo dõi tiến trình và lỗi.                   |   |
-| 2️⃣ Chunking         | Chia nhỏ văn bản       | ❌                                  | ✅                             | Chạy ngầm; cần giao diện quản trị để cấu hình và giám sát.                         |   |
-| 3️⃣ Embedding        | Biểu diễn vector       | ❌                                  | ✅                             | Chạy ngầm; cần giao diện quản trị để theo dõi hiệu suất và lỗi.                    |   |
-| 4️⃣ Indexing         | Lập chỉ mục vector     | ❌                                  | ✅                             | Chạy ngầm; cần giao diện quản trị để giám sát trạng thái chỉ mục.                  |   |
-| 5️⃣ Retrieval        | Truy xuất thông tin    | ✅                                  | ✅                             | Người dùng có thể xem kết quả truy xuất; quản trị viên giám sát hiệu suất.         |   |
-| 6️⃣ Reranking        | Sắp xếp lại kết quả    | ✅                                  | ✅                             | Người dùng có thể thấy kết quả được sắp xếp lại; quản trị viên giám sát hiệu suất. |   |
-| 7️⃣ Augmented Prompt | Tạo prompt tăng cường  | ❌                                  | ✅                             | Chạy ngầm; cần giao diện quản trị để theo dõi cấu trúc prompt.                     |   |
-| 8️⃣ Generation       | Sinh phản hồi bằng LLM | ✅                                  | ✅                             | Người dùng thấy phản hồi; quản trị viên giám sát chất lượng và hiệu suất.          |   |
-| 9️⃣ Post-processing  | Xử lý đầu ra           | ✅                                  | ✅                             | Người dùng thấy kết quả cuối cùng; quản trị viên giám sát các bước xử lý sau.      |   |
+| 1️⃣ Extract          | Trích xuất dữ liệu thô | ❌                                  | ❌                             | ✅                   |   |
+| 2️⃣ Chunking         | Chia nhỏ văn bản       | ❌                                  | ✅                             | ✅                   |   |
+| 3️⃣ Embedding        | Biểu diễn vector       | ❌                                  | ❌                             | ✅                   |   |
+| 4️⃣ Indexing         | Lập chỉ mục vector     | ❌                                  | ❌                             | ✅                   |   |
+| 5️⃣ Retrieval        | Truy xuất thông tin    | ❌                                  | ❌                             | ✅                   |   |
+| 6️⃣ Reranking        | Sắp xếp lại kết quả    | ✅                                  | ✅                             | ✅                   |   |
+| 7️⃣ Augmented Prompt | Tạo prompt tăng cường  | ❌                                  | ✅                             | ✅                   |   |
+| 8️⃣ Generation       | Sinh phản hồi bằng LLM | ❌                                  | ❌                             | ✅                   |   |
+| 9️⃣ Post-processing  | Xử lý đầu ra           | ✅                                  | ✅                             | ✅                   |   |
 
-## 🧩 Gợi ý giao diện người dùng (UI) cho người dùng cuối
-### Giao diện truy vấn:
+## 🧩 Giao diện hội thoại (UI chat) cho người dùng cuối
+- Ô nhập câu hỏi.
+- Hiển thị phản hồi từ chatbot (bao gồm xem cả trích dẫn nguồn gốc - số trang - số mục heading).
+- Tùy chọn xem thứ tự sắp xếp lại của các đoạn văn bản (nếu chọn chế độ reasoning).
+- Tùy chọn đánh giá phản hồi (hữu ích/không hữu ích).
+- Tùy chọn báo cáo lỗi hoặc phản hồi không chính xác.
 
-Ô nhập câu hỏi.
-
-Hiển thị phản hồi từ chatbot.
-
-Tùy chọn xem nguồn thông tin được sử dụng (nếu cần).
-
-### Giao diện phản hồi chi tiết:
-
-Hiển thị các đoạn văn bản được truy xuất.
-
-Hiển thị thứ tự sắp xếp lại của các đoạn văn bản.
-
-Hiển thị prompt tăng cường (nếu phù hợp).
-
-### Giao diện phản hồi người dùng:
-
-Tùy chọn đánh giá phản hồi (hữu ích/không hữu ích).
-
-Tùy chọn báo cáo lỗi hoặc phản hồi không chính xác.
-
-## 🛠️ Gợi ý giao diện quản trị (Admin UI) và công cụ giám sát
-### Bảng điều khiển tổng quan:
-
-Hiển thị trạng thái hoạt động của từng bước trong pipeline.
-
-Hiển thị các cảnh báo và lỗi hệ thống.
-
-### Giám sát hiệu suất:
-
-Thời gian xử lý trung bình cho từng bước.
-
-Tỷ lệ lỗi và thất bại.
-
-Sử dụng tài nguyên hệ thống (CPU, bộ nhớ).
+## 🛠️ Giao diện quản trị Admin UI:
+- Hiển thị phân đoạn văn bản được chia nhỏ.
+- Hiển thị các đoạn văn bản được truy xuất.
+- Hiển thị thứ tự sắp xếp lại của các đoạn văn bản.
+- Hiển thị prompt tăng cường.
+- Hiển thị các cảnh báo và lỗi hệ thống trong bảng điều khiển tổng quan.
 
 ### Cấu hình hệ thống:
+- Theo dõi truy vấn và phản hồi cụ thể để phân tích lỗi.
+- Tùy chọn cấu hình cho từng bước (ví dụ: kích thước chunk, mô hình embedding).
+- Quản lý phiên bản và cập nhật mô hình.
+- Nhật ký và theo dõi
 
-Tùy chọn cấu hình cho từng bước (ví dụ: kích thước chunk, mô hình embedding).
+## 🛠️ Công cụ giám sát của Devs:
 
-Quản lý phiên bản và cập nhật mô hình.
+### Giám sát hiệu suất:
+- Thời gian xử lý trung bình cho từng bước.
+- Tỷ lệ lỗi và thất bại.
+- Sử dụng tài nguyên hệ thống (CPU, bộ nhớ).
 
-Nhật ký và theo dõi:
-
-Truy cập nhật ký hệ thống cho từng bước.
-
-Theo dõi truy vấn và phản hồi cụ thể để phân tích lỗi.
-
-## 🔧 Công cụ giám sát và quan sát đề xuất
+### 🔧 Công cụ giám sát và quan sát đề xuất
 - Prometheus & Grafana: Giám sát hiệu suất và trực quan hóa dữ liệu.
 
 - ELK Stack (Elasticsearch, Logstash, Kibana): Thu thập và phân tích nhật ký hệ thống.
