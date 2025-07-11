@@ -1,26 +1,31 @@
-# 🎯 Mục tiêu của loạt series: 700 bài chia sẻ AI thực chiến trong doanh nghiệp
+# 🎯 700 bài chia sẻ AI thực chiến trong doanh nghiệp
 
-Mình đang thực hiện một hành trình 700 bài viết chia sẻ kiến thức thực chiến về AI trong doanh nghiệp, với kỳ vọng hoàn thành trong khoảng 3 năm.
-Nghe có vẻ hơi điên rồ và lãng phí thơi gian nhưng mình xem đây là một cách để:
-Rèn luyện kỷ luật cá nhân trong việc học AI
-Lan toả tư duy phát hiện sớm – giải quyết vấn đề đúng cách
-Xây dựng nền tảng để sau này có thể tư vấn, đồng hành cùng các doanh nghiệp lớn ứng dụng AI bài bản hơn
-Trong các bài viết hiện tại và sắp tới, Mình đã và sẽ không tập trung vào việc hướng dẫn từng dòng code, mà cố gắng giải thích mindset, logic và best practices mà mình học được từ các hệ thống lớn như LinkedIn, Meta, Microsoft,...hay từ cộng đồng AI...
+Link nguồn: https://www.facebook.com/groups/694306310161753/
 
-<img width="526" height="526" alt="image" src="https://github.com/user-attachments/assets/9b4c434a-deae-4419-aad8-5e26dbb4f172" />
+Một số bài viết liên quan: https://viblo.asia/p/toi-uu-hoa-rag-cho-du-lieu-co-cau-truc-voi-text2sql-x7Z4DOOPVnX
 
-## 💡 Tất cả đều miễn phí – mục tiêu là chia sẻ & cộng đồng
-Series này mình không bán khóa học, không upsell gì cả, chỉ đơn giản là chia sẻ kiến thức mình học được, trải nghiệm được.
-Mình chỉ hi vọng:
-Giúp các doanh nghiệp và các bạn đang làm AI hiểu rõ hơn cách triển khai giải pháp thực tế
-Rút ngắn đường cong học tập bằng cách chia sẻ tư duy của “expert thật sự”, chứ không chỉ mày mò thử-sai như mình đã từng và đang khi học để chia sẽ cho mọi người
+Link GitHub: https://github.com/vanna-ai/vanna
+
+<img width="2406" height="1724" alt="image" src="https://github.com/user-attachments/assets/7a057370-8a36-42e0-8df0-8e03b7ac60ea" />
+
+Link GitHub: https://github.com/sinaptik-ai/pandas-ai
+
+Link GitHub: https://github.com/Canner/WrenAI
+
+<img width="2837" height="1284" alt="image" src="https://github.com/user-attachments/assets/1e4d375d-9faa-4f0b-a7f8-ba03f0d1620f" />
+
+Link GitHub: https://github.com/sqlchat/sqlchat
+
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/0cd46e66-09b2-499b-a908-6cf8451ba97c" />
+
+---
 
 ## 🧠 Tập trung vào tư duy phát hiện vấn đề sớm – không chỉ “chạy được là xong”
 Bạn có thể thấy trong các bài viết, mình thường không đi sâu code.
 Thay vào đó, mình đặt câu hỏi như:
 Nếu bạn build chatbot trả lời SQL cho ngân hàng, nhưng quên tính privacy thì sao?
 Bạn có nghĩ đến retry, logging, hoặc cách scale agent khi tăng truy vấn chưa?
-Nếu openai sập trong 1 giờ, liệu app của bạn có chết theo không?
+Nếu OpenAI sập trong 1 giờ, liệu app của bạn có chết theo không?
 => Đây chính là góc nhìn mình hi vọng có thể mang đến:
 Phát hiện sớm – xử lý đúng – tiết kiệm chi phí & thời gian.
 
