@@ -20,7 +20,7 @@ P/s 1: Đăng nhập như hình ảnh chứ không phải đăng nhập bằng G
 
 P/s 2: Trong quá trình đăng nhập lần đầu trên 1 thiết bị mới, ChatGPT có thể yêu cầu CODE thì nhắn tin liên hệ với Zalo Mr.Long - 0967566988
 
-Sau khi đăng nhập thì chọn không gian làm việc chung là `FoxAI` theo hình sau:
+Sau khi đăng nhập thì chọn không gian làm việc chung là `FoxAI` để có thể sử dụng được các tính năng như `GPT Stores` và `Projects` vượt trội so với không gian làm việc cá nhân:
 
 <img width="451" height="166" alt="image" src="https://github.com/user-attachments/assets/6e9258b3-abdc-4fb6-8916-c48e61cf4e4c" />
 
