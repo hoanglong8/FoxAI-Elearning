@@ -16,7 +16,13 @@ Tài liệu này bao gồm:
 Tài khoản đăng nhập: `congtycophan001@gmail.com`
 Pass: `Fox@12345678`
 
-Nếu cần CODE thì nhắn tin liên hệ với Zalo Mr.Long - `0967566988`
+P/s 1: Đăng nhập như hình ảnh chứ không phải đăng nhập bằng Gmail
+
+P/s 2: Trong quá trình đăng nhập lần đầu trên 1 thiết bị mới, ChatGPT có thể yêu cầu CODE thì nhắn tin liên hệ với Zalo Mr.Long - 0967566988
+
+Sau khi đăng nhập thì chọn không gian làm việc chung là `FoxAI` theo hình sau:
+
+<img width="451" height="166" alt="image" src="https://github.com/user-attachments/assets/6e9258b3-abdc-4fb6-8916-c48e61cf4e4c" />
 
 ---
 # [CourseMind](https://coursemind.io/?lang=vi)
