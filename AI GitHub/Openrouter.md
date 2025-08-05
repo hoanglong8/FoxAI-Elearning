@@ -1,6 +1,6 @@
 **Giới thiệu về OpenRouter: Nền tảng AI đa mô hình cho lập trình viên và doanh nghiệp**
 
-OpenRouter là một nền tảng API thống nhất, cho phép truy cập hơn 400 mô hình ngôn ngữ lớn (LLM) từ hơn 60 nhà cung cấp khác nhau, bao gồm OpenAI, Anthropic, Google, Meta, DeepSeek và nhiều nhà cung cấp mã nguồn mở khác. Được sáng lập vào đầu năm 2023 bởi Alex Atallah – đồng sáng lập OpenSea, OpenRouter ra đời nhằm giải quyết vấn đề tích hợp và tối ưu hóa chi phí khi sử dụng nhiều mô hình AI khác nhau .([World Best AI Learning Resources][1], [developer.puter.com][2])
+[OpenRouter](https://openrouter.ai/rankings) là một nền tảng API thống nhất, cho phép truy cập hơn 400 mô hình ngôn ngữ lớn (LLM) từ hơn 60 nhà cung cấp khác nhau, bao gồm OpenAI, Anthropic, Google, Meta, DeepSeek và nhiều nhà cung cấp mã nguồn mở khác. Được sáng lập vào đầu năm 2023 bởi Alex Atallah – đồng sáng lập OpenSea, OpenRouter ra đời nhằm giải quyết vấn đề tích hợp và tối ưu hóa chi phí khi sử dụng nhiều mô hình AI khác nhau .([World Best AI Learning Resources][1], [developer.puter.com][2])
 
 <img width="1073" height="814" alt="image" src="https://github.com/user-attachments/assets/ba033909-c310-4a7f-8142-c6ff703af4ea" />
 
