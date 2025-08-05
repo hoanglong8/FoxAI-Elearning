@@ -1,0 +1,8 @@
+# Trendshift
+Trendshift là một nền tảng khám phá các kho lưu trữ mã nguồn mở phổ biến trên GitHub, tập trung vào việc hiển thị các dự án đang trending và cung cấp cái nhìn sâu sắc về xu hướng phát triển phần mềm [Trendshift Overview](https://trendshift.io/). Trang web này hoạt động như một công cụ theo dõi cộng đồng mã nguồn mở, liệt kê các repository nổi bật dựa trên số lần xuất hiện trong GitHub Trending, giúp người dùng khám phá các dự án mới và hữu ích [Trendshift Features](https://trendshift.io/features).
+
+<img width="1878" height="921" alt="image" src="https://github.com/user-attachments/assets/97574ace-81a8-4515-b77f-325ae3210550" />
+
+Trendshift cung cấp danh sách các dự án đa dạng, bao gồm các lĩnh vực như AI, học máy, phát triển web, và tài nguyên giáo dục, chẳng hạn như Lobe Chat cho khung chat AI, tài liệu về Generative AI, và hướng dẫn về hệ thống lớn [Trendshift Project List](https://trendshift.io/). Người dùng có thể tìm thấy các repository như "Build your own X" để học lập trình, hoặc các công cụ như freeCodeCamp cho giáo dục miễn phí, tất cả đều được sắp xếp theo mức độ phổ biến [Trendshift Data Sources](https://trendshift.io/data).
+
+Với giao diện đơn giản và cập nhật thời gian thực, Trendshift giúp cộng đồng phát triển phần mềm khám phá các ý tưởng mới, từ AI agent đến hệ thống thanh toán mã nguồn mở, làm cho nó trở thành tài nguyên quý giá cho lập trình viên và nhà nghiên cứu [Trendshift User Guide](https://trendshift.io/guide). Tổng thể, Trendshift thúc đẩy sự hợp tác và sáng tạo trong thế giới mã nguồn mở [Trendshift Mission](https://trendshift.io/about).
