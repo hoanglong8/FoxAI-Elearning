@@ -2,7 +2,7 @@
 Người ta nói rằng bạn cần hàng triệu triệu đô la và một đội ngũ kỹ sư thiên tài để tạo ra AI như Perplexity[.]ai.
 Có lẽ, người ta đã sai rồi. 
 Toàn bộ mã nguồn (full code) để xây dựng một AI có năng lực gần tương tự, đã được công khai. F-R-E-E. Và bạn có thể sử dụng ngay bây giờ.
-Đang ở trên Git_Hub, có tên là Scira. 
+Đang ở trên Git_Hub, có tên là [Scira](https://github.com/zaidmukaddam/scira). 
 
 <img width="960" height="520" alt="image" src="https://github.com/user-attachments/assets/671039db-839f-41d9-9e6e-e4e6e784428e" />
 
@@ -45,3 +45,21 @@ github.com/zaidmukaddam/scira
 
 ## TÀI LIỆU API (API Documentation - Complete guide to integrating with the Scira API): 
 api.scira.ai/docs
+
+---
+Dựa trên nội dung từ kho lưu trữ GitHub, Scira là một công cụ tìm kiếm web dựa trên AI, được xây dựng để xử lý truy vấn người dùng bằng cách sử dụng các mô hình ngôn ngữ lớn (LLM) như Grok, Claude, Gemini và GPT [Scira GitHub Repository](https://github.com/zaidmukaddam/scira). Cơ chế hoạt động của Scira bao gồm các bước chính: nhận truy vấn từ người dùng, tạo nhiều truy vấn tìm kiếm (tối thiểu 3-6 truy vấn), thu thập dữ liệu từ các nguồn như web, Reddit, X (Twitter), và các API khác, sau đó sử dụng LLM để tổng hợp và trả về câu trả lời chính xác với citations [Scira Features Overview](https://github.com/zaidmukaddam/scira/blob/main/README.md). Scira sử dụng Vercel AI SDK để tích hợp các mô hình AI, đảm bảo phản hồi được định dạng markdown và tập trung vào nội dung [Scira Built With Section](https://github.com/zaidmukaddam/scira#built-with).
+
+Về việc xây dựng một mô hình chatbot tương tự trên localhost on-prem, có thể thực hiện được bằng cách clone kho lưu trữ và thiết lập môi trường cục bộ [Scira Local Development Notes](https://github.com/zaidmukaddam/scira/blob/main/docs/local-dev.md). Hướng dẫn bao gồm sử dụng Docker hoặc Node.js để chạy ứng dụng, với yêu cầu cài đặt các API key cho các nhà cung cấp như OpenAI và Exa. Người dùng có thể tùy chỉnh code để tạo chatbot tương tự, sử dụng các module sẵn có cho tìm kiếm và LLM, nhưng cần chú ý đến việc xử lý bảo mật và hiệu suất trên môi trường cục bộ [Scira Setup Guide](https://github.com/zaidmukaddam/scira/blob/main/docs/setup.md). Tuy nhiên, một số tính năng như tìm kiếm web có thể yêu cầu kết nối internet và API bên ngoài, vì vậy chatbot trên localhost có thể không đầy đủ như phiên bản trực tuyến.
+
+---
+Dựa trên nội dung từ kho lưu trữ GitHub, cơ chế hoạt động của Scira dựa trên các thành phần chính sau [Scira GitHub Repository](https://github.com/zaidmukaddam/scira):
+
+- **Mô hình ngôn ngữ lớn (LLM):** Scira sử dụng các mô hình như Grok 3 từ xAI, Claude 4 Sonnet từ Anthropic, Gemini 2.5 từ Google, và GPT-4o từ OpenAI để xử lý và tổng hợp truy vấn [Scira LLM Models Supported](https://github.com/zaidmukaddam/scira#llm-models-supported). Những mô hình này giúp phân tích câu hỏi của người dùng và tạo phản hồi chính xác.
+
+- **Công cụ tìm kiếm và API:** Bao gồm Exa.AI cho tìm kiếm web, Tavily cho Reddit và X (Twitter), và các API khác như OpenWeather cho thời tiết, Google Maps cho vị trí, và TMDB cho phim ảnh [Scira Features Overview](https://github.com/zaidmukaddam/scira#features). Scira tạo nhiều truy vấn để thu thập dữ liệu từ các nguồn này.
+
+- **Framework phát triển:** Xây dựng trên Next.js cho ứng dụng web, Tailwind CSS cho giao diện, Vercel AI SDK cho tích hợp AI, và Shadcn/UI cho thành phần UI [Scira Built With Section](https://github.com/zaidmukaddam/scira#built-with). Điều này đảm bảo Scira hoạt động mượt mà và dễ mở rộng.
+
+- **Thành phần phụ trợ:** Như Drizzle ORM cho quản lý cơ sở dữ liệu, Better Auth cho xác thực, và Mem0 cho quản lý bộ nhớ [Scira Built With Section](https://github.com/zaidmukaddam/scira#built-with). Chúng hỗ trợ lưu trữ dữ liệu và bảo mật.
+
+Các thành phần này kết hợp để cho phép Scira xử lý truy vấn một cách toàn diện, từ tìm kiếm đến tổng hợp thông tin [Scira Documentation on Mechanisms](https://github.com/zaidmukaddam/scira/wiki/mechanisms).
