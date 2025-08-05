@@ -40,11 +40,8 @@ LLM Models Supported:
 5. X (Twitter) search: Search X posts with date ranges and specific handle filtering using xAI Live Search
 6. Extreme search: Advanced multi-step search capability for complex queries..."
 __________
-## SOURCE/HƯỚNG DẪN CÀI ĐẶT/THÔNG TIN CHI TIẾT/NGUỒN TIN:
-github.com/zaidmukaddam/scira
 
-## TÀI LIỆU API (API Documentation - Complete guide to integrating with the Scira API): 
-api.scira.ai/docs
+TÀI LIỆU [API](https://api.scira.ai/docs) (API Documentation - Complete guide to integrating with the Scira API)
 
 ---
 Dựa trên nội dung từ kho lưu trữ GitHub, Scira là một công cụ tìm kiếm web dựa trên AI, được xây dựng để xử lý truy vấn người dùng bằng cách sử dụng các mô hình ngôn ngữ lớn (LLM) như Grok, Claude, Gemini và GPT [Scira GitHub Repository](https://github.com/zaidmukaddam/scira). Cơ chế hoạt động của Scira bao gồm các bước chính: nhận truy vấn từ người dùng, tạo nhiều truy vấn tìm kiếm (tối thiểu 3-6 truy vấn), thu thập dữ liệu từ các nguồn như web, Reddit, X (Twitter), và các API khác, sau đó sử dụng LLM để tổng hợp và trả về câu trả lời chính xác với citations [Scira Features Overview](https://github.com/zaidmukaddam/scira/blob/main/README.md). Scira sử dụng Vercel AI SDK để tích hợp các mô hình AI, đảm bảo phản hồi được định dạng markdown và tập trung vào nội dung [Scira Built With Section](https://github.com/zaidmukaddam/scira#built-with).
