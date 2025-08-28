@@ -85,8 +85,9 @@ FOXAI đề xuất triển khai một hệ sinh thái AI đồng bộ, tác đ�
     *   **Nội dung:** Nâng cấp phòng họp trực tuyến hiện có với các tính năng:
         *   **Thư ký ảo AI:** Tự động ghi âm, chuyển đổi giọng nói thành văn bản và tạo dự thảo biên bản cuộc họp.
         *   **Theo dõi nhiệm vụ:** Tự động nhận diện và liệt kê các đầu việc được giao trong cuộc họp.
+        *   **Phiên dịch:** Hỗ trợ dịch cabin thời gian thực khi có khách quốc tế.
 
-**IV. KẾ HOẠCH ĐÀO TẠO (Dự kiến: 06 ngày)**
+**IV. KẾ HOẠCH ĐÀO TẠO (Dự kiến: 05-06 ngày)**
 
 | **Thời gian** | **Đối tượng** | **Nội dung chính** |
 | :--- | :--- | :--- |
