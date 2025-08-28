@@ -4,7 +4,7 @@
 
 *   **Đối tượng:** Giám đốc, Kế toán trưởng của 200 doanh nghiệp Việt Nam tại Lào.
 *   **Thời lượng:** 3 giờ (9:00 – 12:00).
-*   **Chuyên gia đào tạo:** Hà Quốc Thạch và Nguyễn Hoàng Long FOXAI
+*   **Chuyên gia đào tạo:** FOXAI
 
 ---
 
