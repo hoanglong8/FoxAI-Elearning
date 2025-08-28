@@ -29,17 +29,18 @@ Công ty Cổ phần FOXAI xây dựng Kế hoạch đào tạo và triển khai
 **I. MỤC ĐÍCH, YÊU CẦU**
 
 1.  **Mục đích:**
-    *   Trang bị cho đội ngũ cán bộ, công chức (CBCC) các kỹ năng và công cụ AI tiên tiến, ứng dụng trực tiếp vào công việc chuyên môn hàng ngày.
-    *   Hỗ trợ Lãnh đạo Phường ra quyết định điều hành dựa trên dữ liệu trực quan, theo thời gian thực.
-    *   Tối ưu hóa quy trình làm việc, giảm tải công việc thủ công, nâng cao hiệu suất và tính chuyên nghiệp của đội ngũ CBCC.
-    *   Nâng cao chất lượng dịch vụ công, tăng mức độ hài lòng của người dân và doanh nghiệp thông qua các kênh tương tác số thông minh.
-    *   Góp phần hoàn thành xuất sắc các chỉ tiêu về Chuyển đổi số theo Kế hoạch của Thành phố.
+
+Chương trình hướng tới việc xây dựng một mô hình chính quyền số toàn diện tại Phường, tập trung vào 3 mục tiêu trọng tâm sau:
+- Nâng cao năng lực ra quyết định điều hành của Lãnh đạo Phường dựa trên dữ liệu trực quan, theo thời gian thực, trang bị các trợ lý AI tiên tiến cho `Lãnh đạo số`.
+- Tối ưu hóa hiệu suất làm việc, giảm tải công việc thủ công và nâng cao năng lực chuyên môn cho đội ngũ CBCC thông qua việc trang bị các kỹ năng và công cụ AI tiên tiến, ứng dụng trực tiếp vào nghiệp vụ hàng ngày của    `Công chức số`.
+- Nâng cao chất lượng dịch vụ công và trải nghiệm của người dân, doanh nghiệp thông qua các kênh tương tác số thông minh, hiện đại, góp phần xây dựng `Công dân số`.
+- Góp phần hoàn thành xuất sắc các chỉ tiêu về `Cải cách hành chính và Chuyển đổi số` theo Kế hoạch chung của Thành phố Hà Nội.
 
 2.  **Yêu cầu:**
-    *   Nội dung đào tạo và giải pháp phải thiết thực, bám sát các nghiệp vụ thực tế tại Phường.
-    *   Quá trình triển khai phải đồng bộ, không làm gián đoạn hoạt động thường xuyên của đơn vị.
-    *   Các giải pháp đảm bảo an toàn, an ninh thông tin và tuân thủ các quy định của pháp luật.
-    *   Có lộ trình đồng hành, hỗ trợ để đảm bảo 100% học viên áp dụng thành công các kỹ năng đã học vào công việc.
+- Nội dung đào tạo và giải pháp phải thiết thực, bám sát các nghiệp vụ thực tế tại Phường.
+- Quá trình triển khai phải đồng bộ, không làm gián đoạn hoạt động thường xuyên của đơn vị.
+- Các giải pháp đảm bảo an toàn, an ninh thông tin và tuân thủ các quy định của pháp luật.
+- Có lộ trình đồng hành, hỗ trợ để đảm bảo 100% học viên áp dụng thành công các kỹ năng đã học vào công việc.
 
 **II. ĐÁNH GIÁ HIỆN TRẠNG (Dựa trên kết quả khảo sát)**
 
