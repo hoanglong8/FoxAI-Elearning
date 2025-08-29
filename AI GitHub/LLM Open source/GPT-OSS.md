@@ -132,21 +132,16 @@ Bạn có thể trỏ **Agents SDK** sang Ollama thông qua LiteLLM (Python) ho�
 
 ---
 
-### 8) Nguồn chính thống để bạn bookmark
+### 8) Nguồn tài liệu tham khảo
 
 * **Ollama Library – gpt-oss:20b** (kích thước \~14GB, MXFP4, lệnh `ollama run/pull`) ([Ollama][2])
 * **OpenAI Cookbook – Run gpt-oss với Ollama** (end-to-end: install, API, tools, Agents) ([Cookbook][1])
 * **OpenAI model page** (mô tả gpt-oss-20b: open-weight, dùng local/specialized) ([platform.openai.com][6])
 
----
-
-Nếu bạn muốn, mình có thể đưa luôn:
-
 * file **.http** cho VS Code REST Client,
 * mẫu **docker-compose** map cổng 11434,
 * và **Modelfile** custom system/prompt/parameters cho gpt-oss:20b (dev & prod).
-  Nói một tiếng là mình drop template liền.
-
+  
 [1]: https://cookbook.openai.com/articles/gpt-oss/run-locally-ollama "How to run gpt-oss locally with Ollama"
 [2]: https://ollama.com/library/gpt-oss%3A20b "gpt-oss:20b"
 [3]: https://www.windowscentral.com/artificial-intelligence/just-what-sort-of-gpu-do-you-need-to-run-local-ai-with-ollama-the-answer-isnt-as-expensive-as-you-might-think?utm_source=chatgpt.com "Just what sort of GPU do you need to run local AI with Ollama? - The answer isn't as expensive as you might think"
