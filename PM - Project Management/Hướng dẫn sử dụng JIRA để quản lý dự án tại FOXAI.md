@@ -514,3 +514,192 @@ Bạn chỉ cần copy phần **Tóm tắt nội dung** ở trên vào file Mark
 [15]: https://confluence.atlassian.com/adminjiraserver0917/defining-priority-field-values-1431246085.html?utm_source=chatgpt.com "Defining priority field values - Atlassian Documentation"
 [16]: https://confluence.atlassian.com/adminjiraserver0917/configuring-custom-field-contexts-1431246261.html?utm_source=chatgpt.com "Configuring custom field contexts - Atlassian Documentation"
 
+---
+## Hướng Dẫn Khai Báo Sprint, Backlog và Issue trên Jira cho Dự án [FOXAI Native SHB](http://fox.ai.vn:8080/secure/RapidBoard.jspa?rapidView=2&projectKey=SHBNB&view=planning&issueLimit=100#)
+
+### Bước 1: Chuẩn Bị Dự Án Jira (Project Setup)
+
+Nếu bạn chưa có dự án Jira, hãy tạo một dự án mới với template **Scrum software development**.
+
+1.  **Chọn "Projects"** trên thanh điều hướng trên cùng.
+2.  **Nhấn "Create project"**.
+3.  **Chọn template "Scrum"** và nhấn "Use template".
+4.  **Chọn "Company-managed project"** (thường dùng cho các dự án lớn, nhiều đội).
+5.  **Đặt tên dự án:** `FOXAI Native SHB` (hoặc tên tương tự, ví dụ: `SHB-FOXAI-Native`).
+6.  **Key:** Tự động tạo hoặc đặt thủ công, ví dụ: `SHBNB`. (Key này sẽ xuất hiện ở đầu các issue, ví dụ: `SHBNB-123`).
+7.  **Nhấn "Create project"**.
+
+Bây giờ bạn đã có một dự án Scrum sẵn sàng để làm việc!
+
+### Bước 2: Tạo Epics (Các Tính Năng Lớn)
+
+Epics là những phần công việc lớn, thường kéo dài nhiều Sprint. Chúng ta sẽ tạo các Epic tương ứng với các phần chính của thiết kế.
+
+1.  **Đi tới "Backlog"** trong thanh điều hướng bên trái của dự án.
+2.  Ở phía trên cùng bên trái của màn hình Backlog, bạn sẽ thấy mục **"Epics"**. Nhấn vào đó.
+3.  **Nhấn "Create epic"**.
+
+Dựa trên tài liệu của bạn, chúng ta có thể định nghĩa các Epic sau:
+
+*   **Epic 1: Quản lý Phân loại Ý định (Intent Classification Management)**
+    *   **Epic Name:** `FEAT-CONV-001: Intent Classification Mgmt`
+    *   **Summary:** `Cho phép Admin/Trainer cấu hình và huấn luyện mô hình phân loại ý định người dùng cho Conversation Engine (Service 07).`
+    *   *(Liên quan đến **PHẦN 1.1** và **PHẦN 2** của tài liệu)*
+*   **Epic 2: Quản lý Thu thập Thông tin & Hành động (Slot Filling & Workflow Trigger)**
+    *   **Epic Name:** `FEAT-CONV-002/003: Slot Filling & Workflow Trigger Mgmt`
+    *   **Summary:** `Cho phép Admin cấu hình luồng thu thập thông tin (slot filling) và ánh xạ/kích hoạt các workflow từ Service 09 thông qua Conversation Engine (Service 07).`
+    *   *(Liên quan đến **PHẦN 1.1**, **PHẦN 5** và **PHẦN 6** của tài liệu)*
+*   **Epic 3: Database & Core Logic cho Conversation Engine (Service 07)**
+    *   **Epic Name:** `SVC07: Conversation Engine Core`
+    *   **Summary:** `Triển khai cấu trúc DB và các thành phần cốt lõi của Service 07, bao gồm Intent Classifier, Dialog Manager, Session Context, Configuration Manager.`
+    *   *(Liên quan đến **PHẦN 1.3**, **PHẦN 1.4**, **PHẦN 3** của tài liệu)*
+*   **Epic 4: Database & Core Logic cho Knowledge QA (Service 03)**
+    *   **Epic Name:** `SVC03: Knowledge QA Core`
+    *   **Summary:** `Thiết kế và triển khai CSDL cho Service 03 để lưu trữ, quản lý và truy vấn kho tri thức, bao gồm Collections, Documents, Chunks, Access Control.`
+    *   *(Liên quan đến **PHẦN 4** của tài liệu)*
+*   **Epic 5: Service 04 - Data Ingestion Service (POC Simulation)**
+    *   **Epic Name:** `SVC04: Data Ingestion (Core Banking Sim)`
+    *   **Summary:** `Xây dựng Service 04 giả lập hệ thống Core Banking/Card Management để hỗ trợ POC cho Service 07 và 09, bao gồm DB giả lập và API tương tác.`
+    *   *(Liên quan đến **PHẦN 5** của tài liệu)*
+*   **Epic 6: Tích hợp và API (Integration & APIs)**
+    *   **Epic Name:** `INTEG: API & Cross-Service Integration`
+    *   **Summary:** `Định nghĩa và triển khai các API inbound/outbound cần thiết cho Service 07 và các tích hợp giữa các microservices (07, 09, 15).`
+    *   *(Liên quan đến **PHẦN 1.5** của tài liệu)*
+
+Sau khi tạo các Epic, bạn sẽ thấy chúng xuất hiện trong danh sách Epics.
+
+### Bước 3: Tạo User Stories (Yêu Cầu Từ Góc Nhìn Người Dùng) và Technical Tasks
+
+Bây giờ, chúng ta sẽ chia nhỏ các Epic thành các User Story (nếu là tính năng người dùng) hoặc Technical Task (nếu là công việc kỹ thuật backend/cơ sở hạ tầng). Bạn có thể tạo trực tiếp trong màn hình Backlog.
+
+**Cách tạo:**
+1.  **Trong phần "Create issue" ở dưới cùng của Backlog**, chọn loại issue là `Story` hoặc `Task`.
+2.  **Nhập tiêu đề (Summary).**
+3.  **Nhấn Enter.**
+4.  **Kéo và thả Story/Task** vào Epic tương ứng (bằng cách kéo lên phần Epics và thả vào Epic mong muốn).
+
+**Ví dụ một số User Stories/Tasks dựa trên tài liệu của bạn:**
+
+**Epic: `FEAT-CONV-001: Intent Classification Mgmt`**
+
+*   **Story:** `SHBNB-S101: Với vai trò Knowledge Admin, tôi muốn tạo Intent mới để mở rộng luồng hội thoại.`
+    *   **Description:** `Admin có thể tạo các Intent mới (vd: CUSTOMER_FEEDBACK, PROMOTION_INQUIRY) thông qua giao diện quản trị, với tên định danh, tên hiển thị và mô tả. Các Intent này sẽ được lưu vào bảng tbl_intents.`
+    *   **Acceptance Criteria:**
+        *   Giao diện "Phân loại Ý định" trong Admin Portal có nút "Thêm Intent mới".
+        *   Form tạo Intent cho phép nhập Intent Name (không dấu, SNAKE_CASE), Display Name (có dấu), Description.
+        *   Intent được lưu vào DB tbl_intents với `is_system=FALSE`.
+        *   `Knowledge Admin` có thể thực hiện thao tác này.
+*   **Story:** `SHBNB-S102: Với vai trò Intent Trainer, tôi muốn thêm/sửa/xóa mẫu câu huấn luyện cho các Intent hiện có.`
+    *   **Description:** `Trainer có thể chọn một Intent và quản lý danh sách các mẫu câu (utterances) của Intent đó. Các thay đổi được lưu vào bảng tbl_intent_utterances.`
+    *   **Acceptance Criteria:**
+        *   Giao diện chi tiết Intent hiển thị danh sách Utterances, có nút "Thêm", "Sửa", "Xóa".
+        *   Mỗi Utterance được lưu vào tbl_intent_utterances, liên kết với intent_id.
+        *   Phân quyền: `Intent Trainer` chỉ có quyền này, không thấy nút tạo/xóa Intent.
+*   **Story:** `SHBNB-S103: Với vai trò Knowledge Admin, tôi muốn kích hoạt quá trình huấn luyện lại mô hình NLU sau khi cập nhật Intent/Utterances.`
+    *   **Description:** `Admin có thể nhấn nút "Huấn luyện & Áp dụng" để kích hoạt một background job, huấn luyện lại mô hình NLU của Service 07 dựa trên dữ liệu mới và triển khai mô hình mới.`
+    *   **Acceptance Criteria:**
+        *   Nút "Huấn luyện & Áp dụng" chỉ hiển thị cho `Knowledge Admin`.
+        *   Hiển thị thông báo xác nhận và trạng thái quá trình huấn luyện trên UI.
+        *   Quá trình huấn luyện cập nhật mô hình NLU trong Service 07.
+*   **Task:** `SHBNB-T101: Thiết kế và triển khai Database cho Intent Classification (tbl_intents, tbl_intent_utterances).`
+    *   **Description:** `Triển khai các bảng tbl_intents và tbl_intent_utterances theo đặc tả ở PHẦN 3. Đảm bảo ràng buộc, index, và dữ liệu khởi tạo (seed data) cho 4 Intent mặc định.`
+    *   **Sub-tasks (ví dụ):**
+        *   `SHBNB-T101a: Tạo migration script cho tbl_intents.`
+        *   `SHBNB-T101b: Tạo migration script cho tbl_intent_utterances.`
+        *   `SHBNB-T101c: Viết seed data script cho 4 Intent mặc định.`
+        *   `SHBNB-T101d: Cấu hình ON DELETE CASCADE cho intent_utterances.`
+
+**Epic: `FEAT-CONV-002/003: Slot Filling & Workflow Trigger Mgmt`**
+
+*   **Story:** `SHBNB-S201: Với vai trò Knowledge Admin, tôi muốn cấu hình các câu hỏi làm rõ (prompts) cho tham số của một Tool.`
+    *   **Description:** `Admin có thể định nghĩa các tham số cần thiết cho một Tool (vd: so sánh tài liệu, kích hoạt workflow) và các câu hỏi mà chatbot sẽ hỏi người dùng nếu tham số đó còn thiếu. Thông tin này được lưu trong trường 'configuration' của tbl_tools.`
+    *   **Acceptance Criteria:**
+        *   Trong giao diện Tool Management (Service 07), khi tạo/sửa Tool loại `RAG` hoặc `WORKFLOW`, có khu vực "Parameters & Prompts Configuration".
+        *   Cho phép thêm/sửa/xóa Parameter (Name, Required, Prompt).
+        *   Dữ liệu được lưu dưới dạng JSONB trong cột `configuration` của `tbl_tools`.
+*   **Task:** `SHBNB-T201: Phát triển Dialog Manager trong Service 07 để thu thập thông tin còn thiếu.`
+    *   **Description:** `Triển khai module Dialog Manager để quản lý trạng thái hội thoại, kiểm tra các slot bắt buộc, hỏi người dùng các prompt đã cấu hình và lưu thông tin vào Session Cache (Redis).`
+    *   **Sub-tasks:**
+        *   `SHBNB-T201a: Tích hợp Redis cho Session Cache.`
+        *   `SHBNB-T201b: Phát triển logic kiểm tra tham số và hỏi lại.`
+        *   `SHBNB-T201c: Cập nhật Session Cache với dữ liệu người dùng.`
+*   **Task:** `SHBNB-T202: Phát triển cơ chế giao tiếp Service 07 với Service 09 (Workflow Discovery API).`
+    *   **Description:** `Service 07 cần có khả năng gọi API của Service 09 để lấy danh sách các tham số của một Workflow cụ thể, phục vụ cho việc cấu hình Slot Filling.`
+    *   **Acceptance Criteria:**
+        *   Service 09 có endpoint `GET /api/v1/workflows/{workflow_definition_id}/parameters`.
+        *   Service 07 có logic gọi API này khi Admin cấu hình Tool loại WORKFLOW.
+        *   UI của Service 07 tự động hiển thị các tham số từ Service 09.
+
+**Epic: `SVC07: Conversation Engine Core`**
+
+*   **Task:** `SHBNB-T301: Triển khai các thành phần cốt lõi của Service 07 (Intent Classifier, Dialog Manager, Configuration Manager).`
+    *   **Description:** `Xây dựng khung sườn cho Service 07, tích hợp NLU model, quản lý trạng thái hội thoại và đọc cấu hình từ DB.`
+
+**Epic: `SVC03: Knowledge QA Core`**
+
+*   **Task:** `SHBNB-T401: Thiết kế và triển khai Database cho Knowledge Base (tbl_collections, tbl_documents, tbl_document_chunks, tbl_document_access_control).`
+    *   **Description:** `Triển khai các bảng CSDL theo đặc tả ở PHẦN 4, bao gồm hỗ trợ kiểu dữ liệu VECTOR và các ràng buộc.`
+    *   **Sub-tasks:** (Tương tự như Task DB ở trên, chia nhỏ cho từng bảng và các yêu cầu phụ như indexing, cross-service keys, v.v.)
+*   **Task:** `SHBNB-T402: Triển khai API cho Service 03 để quản lý Collections và Documents.`
+*   **Task:** `SHBNB-T403: Cấu hình môi trường CSDL để hỗ trợ pgvector (nếu dùng PostgreSQL).`
+
+**Epic: `SVC04: Data Ingestion (Core Banking Sim)`**
+
+*   **Task:** `SHBNB-T501: Thiết kế và triển khai Database giả lập cho Service 04 (dummy_customers, dummy_cards).`
+    *   **Description:** `Triển khai các bảng dummy_customers và dummy_cards theo đặc tả ở PHẦN 5.2.`
+    *   **Sub-tasks:**
+        *   `SHBNB-T501a: Tạo migration scripts.`
+        *   `SHBNB-T501b: Viết seed data script với 10 khách hàng và 20 thẻ theo ví dụ.`
+*   **Task:** `SHBNB-T502: Phát triển API mô phỏng của Service 04 (verify-customer, unlock-card).`
+    *   **Description:** `Triển khai các API /api/v1/poc/verify-customer và /api/v1/poc/unlock-card theo đặc tả ở PHẦN 5.4, với logic truy vấn DB giả lập.`
+
+**Epic: `INTEG: API & Cross-Service Integration`**
+
+*   **Task:** `SHBNB-T601: Thiết kế và triển khai API Inbound cho Service 07 (POST /api/v1/conversation/chat).`
+*   **Task:** `SHBNB-T602: Thiết kế và triển khai API Outbound từ Service 07 đến Service 15 (POST /api/v1/reasoning/query).`
+*   **Task:** `SHBNB-T603: Thiết kế và triển khai API Outbound từ Service 07 đến Service 09 (POST /api/v1/workflows/trigger).`
+*   **Task:** `SHBNB-T604: Thiết kế và triển khai API Cấu hình cho Service 07 (Admin Portal APIs).`
+
+**Lưu ý quan trọng khi tạo Issue:**
+*   **Link Issue:** Sau khi tạo, hãy link các Task/Story liên quan đến nhau. Ví dụ: `SHBNB-S101` "is implemented by" `SHBNB-T101`.
+*   **Add Comments:** Thêm các ghi chú, câu hỏi, hoặc quyết định vào phần comment của từng issue.
+*   **Assignee:** Gán issue cho người phụ trách.
+*   **Estimates:** Ước lượng thời gian hoặc điểm (Story Points) cho mỗi Story/Task.
+
+### Bước 4: Tạo và Lên Kế Hoạch Sprints
+
+Sau khi đã có một lượng kha khá các Epic, Story và Task trong Backlog, bạn có thể bắt đầu lên kế hoạch cho các Sprint.
+
+1.  **Trong màn hình Backlog, kéo xuống cuối cùng**, bạn sẽ thấy nút **"Create sprint"**.
+2.  **Nhấn "Create sprint"**. Một Sprint mới sẽ xuất hiện.
+3.  **Đặt tên cho Sprint:** Ví dụ: `Sprint 1 - Conversation Engine Core`
+4.  **Kéo và thả các Story/Task** từ Backlog chưa được gán vào một Sprint cụ thể vào Sprint mới này. Hãy nhớ nguyên tắc "làm đầy" Sprint dựa trên năng lực của đội (team velocity).
+5.  **Sau khi đã kéo đủ số lượng công việc cho Sprint, nhấn nút "Start sprint"** ở góc trên bên phải của Sprint.
+6.  **Cấu hình Sprint:**
+    *   **Sprint name:** (Đã đặt)
+    *   **Duration:** Chọn thời gian cho Sprint (ví dụ: 1 tuần, 2 tuần).
+    *   **Start date / End date:** Tự động điền hoặc chỉnh sửa.
+    *   **Sprint Goal:** Viết mục tiêu chính của Sprint này. Ví dụ: *"Hoàn thành cấu trúc DB và API cơ bản cho Service 07, cho phép tạo Intent mới và huấn luyện mô hình NLU."*
+7.  **Nhấn "Start".**
+
+Sau khi Sprint bắt đầu, các Issue sẽ chuyển sang màn hình "Active Sprints" (hoặc "Board"), nơi đội có thể kéo các Issue qua các cột (To Do, In Progress, Review, Done) để cập nhật trạng thái công việc.
+
+### Bước 5: Theo Dõi và Báo Cáo
+
+Jira cung cấp nhiều công cụ để theo dõi tiến độ:
+
+*   **Active Sprints (Board):** Hiển thị trực quan trạng thái các Issue trong Sprint hiện tại.
+*   **Reports:**
+    *   **Burndown Chart:** Theo dõi tiến độ hoàn thành công việc trong Sprint.
+    *   **Velocity Chart:** Đo lường năng lực hoàn thành Story Points của đội qua các Sprint.
+    *   **Epic Report:** Theo dõi tiến độ của từng Epic.
+
+### Tổng kết và Lời khuyên cho PM
+
+*   **Bắt đầu nhỏ:** Đừng cố gắng tạo tất cả mọi thứ ngay lập tức. Tập trung vào Sprint đầu tiên với các công việc quan trọng nhất.
+*   **Sử dụng mô tả chi tiết:** Hãy tận dụng tối đa phần mô tả của Story/Task để dán các đoạn trích từ tài liệu đặc tả của bạn, điều này giúp Dev dễ hiểu và tham chiếu.
+*   **Tận dụng Sub-tasks:** Đối với các Task lớn (như triển khai DB), hãy chia nhỏ thành các Sub-task để dễ quản lý và gán cho các thành viên khác nhau.
+*   **Ước lượng liên tục:** Việc ước lượng ban đầu có thể chưa chính xác, hãy điều chỉnh trong các buổi lập kế hoạch Sprint và các buổi Daily Scrum.
+*   **Review định kỳ:** Luôn có các buổi Review Sprint và Retrospective để cải thiện quy trình.
+
+---
