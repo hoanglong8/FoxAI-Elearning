@@ -328,4 +328,189 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 
 ---
 
+# Hướng Dẫn Cấu Hình Project trên JIRA
+
+## 1. Truy cập tới Cài Đặt Dự Án
+
+1. Trong giao diện JIRA, chọn **Projects → \[Project của bạn]**.
+2. Nhấn vào biểu tượng **More actions (•••)** cạnh tên dự án → chọn **Project settings**.
+3. Sử dụng thanh bên trái để truy cập nhanh các mục như Project Details, Issue types, Workflows,… ([Atlassian Support][1]).
+
+---
+
+## 2. Chi Tiết Dự Án (Project Details)
+
+* **Tên dự án**, **Project key** (được dùng để tạo issue keys), mô tả, và avatar của dự án có thể được chỉnh sửa tại đây. ([confluence.atlassian.com][2], [Atlassian Support][1]).
+* Lưu ý: Việc thay đổi Project key không đơn giản và cần cân nhắc kỹ. ([Atlassian Support][1]).
+
+---
+
+## 3. Loại Dự Án & Template
+
+* Khi tạo project mới: chọn **management type** (Team‑managed hoặc Company‑managed) và **template** (Scrum, Kanban, Software, Service, Work Management,…). ([community.atlassian.com][3], [confluence.atlassian.com][2]).
+
+  * **Team‑managed**: phù hợp cho nhóm nhỏ, dễ cấu hình.
+  * **Company‑managed**: phù hợp cho tổ chức lớn, có tính năng chia sẻ scheme. ([community.atlassian.com][3]).
+* **Template** xác định cấu hình cơ bản (issue types, workflows, board, backlog). ([confluence.atlassian.com][4], [community.atlassian.com][3]).
+
+---
+
+## 4. Issue Types & Issue Type Schemes
+
+* Trong **Project settings → Issue types**, bạn có thể chọn hoặc thêm mới issue type phù hợp (epic, story, task, bug, v.v.). ([confluence.atlassian.com][5], [Atlassian Support][1]).
+* Scheme này kiểm soát loại issue được phép tạo trong project.
+
+---
+
+## 5. Workflow & Workflow Scheme
+
+* **Workflow** xác định luồng trạng thái của issue (ví dụ: To Do → In Progress → Done).
+* **Workflow scheme** gán workflow này cho các issue type cụ thể trong project. ([confluence.atlassian.com][6]).
+* Quản trị viên có thể:
+
+  * Copy workflow hệ thống → chỉnh sửa.
+  * Tạo workflow mới từ đầu.
+  * Sử dụng workflow designer để chỉnh sửa trực quan (thêm trạng thái, transitions,…). ([confluence.atlassian.com][6]).
+* Khi sửa workflow đang active, JIRA tạo **bản draft** để chỉnh sửa và cho phép **publish** sau khi hoàn tất. ([confluence.atlassian.com][6]).
+
+---
+
+## 6. Screens, Screen Schemes & Field Configuration
+
+* **Screens** xác định các trường hiển thị trên giao diện (create/edit/view).
+* **Screen schemes** gán từng screen cho các hành động.
+* **Issue type screen schemes** gán các screen scheme cho từng loại issue. ([confluence.atlassian.com][7]).
+* Bạn có thể tùy chỉnh fields, vị trí hiển thị để tối ưu thông tin cần capture.
+
+---
+
+## 7. Components
+
+* Trong **Project settings → Components**, bạn có thể:
+
+  * Tạo, chỉnh sửa, xoá component.
+  * Gán **Component lead** và **Default assignee** cho component để tự động assign issue khi component được set. ([confluence.atlassian.com][8]).
+* Component giúp phân chia rõ phạm vi công việc và tăng tính tự động.
+
+---
+
+## 8. Versions (Fix Versions & Release Management)
+
+* Phiên bản (Versions) dùng để nhóm issue liên quan đến một bản phát hành (release).
+* Có thể tạo, chỉnh sửa, xoá version và gán cho issue để theo dõi release. ([confluence.atlassian.com][9], [jirastrategy.com][10]).
+
+---
+
+## 9. Permissions & Permission Schemes
+
+* **Global permissions** áp dụng cho toàn hệ thống.
+* **Project permissions** (qua Permission scheme) điều khiển ai được làm gì trong project — như xem issue, tạo, chỉnh sửa, assign,… ([confluence.atlassian.com][11]).
+* Project Admin (Administer projects) có thể làm nhiều tác vụ như chỉnh project details, roles, components,… mà không cần Global Admin quyền. ([Atlassian Support][12], [confluence.atlassian.com][13]).
+
+---
+
+## 10. Issue Linking
+
+* Mặc định JIRA hỗ trợ 4 kiểu link: "relates to", "duplicates", "blocks", "clones", v.v.
+* Bạn có thể thêm, sửa hoặc xoá kiểu linking để phù hợp với quy trình. ([confluence.atlassian.com][14]).
+* Người dùng cần có permission **Link issues** để sử dụng tính năng này.
+
+---
+
+## 11. Priority Schemes
+
+* JIRA cho sẵn các mức ưu tiên: Highest, High, Medium, Low, Lowest.
+* Bạn có thể thêm priority mới, chỉnh hoặc gán chúng vào **Priority scheme**, rồi gán scheme này cho project. ([confluence.atlassian.com][15]).
+
+---
+
+## 12. Custom Field Contexts
+
+* Custom fields có thể đặt ở **global context** hoặc **project-specific context**.
+* Project‑specific context giúp giới hạn phạm vi field, tối ưu hiệu năng và dễ quản lý. ([confluence.atlassian.com][16]).
+
+---
+
+## 13. Mẹo Chung
+
+* Chỉnh sửa **shared schemes** (workflow, screen, field,...): thay đổi sẽ lan sang nhiều project liên kết.
+* Dùng **draft workflow** để thử nghiệm trước khi áp dụng cho project thực tế.
+* Theo dõi performance khi thay đổi workflows cho project có nhiều issue — có thể chậm. ([confluence.atlassian.com][6]).
+
+---
+
+### Tóm tắt nội dung để đưa lên GitHub
+
+```markdown
+# Hướng Dẫn Cấu Hình Project JIRA
+
+## 1. Truy cập Project Settings
+- Projects → Chọn project → More actions → Project settings
+
+## 2. Project Details
+- Tên, key, mô tả, avatar
+- Không dễ thay đổi Project key
+
+## 3. Loại dự án & Template
+- Chọn Team-managed vs Company-managed
+- Chọn template phù hợp (Scrum, Kanban…)
+
+## 4. Issue Types
+- Thêm/xoá issue types trong project settings
+
+## 5. Workflow
+- Copy/edit hoặc tạo workflow mới
+- Sử dụng workflow designer
+- Publish draft workflow khi hoàn tất
+
+## 6. Screens/Field Configuration
+- Custom field layout cho từng operation
+- Gán screen scheme cho issue type
+
+## 7. Components
+- Tạo component, gán lead, default assignee
+
+## 8. Versions
+- Tạo Fix Versions để quản lý release
+
+## 9. Permissions
+- Thiết lập qua Permission scheme
+- Project Admin vs Global Admin
+
+## 10. Issue Linking
+- Quản lý kiểu liên kết giữa issues
+- Cần permission Link issues
+
+## 11. Priority Schemes
+- Tạo priority mới, gán vào project
+
+## 12. Custom Field Contexts
+- Giới hạn field theo project/issue type
+
+## 13. Best Practices
+- Dùng schemes chia sẻ khi cần chuẩn hoá
+- Sử dụng draft workflow
+- Lưu ý performance với project lớn
+```
+
+---
+
+Bạn chỉ cần copy phần **Tóm tắt nội dung** ở trên vào file Markdown lên GitHub là hoàn toàn sẵn sàng. Nếu cần mình thêm ví dụ cụ thể hoặc template import CSV, cứ nhắc nhé!
+
+[1]: https://support.atlassian.com/jira-cloud-administration/docs/configure-a-project/?utm_source=chatgpt.com "Configure a project - Atlassian Support"
+[2]: https://confluence.atlassian.com/adminjiraserver0917/defining-a-project-1431246049.html?utm_source=chatgpt.com "Defining a project - Atlassian Documentation"
+[3]: https://community.atlassian.com/forums/App-Central-articles/The-Ultimate-Jira-Setup-Guide-2025/ba-p/2955217?utm_source=chatgpt.com "The Ultimate Jira Setup Guide 2025 - Atlassian Community"
+[4]: https://confluence.atlassian.com/display/JIRASOFTWARESERVER083/Configuring%2Ba%2Bproject?utm_source=chatgpt.com "Configuring a project - Jira Software Server 8.3 - Atlassian Documentation"
+[5]: https://confluence.atlassian.com/display/JIRASOFTWARESERVER089/Configuring%2Ba%2Bproject?utm_source=chatgpt.com "Configuring a project - Atlassian Documentation"
+[6]: https://confluence.atlassian.com/adminjiraserver0917/working-with-workflows-1431246403.html?utm_source=chatgpt.com "Working with workflows - Atlassian Documentation"
+[7]: https://confluence.atlassian.com/adminjiraserver0917/project-screens-schemes-and-fields-1431246236.html?utm_source=chatgpt.com "Project screens, schemes and fields - Atlassian Documentation"
+[8]: https://confluence.atlassian.com/adminjiraserver0917/managing-components-1431246190.html?utm_source=chatgpt.com "Managing components - Atlassian Documentation"
+[9]: https://confluence.atlassian.com/adminjiraserver0917/configuring-projects-1431246048.html?utm_source=chatgpt.com "Configuring projects - Atlassian Documentation"
+[10]: https://www.jirastrategy.com/wp-content/uploads/2025/07/Jira-Project-Configuration-LinkedIn-Learning.pdf?utm_source=chatgpt.com "Complete Guide to Jira Administration: Configuration, Management, and ..."
+[11]: https://confluence.atlassian.com/adminjiraserver0917/configuring-permissions-1431246135.html?utm_source=chatgpt.com "Configuring permissions - Atlassian Documentation"
+[12]: https://support.atlassian.com/jira-cloud-administration/docs/configure-projects/?utm_source=chatgpt.com "Configure projects - Atlassian Support"
+[13]: https://confluence.atlassian.com/adminjiraserver0917/managing-project-permissions-1431246140.html?utm_source=chatgpt.com "Managing project permissions - Atlassian Documentation"
+[14]: https://confluence.atlassian.com/adminjiraserver0917/configuring-issue-linking-1431247031.html?utm_source=chatgpt.com "Configuring issue linking - Atlassian Documentation"
+[15]: https://confluence.atlassian.com/adminjiraserver0917/defining-priority-field-values-1431246085.html?utm_source=chatgpt.com "Defining priority field values - Atlassian Documentation"
+[16]: https://confluence.atlassian.com/adminjiraserver0917/configuring-custom-field-contexts-1431246261.html?utm_source=chatgpt.com "Configuring custom field contexts - Atlassian Documentation"
 
