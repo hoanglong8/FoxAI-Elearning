@@ -139,6 +139,8 @@ Feature: FaceID Login
 | Bug P1 trong sprint | `project=SHBNB AND issuetype=Bug AND priority=Highest AND sprint in openSprints()` | Kiểm soát chất lượng |
 | Burndown | N/A | Biểu đồ tự động trong board |
 
+<img width="1919" height="737" alt="image" src="https://github.com/user-attachments/assets/a908a95a-7906-42d4-ba96-6505b7663f74" />
+
 ---
 
 ## 🧰 7. Tạo Issue bằng API
@@ -327,10 +329,11 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 | Báo cáo     | Burndown, Velocity, Bugs P1              |
 
 ---
-
 # Hướng Dẫn Cấu Hình Project trên JIRA
 
 ## 1. Truy cập tới Cài Đặt Dự Án
+
+<img width="1906" height="949" alt="image" src="https://github.com/user-attachments/assets/8c1b4d97-6798-4aaf-98df-0316e690f9ec" />
 
 1. Trong giao diện JIRA, chọn **Projects → \[Project của bạn]**.
 2. Nhấn vào biểu tượng **More actions (•••)** cạnh tên dự án → chọn **Project settings**.
@@ -437,9 +440,11 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 * Dùng **draft workflow** để thử nghiệm trước khi áp dụng cho project thực tế.
 * Theo dõi performance khi thay đổi workflows cho project có nhiều issue — có thể chậm. ([confluence.atlassian.com][6]).
 
+<img width="1908" height="818" alt="image" src="https://github.com/user-attachments/assets/650e7c51-d207-49f3-9c07-c7fbe23f6392" />
+
 ---
 
-### Tóm tắt nội dung để đưa lên GitHub
+### Tóm tắt nội dung
 
 ```markdown
 # Hướng Dẫn Cấu Hình Project JIRA
