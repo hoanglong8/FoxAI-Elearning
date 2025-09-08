@@ -703,3 +703,97 @@ Jira cung cấp nhiều công cụ để theo dõi tiến độ:
 *   **Review định kỳ:** Luôn có các buổi Review Sprint và Retrospective để cải thiện quy trình.
 
 ---
+## Ví dụ các trường thông tin cho Epic 1:"Quản lý Phân loại Ý định (Intent Classification Management)"
+
+<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/59451f78-335f-4bed-aaac-9014c1f56cdb" />
+
+Khi bạn tạo một Epic, bản thân nó đã là cấp cao nhất trong hệ thống phân cấp của Jira (ngoại trừ Initiative/Program nếu có). Vì vậy, bạn sẽ không thể gán một Epic cho một Epic Link khác. Trường "Epic Link" dùng để gán các Story/Task/Bug vào một Epic cha. Khi bạn đang tạo *chính nó là Epic*, trường này sẽ không được sử dụng hoặc sẽ có thông báo như vậy.
+
+Hãy chọn **Loại Issue (Issue Type)** là **`Epic`**.
+
+1.  **Summary (Tóm tắt/Tiêu đề):**
+    *   **Điền:** `FEAT-CONV-001: Intent Classification Mgmt`
+    *   *Giải thích:* Đây là tên ngắn gọn, dễ hiểu, theo quy tắc đã thống nhất (`Mã Tính Năng: Tên Tính Năng`).
+
+2.  **Description (Mô tả):**
+    *   **Điền:**
+        ```
+        **Mô tả tổng quan:**
+        Tính năng này cho phép Quản trị viên (Admin) và Người huấn luyện (Trainer) của SHB có thể chủ động "dạy" cho Chatbot cách nhận biết các loại ý định khác nhau từ người dùng. Mục tiêu là xây dựng một hệ thống linh hoạt, có khả năng mở rộng các luồng hội thoại trong tương lai mà không cần can thiệp vào mã nguồn, đảm bảo tính chủ động cho phía nghiệp vụ của ngân hàng.
+
+        **Các yêu cầu chính:**
+        *   Cung cấp giao diện quản lý Intent trong Admin Portal của Service 07.
+        *   Cho phép Knowledge Admin tạo, sửa, xóa các Intent mới (ngoài 4 Intent hệ thống mặc định).
+        *   Cho phép Knowledge Admin và Intent Trainer thêm, sửa, xóa các mẫu câu huấn luyện (training utterances) cho từng Intent.
+        *   Cơ chế để Knowledge Admin kích hoạt quá trình huấn luyện lại mô hình NLU.
+        *   Phân quyền chi tiết cho Knowledge Admin và Intent Trainer.
+
+        **Liên quan đến:**
+        *   Service 07. Conversation Engine
+        *   Service 01. IAM (cho phân quyền)
+        *   PHẦN 1.1, PHẦN 1.3, PHẦN 1.4, PHẦN 2, PHẦN 3 của tài liệu thiết kế.
+        ```
+    *   *Giải thích:* Đây là phần rất quan trọng. Bạn nên tóm tắt mục tiêu, các yêu cầu chính và các thành phần/tài liệu liên quan để bất kỳ ai đọc Epic này cũng hiểu được phạm vi công việc.
+
+3.  **Labels:**
+    *   **Điền:** `Service_07`, `FEAT-CONV-001`, `Admin_Portal`, `NLU`
+    *   *Giải thích:* Labels giúp bạn phân loại và lọc các Issue một cách nhanh chóng.
+        *   `Service_07`: Cho biết Epic này thuộc về Service 07.
+        *   `FEAT-CONV-001`: Mã tính năng (giúp liên kết trực tiếp với tài liệu đặc tả).
+        *   `Admin_Portal`: Cho biết có liên quan đến giao diện quản trị.
+        *   `NLU`: Liên quan đến công nghệ xử lý ngôn ngữ tự nhiên.
+
+4.  **Linked Issues:**
+    *   Trong ảnh bạn gửi, bạn đã chọn `blocks`. Tuy nhiên, vì đây là một Epic, nó **ít khi `blocks` (chặn) trực tiếp các Issue khác ở cấp thấp hơn**. Thông thường, các Story/Task mới là thứ bị chặn bởi các Bug hoặc các Story khác.
+    *   **Để trống trường "Issue"** nếu Epic này không trực tiếp chặn một Issue cụ thể nào ở cấp độ tương đương.
+    *   *Giải thích:* Trường này dùng để thể hiện mối quan hệ giữa các Issue (ví dụ: một bug "blocks" một story, một story "relates to" một task). Một Epic thường là cha của nhiều Story/Task, chứ không phải là một Issue bị chặn hay chặn cái khác.
+
+5.  **Assignee (Người được giao):**
+    *   **Điền:** `Nguyen Hoang Long` (hoặc tên người chịu trách nhiệm chính cho Epic này)
+    *   *Giải thích:* Người này là người chịu trách nhiệm tổng thể về Epic, thường là Product Owner, hoặc một Lead Dev/Tech Lead phụ trách mảng này.
+
+6.  **Epic Link:**
+    *   **Đây là lý do bạn thấy lỗi:** "An epic cannot have another epic linked to it."
+    *   **Để trống trường này.** Khi bạn đang tạo một Issue có loại là `Epic`, trường "Epic Link" này sẽ không áp dụng vì bản thân nó đã là Epic rồi, không thể gán nó vào một Epic cha khác.
+    *   *Giải thích:* Trường "Epic Link" chỉ xuất hiện và cần điền khi bạn tạo các Issue loại `Story`, `Task`, `Bug` và muốn gán chúng vào một Epic cụ thể.
+
+7.  **Sprint:**
+    *   **Điền:** (Để trống)
+    *   *Giải thích:* Một Epic thường kéo dài qua nhiều Sprint. Bạn sẽ gán các Story/Task (con của Epic này) vào các Sprint cụ thể, chứ không gán bản thân Epic vào một Sprint duy nhất.
+
+### Minh họa sau khi điền:
+
+**Issue Type:** `Epic`
+
+**Summary:** `FEAT-CONV-001: Intent Classification Mgmt`
+
+**Description:**
+```
+**Mô tả tổng quan:**
+Tính năng này cho phép Quản trị viên (Admin) và Người huấn luyện (Trainer) của SHB có thể chủ động "dạy" cho Chatbot cách nhận biết các loại ý định khác nhau từ người dùng. Mục tiêu là xây dựng một hệ thống linh hoạt, có khả năng mở rộng các luồng hội thoại trong tương lai mà không cần can thiệp vào mã nguồn, đảm bảo tính chủ động cho phía nghiệp vụ của ngân hàng.
+
+**Các yêu cầu chính:**
+*   Cung cấp giao diện quản lý Intent trong Admin Portal của Service 07.
+*   Cho phép Knowledge Admin tạo, sửa, xóa các Intent mới (ngoài 4 Intent hệ thống mặc định).
+*   Cho phép Knowledge Admin và Intent Trainer thêm, sửa, xóa các mẫu câu huấn luyện (training utterances) cho từng Intent.
+*   Cơ chế để Knowledge Admin kích hoạt quá trình huấn luyện lại mô hình NLU.
+*   Phân quyền chi tiết cho Knowledge Admin và Intent Trainer.
+
+**Liên quan đến:**
+*   Service 07. Conversation Engine
+*   Service 01. IAM (cho phân quyền)
+*   PHẦN 1.1, PHẦN 1.3, PHẦN 1.4, PHẦN 2, PHẦN 3 của tài liệu thiết kế.
+```
+
+**Labels:** `Service_07`, `FEAT-CONV-001`, `Admin_Portal`, `NLU`
+
+**Linked Issues:** (Để trống hoặc điền nếu thực sự có mối quan hệ chặn ở cấp Epic, nhưng rất hiếm)
+
+**Assignee:** `Nguyen Hoang Long`
+
+**Epic Link:** (Để trống, vì đây là Epic)
+
+**Sprint:** (Để trống)
+
+---
+
