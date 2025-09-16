@@ -148,185 +148,6 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 
 > 🔧 **Lưu ý**: thay các giá trị `<>` bằng giá trị thực tế. Nếu chưa rõ `customfield`, dùng placeholder và nhắc map với JIRA admin.
 
-### 🟣 7.1. EPIC
-
-```json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Epic" },
-    "summary": "[EPIC] Đăng nhập — OTP + FaceID",
-    "description": "Tập trung phát triển tính năng xác thực 2 lớp (OTP, FaceID)",
-    "<customfield_epicName>": "Login with FaceID",
-    "labels": ["auth-service"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "High" },
-    "fixVersions": [{ "name": "1.0.0" }]
-  }
-}
-```
-
-### 🟢 7.2. USER STORY
-
-````json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Story" },
-    "summary": "US: As a user, I want to login with FaceID, so that I don't need OTP",
-    "description": "**Goal:** Đăng nhập bằng FaceID\n\n```gherkin\nFeature: FaceID login\nScenario: Login success\nGiven thiết bị đã đăng ký FaceID\nWhen mở app và quét khuôn mặt\nThen hệ thống xác thực và tự đăng nhập\n```",
-    "labels": ["auth-service", "faceid-login"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "Medium" },
-    "<customfield_storyPoints>": 5,
-    "<customfield_epicLink>": "SHBNB-10",
-    "assignee": { "accountId": "<Dev A ID>" },
-    "reporter": { "accountId": "<PM ID>" }
-  }
-}
-````
-
-### 🔵 7.3. TASK
-
-```json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Task" },
-    "summary": "TASK: Thiết kế API login — OAuth2",
-    "description": "Tạo thiết kế chi tiết cho endpoint `/v1/auth/login`, có hỗ trợ OTP và FaceID",
-    "labels": ["auth-service", "api-design"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "Medium" },
-    "fixVersions": [{ "name": "1.0.0" }],
-    "assignee": { "accountId": "<Dev B ID>" },
-    "reporter": { "accountId": "<PM ID>" }
-  }
-}
-```
-
-### 🟠 7.4. SUB-TASK
-
-```json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Sub-task" },
-    "summary": "ST: AuthService — Validate FaceID token",
-    "description": "Xây dựng logic xác thực token từ Apple FaceID trong middleware",
-    "labels": ["auth-service"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "High" },
-    "parent": { "key": "SHBNB-23" },
-    "assignee": { "accountId": "<Dev C ID>" },
-    "reporter": { "accountId": "<TechLead ID>" }
-  }
-}
-```
-
-#### 🔴 7.5. BUG
-
-```json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Bug" },
-    "summary": "[BUG] Login thất bại @iOS 16 — AuthService",
-    "description": "Người dùng báo lỗi đăng nhập không phản hồi trên iOS 16. API trả lỗi 500.",
-    "labels": ["auth-service", "ios-bug"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "Highest" },
-    "fixVersions": [{ "name": "1.0.1" }],
-    "assignee": { "accountId": "<QA ID>" },
-    "reporter": { "accountId": "<PM ID>" }
-  }
-}
-```
-
-### 🔷 7.6. INITIATIVE (nếu dùng Portfolio/Advanced Roadmaps)
-
-```json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Initiative" },
-    "summary": "[INITIATIVE] Tăng trưởng người dùng App SHB",
-    "description": "Tập trung triển khai các tính năng như chatbot, FaceID login, và cá nhân hoá để tăng tỷ lệ active user.",
-    "labels": ["growth", "customer-exp"],
-    "priority": { "name": "High" },
-    "fixVersions": [{ "name": "1.0.0" }],
-    "assignee": { "accountId": "<PMO ID>" },
-    "reporter": { "accountId": "<PM ID>" }
-  }
-}
-```
-
-### 🧪 7.7. TEST CASE (nếu có test management tool như Zephyr/TestRail tích hợp)
-
-```json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Test" },
-    "summary": "TEST: Login với FaceID hợp lệ trên iOS",
-    "description": "**Pre-condition**: User đã enable FaceID trong cài đặt\n**Test Steps**:\n1. Mở app SHB trên iOS 16\n2. Quét khuôn mặt thành công\n**Expected**: Người dùng được tự động đăng nhập và vào trang chính",
-    "labels": ["testcase", "auth-service", "ios"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "Medium" },
-    "fixVersions": [{ "name": "1.0.0" }],
-    "assignee": { "accountId": "<QA ID>" },
-    "reporter": { "accountId": "<TestLead ID>" }
-  }
-}
-```
-
-### 🐞 7.8. BUG WITH REPRO STEPS
-
-````json
-{
-  "fields": {
-    "project": { "key": "SHBNB" },
-    "issuetype": { "name": "Bug" },
-    "summary": "[BUG] Crash khi đăng nhập bằng FaceID @iOS 17 — AuthService",
-    "description": "**Môi trường:** iOS 17.0.1, App version 1.0.0\n\n**Bước tái hiện:**\n1. Mở app SHB\n2. Bấm đăng nhập → Quét FaceID\n3. Ứng dụng crash ngay lập tức\n\n**Kỳ vọng:** Đăng nhập thành công hoặc báo lỗi rõ ràng\n**Thực tế:** Crash app\n\n**Ghi log:**\n```\nEXC_BAD_ACCESS at AuthService.swift line 123\n```",
-    "labels": ["bug", "faceid", "ios", "auth-service"],
-    "components": [{ "name": "AuthService" }],
-    "priority": { "name": "Highest" },
-    "fixVersions": [{ "name": "1.0.1" }],
-    "assignee": { "accountId": "<Dev ID>" },
-    "reporter": { "accountId": "<QA ID>" }
-  }
-}
-````
-
----
-
-## ⚠️ 8. Rủi ro & Biện pháp
-
-| Rủi ro               | Mức độ     | Biện pháp                           |
-| -------------------- | ---------- | ----------------------------------- |
-| NLP lỗi tiếng Việt   | Cao        | Kiểm thử ngữ cảnh + fallback intent |
-| FaceID không ổn định | Trung bình | Cho phép fallback OTP               |
-
----
-
-## 📣 9. Truyền thông & Phê duyệt
-
-* Kênh: Slack `#shb-chatbot`, Email `dự án@shb.com.vn`
-* Thời gian cập nhật: Daily 9h sáng
-* Người phê duyệt: SHB PM + Product Owner
-
----
-
-## 🧾 10. Phiên bản rút gọn
-
-| Thông tin   | Giá trị                                  |
-| ----------- | ---------------------------------------- |
-| Project Key | `SHBNB`                                  |
-| Naming      | Epic `[EPIC]`; Story `US:`; Task `TASK:` |
-| Estimation  | Story Point (1–13), P1–P4                |
-| Sprint      | 2 tuần                                   |
-| Báo cáo     | Burndown, Velocity, Bugs P1              |
 
 ---
 # Hướng Dẫn Cấu Hình Project trên JIRA
@@ -443,81 +264,46 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 <img width="1908" height="818" alt="image" src="https://github.com/user-attachments/assets/650e7c51-d207-49f3-9c07-c7fbe23f6392" />
 
 ---
+## 📋 Checklist JIRA cho PM tại FOXAI - rút gọn từ tài liệu *Hướng dẫn thiết lập một số chức năng quan trọng trên JIRA*
 
-### Tóm tắt nội dung
+## 1️⃣ Khởi tạo Project
 
-```markdown
-# Hướng Dẫn Cấu Hình Project JIRA
+* [ ] Vào **Projects → Create Project**.
+* [ ] Chọn loại project (*Basic software development* thường dùng).
+* [ ] Nhập **Project Name, Key (3–6 ký tự), PM**.
+* [ ] Submit (nếu chưa có quyền → liên hệ Admin).
 
-## 1. Truy cập Project Settings
-- Projects → Chọn project → More actions → Project settings
+## 2️⃣ Tạo Epic (Chủ đề)
 
-## 2. Project Details
-- Tên, key, mô tả, avatar
-- Không dễ thay đổi Project key
+* [ ] Nhấn **Create**, chọn **Issue Type = Epic**.
+* [ ] Nhập thông tin, bấm **Create**.
 
-## 3. Loại dự án & Template
-- Chọn Team-managed vs Company-managed
-- Chọn template phù hợp (Scrum, Kanban…)
+## 3️⃣ Tạo Issue khác (Task/Bug/Feature)
 
-## 4. Issue Types
-- Thêm/xoá issue types trong project settings
+* [ ] Nhấn **Create**, chọn Issue phù hợp:
 
-## 5. Workflow
-- Copy/edit hoặc tạo workflow mới
-- Sử dụng workflow designer
-- Publish draft workflow khi hoàn tất
+  * *Improvement* (cải tiến)
+  * *Task* (việc)
+  * *New Feature* (chức năng mới)
+  * *Bug* (lỗi)
+* [ ] Nhập **Epic Link** để liên kết với Epic.
 
-## 6. Screens/Field Configuration
-- Custom field layout cho từng operation
-- Gán screen scheme cho issue type
+## 4️⃣ Thêm Custom Fields (VD: Tester, Developer, Deadline)
 
-## 7. Components
-- Tạo component, gán lead, default assignee
+* [ ] **⚙️ Settings → Issues → Custom fields → Add field**.
+* [ ] Chọn loại dữ liệu → Create.
+* [ ] Vào **Screens → Configure Screen → Add field** vào form tạo Issue.
+* [ ] Kiểm tra hiển thị khi **Create Issue**.
 
-## 8. Versions
-- Tạo Fix Versions để quản lý release
+## 5️⃣ Thiết lập Workflow
 
-## 9. Permissions
-- Thiết lập qua Permission scheme
-- Project Admin vs Global Admin
+* [ ] **⚙️ Settings → Issues → Workflows → Add workflow**.
+* [ ] Đặt tên, thêm **Status** (Open, In Progress, Done…).
+* [ ] Thêm **Transitions** (luồng hành động giữa các status).
+* [ ] Publish & gán Workflow vào Project.
 
-## 10. Issue Linking
-- Quản lý kiểu liên kết giữa issues
-- Cần permission Link issues
-
-## 11. Priority Schemes
-- Tạo priority mới, gán vào project
-
-## 12. Custom Field Contexts
-- Giới hạn field theo project/issue type
-
-## 13. Best Practices
-- Dùng schemes chia sẻ khi cần chuẩn hoá
-- Sử dụng draft workflow
-- Lưu ý performance với project lớn
-```
-
----
-
-Bạn chỉ cần copy phần **Tóm tắt nội dung** ở trên vào file Markdown lên GitHub là hoàn toàn sẵn sàng. Nếu cần mình thêm ví dụ cụ thể hoặc template import CSV, cứ nhắc nhé!
-
-[1]: https://support.atlassian.com/jira-cloud-administration/docs/configure-a-project/?utm_source=chatgpt.com "Configure a project - Atlassian Support"
-[2]: https://confluence.atlassian.com/adminjiraserver0917/defining-a-project-1431246049.html?utm_source=chatgpt.com "Defining a project - Atlassian Documentation"
-[3]: https://community.atlassian.com/forums/App-Central-articles/The-Ultimate-Jira-Setup-Guide-2025/ba-p/2955217?utm_source=chatgpt.com "The Ultimate Jira Setup Guide 2025 - Atlassian Community"
-[4]: https://confluence.atlassian.com/display/JIRASOFTWARESERVER083/Configuring%2Ba%2Bproject?utm_source=chatgpt.com "Configuring a project - Jira Software Server 8.3 - Atlassian Documentation"
-[5]: https://confluence.atlassian.com/display/JIRASOFTWARESERVER089/Configuring%2Ba%2Bproject?utm_source=chatgpt.com "Configuring a project - Atlassian Documentation"
-[6]: https://confluence.atlassian.com/adminjiraserver0917/working-with-workflows-1431246403.html?utm_source=chatgpt.com "Working with workflows - Atlassian Documentation"
-[7]: https://confluence.atlassian.com/adminjiraserver0917/project-screens-schemes-and-fields-1431246236.html?utm_source=chatgpt.com "Project screens, schemes and fields - Atlassian Documentation"
-[8]: https://confluence.atlassian.com/adminjiraserver0917/managing-components-1431246190.html?utm_source=chatgpt.com "Managing components - Atlassian Documentation"
-[9]: https://confluence.atlassian.com/adminjiraserver0917/configuring-projects-1431246048.html?utm_source=chatgpt.com "Configuring projects - Atlassian Documentation"
-[10]: https://www.jirastrategy.com/wp-content/uploads/2025/07/Jira-Project-Configuration-LinkedIn-Learning.pdf?utm_source=chatgpt.com "Complete Guide to Jira Administration: Configuration, Management, and ..."
-[11]: https://confluence.atlassian.com/adminjiraserver0917/configuring-permissions-1431246135.html?utm_source=chatgpt.com "Configuring permissions - Atlassian Documentation"
-[12]: https://support.atlassian.com/jira-cloud-administration/docs/configure-projects/?utm_source=chatgpt.com "Configure projects - Atlassian Support"
-[13]: https://confluence.atlassian.com/adminjiraserver0917/managing-project-permissions-1431246140.html?utm_source=chatgpt.com "Managing project permissions - Atlassian Documentation"
-[14]: https://confluence.atlassian.com/adminjiraserver0917/configuring-issue-linking-1431247031.html?utm_source=chatgpt.com "Configuring issue linking - Atlassian Documentation"
-[15]: https://confluence.atlassian.com/adminjiraserver0917/defining-priority-field-values-1431246085.html?utm_source=chatgpt.com "Defining priority field values - Atlassian Documentation"
-[16]: https://confluence.atlassian.com/adminjiraserver0917/configuring-custom-field-contexts-1431246261.html?utm_source=chatgpt.com "Configuring custom field contexts - Atlassian Documentation"
+✅ **Kết quả**: PM có thể tạo project chuẩn, quản lý backlog theo *Epic → Issue*, thêm field cần thiết, và theo dõi tiến độ qua workflow.
+⏱️ **Thời gian triển khai**: 30 phút–1 giờ cho project mới.
 
 ---
 ## Hướng Dẫn Khai Báo Sprint, Backlog và Issue trên Jira cho Dự án [FOXAI Native SHB](http://fox.ai.vn:8080/secure/RapidBoard.jspa?rapidView=2&projectKey=SHBNB&view=planning&issueLimit=100#)
