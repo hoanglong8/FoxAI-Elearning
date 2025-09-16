@@ -9,9 +9,7 @@ Mật khẩu: `P@ssword123`
 <img width="1919" height="748" alt="image" src="https://github.com/user-attachments/assets/992ab0e8-04e9-4163-9965-6f605c0525d0" />
 
 ---
-
-# 📘 Hướng Dẫn Sử Dụng JIRA cho PM – Ví dụ `Dự Án FOXAI Native cho ngân hàng SHB`
-
+# 📘 PHẦN 1 - Hướng Dẫn Sử Dụng JIRA cho PM – Ví dụ `Dự Án FOXAI Native cho ngân hàng SHB`
 ## 📌 1. Mục tiêu tài liệu
 
 Cung cấp hướng dẫn thực tiễn giúp PM quản lý dự án Agile/Scrum trên JIRA một cách chuẩn hóa và hiệu quả:
@@ -20,8 +18,6 @@ Cung cấp hướng dẫn thực tiễn giúp PM quản lý dự án Agile/Scrum
 * Cách tạo/giao việc cho dev/QA/BA
 * Cách theo dõi tiến độ, xem báo cáo
 * Mẫu cấu trúc backlog, quy ước đặt tên, gán label
-
----
 
 ## 🏗️ 2. Thiết lập Project
 
@@ -36,8 +32,6 @@ Cung cấp hướng dẫn thực tiễn giúp PM quản lý dự án Agile/Scrum
 | Epic                              | Story                                        | Task/Sub-task                                                        |
 | --------------------------------- | -------------------------------------------- | -------------------------------------------------------------------- |
 | `[EPIC] Đăng nhập — OTP + FaceID` | `US: As a user, I want to login with FaceID` | `TASK: Thiết kế API đăng nhập`<br>`ST: AuthService — Validate token` |
-
----
 
 ## 🧾 3. Quy chuẩn đặt tên và cấu hình
 
@@ -61,10 +55,7 @@ Cung cấp hướng dẫn thực tiễn giúp PM quản lý dự án Agile/Scrum
 * **Story Point**: Fibonacci (1, 2, 3, 5, 8,…)
 * **Priority**: P1 (Critical) → P4 (Low)
 
----
-
 ## 📋 4. Mẫu Giao Việc (Story + Sub-task)
-
 ### 🧾 Mô tả Story (Markdown + Gherkin)
 
 ```
@@ -93,8 +84,6 @@ Feature: FaceID Login
 **Components**: `AuthService`
 
 ```
-
----
 
 ## 🔄 5. Cách Quản Lý Sprint
 
@@ -128,8 +117,6 @@ Feature: FaceID Login
 
 * `AuthService`, `ConversationEngine`, `UserProfile`, `MobileApp`
 
----
-
 ## 📊 6. Báo cáo thường dùng
 
 | Mục đích | JQL mẫu | Báo cáo |
@@ -141,8 +128,6 @@ Feature: FaceID Login
 
 <img width="1919" height="737" alt="image" src="https://github.com/user-attachments/assets/a908a95a-7906-42d4-ba96-6505b7663f74" />
 
----
-
 ## 🧰 7. Tạo Issue bằng API
 Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng để tạo Issue qua REST API cho dự án SHBNB (Chatbot Native cho SHB):
 
@@ -150,7 +135,7 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 
 
 ---
-# Hướng Dẫn Cấu Hình Project trên JIRA
+# PHẦN 2 - Hướng Dẫn Cấu Hình Project trên JIRA
 
 ## 1. Truy cập tới Cài Đặt Dự Án
 
@@ -264,7 +249,7 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 <img width="1908" height="818" alt="image" src="https://github.com/user-attachments/assets/650e7c51-d207-49f3-9c07-c7fbe23f6392" />
 
 ---
-## 📋 Checklist JIRA cho PM tại FOXAI - rút gọn từ tài liệu *Hướng dẫn thiết lập một số chức năng quan trọng trên JIRA*
+# 📋 PHẦN 3 - Checklist JIRA cho PM tại FOXAI - rút gọn từ tài liệu *Hướng dẫn thiết lập một số chức năng quan trọng trên JIRA*
 
 ## 1️⃣ Khởi tạo Project
 
@@ -306,7 +291,7 @@ Bộ mẫu JIRA JSON payload đã chuẩn hóa theo cấu trúc FOXAI, dùng đ�
 ⏱️ **Thời gian triển khai**: 30 phút–1 giờ cho project mới.
 
 ---
-## Hướng Dẫn Khai Báo Sprint, Backlog và Issue trên Jira cho Dự án [FOXAI Native SHB](http://fox.ai.vn:8080/secure/RapidBoard.jspa?rapidView=2&projectKey=SHBNB&view=planning&issueLimit=100#)
+# PHẦN 4 - Hướng Dẫn Khai Báo Sprint, Backlog và Issue trên Jira cho Dự án [FOXAI Native SHB](http://fox.ai.vn:8080/secure/RapidBoard.jspa?rapidView=2&projectKey=SHBNB&view=planning&issueLimit=100#)
 
 ### Bước 1: Chuẩn Bị Dự Án Jira (Project Setup)
 
