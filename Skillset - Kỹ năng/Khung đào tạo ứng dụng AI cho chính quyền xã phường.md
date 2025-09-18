@@ -1,3 +1,230 @@
+# PHẦN 1
+**Tên chương trình:** Đào tạo, bồi dưỡng ứng dụng trí tuệ nhân tạo (AI) cho lãnh đạo các đơn vị xã/phường trên địa bàn TP. Hà Nội
+
+**Tiêu đề phụ:** KIẾN TẠO CHÍNH QUYỀN SỐ TINH GỌN, HIỆU QUẢ BẰNG TRÍ TUỆ NHÂN TẠO (AI)
+
+<img width="1920" height="1080" alt="slide_cover_option_A" src="https://github.com/user-attachments/assets/46f5e473-181f-48ca-916e-bc872ae44b21" />
+
+**Lưu ý:** Prompt nhận diện thương hiệu đưa vào `Chat.Z.AI` tham khảo tại đây:
+https://chatgpt.com/share/e/68cb9002-2560-8001-b1b0-d251d8aa6cf0
+
+---
+
+### **PART 1: TẠI SAO PHẢI LÀ AI, TẠI SAO LÀ BÂY GIỜ? (30 phút)**
+
+**Slide 1: KHAI MẠC & ĐẶT VẤN ĐỀ TRỰC DIỆN**
+
+*   **Tiêu đề slide:** BIẾN AI THÀNH CÔNG CỤ ĐIỀU HÀNH QUYỀN LỰC
+*   **Gợi ý hình ảnh:** Ảnh nền Hà Nội ban đêm, phía trên có 3 icon nổi bật, sáng nhẹ: ⏱️ (Biểu tượng đồng hồ tượng trưng Áp lực Thời hạn), 📊 (Biểu đồ cột tượng trưng Áp lực Chỉ tiêu), 📥 (Hòm thư tượng trưng Áp lực Kiến nghị dân).
+*   **Ghi chú lời dẫn (Script cho Giảng viên):**
+    *   "Kính thưa các đồng chí Bí thư, Chủ tịch cùng toàn thể các đồng chí Lãnh đạo. Thay mặt công ty FOXAI và Ban tổ chức, xin nhiệt liệt chào mừng các đồng chí đã đến với chương trình đào tạo đặc biệt ngày hôm nay."
+    *   "Trước khi đi vào nội dung chính, tôi xin phép mời các đồng chí dành 10 giây suy nghĩ về một câu hỏi rất thực tế: **Tuần vừa rồi, điều gì đã khiến các đồng chí tốn nhiều thời gian và tâm sức nhất?** (Ngừng lại một chút, nhìn bao quát hội trường). Có phải là việc tổng hợp hàng loạt báo cáo từ các bộ phận? Hay là việc phải xử lý một phản ánh phức tạp, nhạy cảm của người dân? Hay là những cuộc họp kéo dài mà hiệu quả chưa như mong muốn?"
+    *   "Mục tiêu của chúng ta trong 180 phút tới rất rõ ràng và thực dụng: **biến AI** từ một khái niệm có vẻ xa vời thành **công cụ điều hành cụ thể nằm trên bàn làm việc, trong chiếc điện thoại của chính các đồng chí**. Chúng tôi sẽ chứng minh điều đó bằng **demo trực quan, các kịch bản sát với thực tế công việc** và cuối cùng là đề xuất một **lộ trình Giai đoạn 2** rõ ràng, khả thi để các đồng chí có thể xem xét, phê duyệt ngay hôm nay."
+*   **Lời chuyển tiếp:** "Để bắt đầu, xin trân trọng kính mời [Chức danh, Họ và tên Lãnh đạo] lên có đôi lời phát biểu khai mạc và chỉ đạo chương trình."
+
+---
+
+**Slide 2: PHÁT BIỂU KHAI MẠC**
+
+*   **Tiêu đề slide:** PHÁT BIỂU CHỈ ĐẠO CỦA LÃNH ĐẠO THÀNH PHỐ
+*   **Gợi ý hình ảnh:** Hình ảnh trang trọng của trụ sở UBND Thành phố Hà Nội hoặc logo chính thức của Thành phố.
+*   **Ghi chú lời dẫn:** (Dành cho MC giới thiệu Lãnh đạo phát biểu).
+*   **Lời chuyển tiếp (của Giảng viên):** "Xin trân trọng cảm ơn những phát biểu chỉ đạo sâu sắc và đầy tâm huyết của đồng chí... Những chỉ đạo của đồng chí chính là kim chỉ nam cho chương trình. Tiếp theo, chúng ta sẽ cùng phân tích: tại sao mô hình vận hành hiện tại đang dần trở nên quá tải, và đâu là lối ra?"
+
+---
+
+**Slide 3: TỪ "PHẢN ỨNG" ĐẾN "TIÊN ĐOÁN"**
+
+*   **Tiêu đề slide:** CHUYỂN ĐỔI MÔ HÌNH: TỪ CHÍNH QUYỀN "PHẢN ỨNG" SANG CHÍNH QUYỀN "TIÊN ĐOÁN"
+*   **Gợi ý hình ảnh:** Sơ đồ so sánh 2 cột.
+    *   **Cột 1 (Phản ứng):** Icon Lãnh đạo ở trên -> Chỉ đạo đi xuống -> Các bộ phận thực thi -> Báo cáo giấy đi lên. Quy trình này được vẽ theo đường thẳng, có các icon đồng hồ cát thể hiện độ trễ.
+    *   **Cột 2 (Tiên đoán):** Một khối **DỮ LIỆU có hình BỘ NÃO AI** nằm ở trung tâm. Các icon Lãnh đạo, Cán bộ, Người dân đều có mũi tên 2 chiều kết nối vào khối trung tâm này. Dòng thông tin tức thời, đa chiều.
+*   **Ghi chú lời dẫn:**
+    *   "Kính thưa các đồng chí, Chuyển đổi số không chỉ là việc chúng ta cài thêm vài phần mềm. Đó là một cuộc cách mạng về **cách thức vận hành**."
+    *   "Mô hình truyền thống (bên trái) hoạt động theo cơ chế 'phản ứng'. Có sự vụ, có báo cáo thì Lãnh đạo mới biết và chỉ đạo. Chúng ta luôn đi sau thực tế một bước."
+    *   "Mô hình chúng ta hướng tới (bên phải) là mô hình 'tiên đoán'. Mọi hoạt động được số hóa, và **bộ não AI** ở trung tâm sẽ phân tích dòng dữ liệu đó theo thời gian thực. Nó không chỉ giúp các đồng chí biết chuyện gì **đã** xảy ra, mà còn thấy chuyện gì **đang** xảy ra và quan trọng hơn là **dự báo** được những 'điểm nóng' nào **sắp** xảy ra để chỉ đạo phòng ngừa."
+*   **Lời chuyển tiếp:** "Vậy 'bộ não AI' này thực chất là gì và nó sẽ giúp chúng ta như thế nào một cách đơn giản nhất? Mời các đồng chí đến với slide tiếp theo."
+
+---
+
+**Slide 4: AI LÀ GÌ? (GIẢI THÍCH CHO LÃNH ĐẠO)**
+
+*   **Tiêu đề slide:** AI: NGƯỜI TRỢ LÝ MẪN CÁN, KHÔNG BAO GIỜ NGỦ
+*   **Gợi ý hình ảnh:** Hình ảnh một bộ não kỹ thuật số, từ đó tỏa ra 3 nhánh năng lực cốt lõi với các icon tương ứng:
+    *   **"MẮT THẦN"**: Icon con mắt đang quét qua các biểu đồ dữ liệu.
+    *   **"BỘ ÓC BÁCH KHOA"**: Icon cuốn sách luật mở ra.
+    *   **"CÁNH TAY NỐI DÀI"**: Icon một cánh tay robot đang gõ phím, soạn thảo văn bản.
+*   **Ghi chú lời dẫn:**
+    *   "Thưa các đồng chí, hôm nay chúng ta sẽ không nói về thuật toán phức tạp. Hãy hình dung AI một cách đơn giản nhất: nó là một **NGƯỜI TRỢ LÝ ẢO** được trang bị 3 năng lực siêu việt:"
+    *   **Một là MẮT THẦN:** Giúp các đồng chí nhìn xuyên qua hàng núi báo cáo giấy để thấy ngay đâu là vấn đề cốt lõi, đâu là 'điểm nóng' cần xử lý.
+    *   **Hai là BỘ ÓC BÁCH KHOA:** Chứa toàn bộ hệ thống văn bản pháp luật, quy định. Cần tra cứu gì, hỏi là có ngay, chính xác tuyệt đối.
+    *   **Ba là CÁNH TAY NỐI DÀI:** Có thể làm các công việc lặp đi lặp lại như soạn công văn, làm báo cáo, trả lời người dân 24/7 mà không bao giờ mệt mỏi, không bao giờ sai sót.
+    *   "Tôi xin nhấn mạnh: Nó không thay thế các đồng chí, mà nó **giải phóng các đồng chí** khỏi sự vụ, để tập trung vào việc quan trọng nhất mà không máy móc nào làm được, đó là: **LÃNH ĐẠO**."
+*   **Lời chuyển tiếp:** "Nói thì có vẻ hay, nhưng cụ thể 'người trợ lý' này sẽ được triển khai như thế nào tại phường/xã? Xin mời các đồng chí đến với Hệ sinh thái giải pháp của FOXAI."
+
+---
+
+### **PHẦN 2: HỆ SINH THÁI GIẢI PHÁP VÀ DEMO THỰC CHIẾN (90 phút)**
+
+**Slide 5: TỔNG QUAN HỆ SINH THÁI GIẢI PHÁP**
+
+*   **Tiêu đề slide:** HỆ SINH THÁI AI ĐỒNG BỘ CHO CHÍNH QUYỀN CƠ SỞ
+*   **Gợi ý hình ảnh:** Một sơ đồ trực quan, ở trung tâm là icon "Tòa nhà UBND Phường/Xã". Xung quanh là 4 khối vệ tinh kết nối vào, mỗi khối có tiêu đề và một câu mô tả ngắn:
+    *   **Lãnh đạo:** Trung tâm Điều hành số & Trợ lý AI cá nhân.
+    *   **Công chức:** Trợ lý ảo tăng tốc hiệu suất công việc.
+    *   **Công dân:** Cán bộ Một cửa số phục vụ 24/7.
+    *   **Hội họp:** Thư ký AI tự động hóa biên bản, nhiệm vụ.
+*   **Ghi chú lời dẫn:** "Chúng tôi không cung cấp những công cụ rời rạc. Đây là một **hệ sinh thái đồng bộ**, tác động đến mọi khía cạnh hoạt động của chính quyền. Mỗi giải pháp giải quyết một 'điểm đau' cụ thể, nhưng tất cả đều được kết nối với nhau bằng một dòng chảy dữ liệu thông suốt. Bây giờ, chúng ta sẽ bắt đầu với công cụ được thiết kế dành riêng cho các vị tư lệnh tại đây."
+*   **Lời chuyển tiếp:** "Mời các đồng chí đến với giải pháp đầu tiên: Trung tâm điều hành số."
+
+---
+
+**Slide 6: GIẢI PHÁP 1 - TRUNG TÂM ĐIỀU HÀNH SỐ & TRỢ LÝ AI**
+
+*   **Tiêu đề slide:** "PHÒNG GIAO BAN SỐ" TRÊN DI ĐỘNG & TRỢ LÝ AI CÁ NHÂN
+*   **Gợi ý hình ảnh:** Hình ảnh một Lãnh đạo đang xem dashboard trên điện thoại, các biểu đồ trên điện thoại khớp với màn hình TV lớn phía sau. Thể hiện sự đồng bộ, tiện lợi.
+*   **Ghi chú lời dẫn:** "Hãy tưởng tượng, thay vì cuộc họp giao ban sáng thứ Hai kéo dài 2 tiếng để nghe báo cáo, các đồng chí chỉ cần 5 phút lướt điện thoại là nắm được toàn bộ tình hình: hồ sơ nào sắp trễ hạn, lĩnh vực nào đang có vấn đề, người dân đang phản ánh nhiều nhất về việc gì ở tổ dân phố nào. Và khi cần một con số đột xuất trong cuộc họp với cấp trên, các đồng chí chỉ cần **hỏi bằng giọng nói** như đang ra lệnh cho một người trợ lý thực thụ."
+*   **Lời chuyển tiếp:** "Để các đồng chí dễ hình dung nhất, xin mời xem một đoạn demo ngắn 3 phút về một kịch bản rất quen thuộc."
+
+---
+
+**Slide 6A: MINI DEMO 1 - KỊCH BẢN LÃNH ĐẠO**
+
+*   **Tiêu đề slide:** DEMO (3 phút): LÃNH ĐẠO RA QUYẾT ĐỊNH BẰNG DỮ LIỆU
+*   **Gợi ý hình ảnh:** Một video được quay sẵn hoặc live demo trên màn hình.
+*   **Kịch bản demo:**
+    1.  Mở Dashboard trên điện thoại, lướt qua các chỉ số. Camera zoom vào mục "Hồ sơ hành chính", thấy lĩnh vực "Đất đai - Xây dựng" đang có chỉ số cảnh báo màu đỏ.
+    2.  Người trình bày bật Trợ lý AI, dùng giọng nói hỏi: *"Trong tuần qua, lĩnh vực đất đai có bao nhiêu hồ sơ trễ hạn và nguyên nhân chính là gì?"*
+    3.  Màn hình hiển thị câu trả lời: "Có 05 hồ sơ trễ hạn. Nguyên nhân chính: 60% do chờ xác minh nguồn gốc đất, 40% do người dân bổ sung hồ sơ chậm." Kèm theo một biểu đồ tròn nhỏ.
+    4.  Trợ lý AI gợi ý hành động: "Gợi ý chỉ đạo: Giao đồng chí Phó Chủ tịch phụ trách Đô thị kiểm tra, đôn đốc và báo cáo lại trước 16h hôm nay."
+*   **Ghi chú lời dẫn:** (Thuyết minh theo video) "Đây chính là sức mạnh của việc điều hành bằng dữ liệu. Nhanh chóng, chính xác và ra chỉ đạo kịp thời."
+*   **Lời chuyển tiếp:** "Khi Lãnh đạo đã có công cụ mạnh, làm sao để cả bộ máy cùng tăng tốc? Chúng ta đến với giải pháp cho đội ngũ cán bộ, công chức."
+
+---
+
+**Slide 7: GIẢI PHÁP 2 - "TRỢ LÝ ẢO" CHO CÁN BỘ**
+
+*   **Tiêu đề slide:** "TRỢ LÝ ẢO" AI - NHÂN BẢN NĂNG SUẤT CHO CÁN BỘ
+*   **Gợi ý hình ảnh:** So sánh "Trước - Sau".
+    *   **Trước:** Cán bộ mệt mỏi tra cứu trong chồng văn bản luật.
+    *   **Sau:** Cán bộ mỉm cười, gõ câu hỏi vào máy tính và nhận được câu trả lời chính xác trong vài giây.
+*   **Ghi chú lời dẫn:** "Lãnh đạo giỏi sẽ có một đội ngũ tinh nhuệ. Giải pháp này giúp đội ngũ của các đồng chí giảm tới 90% thời gian cho các việc thủ công như tra cứu văn bản, soạn thảo công văn, tóm tắt báo cáo... để họ có thêm thời gian đi cơ sở, làm những việc cần chuyên môn sâu và sự tương tác của con người."
+*   **Lời chuyển tiếp:** "Mời các đồng chí xem tiếp một demo 3 phút về việc AI giúp cán bộ văn phòng tăng tốc công việc như thế nào."
+
+---
+
+**Slide 7A: MINI DEMO 2 - KỊCH BẢN CÔNG CHỨC**
+
+*   **Tiêu đề slide:** DEMO (3 phút): TĂNG TỐC CÔNG VIỆC THƯỜNG NGÀY
+*   **Gợi ý hình ảnh:** Một video được quay sẵn hoặc live demo.
+*   **Kịch bản demo:**
+    1.  Mở giao diện Trợ lý AI cho cán bộ. Cán bộ copy và dán một văn bản chỉ đạo dài 5 trang của Thành phố về công tác phòng cháy chữa cháy vào AI.
+    2.  Người trình bày gõ lệnh: *"Tóm tắt văn bản này thành 3 gạch đầu dòng chính và soạn giúp tôi dự thảo thông báo gửi các tổ dân phố để phổ biến nội dung này, theo mẫu chuẩn."*
+    3.  Trong vài giây, AI trả về: (1) Bản tóm tắt 3 ý chính, (2) Một bản dự thảo thông báo hoàn chỉnh, đúng thể thức, sẵn sàng để trình ký.
+*   **Ghi chú lời dẫn:** (Thuyết minh theo video) "Như các đồng chí thấy, công việc mà trước đây có thể mất cả buổi sáng thì giờ chỉ còn tính bằng phút. Đây chính là 'nhân bản năng suất'."
+*   **Lời chuyển tiếp:** "Khi bộ máy bên trong đã vận hành trơn tru, vậy bộ mặt của chính quyền khi tương tác với người dân sẽ thay đổi ra sao?"
+
+---
+
+**Slide 8: GIẢI PHÁP 3 - "CÁN BỘ MỘT CỬA SỐ" 24/7**
+
+*   **Tiêu đề slide:** "CÁN BỘ MỘT CỬA SỐ" - NÂNG CAO SỰ HÀI LÒNG CỦA DÂN
+*   **Gợi ý hình ảnh:** Một mã QR lớn trên màn hình. Bên cạnh là hình ảnh minh họa một người dân đang dùng điện thoại quét mã và chat với chatbot trên Zalo.
+*   **Ghi chú lời dẫn:**
+    *   "Thưa các đồng chí, chỉ số hài lòng của người dân (SIPAS) là một trong những thước đo quan trọng nhất đánh giá năng lực của chính quyền. Giải pháp này tác động trực tiếp để nâng cao chỉ số này."
+    *   "Với Chatbot AI, chúng ta có một 'cán bộ' không bao giờ ngủ, không bao giờ cáu gắt, luôn trả lời chính xác và nhất quán 24/7. Nó giúp giảm tải cho bộ phận Một cửa và tăng cường niềm tin của người dân vào một chính quyền hiện đại, thân thiện."
+    *   "Bây giờ, xin mời các đồng chí cùng lấy điện thoại ra và quét mã QR trên màn hình để trực tiếp trải nghiệm và 'thử tài' người cán bộ số này."
+*   **Lời chuyển tiếp:** (Sau khi lãnh đạo trải nghiệm) "Rất tiện lợi và minh bạch phải không ạ? Và cuối cùng, một giải pháp giúp nâng tầm hiệu quả cho hoạt động không thể thiếu của Lãnh đạo: các cuộc họp."
+
+---
+
+**Slide 9: GIẢI PHÁP 4 & CÂU CHUYỆN THÀNH CÔNG**
+
+*   **Tiêu đề slide:** PHÒNG HỌP THÔNG MINH & NHỮNG "CON SỐ BIẾT NÓI"
+*   **Gợi ý hình ảnh:** Màn hình chia đôi.
+    *   **Bên trái:** Giao diện phần mềm tự động ghi biên bản cuộc họp và liệt kê các đầu việc đã được giao.
+    *   **Bên phải:** Biểu đồ cột thể hiện các kết quả ấn tượng tại một đơn vị thí điểm: "Thời gian lập báo cáo tuần ↓40%", "Tỷ lệ hồ sơ đúng hạn ↑15%".
+*   **Ghi chú lời dẫn:** "Cuối cùng là giải pháp cho 'nỗi ám ảnh' họp hành. Phòng họp thông minh sẽ có 'Thư ký AI' tự động ghi âm, gỡ băng, tóm tắt biên bản và theo dõi nhiệm vụ đã giao. Hiệu quả này đã được chứng minh tại một phường thí điểm của Hà Nội: **thời gian tổng hợp báo cáo tuần của họ đã giảm gần 40%**, **tỷ lệ hồ sơ đúng hạn tăng rõ rệt** nhờ các cảnh báo sớm từ hệ thống. Đây là những con số biết nói."
+*   **Lời chuyển tiếp:** "Bốn giải pháp vừa rồi như 4 trụ cột vững chắc cho một chính quyền số hiện đại. Vậy để xây dựng được ngôi nhà này, chúng ta cần một lộ trình ra sao? Mời các đồng chí đến với phần cuối cùng: Triển khai, Cam kết và Hành động."
+
+---
+
+### **PHẦN 3: TRIỂN KHAI, CAM KẾT VÀ HÀNH ĐỘNG (60 phút)**
+
+**Slide 10: LỘ TRÌNH TRIỂN KHAI GIAI ĐOẠN 2**
+
+*   **Tiêu đề slide:** LỘ TRÌNH TRIỂN KHAI 3 BƯỚC: RÕ RÀNG - KHẢ THI - ĐỒNG HÀNH
+*   **Gợi ý hình ảnh:** Một timeline trực quan, đơn giản gồm 3 giai đoạn:
+    *   **GĐ 1: Khởi động & "May đo" (2 tuần):** Icon "Bắt tay", "Khảo sát".
+    *   **GĐ 2: Đào tạo & Chuyển giao (1 tuần):** Icon "Lớp học", "Chuyển giao công nghệ".
+    *   **GĐ 3: Đồng hành & Tối ưu (3 tháng):** Icon "Hỗ trợ 24/7", "Đo lường hiệu quả".
+*   **Ghi chú lời dẫn:** "Để triển khai thành công, chúng tôi đề xuất một lộ trình 3 bước rất rõ ràng. Đặc biệt, chúng tôi nhấn mạnh Giai đoạn 3: FOXAI **cam kết đồng hành** trong 3 tháng tiếp theo, hỗ trợ 'cầm tay chỉ việc' để đảm bảo 100% cán bộ, lãnh đạo ứng dụng thành công. Chúng tôi không chỉ bán phần mềm, chúng tôi cung cấp một giải pháp trọn vẹn."
+*   **Lời chuyển tiếp:** "Tuy nhiên, trước khi triển khai, một trong những băn khoăn lớn nhất của các đồng chí chắc chắn là vấn đề bảo mật. Chúng tôi xin được làm rõ ngay sau đây."
+
+---
+
+**Slide 11: BẢO MẬT, PHÁP LÝ & ĐẠO ĐỨC SỬ DỤNG**
+
+*   **Tiêu đề slide:** CAM KẾT AN TOÀN TUYỆT ĐỐI CHO DỮ LIỆU CỦA CHÍNH QUYỀN
+*   **Gợi ý hình ảnh:** Một biểu tượng chiếc khiên bảo mật lớn, bên cạnh là các checklist đã được đánh dấu tích: ✅ Phân quyền truy cập nghiêm ngặt; ✅ Mã hóa dữ liệu đa lớp; ✅ Nhật ký hoạt động minh bạch; ✅ Tuân thủ quy định của Chính phủ.
+*   **Ghi chú lời dẫn:** "Chúng tôi hiểu rằng, với dữ liệu của chính quyền, an toàn là yêu cầu số một, không có sự thỏa hiệp. Hệ thống của chúng tôi được xây dựng trên nền tảng bảo mật cấp cao nhất, tuân thủ mọi quy định của pháp luật Việt Nam về an toàn, an ninh thông tin, đảm bảo dữ liệu của Nhà nước và của người dân được bảo vệ tuyệt đối."
+*   **Lời chuyển tiếp:** "Khi đã yên tâm về bảo mật, vậy làm sao để chúng ta đo lường được hiệu quả của chương trình một cách khách quan?"
+
+---
+
+**Slide 12: ĐO LƯỜNG HIỆU QUẢ BẰNG KPI**
+
+*   **Tiêu đề slide:** CHÚNG TA SẼ ĐO LƯỜNG THÀNH CÔNG NHƯ THẾ NÀO?
+*   **Gợi ý hình ảnh:** Một bảng KPI mẫu đơn giản, trực quan trên giao diện dashboard.
+    *   **Hiệu quả nội bộ:** Biểu đồ đường của "% TTHC đúng hạn" và "Thời gian lập báo cáo tuần".
+    *   **Phục vụ người dân:** Biểu đồ cột của "Thời gian trung bình phản hồi kiến nghị" và "Điểm hài lòng (SIPAS)".
+*   **Ghi chú lời dẫn:** "Hiệu quả sẽ không chỉ là cảm tính. Ngay từ đầu, chúng ta sẽ thống nhất những chỉ số đo lường rất cụ thể này và theo dõi chúng theo thời gian thực ngay trên Dashboard điều hành. **Đo được thì mới quản trị được, quản trị được thì mới cải tiến được**."
+*   **Lời chuyển tiếp:** "Kính thưa các đồng chí, chúng ta đã thấy được Tại sao cần AI, AI có thể làm được gì, và làm như thế nào. Giờ là lúc quan trọng nhất: chúng ta cần một sự quyết tâm và đồng thuận để hành động."
+
+---
+
+**Slide 13: KÊU GỌI HÀNH ĐỘNG & ĐỒNG THUẬN**
+
+*   **Tiêu đề slide:** ĐỀ XUẤT PHÊ DUYỆT CHỦ TRƯƠNG TRIỂN KHAI GIAI ĐOẠN 2
+*   **Gợi ý hình ảnh:** Một hình tam giác vững chắc được ghép từ 3 mảnh: "Lãnh đạo số" (màu xanh dương), "Công chức số" (màu xanh lá), "Công dân số" (màu cam).
+*   **Ghi chú lời dẫn:**
+    *   "Kính thưa các đồng chí, việc tiên phong ứng dụng AI không chỉ giúp giải quyết các vấn đề trước mắt, mà còn là một **dấu ấn nhiệm kỳ**, đưa đơn vị của các đồng chí trở thành điểm sáng về cải cách hành chính và chuyển đổi số của Thành phố."
+    *   "Để biến những điều chúng ta vừa thấy thành hiện thực, thay mặt Ban tổ chức và FOXAI, chúng tôi trân trọng đề nghị các đồng chí Lãnh đạo xem xét, thống nhất và phê duyệt chủ trương triển khai Giai đoạn 2 với **3 hành động cụ thể** ngay sau buổi hôm nay:"
+    *   **(Nhấn mạnh từng điểm)**
+        *   **1. Chọn 02 lĩnh vực ưu tiên** để thí điểm (ví dụ: Đất đai, Tư pháp-Hộ tịch).
+        *   **2. Thành lập Tổ công tác triển khai** do một đồng chí Lãnh đạo trực tiếp phụ trách để phối hợp chặt chẽ.
+        *   **3. Thống nhất lịch triển khai dự kiến** ngay trong quý tới.
+    *   "FOXAI cam kết sẽ dồn mọi nguồn lực tốt nhất để đồng hành cùng các đồng chí trong từng bước của quá trình này."
+*   **Lời chuyển tiếp:** "Phần trình bày của chúng tôi đến đây là kết thúc. Bây giờ là thời gian dành cho các câu hỏi, thắc mắc và trao đổi thẳng thắn từ phía các đồng chí Lãnh đạo."
+
+---
+
+**Slide 14: HỎI - ĐÁP & GIẢI TỎA BĂN KHOĂN**
+
+*   **Tiêu đề slide:** THẢO LUẬN & GIẢI ĐÁP
+*   **Gợi ý hình ảnh:** Hình ảnh micro và các bong bóng câu hỏi (?). Nền là ảnh hội trường đang thảo luận.
+*   **Ghi chú lời dẫn:** "Kính mời các đồng chí đặt câu hỏi về mọi vấn đề mà các đồng chí còn băn khoăn: từ kỹ thuật, pháp lý, dữ liệu, kinh phí, cho đến lộ trình cụ thể. Chúng tôi và các chuyên gia sẵn sàng giải đáp một cách ngắn gọn, đi thẳng vào vấn đề."
+*   **Lời chuyển tiếp:** (Sau phần Q&A) "Xin trân trọng cảm ơn các câu hỏi và ý kiến đóng góp sâu sắc của các đồng chí. Để tổng kết chương trình, trân trọng kính mời [Chức danh, Họ và tên Lãnh đạo Thành phố] lên phát biểu bế mạc và chỉ đạo."
+
+---
+
+**Slide 15: BẾ MẠC & CAM KẾT ĐỒNG HÀNH**
+
+*   **Tiêu đề slide:** BẾ MẠC VÀ CHỈ ĐẠO CỦA LÃNH ĐẠO THÀNH PHỐ
+*   **Gợi ý hình ảnh:** Hình ảnh trang trọng của hội trường.
+*   **Ghi chú lời dẫn:** (Dành cho MC giới thiệu Lãnh đạo phát biểu tổng kết, kêu gọi sự đồng thuận và chỉ đạo triển khai).
+*   **Lời chuyển tiếp (của Giảng viên sau phát biểu của Lãnh đạo):** "Một lần nữa xin trân trọng cảm ơn những chỉ đạo quý báu của đồng chí..."
+
+---
+
+**Slide 16: TRÂN TRỌNG CẢM ƠN!**
+
+*   **Tiêu đề slide:** TRÂN TRỌNG CẢM ƠN!
+*   **Gợi ý hình ảnh:** Logo của FOXAI và các đơn vị đồng tổ chức. Bên dưới là thông điệp "Đồng hành cùng chính quyền cơ sở kiến tạo tương lai số" và thông tin liên hệ (email, hotline hỗ trợ).
+*   **Ghi chú lời dẫn:** "Thay mặt Ban tổ chức, một lần nữa xin trân trọng cảm ơn sự quan tâm lắng nghe và tham gia nhiệt tình của các đồng chí Lãnh đạo. Kính chúc các đồng chí sức khỏe, hạnh phúc và thành công. Xin trân trọng cảm ơn!"
+
+---
+# PHẦN 2 - KHUNG CHƯƠNG TRÌNH ĐÃ THỐNG NHẤT (KHÔNG CẦN SOẠN SLIDE)
 ## KẾ HOẠCH GIAI ĐOẠN 1
 
 ### **KHUNG CHƯƠNG TRÌNH ĐÀO TẠO NHẬN THỨC CHO LÃNH ĐẠO**
