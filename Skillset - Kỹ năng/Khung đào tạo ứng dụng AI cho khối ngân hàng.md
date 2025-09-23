@@ -575,3 +575,27 @@
 
 ---
 
+# Phân chia nhóm người học
+
+1.Khối bán lẻ & Dịch vụ KH: 
+- ChatGPT hỗ trợ tạo kịch bản chăm sóc KH, gửi email
+- Chuyên sâu: Chatbot chăm sóc KH 24/7
+
+2.Khối Quan hệ khách hàng (DN, cá nhân):
+- ChatGPT hỗ trợ phân tích báo cáo tài chính của DN, tạo kịch bản chào hàng; Tạo dàn ý chi tiết cho một tờ trình cấp tín dụng cho một công ty xây dựng vay vốn lưu động.
+- Chuyên sâu: Trợ lý ảo nội bộ FOXAI
+
+3.Khối marketing và quản trị thương hiệu
+
+- ChatGPT hỗ trợ tạo hình ảnh, video, chiến dịch marketing
+- Chuyên sâu: Dịch vụ Digital Marketing FOXAI
+
+4.Khối kế toán và Back-office:
+
+- ChatGPT đối soát dữ liệu giao dịch giữa 2 phần mềm Mobile và Core
+- Chuyên sâu: RPA + OCR tự động nhập liệu hóa đơn/chứng từ vào phần mềm Core
+
+5.Khối quản lý rủi ro
+
+- ChatGPT
+- Chuyên sâu: Giới thiệu mô hình AI ML dự báo Credit Score, Churning Rate...
