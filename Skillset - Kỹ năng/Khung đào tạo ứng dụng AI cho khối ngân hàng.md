@@ -582,7 +582,7 @@
 - Chuyên sâu: Chatbot chăm sóc KH 24/7
 
 2.Khối Quan hệ khách hàng (DN, cá nhân):
-- ChatGPT hỗ trợ phân tích báo cáo tài chính của DN, tạo kịch bản chào hàng; Tạo dàn ý chi tiết cho một tờ trình cấp tín dụng cho một công ty xây dựng vay vốn lưu động.
+- ChatGPT hỗ trợ phân tích báo cáo tài chính của DN, tạo kịch bản chào hàng; Email thông báo KH về việc phê duyệt khoản vay - thay đổi lãi suất.
 - Chuyên sâu: Trợ lý ảo nội bộ FOXAI
 
 3.Khối marketing và quản trị thương hiệu
