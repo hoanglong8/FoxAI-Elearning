@@ -67,6 +67,8 @@
   * Nhóm “Quan tâm RPA” → upsell dịch vụ triển khai.
   * Nhóm “Đang tìm hiểu” → nuôi dưỡng bằng bản tin & ebook.
 
+- Source tài liệu để bộ phận Marketing tạo các tài liệu gửi khách hàng: https://foxai.sharepoint.com/:f:/s/TaiLieuTTSXFoxAI/Et3PuFyTLZBOoiMeFoPcb1sBfenOCLj7qrpz3BmPb49DuA?e=0NhGOg
+
 ---
 # 📌 PHẦN 2 - Phân công công việc chăm sóc khách hàng AI (FOXAI – nhóm Zalo & truyền thông) giữa các trung tâm
 
