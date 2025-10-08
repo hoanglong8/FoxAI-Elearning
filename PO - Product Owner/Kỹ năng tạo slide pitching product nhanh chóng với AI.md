@@ -6,7 +6,9 @@ Giúp mọi nhân viên FOXAI tạo slide/presentation nhanh chóng, đẹp mắ
 Tài liệu gồm: quy trình 5 bước, bộ prompt mẫu, checklist chất lượng, mẹo thiết kế, và hướng dẫn nâng cao (API/Agent).
 
 ## Quy trình 5 bước
-### Bước 1 - Sử dụng ChatGPT để tạo brief outline bằng prompt sau
+### Bước 1 - Sử dụng ChatGPT để tạo brief outline
+
+<img width="1007" height="620" alt="image" src="https://github.com/user-attachments/assets/7fa46ca8-45ef-466e-bbc0-d16b32afc6ea" />
 
 ```prompt
 Bạn là một chuyên gia thiết kế đào tạo nội bộ của FOXAI, có nhiệm vụ giúp Product Owner tạo outline chi tiết cho bộ slide đào tạo với chủ đề: “Kỹ năng sử dụng Chat.Z.AI để tạo slide nhanh chóng”.
@@ -59,8 +61,10 @@ Mục tiêu cuối cùng: PO có thể lấy ngay output này để gửi cho de
 
 ### Bước 2 - Đưa prompt vào Chat.Z.Ai để tạo slide
 
+<img width="1227" height="585" alt="image" src="https://github.com/user-attachments/assets/1d265002-8c57-4beb-b040-d3f3b19140e4" />
+
 ```content
-# (DÁN VÀO CHAT.Z.AI – SLIDE/POSTER AGENT)
+# (DÁN VÀO CHAT.Z.AI – SLIDE/POSTER AGENT - Chọn Ai Slides)
 
 ## 0) TEMPLATE CHUNG (áp cho toàn deck)
 
