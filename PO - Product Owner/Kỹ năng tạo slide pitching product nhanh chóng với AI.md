@@ -1,17 +1,218 @@
 # KỸ NĂNG TẠO SLIDE BẰNG CÁC CÔNG CỤ AI CHUYÊN NGHIỆP
-## MỤC LỤC
-
-* Quy trình 5 bước để tạo slide với **Slide/Poster Agent** (mô tả một câu → agent tự tìm & cấu trúc nội dung → sinh slide → bạn yêu cầu chỉnh → **xuất PDF**; **PPTX sẽ sớm hỗ trợ**). ([docs.z.ai][1])
-* Bộ **prompt mẫu** cho 5 tình huống (giới thiệu sản phẩm, báo cáo thị trường, báo cáo tiến độ, đào tạo nội bộ, deck demo).
-* **Checklist chất lượng** (nội dung, thiết kế, thương hiệu) + khuyến nghị màu FOXAI.
-* **Mẹo tối ưu** (tách nhiệm vụ theo tầng, bắt agent gắn nguồn, giới hạn độ dài dòng/slide…).
-* Phần **nâng cao (PO/Dev)**: gọi **GLM-4.6** bằng Chat Completions, dùng **Web Search API** để lấy nguồn đáng tin, gợi ý pipeline tác vụ agent. ([docs.z.ai][2])
-
----
 ## Mục tiêu
 
-Giúp mọi nhân viên FOXAI tạo slide/presentation nhanh chóng, đẹp mắt, đủ thông tin và nhất quán thương hiệu bằng Chat.Z.AI – đặc biệt là **GLM‑4.6** và **Slide/Poster Agent**. Tài liệu gồm: quy trình 5 bước, bộ prompt mẫu, checklist chất lượng, mẹo thiết kế, và hướng dẫn nâng cao (API/Agent).
+Giúp mọi nhân viên FOXAI tạo slide/presentation nhanh chóng, đẹp mắt, đủ thông tin và nhất quán thương hiệu bằng Chat.Z.AI – đặc biệt là **GLM‑4.6** và **Slide/Poster Agent**. 
 
+Tài liệu gồm: quy trình 5 bước, bộ prompt mẫu, checklist chất lượng, mẹo thiết kế, và hướng dẫn nâng cao (API/Agent).
+
+## Quy trình 5 bước
+### Bước 1 - Sử dụng ChatGPT để tạo brief outline bằng prompt sau
+
+```prompt
+Bạn là một chuyên gia thiết kế đào tạo nội bộ của FOXAI, có nhiệm vụ giúp Product Owner tạo outline chi tiết cho bộ slide đào tạo với chủ đề: “Kỹ năng sử dụng Chat.Z.AI để tạo slide nhanh chóng”.
+
+Yêu cầu đầu ra:
+
+1. **Cấu trúc tổng thể:**
+   - 1 slide mở đầu (giới thiệu & mục tiêu)
+   - 3–5 slide nội dung chính (theo logic học tập: Nhận thức → Thực hành → Ứng dụng)
+   - 1 slide tổng kết / lời kêu gọi hành động
+   - 1 slide template tham chiếu để PO chỉnh sửa khi cần
+
+2. **Cấu trúc cho từng slide (bắt buộc):**
+   - **Title**: ngắn gọn, thu hút, ≤ 12 từ
+   - **Nội dung chính (bullet)**: 3–5 ý quan trọng, mỗi ý ≤ 15 từ
+   - **Hình ảnh minh họa (gợi ý)**: mô tả nội dung hình minh họa phù hợp (không tạo ảnh)
+   - **Lời dẫn/ghi chú của giảng viên**: hướng dẫn cách nói, nhấn mạnh, hoặc ví dụ thực tế
+   - **Câu chuyển tiếp sang slide kế tiếp**: 1 câu logic, tự nhiên, gắn mạch nội dung
+
+3. **Yêu cầu thẩm mỹ & thương hiệu:**
+   - Template thống nhất: khung bố cục gồm *Title – Content – Visual – Note – Transition*
+   - Gợi ý khu vực đặt *brand color palette* và *logo đối tác* (nếu có)
+   - Phong cách: chuyên nghiệp, năng động, trực quan, thân thiện với nhân viên văn phòng
+
+4. **Đầu ra mong muốn:**
+   - Dạng text hoăc dạng bảng (markdown) gồm các nội dung:
+     - Slide #
+     - Title
+     - Nội dung chính
+     - Hình ảnh minh họa
+     - Lời dẫn ghi chú
+     - Câu chuyển tiếp`
+   - Cuối cùng, thêm phần: **“Gợi ý thiết kế Template chung”** mô tả:
+     - Bố cục
+     - Bảng màu (primary/secondary)
+     - Font đề xuất
+     - Kiểu biểu tượng minh họa (icon/photo/vector)
+     - Gợi ý sử dụng trong Chat.Z.AI (prompt mẫu sinh slide)
+
+Ngữ cảnh:
+- Đối tượng học: nhân viên FOXAI (không chuyên kỹ thuật)
+- Thời lượng buổi đào tạo: 45–60 phút
+- Ngôn ngữ: Tiếng Việt
+- Giọng điệu: Tự tin, truyền cảm hứng, dễ áp dụng
+
+Mục tiêu cuối cùng: PO có thể lấy ngay output này để gửi cho designer/Chat.Z.AI tạo bộ slide hoàn chỉnh.
+```
+
+---
+
+### Bước 2 - Đưa prompt vào Chat.Z.Ai để tạo slide
+
+```content
+# (DÁN VÀO CHAT.Z.AI – SLIDE/POSTER AGENT)
+
+## 0) TEMPLATE CHUNG (áp cho toàn deck)
+
+* **Brand (điền nếu trình bày cho đối tác):**
+  `PRIMARY=#____`, `ACCENT=#____`, `DARK=#____`, `LIGHT=#FFFFFF`, `TEXT_DARK=#111827`, `TEXT_LIGHT=#F9FAFB`
+  (Nếu không khai báo, dùng mặc định: PRIMARY=#0D6EFD, DARK=#111827, GREY=#6B7280, WHITE=#FFFFFF)
+* **Font:** Inter hoặc Roboto; Title 28pt; Section 20–22pt; Body 16–18pt; Caption/Footnote 12–13pt.
+* **Lưới & khoảng trắng:** Lề 48px; khoảng cách khối ≥ 16–24px; tối đa **6 bullet/slide**, ≤ **14 từ/bullet**.
+* **Phong cách hình:** minh hoạ phẳng, icon nét đều; không quá **3 màu**/slide; ưu tiên nền sáng.
+* **Nhận diện:** đặt logo (góc phải trên), khoảng đệm ≥ 0.5× chiều cao logo; không méo/đổi tỉ lệ.
+* **Nguồn:** mỗi số liệu phải có link ở “Nguồn tham khảo”; cho phép chú thích ngắn ở chân slide.
+
+> **Yêu cầu agent:** “Áp template trên cho toàn bộ deck; đảm bảo tương phản đủ (gần WCAG AA), nhất quán font/cỡ chữ, không tràn lề. Với mọi số liệu, thêm nguồn (tên + link).”
+
+---
+
+## 1) COVER
+
+* **Title:** Kỹ năng dùng Chat.Z.AI để tạo slide nhanh & đẹp
+* **Nội dung:** Tên khoá học, người hướng dẫn, ngày; đối tượng: nhân viên nội bộ FOXAI.
+* **Hình minh hoạ:** Poster/cover tối giản theo **PRIMARY** + icon “slides” hoặc mockup laptop.
+* **Lời dẫn:** “Buổi này học cách biến 1 câu mô tả thành deck chuẩn thương hiệu trong ~10 phút.”
+* **Chuyển tiếp:** “Trước hết, chúng ta sẽ xem nhanh nội dung buổi học.”
+
+## 2) AGENDA
+
+* **Title:** Lộ trình 60–90 phút
+* **Nội dung:** 1) Hiểu công cụ; 2) Viết brief 1 câu; 3) Thiết lập brand; 4) Kiểm soát cấu trúc & độ dài; 5) Nguồn & biểu đồ; 6) Lặp/Refine; 7) Export & chi phí; 8) Thực hành.
+* **Hình minh hoạ:** Timeline 8 bước.
+* **Lời dẫn:** “Nắm khung trước, lát nữa ta làm thực hành.”
+* **Chuyển tiếp:** “Bắt đầu bằng: Chat.Z.AI & Slide/Poster Agent là gì?”
+
+## 3) TỔNG QUAN CÔNG CỤ
+
+* **Title:** Chat.Z.AI + GLM-4.6 + Slide/Poster Agent
+* **Nội dung:** Agent tự tìm → tóm tắt → dàn layout → sinh slide; xuất **PDF**; **PPTX sắp có**; GLM-4.6 hỗ trợ 200K context & agent planning.
+* **Hình minh hoạ:** Sơ đồ pipeline: *Brief → Web Search → Tóm tắt → Soạn slide → Lặp → Export*.
+* **Lời dẫn:** “Điểm mạnh là tự động hoá cả nội dung lẫn thẩm mỹ bố cục.”
+* **Chuyển tiếp:** “Khi nào nên dùng agent, khi nào tự làm?”
+
+## 4) KHI NÀO DÙNG AGENT?
+
+* **Title:** Dùng agent khi…
+* **Nội dung:** Cần deck nhanh; cần tổng hợp nguồn; đề tài đã phổ biến/có dữ liệu; yêu cầu đồng bộ brand.
+* **Hình minh hoạ:** Ma trận 2×2 (gấp gáp × phức tạp).
+* **Lời dẫn:** “Tình huống nội bộ/đào tạo/giới thiệu thường rất hợp.”
+* **Chuyển tiếp:** “Muốn ra deck tốt, **brief 1 câu** là chìa khoá.”
+
+## 5) VIẾT BRIEF 1 CÂU
+
+* **Title:** Công thức brief = Đối tượng + Mục tiêu + Phạm vi + Ngôn ngữ
+* **Nội dung (mẫu dán):**
+  “Tạo **deck 12–15 trang** về **[chủ đề]** cho **[đối tượng]**, mục tiêu **[kết quả]**. Ngôn ngữ: **[vi/eng]**. Ưu tiên số liệu **24 tháng** gần nhất và gắn **link nguồn**.”
+* **Hình minh hoạ:** Thẻ input có placeholder.
+* **Lời dẫn:** “Giữ 1 câu rõ ràng, phần còn lại agent sẽ hỏi thêm hoặc tự đề xuất.”
+* **Chuyển tiếp:** “Tiếp theo, gắn **template thương hiệu** để đồng bộ hình thức.”
+
+## 6) THIẾT LẬP THƯƠNG HIỆU
+
+* **Title:** Palette & quy ước trình bày
+* **Nội dung:** Điền `PRIMARY/ACCENT/DARK/LIGHT`; font Inter/Roboto; giới hạn màu; lề 48px; bullet ≤6; dòng ≤14 từ.
+* **Hình minh hoạ:** Bảng màu 4 ô + ví dụ slide trước/sau áp template.
+* **Lời dẫn:** “Brand nhất quán giúp nhìn chuyên nghiệp ngay cả khi nội dung nhiều.”
+* **Chuyển tiếp:** “Sau brand là **khung nội dung** chuẩn cho mọi deck.”
+
+## 7) KHUNG NỘI DUNG CHUẨN
+
+* **Title:** 10–13 phần khuyến nghị
+* **Nội dung:** Cover, Agenda, Executive Summary, Bối cảnh, Vấn đề, Giải pháp, Lợi ích/ROI, Case, Lộ trình/Timeline, Kêu gọi hành động, Nguồn.
+* **Hình minh hoạ:** Sơ đồ xương cá hoặc list có icon.
+* **Lời dẫn:** “Khung này giúp agent sắp nội dung logic.”
+* **Chuyển tiếp:** “Tiếp theo là **kiểm soát độ dài & bố cục**.”
+
+## 8) KIỂM SOÁT ĐỘ DÀI & BỐ CỤC
+
+* **Title:** Quy tắc vàng: ngắn – thoáng – rõ
+* **Nội dung:** ≤6 bullet/slide; ≤14 từ/bullet; chia slide nếu dài; dùng tiêu đề hành động; khoảng trắng rộng.
+* **Hình minh hoạ:** So sánh *trước (dày chữ)* vs *sau (thoáng)*.
+* **Lời dẫn:** “Nếu quá dài, yêu cầu agent tách slide.”
+* **Chuyển tiếp:** “Đến phần **số liệu & biểu đồ**.”
+
+## 9) SỐ LIỆU & BIỂU ĐỒ
+
+* **Title:** Chart đúng – dễ hiểu – có nguồn
+* **Nội dung:** Gợi ý cột/đường/bánh; bắt buộc: tiêu đề, đơn vị, trục, source; chú ý tương phản.
+* **Hình minh hoạ:** Biểu đồ cột đơn giản có nhãn rõ.
+* **Lời dẫn:** “Nhờ agent gợi ý biểu đồ + caption, bạn chỉ việc duyệt.”
+* **Chuyển tiếp:** “Giờ là **hình ảnh & bản quyền**.”
+
+## 10) HÌNH ẢNH & BẢN QUYỀN
+
+* **Title:** Chọn ảnh minh hoạ an toàn
+* **Nội dung:** Ưu tiên ảnh stock miễn phí (Unsplash/Pexels) hoặc icon; ghi nguồn nếu cần; tránh logo bên thứ ba không có quyền.
+* **Hình minh hoạ:** Lưới 3–4 ảnh stock demo.
+* **Lời dẫn:** “Cho agent gợi ý từ kho free; bạn duyệt trước khi dùng.”
+* **Chuyển tiếp:** “Tiếp theo là **lặp nhanh** để chốt deck.”
+
+## 11) LẶP NHANH (REFINE)
+
+* **Title:** 4 câu nhắc hữu ích
+* **Nội dung:**
+
+  1. “Rút gọn mỗi slide còn 4 bullet, ≤12 từ/bullet.”
+  2. “Thêm 1 biểu đồ cột so sánh trước/sau.”
+  3. “Chuẩn hoá theo template brand ở đầu.”
+  4. “Tạo trang Nguồn tham khảo (APA ngắn + link).”
+* **Hình minh hoạ:** Bảng “prompt → kết quả”.
+* **Lời dẫn:** “Lặp vài vòng ngắn sẽ nâng chất lượng rất mạnh.”
+* **Chuyển tiếp:** “Khi sẵn sàng, **export & chia sẻ**.”
+
+## 12) EXPORT & CHIA SẺ
+
+* **Title:** Xuất PDF (PPTX sắp có)
+* **Nội dung:** Dùng nút Export → **PDF**; kiểm tra link nguồn; nếu cần PPTX, ghi chú “convert tạm vào PowerPoint/Slides”.
+* **Hình minh hoạ:** Mockup nút Export.
+* **Lời dẫn:** “PDF đủ tốt để gửi ngay; PPTX sẽ cập nhật sau.”
+* **Chuyển tiếp:** “Bây giờ nói ngắn gọn về **chi phí**.”
+
+## 13) CHI PHÍ & TỐI ƯU TOKEN
+
+* **Title:** Pay-as-you-go theo token
+* **Nội dung:** Giá tham khảo **$0.7/1M tokens** (tổng toàn flow); rút ngắn prompt & số vòng lặp để tiết kiệm; gom chỉnh sửa thành batch.
+* **Hình minh hoạ:** Hộp “Tips tiết kiệm”.
+* **Lời dẫn:** “Quản lý số vòng refine ảnh hưởng trực tiếp đến chi phí.”
+* **Chuyển tiếp:** “Kết thúc bằng **thực hành**.”
+
+## 14) THỰC HÀNH CÓ HƯỚNG DẪN
+
+* **Title:** Bài tập 15 phút
+* **Nội dung:** Viết brief 1 câu cho “Đào tạo Prompt cơ bản”; điền palette đối tác; yêu cầu 10–12 slide; thêm 1 biểu đồ; tạo trang nguồn; export PDF.
+* **Hình minh hoạ:** Checklist 6 bước.
+* **Lời dẫn:** “Cả nhóm cùng làm, giảng viên quan sát & góp ý.”
+* **Chuyển tiếp:** “Q&A và tổng kết.”
+
+## 15) NGUỒN THAM KHẢO
+
+* **Title:** Tài liệu & link
+* **Nội dung:** Liệt kê link bài viết/chính sách/nguồn số liệu đã sử dụng trong deck.
+* **Hình minh hoạ:** Icon link/chain.
+* **Lời dẫn:** “Đảm bảo minh bạch & dễ kiểm tra.”
+* **Chuyển tiếp:** “Hết.”
+
+```
+
+### Bước 3-5 - Tùy chỉnh, sửa đổi và hoàn thiện slide
+
+Ví dụ slide sau khi tạo sẽ có giao diện như sau: 
+- Version 1: https://chat.z.ai/space/h0th28yddw51-ppt
+- Version 2: https://chat.z.ai/space/j0qhw803k9k0-ppt
+
+---
+## Hướng dẫn nâng cao
 ### 1) Giới thiệu về công cụ Chat.Z.AI với Model GLM
 
 * **Chat.Z.AI**: Nền tảng AI của Zhipu AI, hỗ trợ chat, agent, tìm kiếm web, tạo slide/poster tự động.
@@ -234,49 +435,6 @@ curl -X POST https://api.z.ai/api/paas/v4/web_search \
 [5]: https://docs.z.ai/api-reference/agents/agent "Agent Chat - Z.AI DEVELOPER DOCUMENT"
 
 ---
-# PHẦN 2 - THỰC HÀNH
 
-## Bước 1 - Sử dụng ChatGPT để tạo outline slide
 
-```prompt
-Bạn là một chuyên gia thiết kế đào tạo nội bộ của FOXAI, có nhiệm vụ giúp Product Owner tạo outline chi tiết cho bộ slide đào tạo với chủ đề: “Kỹ năng sử dụng Chat.Z.AI để tạo slide nhanh chóng”.
-
-Yêu cầu đầu ra:
-
-1. **Cấu trúc tổng thể:**
-   - 1 slide mở đầu (giới thiệu & mục tiêu)
-   - 3–5 slide nội dung chính (theo logic học tập: Nhận thức → Thực hành → Ứng dụng)
-   - 1 slide tổng kết / lời kêu gọi hành động
-   - 1 slide template tham chiếu để PO chỉnh sửa khi cần
-
-2. **Cấu trúc cho từng slide (bắt buộc):**
-   - **Title**: ngắn gọn, thu hút, ≤ 12 từ
-   - **Nội dung chính (bullet)**: 3–5 ý quan trọng, mỗi ý ≤ 15 từ
-   - **Hình ảnh minh họa (gợi ý)**: mô tả nội dung hình minh họa phù hợp (không tạo ảnh)
-   - **Lời dẫn/ghi chú của giảng viên**: hướng dẫn cách nói, nhấn mạnh, hoặc ví dụ thực tế
-   - **Câu chuyển tiếp sang slide kế tiếp**: 1 câu logic, tự nhiên, gắn mạch nội dung
-
-3. **Yêu cầu thẩm mỹ & thương hiệu:**
-   - Template thống nhất: khung bố cục gồm *Title – Content – Visual – Note – Transition*
-   - Gợi ý khu vực đặt *brand color palette* và *logo đối tác* (nếu có)
-   - Phong cách: chuyên nghiệp, năng động, trực quan, thân thiện với nhân viên văn phòng
-
-4. **Đầu ra mong muốn:**
-   - Dạng bảng (markdown table hoặc JSON) gồm các cột:
-     `Slide # | Title | Nội dung chính | Hình ảnh minh họa | Lời dẫn ghi chú | Câu chuyển tiếp`
-   - Cuối cùng, thêm phần: **“Gợi ý thiết kế Template chung”** mô tả:
-     - Bố cục
-     - Bảng màu (primary/secondary)
-     - Font đề xuất
-     - Kiểu biểu tượng minh họa (icon/photo/vector)
-     - Gợi ý sử dụng trong Chat.Z.AI (prompt mẫu sinh slide)
-
-Ngữ cảnh:
-- Đối tượng học: nhân viên FOXAI (không chuyên kỹ thuật)
-- Thời lượng buổi đào tạo: 45–60 phút
-- Ngôn ngữ: Tiếng Việt
-- Giọng điệu: Tự tin, truyền cảm hứng, dễ áp dụng
-
-Mục tiêu cuối cùng: PO có thể lấy ngay output này để gửi cho designer/Chat.Z.AI tạo bộ slide hoàn chỉnh.
-```
 
