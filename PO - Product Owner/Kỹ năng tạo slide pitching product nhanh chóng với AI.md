@@ -6,6 +6,24 @@ Giúp mọi nhân viên FOXAI tạo slide/presentation nhanh chóng, đẹp mắ
 Tài liệu gồm: quy trình 5 bước, bộ prompt mẫu, checklist chất lượng, mẹo thiết kế, và hướng dẫn nâng cao (API/Agent).
 
 ## Quy trình 5 bước
+
+```mermaid
+flowchart TD
+    Start[Bat dau] --> B1[Buoc 1 Xac dinh brief 1 cau
+Doi tuong Muc tieu Pham vi Ngon ngu]
+    B1 --> B2[Buoc 2 Nhap prompt cho Slide Poster Agent
+Chu de Doi tuong Muc tieu Pham vi va nguon Tone Do dai Brand Noi dung bat buoc]
+    B2 --> B3[Buoc 3 Kiem duyet va lap
+Kiem nguon Giam text Them bieu do timeline]
+    B3 -- Dat --> B4[Buoc 4 Dieu chinh brand va bo cuc
+Ap palette Font Khoang trang Hinh minh hoa]
+    B3 -- Chua dat --> B2
+    B4 --> B5[Buoc 5 Xuat ban
+PDF su dung ngay PPTX se ho tro Nhap PDF vao PowerPoint Google Slides de chinh]
+    B5 --> End[Hoan tat]
+
+```
+
 ### Bước 1 - Sử dụng ChatGPT để tạo brief outline
 
 <img width="1007" height="620" alt="image" src="https://github.com/user-attachments/assets/7fa46ca8-45ef-466e-bbc0-d16b32afc6ea" />
