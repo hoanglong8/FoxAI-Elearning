@@ -23,7 +23,7 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 
 **Mục đích:** Đây là màn hình khởi đầu, nơi bạn tạo mới, xem và quản lý tất cả các đợt tuyển dụng của mình. Mỗi chiến dịch tương ứng với một vị trí bạn đang cần tuyển.
 
-`[Ảnh chụp màn hình Quản lý Chiến dịch]`
+<img width="1714" height="765" alt="image" src="https://github.com/user-attachments/assets/210165a7-6a61-43cb-ae4a-f8435c5bcf89" />
 
 **Các bước thực hiện:**
 
@@ -54,7 +54,7 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 
 **Mục đích:** Sau khi có chiến dịch, đây là nơi bạn lấy dữ liệu ứng viên từ các nền tảng (như TopCV) về hệ thống và ra lệnh cho AI bắt đầu quá trình xử lý.
 
-`[Ảnh chụp màn hình Quản lý Ứng viên]`
+<img width="1824" height="625" alt="image" src="https://github.com/user-attachments/assets/c9deef6f-32f9-4cca-ab10-0f09e92b416b" />
 
 **Các bước thực hiện:**
 
@@ -90,7 +90,7 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 *   Nếu một ứng viên có trạng thái là **Downloaded (Màu xanh)**, bạn sẽ thấy một **biểu tượng con mắt (Xem CV)** xuất hiện bên cạnh.
 *   Nhấn vào biểu tượng đó, file CV (PDF) của ứng viên sẽ được mở ra trong một tab mới trên trình duyệt của bạn.
 
-`[Ảnh chụp màn hình cột Trạng thái CV có biểu tượng con mắt]`
+<img width="1826" height="916" alt="image" src="https://github.com/user-attachments/assets/7df11b0e-1de9-4a73-b2fe-6ce13e4ba108" />
 
 ---
 
@@ -98,7 +98,7 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 
 **Mục đích:** Đây là màn hình quan trọng nhất, nơi hiển thị kết quả làm việc của AI, giúp bạn xem và so sánh điểm số của các ứng viên để nhanh chóng tìm ra những người phù hợp nhất.
 
-`[Ảnh chụp màn hình Dashboard]`
+<img width="1824" height="989" alt="image" src="https://github.com/user-attachments/assets/c6d1aa03-8af5-4e5b-bd0d-8b1c2bb34452" />
 
 **Các bước thực hiện:**
 
@@ -123,6 +123,8 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
         *   **Điểm yếu:** Những kỹ năng còn thiếu so với JD.
         *   **Đề xuất cải thiện:** Gợi ý từ AI.
         *   Tại đây, bạn cũng có một link **"Xem CV Gốc"** để đối chiếu lại thông tin.
+
+<img width="1822" height="987" alt="image" src="https://github.com/user-attachments/assets/c648672d-6475-416f-8d7d-f1e14465c8c0" />
 
 ---
 ### **Tài liệu Nền tảng cho Salekit & Pitching Deck**
