@@ -11,7 +11,7 @@ Tài liệu này sẽ hướng dẫn bạn qua các chức năng chính của h�
 ### **2. Bắt đầu**
 
 Để truy cập hệ thống, bạn vui lòng mở trình duyệt web và đi đến địa chỉ:
-`[URL của hệ thống sẽ được cung cấp tại đây]`
+[FOXAI Recruitment Assistant](https://ai.studio/apps/drive/1xPk8wbhOPT1ONZfZeM14Vz5LQAY17rKc)
 
 Sử dụng tài khoản (email và mật khẩu) đã được cấp để đăng nhập.
 
@@ -19,11 +19,13 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 
 ### **3. Hướng dẫn chi tiết các chức năng**
 
+<img width="1896" height="979" alt="image" src="https://github.com/user-attachments/assets/83d7b9f8-b511-4d72-af5d-54d388dbcba7" />
+
 #### **Màn hình 1: Quản lý Chiến dịch (Campaign Management)**
 
 **Mục đích:** Đây là màn hình khởi đầu, nơi bạn tạo mới, xem và quản lý tất cả các đợt tuyển dụng của mình. Mỗi chiến dịch tương ứng với một vị trí bạn đang cần tuyển.
 
-<img width="1714" height="765" alt="image" src="https://github.com/user-attachments/assets/210165a7-6a61-43cb-ae4a-f8435c5bcf89" />
+<img width="1908" height="978" alt="image" src="https://github.com/user-attachments/assets/add0aea8-3f60-405e-a7fe-5d1d1958270a" />
 
 **Các bước thực hiện:**
 
@@ -39,6 +41,8 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
     *   **Ngày bắt đầu/kết thúc:** Chọn khoảng thời gian diễn ra chiến dịch.
     *   **Trạng thái:** Chọn **"Open"** cho các chiến dịch đang chạy.
     *   Nhấn nút **"Lưu lại"** để hoàn tất. Chiến dịch mới sẽ xuất hiện trong danh sách.
+
+<img width="1917" height="977" alt="image" src="https://github.com/user-attachments/assets/ebd2dc37-3c52-4fe8-8db9-7be02cceb039" />
 
 3.  **Để chỉnh sửa thông tin một chiến dịch:**
     *   Tại bảng danh sách, tìm đến chiến dịch bạn muốn sửa.
