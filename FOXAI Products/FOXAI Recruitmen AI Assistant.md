@@ -58,7 +58,7 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 
 **Mục đích:** Sau khi có chiến dịch, đây là nơi bạn lấy dữ liệu ứng viên từ các nền tảng (như TopCV) về hệ thống và ra lệnh cho AI bắt đầu quá trình xử lý.
 
-<img width="1824" height="625" alt="image" src="https://github.com/user-attachments/assets/c9deef6f-32f9-4cca-ab10-0f09e92b416b" />
+<img width="1890" height="955" alt="image" src="https://github.com/user-attachments/assets/17e7fad6-cc31-4f1c-8ae9-bd9afa4f8f87" />
 
 **Các bước thực hiện:**
 
