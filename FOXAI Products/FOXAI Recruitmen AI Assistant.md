@@ -54,11 +54,11 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 
 ---
 
-#### **Màn hình 2: Quản lý Ứng viên theo Chiến dịch**
+#### **Màn hình 2: Quản lý Ứng viên**
 
 **Mục đích:** Sau khi có chiến dịch, đây là nơi bạn lấy dữ liệu ứng viên từ các nền tảng (như TopCV) về hệ thống và ra lệnh cho AI bắt đầu quá trình xử lý.
 
-<img width="1890" height="955" alt="image" src="https://github.com/user-attachments/assets/17e7fad6-cc31-4f1c-8ae9-bd9afa4f8f87" />
+<img width="1894" height="982" alt="image" src="https://github.com/user-attachments/assets/98dc621c-a095-4329-a0fb-01f959df4282" />
 
 **Các bước thực hiện:**
 
@@ -68,13 +68,15 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
     *   Hệ thống sẽ chạy ngầm để kết nối và tải thông tin cơ bản (Họ tên, Email, SĐT) của tất cả ứng viên đã nộp đơn vào chiến dịch đó. Quá trình này có thể mất vài phút tùy số lượng.
     *   Sau khi hoàn tất, danh sách ứng viên sẽ hiện ra trong bảng bên dưới.
 
-2.  **Bắt đầu tải và chấm điểm CV:**
+2.  **Tải CV hàng loạt:**
     *   Sau khi đã có danh sách ứng viên, nhấn vào nút **"Tải và Chấm điểm CV"**.
     *   Đây là một tác vụ tự động và tốn nhiều thời gian nhất. Hệ thống sẽ lần lượt:
         *   Tải file CV của từng người về.
         *   Cập nhật "Trạng thái CV" từ **Pending** (Chờ xử lý) sang **Downloaded** (Đã tải).
         *   Gọi AI để phân tích và cho điểm từng CV.
     *   Bạn không cần phải ngồi chờ. Hệ thống sẽ tự chạy ngầm và bạn có thể quay lại kiểm tra kết quả sau.
+
+<img width="1887" height="978" alt="image" src="https://github.com/user-attachments/assets/c4af79b2-5cab-4f77-b513-da15ec5cd458" />
 
 3.  **Theo dõi trạng thái CV:**
     *   Cột **"Trạng thái CV"** giúp bạn biết tiến độ của hệ thống:
@@ -94,15 +96,15 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
 *   Nếu một ứng viên có trạng thái là **Downloaded (Màu xanh)**, bạn sẽ thấy một **biểu tượng con mắt (Xem CV)** xuất hiện bên cạnh.
 *   Nhấn vào biểu tượng đó, file CV (PDF) của ứng viên sẽ được mở ra trong một tab mới trên trình duyệt của bạn.
 
-<img width="1826" height="916" alt="image" src="https://github.com/user-attachments/assets/7df11b0e-1de9-4a73-b2fe-6ce13e4ba108" />
+<img width="1889" height="979" alt="image" src="https://github.com/user-attachments/assets/ab57d717-44ca-456d-9939-30f9be96172f" />
 
 ---
 
-#### **Màn hình 4: Báo cáo & Chấm điểm (Scoring Dashboard)**
+#### **Màn hình 3: Báo cáo & Chấm điểm (Scoring Dashboard)**
 
 **Mục đích:** Đây là màn hình quan trọng nhất, nơi hiển thị kết quả làm việc của AI, giúp bạn xem và so sánh điểm số của các ứng viên để nhanh chóng tìm ra những người phù hợp nhất.
 
-<img width="1824" height="989" alt="image" src="https://github.com/user-attachments/assets/c6d1aa03-8af5-4e5b-bd0d-8b1c2bb34452" />
+<img width="1886" height="980" alt="image" src="https://github.com/user-attachments/assets/9b62c8da-eb89-4825-bab2-68bba44e6cf9" />
 
 **Các bước thực hiện:**
 
@@ -128,7 +130,7 @@ Sử dụng tài khoản (email và mật khẩu) đã được cấp để đă
         *   **Đề xuất cải thiện:** Gợi ý từ AI.
         *   Tại đây, bạn cũng có một link **"Xem CV Gốc"** để đối chiếu lại thông tin.
 
-<img width="1822" height="987" alt="image" src="https://github.com/user-attachments/assets/c648672d-6475-416f-8d7d-f1e14465c8c0" />
+<img width="1883" height="977" alt="image" src="https://github.com/user-attachments/assets/fbaec8c1-febb-4739-a3e5-05006f947adf" />
 
 ---
 ### **Tài liệu Nền tảng cho Salekit & Pitching Deck**
