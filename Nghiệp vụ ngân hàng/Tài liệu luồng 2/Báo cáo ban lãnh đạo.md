@@ -3013,12 +3013,797 @@ $$
 * ⚠️ Cần đảm bảo dữ liệu **Kế hoạch** và **Lũy kế thực hiện** được cập nhật đầy đủ, nhất quán
 
 ---
+---
 
+## 1. Tên chỉ tiêu
 
+**Cần thực hiện 2 – Giá trị chi phí còn lại cần thực hiện so với kế hoạch**
 
+---
 
+## 2. Mô tả chỉ tiêu
 
+Chỉ tiêu **Cần thực hiện 2** dùng để xác định **phần chi phí còn thiếu so với kế hoạch**, dựa trên **số thực hiện lũy kế** tại thời điểm báo cáo.
 
+* Phản ánh **khoảng chi phí còn lại** cần thực hiện để đạt kế hoạch
+* Phục vụ theo dõi **tiến độ thực hiện chi phí**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo tính ổn định của báo cáo
+
+---
+
+## 3. Công thức tính
+
+```
+Cần thực hiện 2 = Kế hoạch – Số thực hiện
+```
+
+**Nguyên tắc áp dụng:**
+
+* Nếu đang ở **ngày cuối tháng** → sử dụng số liệu **tháng hiện tại**
+* Nếu **chưa phải ngày cuối tháng** → sử dụng số liệu **tháng liền trước**
+* Nếu kết quả < 0 → hiển thị **0**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Số thực hiện
+
+**Công thức:**
+
+$$
+TH =
+\begin{cases}
+\text{Số thực hiện tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Số thực hiện tháng trước}, & \text{nếu chưa đến cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_TH**: Tổng **Số thực hiện** của tháng đang xem (từ bảng **Chi phí**)
+* **LastM_TH**: Tổng **Số thực hiện** của tháng liền trước
+* Đảm bảo chỉ sử dụng **số liệu đã chốt**
+
+---
+
+### 4.2. Kế hoạch
+
+**Công thức:**
+
+$$
+KH =
+\begin{cases}
+\text{Kế hoạch tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Kế hoạch tháng trước}, & \text{nếu chưa đến cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_KH**: Tổng **Kế hoạch** của tháng hiện tại (từ bảng **Chi phí**)
+* **LastM_KH**: Tổng **Kế hoạch** của tháng liền trước
+* Kế hoạch được so sánh tương ứng với mốc thời gian thực hiện
+
+---
+
+### 4.3. Giá trị cần thực hiện
+
+**Công thức:**
+
+$$
+Cần\ thực\ hiện\ 2 = \max(KH - TH,\ 0)
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Nếu **thực hiện đã đạt hoặc vượt kế hoạch** → không còn chi phí cần thực hiện (hiển thị 0)
+* Nếu **chưa đạt kế hoạch** → hiển thị phần chi phí còn thiếu
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành chi phí, ngân hàng **chỉ đánh giá tiến độ trên cơ sở số liệu đã chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **phần chi phí còn lại so với kế hoạch của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên giá trị của tháng trước**
+>
+> Cách tiếp cận này giúp tránh sai lệch do số liệu chi phí trong tháng chưa hoàn chỉnh.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **không âm** (giá trị nhỏ nhất = 0)
+* ⚠️ Phụ thuộc vào **ngày báo cáo** và logic xác định **ngày cuối tháng**
+* ⚠️ Phù hợp cho **theo dõi tiến độ chi phí**, không dùng cho phân tích chi tiết giao dịch
+* ⚠️ Cần đảm bảo dữ liệu **Số thực hiện** và **Kế hoạch** trong bảng **Chi phí** được cập nhật đầy đủ và nhất quán
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**CP_KH năm – Kế hoạch chi phí năm (theo logic chốt cuối tháng)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CP_KH năm** dùng để xác định **giá trị kế hoạch chi phí năm tại thời điểm báo cáo**, áp dụng logic:
+
+* Nếu đang ở **ngày cuối tháng** → sử dụng **kế hoạch của tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → giữ nguyên **kế hoạch của tháng liền trước**
+
+Chỉ tiêu này đảm bảo kế hoạch chi phí hiển thị trên báo cáo luôn là **số liệu đã được chốt**, tránh biến động trong tháng.
+
+---
+
+## 3. Công thức tính
+
+```
+CP_KH năm =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Kế hoạch tháng hiện tại,
+    Kế hoạch tháng trước
+)
+```
+
+Trong đó:
+
+* **Kế hoạch tháng hiện tại**: Tổng kế hoạch chi phí của tháng đang xem
+* **Kế hoạch tháng trước**: Tổng kế hoạch chi phí của tháng liền trước
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Kế hoạch chi phí của tháng hiện tại}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Kế hoạch** từ bảng **Chi phí**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đúng khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Kế hoạch tháng trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Kế hoạch chi phí của tháng liền trước}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Kế hoạch** của **tháng trước đó**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo kế hoạch hiển thị là **số liệu đã được chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành chi phí, ngân hàng **chỉ sử dụng kế hoạch đã được chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, hệ thống hiển thị **kế hoạch chi phí của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, hệ thống **giữ nguyên kế hoạch của tháng trước**
+>
+> Cách làm này giúp báo cáo **ổn định, nhất quán**, tránh nhầm lẫn do kế hoạch trong tháng có thể điều chỉnh.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo (Date)** được chọn
+* ⚠️ Cần đảm bảo bảng **dimDate** xác định chính xác **ngày cuối tháng**
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh chi phí thực tế
+* ⚠️ Phù hợp cho **dashboard điều hành và theo dõi ngân sách**, không dùng cho phân tích chi tiết nội tháng
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**CP_Tăng/giảm so với cùng kỳ – Mức tăng/giảm chi phí so với cùng kỳ năm trước**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CP_Tăng/giảm so với cùng kỳ** dùng để phản ánh **mức biến động chi phí so với cùng kỳ năm trước**, tại thời điểm báo cáo.
+
+* Giúp đánh giá **xu hướng tăng/giảm chi phí theo thời gian**
+* Phục vụ phân tích **kiểm soát chi phí và hiệu quả quản trị**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+CP_Tăng/giảm so với cùng kỳ =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Giá trị tăng/giảm của tháng hiện tại,
+    Giá trị tăng/giảm của tháng trước
+)
+```
+
+Trong đó:
+
+* **Giá trị tăng/giảm tháng hiện tại**: Mức chênh lệch chi phí so với cùng kỳ tại tháng đang xem
+* **Giá trị tăng/giảm tháng trước**: Mức chênh lệch chi phí so với cùng kỳ tại tháng liền trước
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mức tăng/giảm so với cùng kỳ tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Giá trị Tăng/giảm chi phí so với cùng kỳ (tháng hiện tại)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng chỉ tiêu **“Tăng/giảm so với cùng kỳ”** từ bảng **Chi phí**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đầy đủ khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Mức tăng/giảm so với cùng kỳ tháng trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Giá trị Tăng/giảm chi phí so với cùng kỳ (tháng trước)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng giá trị **tăng/giảm so với cùng kỳ** của **tháng liền trước**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo số liệu hiển thị là **số đã được chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành, ngân hàng **chỉ sử dụng số liệu biến động chi phí đã được chốt theo tháng**.
+> Vì vậy:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **mức tăng/giảm chi phí so với cùng kỳ của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên giá trị của tháng trước**
+>
+> Cách tiếp cận này giúp tránh hiểu sai xu hướng do số liệu tháng đang chạy chưa hoàn chỉnh.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu có thể **dương hoặc âm** (tăng hoặc giảm chi phí)
+* ⚠️ Phụ thuộc vào **ngày báo cáo** và logic xác định **ngày cuối tháng**
+* ⚠️ Phù hợp cho **phân tích xu hướng và so sánh cùng kỳ**
+* ⚠️ Không dùng để đánh giá biến động chi phí **theo ngày trong tháng**
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**Thực hiện – Giá trị thực hiện lũy kế (theo logic chốt cuối tháng)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **Thực hiện** dùng để xác định **giá trị thực hiện lũy kế tại thời điểm báo cáo**, với nguyên tắc:
+
+* Nếu đang ở **ngày cuối tháng** → hiển thị **giá trị lũy kế của tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → hiển thị **giá trị lũy kế của tháng liền trước**
+
+Chỉ tiêu này giúp đảm bảo số liệu hiển thị trên báo cáo là **số đã được chốt**, tránh biến động trong tháng.
+
+---
+
+## 3. Công thức tính
+
+```
+Thực hiện =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Lũy kế thực hiện tháng hiện tại,
+    Lũy kế thực hiện tháng trước
+)
+```
+
+Trong đó:
+
+* **Lũy kế thực hiện tháng hiện tại**: Tổng giá trị thực hiện lũy kế của tháng đang xem
+* **Lũy kế thực hiện tháng trước**: Tổng giá trị thực hiện lũy kế của tháng liền trước
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Lũy kế thực hiện tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Giá trị Lũy kế thực hiện của tháng hiện tại}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Luỹ kế (tỷ)** từ bảng **KQKD**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đầy đủ khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Lũy kế thực hiện tháng trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Giá trị Lũy kế thực hiện của tháng liền trước}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Luỹ kế (tỷ)** của **tháng trước đó**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo số liệu hiển thị là **số đã được chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành, ngân hàng **chỉ sử dụng số liệu thực hiện đã được chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **kết quả thực hiện lũy kế của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên kết quả lũy kế của tháng trước**
+>
+> Cách tiếp cận này giúp báo cáo **ổn định, nhất quán và tránh hiểu sai số liệu** khi tháng chưa kết thúc.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo (Date)** được chọn
+* ⚠️ Cần đảm bảo bảng **dimDate** xác định chính xác **ngày cuối tháng**
+* ⚠️ Chỉ tiêu phản ánh **giá trị thực hiện lũy kế**, không phản ánh phát sinh trong ngày
+* ⚠️ Phù hợp cho **dashboard điều hành và báo cáo tổng hợp**, không dùng cho phân tích chi tiết nội tháng
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**Thực hiện2 – Giá trị thực hiện chi phí (theo logic chốt cuối tháng)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **Thực hiện2** dùng để xác định **giá trị chi phí thực hiện tại thời điểm báo cáo**, với nguyên tắc:
+
+* Nếu đang ở **ngày cuối tháng** → hiển thị **giá trị thực hiện của tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → hiển thị **giá trị thực hiện của tháng liền trước**
+
+Chỉ tiêu này giúp đảm bảo số liệu chi phí hiển thị trên báo cáo là **số đã được chốt**, tránh biến động trong tháng.
+
+---
+
+## 3. Công thức tính
+
+```
+Thực hiện2 =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Số thực hiện tháng hiện tại,
+    Số thực hiện tháng trước
+)
+```
+
+Trong đó:
+
+* **Số thực hiện tháng hiện tại**: Tổng chi phí thực hiện của tháng đang xem
+* **Số thực hiện tháng trước**: Tổng chi phí thực hiện của tháng liền trước
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Số thực hiện tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Số thực hiện chi phí của tháng hiện tại}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Số thực hiện** từ bảng **Chi phí**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đầy đủ khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Số thực hiện tháng trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Số thực hiện chi phí của tháng liền trước}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Số thực hiện** của **tháng trước đó**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo số liệu hiển thị là **số đã được chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành chi phí, ngân hàng **chỉ sử dụng số liệu chi phí đã được chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **chi phí thực hiện của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên chi phí thực hiện của tháng trước**
+>
+> Cách tiếp cận này giúp báo cáo **ổn định, nhất quán**, tránh hiểu sai số liệu khi tháng chưa kết thúc.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo (Date)** được chọn
+* ⚠️ Cần đảm bảo bảng **dimDate** xác định chính xác **ngày cuối tháng**
+* ⚠️ Chỉ tiêu phản ánh **chi phí thực hiện**, không phản ánh phát sinh theo ngày
+* ⚠️ Phù hợp cho **dashboard điều hành chi phí**, không dùng cho phân tích chi tiết nội tháng
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**Vượt kế hoạch – Giá trị thực hiện vượt kế hoạch (theo logic chốt cuối tháng)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **Vượt kế hoạch** dùng để xác định **phần giá trị thực hiện vượt quá kế hoạch**, căn cứ trên **giá trị lũy kế thực hiện so với kế hoạch** tại thời điểm báo cáo.
+
+* Phản ánh **mức độ vượt kế hoạch** (nếu có)
+* Phục vụ theo dõi **kết quả thực hiện vượt mục tiêu**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+Vượt kế hoạch = max(Thực hiện lũy kế – Kế hoạch, 0)
+```
+
+**Nguyên tắc áp dụng:**
+
+* Nếu đang ở **ngày cuối tháng** → sử dụng số liệu **tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → sử dụng số liệu **tháng liền trước**
+* Nếu kết quả ≤ 0 → hiển thị **0** (không vượt kế hoạch)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Thực hiện lũy kế
+
+**Công thức:**
+
+$$
+TH =
+\begin{cases}
+\text{Lũy kế thực hiện tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Lũy kế thực hiện tháng trước}, & \text{nếu chưa cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_TH**: Tổng **Luỹ kế (tỷ)** của tháng đang xem (bảng **KQKD**)
+* **LastM_TH**: Tổng **Luỹ kế (tỷ)** của tháng liền trước
+* Chỉ sử dụng **số liệu đã chốt**
+
+---
+
+### 4.2. Kế hoạch
+
+**Công thức:**
+
+$$
+KH =
+\begin{cases}
+\text{Kế hoạch tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Kế hoạch tháng trước}, & \text{nếu chưa cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_KH**: Tổng **Kế hoạch (tỷ)** của tháng hiện tại
+* **LastM_KH**: Tổng **Kế hoạch (tỷ)** của tháng liền trước
+* Kế hoạch dùng để so sánh tương ứng với mốc thời gian thực hiện
+
+---
+
+### 4.3. Giá trị vượt kế hoạch
+
+**Công thức:**
+
+$$
+Vượt\ kế\ hoạch = \max(TH - KH,\ 0)
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Nếu **TH > KH** → hiển thị phần **vượt kế hoạch**
+* Nếu **TH ≤ KH** → hiển thị **0**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành, ngân hàng **chỉ đánh giá vượt kế hoạch trên cơ sở số liệu đã chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **giá trị vượt kế hoạch của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên kết quả vượt kế hoạch của tháng trước**
+>
+> Cách tiếp cận này giúp đảm bảo báo cáo **ổn định và nhất quán**, tránh hiểu sai khi tháng chưa kết thúc.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **không âm** (giá trị nhỏ nhất = 0)
+* ⚠️ Chỉ phản ánh **phần vượt**, không phản ánh phần chưa đạt kế hoạch
+* ⚠️ Phụ thuộc vào **ngày báo cáo** và logic xác định **ngày cuối tháng**
+* ⚠️ Phù hợp cho **dashboard điều hành, theo dõi kết quả vượt mục tiêu**, không dùng cho phân tích giao dịch chi tiết
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**Vượt kế hoạch 2 – Giá trị chi phí thực hiện vượt kế hoạch (theo logic chốt cuối tháng)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **Vượt kế hoạch 2** dùng để xác định **phần chi phí thực hiện vượt quá kế hoạch**, căn cứ trên **số thực hiện so với kế hoạch** tại thời điểm báo cáo.
+
+* Phản ánh **mức độ chi phí vượt kế hoạch**
+* Phục vụ theo dõi **kiểm soát chi phí và cảnh báo vượt ngân sách**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+Vượt kế hoạch 2 = max(Số thực hiện – Kế hoạch, 0)
+```
+
+**Nguyên tắc áp dụng:**
+
+* Nếu đang ở **ngày cuối tháng** → sử dụng số liệu **tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → sử dụng số liệu **tháng liền trước**
+* Nếu kết quả ≤ 0 → hiển thị **0** (không vượt kế hoạch)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Số thực hiện
+
+**Công thức:**
+
+$$
+TH =
+\begin{cases}
+\text{Số thực hiện tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Số thực hiện tháng trước}, & \text{nếu chưa cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_TH**: Tổng **Số thực hiện** của tháng đang xem (bảng **Chi phí**)
+* **LastM_TH**: Tổng **Số thực hiện** của tháng liền trước
+* Chỉ sử dụng **số liệu đã chốt**
+
+---
+
+### 4.2. Kế hoạch
+
+**Công thức:**
+
+$$
+KH =
+\begin{cases}
+\text{Kế hoạch tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Kế hoạch tháng trước}, & \text{nếu chưa cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_KH**: Tổng **Kế hoạch** của tháng hiện tại (bảng **Chi phí**)
+* **LastM_KH**: Tổng **Kế hoạch** của tháng liền trước
+* Kế hoạch được dùng làm **ngưỡng so sánh**
+
+---
+
+### 4.3. Giá trị vượt kế hoạch
+
+**Công thức:**
+
+$$
+Vượt\ kế\ hoạch\ 2 = \max(TH - KH,\ 0)
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Nếu **Số thực hiện > Kế hoạch** → hiển thị phần **chi phí vượt kế hoạch**
+* Nếu **Số thực hiện ≤ Kế hoạch** → hiển thị **0**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành chi phí, ngân hàng **chỉ đánh giá vượt kế hoạch trên cơ sở số liệu đã chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **giá trị chi phí vượt kế hoạch của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên kết quả vượt kế hoạch của tháng trước**
+>
+> Cách tiếp cận này giúp báo cáo **ổn định, nhất quán**, tránh hiểu sai khi số liệu tháng chưa hoàn tất.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **không âm** (giá trị nhỏ nhất = 0)
+* ⚠️ Chỉ phản ánh **phần chi phí vượt**, không phản ánh phần chưa đạt kế hoạch
+* ⚠️ Phụ thuộc vào **ngày báo cáo** và logic xác định **ngày cuối tháng**
+* ⚠️ Phù hợp cho **dashboard kiểm soát chi phí và cảnh báo vượt ngân sách**, không dùng cho phân tích chi tiết giao dịch
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**CP_KV_% HT KH – Tỷ lệ hoàn thành kế hoạch chi phí theo khu vực**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CP_KV_% HT KH** dùng để đo lường **mức độ hoàn thành kế hoạch chi phí của từng khu vực**, thông qua tỷ lệ giữa **chi phí thực hiện** và **chi phí kế hoạch**.
+
+* Phản ánh **tiến độ thực hiện chi phí theo khu vực**
+* Phục vụ **so sánh, đánh giá và kiểm soát chi phí** giữa các khu vực
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+CP_KV_% HT KH = Chi phí thực hiện / Chi phí kế hoạch
+```
+
+**Nguyên tắc áp dụng:**
+
+* Nếu đang ở **ngày cuối tháng** → sử dụng số liệu **tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → sử dụng số liệu **tháng liền trước**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Chi phí thực hiện
+
+**Công thức:**
+
+$$
+TH = \sum \text{Chi phí thực hiện}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Số thực hiện** từ bảng **CP_KV**
+* Phản ánh **chi phí thực tế đã phát sinh** của khu vực
+* Phụ thuộc vào kỳ báo cáo đang xem
+
+---
+
+### 4.2. Chi phí kế hoạch
+
+**Công thức:**
+
+$$
+KH = \sum \text{Chi phí kế hoạch}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Kế hoạch** từ bảng **CP_KV**
+* Là **ngưỡng mục tiêu** để đánh giá mức độ hoàn thành
+* Được so sánh tương ứng với kỳ thực hiện
+
+---
+
+### 4.3. Tỷ lệ hoàn thành kế hoạch chi phí
+
+**Công thức:**
+
+$$
+CP_KV_%\ HT\ KH = \frac{TH}{KH}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Nếu **CP_KV_% HT KH = 1** → hoàn thành 100% kế hoạch
+* Nếu **< 1** → chưa đạt kế hoạch
+* Nếu **> 1** → chi phí vượt kế hoạch
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành theo khu vực, ngân hàng **chỉ đánh giá mức độ hoàn thành kế hoạch chi phí trên cơ sở số liệu đã chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **tỷ lệ hoàn thành kế hoạch của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên tỷ lệ hoàn thành của tháng trước**
+>
+> Cách tiếp cận này giúp việc so sánh giữa các khu vực **nhất quán và đáng tin cậy**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **Kế hoạch = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng `DIVIDE`)
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo** và logic xác định **ngày cuối tháng**
+* ⚠️ Phù hợp cho **dashboard so sánh khu vực và kiểm soát ngân sách**
+* ⚠️ Cần đảm bảo dữ liệu **Số thực hiện** và **Kế hoạch** trong bảng **CP_KV** được cập nhật đầy đủ, nhất quán
+
+---
 
 
 
