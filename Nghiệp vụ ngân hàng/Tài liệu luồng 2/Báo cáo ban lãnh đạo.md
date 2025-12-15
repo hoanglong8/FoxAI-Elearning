@@ -239,6 +239,89 @@ $$
 * ⚠️ Cần đảm bảo dữ liệu **Attribute = “Chi phí nhân viên”** được chuẩn hóa và nhất quán
 
 ---
+Dưới đây là **tài liệu hóa công thức DAX `%HT_CPNV_Còn lại cần TH`**, được viết **đúng theo form đã chốt**, trong đó **mục 5 chỉ để là “Logic nghiệp vụ”** như bạn yêu cầu.
+
+---
+
+## 1. Tên chỉ tiêu
+
+**%HT_CPNV_Còn lại cần TH – Tỷ lệ Chi phí nhân viên còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **%HT_CPNV_Còn lại cần TH** dùng để xác định **phần tỷ lệ chi phí nhân viên còn thiếu so với mục tiêu kế hoạch**, trong trường hợp mức độ hoàn thành hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** so với kế hoạch
+* Hỗ trợ theo dõi **tiến độ thực hiện chi phí nhân sự**
+* Phục vụ báo cáo **quản trị điều hành và kiểm soát ngân sách**
+
+---
+
+## 3. Công thức tính
+
+```
+%HT_CPNV_Còn lại cần TH = Target – %HT_CPNV
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – %HT_CPNV > 0`
+* Nếu `%HT_CPNV ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **%HT_CPNV**: Tỷ lệ hoàn thành Chi phí nhân viên hiện tại
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ hoàn thành Chi phí nhân viên (%HT_CPNV)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ chi phí nhân viên thực tế so với kế hoạch**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu hoàn thành chi phí nhân viên là **100% kế hoạch**.
+> Nếu tại thời điểm báo cáo, tỷ lệ hoàn thành **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ còn lại cần thực hiện**.
+> Trường hợp đã đạt hoặc vượt mục tiêu, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi %HT_CPNV < 100%**
+* ⚠️ Khi **%HT_CPNV ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị chi phí tuyệt đối
+
+---
+
 
 
 
