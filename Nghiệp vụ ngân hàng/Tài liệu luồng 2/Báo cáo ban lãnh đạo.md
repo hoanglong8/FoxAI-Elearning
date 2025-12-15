@@ -1278,6 +1278,71 @@ $$
 * ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Chi phí dự phòng rủi ro tín dụng”** trong bảng KQKD được chuẩn hóa và nhất quán
 
 ---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_CPHĐ – Kế hoạch Chi phí hoạt động năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_CPHĐ** dùng để xác định **kế hoạch chi phí hoạt động của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ thực hiện chi phí hoạt động trong năm.
+
+* Là **nền tảng kế hoạch** cho các chỉ tiêu % thực hiện chi phí hoạt động
+* Phục vụ báo cáo **kết quả kinh doanh, quản trị chi phí**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_CPHĐ = Tổng kế hoạch Chi phí hoạt động năm
+```
+
+Trong đó:
+
+* **Kế hoạch Chi phí hoạt động năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Chi phí hoạt động năm (KH_CPHĐ)
+
+**Công thức:**
+
+$$
+KH_CPHĐ = \sum \text{Kế hoạch Chi phí hoạt động (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Chi phí hoạt động”** từ bảng KQKD
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xây dựng **kế hoạch chi phí hoạt động ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm cơ sở so sánh, theo dõi và đánh giá mức độ thực hiện chi phí hoạt động.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_CPHĐ cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh chi phí hoạt động thực tế
+* ⚠️ Đơn vị tính (**tỷ đồng**) cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Chi phí hoạt động”** trong bảng KQKD được chuẩn hóa và nhất quán
+
+---
+
 
 
 
