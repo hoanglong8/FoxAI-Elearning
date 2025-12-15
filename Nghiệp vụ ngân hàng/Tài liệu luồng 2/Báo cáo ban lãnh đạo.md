@@ -1825,6 +1825,1200 @@ Target = 1
 * ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị lợi nhuận tuyệt đối
 
 ---
+---
+
+## 1. Tên chỉ tiêu
+
+**LN_CP % KH TNLT LK – Tỷ lệ Thu nhập lãi thuần lũy kế so với Kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LN_CP % KH TNLT LK** dùng để đo lường **mức độ thực hiện Thu nhập lãi thuần (TNLT) lũy kế so với kế hoạch năm**.
+
+* Phản ánh **kết quả hoạt động kinh doanh cốt lõi** của ngân hàng
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu quả sinh lời**
+* So sánh giữa **Thực hiện lũy kế (TH)** và **Kế hoạch năm (KH)**
+
+---
+
+## 3. Công thức tính
+
+```
+LN_CP % KH TNLT LK = Thu nhập lãi thuần lũy kế thực hiện / Thu nhập lãi thuần kế hoạch
+```
+
+Trong đó:
+
+* **Thu nhập lãi thuần lũy kế thực hiện (TH)**: Tổng thu nhập lãi thuần thực tế phát sinh lũy kế đến kỳ báo cáo
+* **Thu nhập lãi thuần kế hoạch (KH)**: Tổng thu nhập lãi thuần kế hoạch năm (lấy tại tháng 1)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Thu nhập lãi thuần kế hoạch (KH)
+
+**Công thức:**
+
+$$
+KH = \sum \text{Kế hoạch Thu nhập lãi thuần (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Thu nhập lãi thuần”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+### 4.2. Thu nhập lãi thuần lũy kế thực hiện (TH)
+
+**Công thức:**
+
+$$
+TH = \sum \text{Thu nhập lãi thuần thực tế phát sinh lũy kế}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị thực tế (Value)** của khoản mục **“Thu nhập lãi thuần”** từ bảng **Data_LN_CP**
+* Tính **lũy kế đến kỳ báo cáo đang xem**
+* Phản ánh **thu nhập lãi thuần thực tế** của ngân hàng tại thời điểm báo cáo
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng sử dụng **kế hoạch Thu nhập lãi thuần năm (chốt tại tháng 1)** làm mục tiêu điều hành.
+> Chỉ tiêu thể hiện **tỷ lệ Thu nhập lãi thuần đã thực hiện lũy kế** so với **kế hoạch năm**, qua đó đánh giá hiệu quả hoạt động kinh doanh cốt lõi trong năm tài chính.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **KH = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng hàm `DIVIDE`)
+* ⚠️ **KH cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ **TH là giá trị lũy kế**, phụ thuộc vào kỳ báo cáo (tháng / quý / năm)
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Thu nhập lãi thuần”** (KQKD) và **Attribute = “Thu nhập lãi thuần”** (Data_LN_CP) được chuẩn hóa và thống nhất về ý nghĩa nghiệp vụ
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**TNLT_Còn lại cần TH – Tỷ lệ Thu nhập lãi thuần còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **TNLT_Còn lại cần TH** dùng để xác định **phần tỷ lệ Thu nhập lãi thuần còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** để đạt kế hoạch Thu nhập lãi thuần
+* Hỗ trợ theo dõi **tiến độ thực hiện Thu nhập lãi thuần**
+* Phục vụ báo cáo **điều hành và đánh giá hiệu quả kinh doanh**
+
+---
+
+## 3. Công thức tính
+
+```
+TNLT_Còn lại cần TH = Target – (LN_CP % KH TNLT LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH TNLT LK) > 0`
+* Nếu `LN_CP % KH TNLT LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH TNLT LK**: Tỷ lệ Thu nhập lãi thuần lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch Thu nhập lãi thuần**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ Thu nhập lãi thuần lũy kế so với kế hoạch
+
+(**LN_CP % KH TNLT LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ thực hiện Thu nhập lãi thuần lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu đạt **100% Thu nhập lãi thuần theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ thực hiện **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ Thu nhập lãi thuần còn lại cần tiếp tục thực hiện**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH TNLT LK < 100%**
+* ⚠️ Khi **LN_CP % KH TNLT LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị Thu nhập lãi thuần tuyệt đối
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**LN_CP % KH TNDV LK – Tỷ lệ Thu nhập từ hoạt động dịch vụ lũy kế so với Kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LN_CP % KH TNDV LK** dùng để đo lường **mức độ thực hiện Thu nhập từ hoạt động dịch vụ (TNDV) lũy kế so với kế hoạch năm**.
+
+* Phản ánh **kết quả phát triển nguồn thu dịch vụ**
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu quả đa dạng hóa thu nhập**
+* So sánh giữa **Thực hiện lũy kế (TH)** và **Kế hoạch năm (KH)**
+
+---
+
+## 3. Công thức tính
+
+```
+LN_CP % KH TNDV LK = Thu nhập từ hoạt động dịch vụ lũy kế thực hiện / Thu nhập từ hoạt động dịch vụ kế hoạch
+```
+
+Trong đó:
+
+* **Thu nhập từ hoạt động dịch vụ lũy kế thực hiện (TH)**: Tổng thu nhập dịch vụ thực tế phát sinh lũy kế đến kỳ báo cáo
+* **Thu nhập từ hoạt động dịch vụ kế hoạch (KH)**: Tổng thu nhập dịch vụ kế hoạch năm (lấy tại tháng 1)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Thu nhập từ hoạt động dịch vụ kế hoạch (KH)
+
+**Công thức:**
+
+$$
+KH = \sum \text{Kế hoạch Thu nhập từ hoạt động dịch vụ (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Thu nhập từ hoạt động dịch vụ”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+### 4.2. Thu nhập từ hoạt động dịch vụ lũy kế thực hiện (TH)
+
+**Công thức:**
+
+$$
+TH = \sum \text{Thu nhập từ hoạt động dịch vụ thực tế phát sinh lũy kế}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị thực tế (Value)** của khoản mục **“Thu thuần từ DV”** từ bảng **Data_LN_CP**
+* Tính **lũy kế đến kỳ báo cáo đang xem**
+* Phản ánh **thu nhập dịch vụ thực tế** của ngân hàng tại thời điểm báo cáo
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng sử dụng **kế hoạch Thu nhập từ hoạt động dịch vụ năm (chốt tại tháng 1)** làm mục tiêu điều hành.
+> Chỉ tiêu thể hiện **tỷ lệ Thu nhập từ hoạt động dịch vụ đã thực hiện lũy kế** so với **kế hoạch năm**, qua đó đánh giá mức độ phát triển và hiệu quả các hoạt động dịch vụ.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **KH = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng hàm `DIVIDE`)
+* ⚠️ **KH cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ **TH là giá trị lũy kế**, phụ thuộc vào kỳ báo cáo (tháng / quý / năm)
+* ⚠️ Cần đảm bảo dữ liệu:
+
+  * **Chỉ tiêu = “Thu nhập từ hoạt động dịch vụ”** (bảng KQKD)
+  * **Attribute = “Thu thuần từ DV”** (bảng Data_LN_CP)
+    được **chuẩn hóa và khớp nghĩa nghiệp vụ**
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**TTDV_Còn lại cần TH – Tỷ lệ Thu nhập từ hoạt động dịch vụ còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **TTDV_Còn lại cần TH** dùng để xác định **phần tỷ lệ thu nhập từ hoạt động dịch vụ còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** để đạt kế hoạch thu nhập dịch vụ
+* Hỗ trợ theo dõi **tiến độ thực hiện thu nhập dịch vụ**
+* Phục vụ báo cáo **điều hành và đánh giá hiệu quả đa dạng hóa thu nhập**
+
+---
+
+## 3. Công thức tính
+
+```
+TTDV_Còn lại cần TH = Target – (LN_CP % KH TNDV LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH TNDV LK) > 0`
+* Nếu `LN_CP % KH TNDV LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH TNDV LK**: Tỷ lệ Thu nhập từ hoạt động dịch vụ lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch Thu nhập từ hoạt động dịch vụ**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ Thu nhập từ hoạt động dịch vụ lũy kế so với kế hoạch
+
+(**LN_CP % KH TNDV LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ thực hiện Thu nhập từ hoạt động dịch vụ lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu đạt **100% Thu nhập từ hoạt động dịch vụ theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ thực hiện **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ Thu nhập từ hoạt động dịch vụ còn lại cần tiếp tục thực hiện**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH TNDV LK < 100%**
+* ⚠️ Khi **LN_CP % KH TNDV LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị Thu nhập từ hoạt động dịch vụ tuyệt đối
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**LN_CP % KH Thu thuần khác LK – Tỷ lệ Thu thuần khác lũy kế so với Kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LN_CP % KH Thu thuần khác LK** dùng để đo lường **mức độ thực hiện thu thuần từ hoạt động khác lũy kế so với kế hoạch năm**.
+
+* Phản ánh **kết quả thu nhập ngoài lãi và ngoài dịch vụ**
+* Phục vụ báo cáo **kết quả kinh doanh, điều hành và quản trị**
+* So sánh giữa **Thực hiện lũy kế (TH)** và **Kế hoạch năm (KH)**
+
+---
+
+## 3. Công thức tính
+
+```
+LN_CP % KH Thu thuần khác LK = Thu thuần khác lũy kế thực hiện / Thu thuần khác kế hoạch
+```
+
+Trong đó:
+
+* **Thu thuần khác lũy kế thực hiện (TH)**: Tổng thu thuần khác thực tế phát sinh lũy kế đến kỳ báo cáo
+* **Thu thuần khác kế hoạch (KH)**: Tổng thu thuần khác kế hoạch năm (lấy tại tháng 1)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Thu thuần khác kế hoạch (KH)
+
+**Công thức:**
+
+$$
+KH = \sum \text{Kế hoạch Thu thuần khác (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Lãi/lỗ thuần từ hoạt động khác”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+### 4.2. Thu thuần khác lũy kế thực hiện (TH)
+
+**Công thức:**
+
+$$
+TH = \sum \text{Thu thuần khác thực tế phát sinh lũy kế}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị thực tế (Value)** của khoản mục **“Thu thuần khác”** từ bảng **Data_LN_CP**
+* Tính **lũy kế đến kỳ báo cáo đang xem**
+* Phản ánh **thu thuần khác thực tế** của ngân hàng tại thời điểm báo cáo
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng sử dụng **kế hoạch thu thuần khác năm (chốt tại tháng 1)** làm mục tiêu điều hành.
+> Chỉ tiêu thể hiện **tỷ lệ thu thuần khác đã thực hiện lũy kế** so với **kế hoạch năm**, qua đó đánh giá mức độ đóng góp của các hoạt động ngoài kinh doanh cốt lõi vào kết quả chung.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **KH = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng hàm `DIVIDE`)
+* ⚠️ **KH cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ **TH là giá trị lũy kế**, phụ thuộc vào kỳ báo cáo (tháng / quý / năm)
+* ⚠️ Cần đảm bảo dữ liệu:
+
+  * **Chỉ tiêu = “Lãi/lỗ thuần từ hoạt động khác”** (bảng KQKD)
+  * **Attribute = “Thu thuần khác”** (bảng Data_LN_CP)
+    được **chuẩn hóa và thống nhất về ý nghĩa nghiệp vụ**
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**TTK_Còn lại cần TH – Tỷ lệ Thu thuần khác còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **TTK_Còn lại cần TH** dùng để xác định **phần tỷ lệ thu thuần khác còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** để đạt kế hoạch thu thuần khác
+* Hỗ trợ theo dõi **tiến độ thực hiện các khoản thu ngoài hoạt động cốt lõi**
+* Phục vụ báo cáo **điều hành và đánh giá kết quả kinh doanh tổng thể**
+
+---
+
+## 3. Công thức tính
+
+```
+TTK_Còn lại cần TH = Target – (LN_CP % KH Thu thuần khác LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH Thu thuần khác LK) > 0`
+* Nếu `LN_CP % KH Thu thuần khác LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH Thu thuần khác LK**: Tỷ lệ Thu thuần khác lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch Thu thuần khác**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ Thu thuần khác lũy kế so với kế hoạch
+
+(**LN_CP % KH Thu thuần khác LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ thực hiện Thu thuần khác lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu đạt **100% Thu thuần khác theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ thực hiện **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ Thu thuần khác còn lại cần tiếp tục thực hiện**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH Thu thuần khác LK < 100%**
+* ⚠️ Khi **LN_CP % KH Thu thuần khác LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị Thu thuần khác tuyệt đối
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**ChiSo_TH – Giá trị thực hiện chỉ số theo logic chốt cuối tháng**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **ChiSo_TH** dùng để xác định **giá trị thực hiện của một chỉ số tại thời điểm báo cáo**, với logic:
+
+* Nếu đang ở **ngày cuối tháng** → lấy **giá trị thực hiện của tháng hiện tại**
+* Nếu **chưa phải ngày cuối tháng** → hiển thị **giá trị thực hiện của tháng liền trước**
+
+Chỉ tiêu này thường dùng trong:
+
+* Dashboard theo dõi **chỉ số điều hành**
+* Báo cáo **ngày trong tháng nhưng chốt số theo tháng**
+* Tránh biến động số liệu khi tháng chưa kết thúc
+
+---
+
+## 3. Công thức tính
+
+```
+ChiSo_TH =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Thực hiện tháng hiện tại,
+    Thực hiện tháng trước
+)
+```
+
+Trong đó:
+
+* **Thực hiện tháng hiện tại**: Tổng giá trị thực hiện của tháng đang xem
+* **Thực hiện tháng trước**: Tổng giá trị thực hiện của tháng liền trước
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Thực hiện tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Giá trị thực hiện của tháng hiện tại}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng giá trị **Thực hiện** từ bảng **CacChiSo**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đầy đủ khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Thực hiện tháng trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Giá trị thực hiện của tháng liền trước}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng giá trị **Thực hiện** của **tháng trước đó**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo số liệu hiển thị là **số đã chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong quá trình theo dõi chỉ số theo ngày, ngân hàng **chỉ coi số liệu của tháng là hợp lệ khi tháng đã kết thúc**.
+> Do đó:
+>
+> * Nếu đang ở **ngày cuối tháng**, hệ thống hiển thị **giá trị thực hiện của tháng hiện tại**
+> * Nếu chưa đến ngày cuối tháng, hệ thống **giữ nguyên số thực hiện của tháng trước** để đảm bảo tính ổn định và chính xác của báo cáo
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo (Date)** đang được chọn
+* ⚠️ Trong tháng đang chạy, số liệu **không phản ánh tạm tính**
+* ⚠️ Đảm bảo bảng **dimDate** có thông tin chính xác về **ngày cuối tháng**
+* ⚠️ Phù hợp cho **báo cáo điều hành**, không phù hợp cho phân tích chi tiết biến động nội tháng
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**ChiSo_TH – Giá trị thực hiện chỉ số theo logic chốt cuối tháng**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **ChiSo_TH** dùng để xác định **giá trị thực hiện của một chỉ số tại thời điểm báo cáo**, với logic:
+
+* Nếu đang ở **ngày cuối tháng** → lấy **giá trị thực hiện của tháng hiện tại**
+* Nếu **chưa phải ngày cuối tháng** → hiển thị **giá trị thực hiện của tháng liền trước**
+
+Chỉ tiêu này thường dùng trong:
+
+* Dashboard theo dõi **chỉ số điều hành**
+* Báo cáo **ngày trong tháng nhưng chốt số theo tháng**
+* Tránh biến động số liệu khi tháng chưa kết thúc
+
+---
+
+## 3. Công thức tính
+
+```
+ChiSo_TH =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Thực hiện tháng hiện tại,
+    Thực hiện tháng trước
+)
+```
+
+Trong đó:
+
+* **Thực hiện tháng hiện tại**: Tổng giá trị thực hiện của tháng đang xem
+* **Thực hiện tháng trước**: Tổng giá trị thực hiện của tháng liền trước
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Thực hiện tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Giá trị thực hiện của tháng hiện tại}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng giá trị **Thực hiện** từ bảng **CacChiSo**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đầy đủ khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Thực hiện tháng trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Giá trị thực hiện của tháng liền trước}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng giá trị **Thực hiện** của **tháng trước đó**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo số liệu hiển thị là **số đã chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong quá trình theo dõi chỉ số theo ngày, ngân hàng **chỉ coi số liệu của tháng là hợp lệ khi tháng đã kết thúc**.
+> Do đó:
+>
+> * Nếu đang ở **ngày cuối tháng**, hệ thống hiển thị **giá trị thực hiện của tháng hiện tại**
+> * Nếu chưa đến ngày cuối tháng, hệ thống **giữ nguyên số thực hiện của tháng trước** để đảm bảo tính ổn định và chính xác của báo cáo
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo (Date)** đang được chọn
+* ⚠️ Trong tháng đang chạy, số liệu **không phản ánh tạm tính**
+* ⚠️ Đảm bảo bảng **dimDate** có thông tin chính xác về **ngày cuối tháng**
+* ⚠️ Phù hợp cho **báo cáo điều hành**, không phù hợp cho phân tích chi tiết biến động nội tháng
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**CIR – Cost to Income Ratio (Tỷ lệ Chi phí trên Thu nhập)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CIR** dùng để đo lường **mức độ hiệu quả trong việc kiểm soát chi phí so với thu nhập**, thông qua tỷ lệ giữa **tổng chi phí hoạt động** và **tổng thu nhập**.
+
+* Là **chỉ tiêu trọng yếu** trong quản trị hiệu quả hoạt động
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu suất**
+* Thường được sử dụng để **so sánh theo thời gian** hoặc **so sánh giữa các đơn vị**
+
+---
+
+## 3. Công thức tính
+
+```
+CIR = Giá trị thực hiện chỉ tiêu CIR tại thời điểm báo cáo
+```
+
+Trong đó:
+
+* Giá trị CIR được lấy theo **ngày số liệu tương ứng với ngày báo cáo đang xem**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Giá trị thực hiện chỉ tiêu CIR
+
+**Công thức:**
+
+$$
+CIR = \sum \text{Giá trị Thực hiện của chỉ tiêu CIR}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị Thực hiện** từ bảng **CacChiSo**
+* Chỉ lấy các bản ghi có **Chỉ tiêu = “CIR”**
+* Không phụ thuộc bộ lọc khác trên bảng **CacChiSo** (đã loại bỏ filter bằng `ALL`)
+
+---
+
+### 4.2. Ngày số liệu áp dụng
+
+**Logic chọn ngày:**
+
+* Ngày tính CIR được xác định bằng:
+
+  * **Ngày số liệu lớn nhất** trong bảng **CacChiSo**
+  * Hoặc **ngày đang được chọn trên báo cáo** nếu có
+
+**Giải thích nghiệp vụ:**
+
+* Đảm bảo CIR được hiển thị theo **ngày số liệu mới nhất**
+* Tránh trường hợp hiển thị **số liệu lỗi thời** khi báo cáo có nhiều mốc thời gian
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Chỉ tiêu CIR được hiển thị theo **ngày số liệu tương ứng với ngày báo cáo đang xem**.
+> Hệ thống luôn ưu tiên **giá trị CIR mới nhất hợp lệ**, đảm bảo chỉ tiêu phản ánh **đúng tình trạng hiệu quả hoạt động tại thời điểm báo cáo**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **Ngày số liệu** trong bảng **CacChiSo**
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “CIR”** được cập nhật đầy đủ và duy nhất theo ngày
+* ⚠️ Không dùng để phân tích chi tiết theo ngày trong tháng nếu dữ liệu chưa được chốt
+* ⚠️ Phù hợp cho **dashboard điều hành và báo cáo tổng hợp**, không dùng cho phân tích giao dịch chi tiết
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**NPL – Tỷ lệ nợ xấu (Non-Performing Loan Ratio)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **NPL** dùng để phản ánh **tỷ lệ nợ xấu tại thời điểm báo cáo**, là một trong những chỉ tiêu trọng yếu trong **quản trị rủi ro tín dụng** của ngân hàng.
+
+* Phản ánh **chất lượng danh mục tín dụng**
+* Phục vụ báo cáo **điều hành, quản trị rủi ro, giám sát an toàn hoạt động**
+* Thường được theo dõi **theo thời gian và so với ngưỡng kiểm soát**
+
+---
+
+## 3. Công thức tính
+
+```
+NPL = Giá trị thực hiện chỉ tiêu NPL tại thời điểm báo cáo
+```
+
+Trong đó:
+
+* Giá trị NPL được lấy theo **ngày số liệu tương ứng với ngày báo cáo đang xem**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Giá trị thực hiện chỉ tiêu NPL
+
+**Công thức:**
+
+$$
+NPL = \sum \text{Giá trị Thực hiện của chỉ tiêu NPL}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị Thực hiện** từ bảng **CacChiSo**
+* Chỉ lấy các bản ghi có **Chỉ tiêu = “NPL”**
+* Không bị ảnh hưởng bởi các bộ lọc khác trên bảng **CacChiSo** (đã loại bỏ bằng `ALL`)
+
+---
+
+### 4.2. Ngày số liệu áp dụng
+
+**Logic chọn ngày:**
+
+* Ngày tính NPL được xác định bằng:
+
+  * **Ngày số liệu được chọn trên báo cáo**
+  * Hoặc **ngày số liệu lớn nhất** nếu không có ngày được chọn
+
+**Giải thích nghiệp vụ:**
+
+* Đảm bảo NPL hiển thị theo **số liệu mới nhất hợp lệ**
+* Tránh hiển thị **số liệu cũ** khi người dùng thay đổi bộ lọc thời gian
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Chỉ tiêu NPL được hiển thị theo **ngày số liệu tương ứng với ngày báo cáo đang xem**.
+> Hệ thống ưu tiên **giá trị NPL mới nhất** trong trường hợp không xác định rõ ngày, nhằm đảm bảo chỉ tiêu phản ánh **đúng tình trạng rủi ro tín dụng tại thời điểm báo cáo**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **Ngày số liệu** trong bảng **CacChiSo**
+* ⚠️ Cần đảm bảo mỗi ngày chỉ có **một giá trị NPL hợp lệ**
+* ⚠️ Không sử dụng để phân tích chi tiết theo giao dịch hoặc theo khoản vay
+* ⚠️ Phù hợp cho **dashboard điều hành và báo cáo giám sát rủi ro**, không dùng cho phân tích tác nghiệp
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**ROA – Tỷ suất sinh lời trên tổng tài sản (Return on Assets)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **ROA** dùng để đo lường **mức độ sinh lời của ngân hàng trên mỗi đơn vị tài sản**, phản ánh hiệu quả sử dụng tổng tài sản trong hoạt động kinh doanh.
+
+* Là **chỉ tiêu cốt lõi** trong đánh giá hiệu quả hoạt động
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu suất**
+* Thường được sử dụng để **so sánh theo thời gian** hoặc **giữa các đơn vị/ngân hàng**
+
+---
+
+## 3. Công thức tính
+
+```
+ROA = Giá trị thực hiện chỉ tiêu ROA tại thời điểm báo cáo
+```
+
+Trong đó:
+
+* Giá trị ROA được lấy theo **ngày số liệu tương ứng với ngày báo cáo đang xem**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Giá trị thực hiện chỉ tiêu ROA
+
+**Công thức:**
+
+$$
+ROA = \sum \text{Giá trị Thực hiện của chỉ tiêu ROA}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị Thực hiện** từ bảng **CacChiSo**
+* Chỉ lấy các bản ghi có **Chỉ tiêu = “ROA”**
+* Không bị ảnh hưởng bởi các bộ lọc khác trên bảng **CacChiSo** (đã loại bỏ bằng `ALL`)
+
+---
+
+### 4.2. Ngày số liệu áp dụng
+
+**Logic chọn ngày:**
+
+* Ngày tính ROA được xác định bằng:
+
+  * **Ngày số liệu được chọn trên báo cáo**
+  * Hoặc **ngày số liệu lớn nhất** nếu không có ngày được chọn
+
+**Giải thích nghiệp vụ:**
+
+* Đảm bảo ROA hiển thị theo **số liệu mới nhất hợp lệ**
+* Tránh hiển thị **số liệu cũ** khi người dùng thay đổi bộ lọc thời gian
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Chỉ tiêu ROA được hiển thị theo **ngày số liệu tương ứng với ngày báo cáo đang xem**.
+> Hệ thống ưu tiên **giá trị ROA mới nhất** trong trường hợp không xác định rõ ngày, nhằm đảm bảo chỉ tiêu phản ánh **đúng hiệu quả sử dụng tài sản tại thời điểm báo cáo**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **Ngày số liệu** trong bảng **CacChiSo**
+* ⚠️ Cần đảm bảo mỗi ngày chỉ có **một giá trị ROA hợp lệ**
+* ⚠️ Không sử dụng để phân tích chi tiết theo giao dịch
+* ⚠️ Phù hợp cho **dashboard điều hành và báo cáo hiệu quả hoạt động**, không dùng cho phân tích tác nghiệp
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**ROE – Tỷ suất sinh lời trên vốn chủ sở hữu (Return on Equity)**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **ROE** dùng để đo lường **mức độ sinh lời của ngân hàng trên mỗi đơn vị vốn chủ sở hữu**, phản ánh hiệu quả sử dụng vốn trong hoạt động kinh doanh.
+
+* Là **chỉ tiêu cốt lõi** trong đánh giá hiệu quả và sức hấp dẫn của ngân hàng
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu suất**
+* Thường được sử dụng để **so sánh theo thời gian** hoặc **giữa các đơn vị/ngân hàng**
+
+---
+
+## 3. Công thức tính
+
+```
+ROE = Giá trị thực hiện chỉ tiêu ROE tại thời điểm báo cáo
+```
+
+Trong đó:
+
+* Giá trị ROE được lấy theo **ngày số liệu tương ứng với ngày báo cáo đang xem**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Giá trị thực hiện chỉ tiêu ROE
+
+**Công thức:**
+
+$$
+ROE = \sum \text{Giá trị Thực hiện của chỉ tiêu ROE}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị Thực hiện** từ bảng **CacChiSo**
+* Chỉ lấy các bản ghi có **Chỉ tiêu = “ROE”**
+* Không bị ảnh hưởng bởi các bộ lọc khác trên bảng **CacChiSo** (đã loại bỏ bằng `ALL`)
+
+---
+
+### 4.2. Ngày số liệu áp dụng
+
+**Logic chọn ngày:**
+
+* Ngày tính ROE được xác định bằng:
+
+  * **Ngày số liệu được chọn trên báo cáo**
+  * Hoặc **ngày số liệu lớn nhất** nếu không có ngày được chọn
+
+**Giải thích nghiệp vụ:**
+
+* Đảm bảo ROE hiển thị theo **số liệu mới nhất hợp lệ**
+* Tránh hiển thị **số liệu cũ** khi người dùng thay đổi bộ lọc thời gian
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Chỉ tiêu ROE được hiển thị theo **ngày số liệu tương ứng với ngày báo cáo đang xem**.
+> Hệ thống ưu tiên **giá trị ROE mới nhất** trong trường hợp không xác định rõ ngày, nhằm đảm bảo chỉ tiêu phản ánh **đúng hiệu quả sử dụng vốn chủ sở hữu tại thời điểm báo cáo**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **Ngày số liệu** trong bảng **CacChiSo**
+* ⚠️ Cần đảm bảo mỗi ngày chỉ có **một giá trị ROE hợp lệ**
+* ⚠️ Không sử dụng để phân tích chi tiết theo giao dịch
+* ⚠️ Phù hợp cho **dashboard điều hành và báo cáo hiệu quả vốn**, không dùng cho phân tích tác nghiệp
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**Tỷ lệ dự trữ thanh khoản – Liquidity Reserve Ratio**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **Tỷ lệ dự trữ thanh khoản** dùng để phản ánh **mức độ đảm bảo khả năng thanh khoản của ngân hàng tại thời điểm báo cáo**, thông qua tỷ lệ dự trữ thanh khoản so với quy mô hoạt động.
+
+* Là **chỉ tiêu an toàn thanh khoản** quan trọng
+* Phục vụ báo cáo **điều hành, quản trị rủi ro thanh khoản**
+* Thường được theo dõi **theo ngày số liệu** và so sánh với **ngưỡng quy định**
+
+---
+
+## 3. Công thức tính
+
+```
+Tỷ lệ dự trữ thanh khoản = Giá trị thực hiện chỉ tiêu Tỷ lệ dự trữ thanh khoản tại thời điểm báo cáo
+```
+
+Trong đó:
+
+* Giá trị chỉ tiêu được lấy theo **ngày số liệu tương ứng với ngày báo cáo đang xem**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Giá trị thực hiện Tỷ lệ dự trữ thanh khoản
+
+**Công thức:**
+
+$$
+Tỷ\ lệ\ dự\ trữ\ thanh\ khoản
+= \sum \text{Giá trị Thực hiện của chỉ tiêu “Tỷ lệ dự trữ thanh khoản”}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị Thực hiện** từ bảng **CacChiSo**
+* Chỉ lấy các bản ghi có **Chỉ tiêu = “Tỷ lệ dự trữ thanh khoản”**
+* Không bị ảnh hưởng bởi các bộ lọc khác trên bảng **CacChiSo** (đã loại bỏ bằng `ALL`)
+
+---
+
+### 4.2. Ngày số liệu áp dụng
+
+**Logic chọn ngày:**
+
+* Ngày tính chỉ tiêu được xác định bằng:
+
+  * **Ngày số liệu được chọn trên báo cáo**
+  * Hoặc **ngày số liệu lớn nhất** nếu không có ngày được chọn
+
+**Giải thích nghiệp vụ:**
+
+* Đảm bảo chỉ tiêu hiển thị theo **số liệu mới nhất hợp lệ**
+* Tránh hiển thị **số liệu lỗi thời** khi thay đổi bộ lọc thời gian
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Tỷ lệ dự trữ thanh khoản được hiển thị theo **ngày số liệu tương ứng với ngày báo cáo đang xem**.
+> Trong trường hợp không xác định rõ ngày, hệ thống ưu tiên **giá trị mới nhất**, nhằm đảm bảo chỉ tiêu phản ánh **đúng tình trạng thanh khoản của ngân hàng tại thời điểm báo cáo**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **Ngày số liệu** trong bảng **CacChiSo**
+* ⚠️ Cần đảm bảo mỗi ngày chỉ có **một giá trị hợp lệ** cho chỉ tiêu này
+* ⚠️ Thường được so sánh với **ngưỡng an toàn theo quy định nội bộ hoặc NHNN**
+* ⚠️ Phù hợp cho **dashboard điều hành và báo cáo quản trị rủi ro thanh khoản**, không dùng cho phân tích giao dịch chi tiết
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**Cần thực hiện – Giá trị còn lại cần hoàn thành so với kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **Cần thực hiện** dùng để xác định **phần giá trị còn thiếu so với kế hoạch**, căn cứ trên **số lũy kế thực hiện** tại thời điểm báo cáo.
+
+* Phản ánh **khoảng cách còn lại** để đạt kế hoạch
+* Phục vụ theo dõi **tiến độ hoàn thành chỉ tiêu kinh doanh**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+Cần thực hiện = Kế hoạch – Lũy kế thực hiện
+```
+
+**Nguyên tắc áp dụng:**
+
+* Nếu đang ở **ngày cuối tháng** → dùng số liệu **tháng hiện tại**
+* Nếu **chưa phải ngày cuối tháng** → dùng số liệu **tháng liền trước**
+* Nếu kết quả < 0 → hiển thị **0**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Lũy kế thực hiện
+
+**Công thức:**
+
+$$
+TH =
+\begin{cases}
+\text{Lũy kế thực hiện tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Lũy kế thực hiện tháng trước}, & \text{nếu chưa cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_TH**: Lũy kế thực hiện của **tháng đang xem**
+* **LastM_TH**: Lũy kế thực hiện của **tháng liền trước**
+* Đảm bảo chỉ sử dụng **số liệu đã chốt**
+
+---
+
+### 4.2. Kế hoạch
+
+**Công thức:**
+
+$$
+KH =
+\begin{cases}
+\text{Kế hoạch tháng hiện tại}, & \text{nếu là ngày cuối tháng} \
+\text{Kế hoạch tháng trước}, & \text{nếu chưa cuối tháng}
+\end{cases}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* **ThisM_KH**: Kế hoạch của **tháng hiện tại**
+* **LastM_KH**: Kế hoạch của **tháng liền trước**
+* Kế hoạch được so sánh tương ứng với mốc thời gian thực hiện
+
+---
+
+### 4.3. Giá trị cần thực hiện
+
+**Công thức:**
+
+$$
+Cần\ thực\ hiện = \max(KH - TH,\ 0)
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Nếu **thực hiện đã vượt kế hoạch** → không còn phần cần thực hiện (hiển thị 0)
+* Nếu **chưa đạt kế hoạch** → hiển thị phần giá trị còn thiếu
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành, ngân hàng **chỉ đánh giá mức độ hoàn thành trên cơ sở số liệu đã chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **phần còn lại so với kế hoạch của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên giá trị của tháng trước**
+>
+> Điều này giúp tránh hiểu nhầm do số liệu lũy kế chưa hoàn chỉnh trong tháng.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **không âm** (giá trị nhỏ nhất = 0)
+* ⚠️ Phụ thuộc vào **ngày báo cáo** và logic xác định **ngày cuối tháng**
+* ⚠️ Sử dụng **lũy kế** nên phù hợp cho báo cáo tiến độ, không dùng cho phân tích giao dịch chi tiết
+* ⚠️ Cần đảm bảo dữ liệu **Kế hoạch** và **Lũy kế thực hiện** được cập nhật đầy đủ, nhất quán
+
+---
+
+
+
+
+
+
 
 
 
