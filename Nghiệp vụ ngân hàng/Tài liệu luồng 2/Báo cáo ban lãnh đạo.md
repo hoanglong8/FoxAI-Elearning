@@ -1342,6 +1342,496 @@ $$
 * ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Chi phí hoạt động”** trong bảng KQKD được chuẩn hóa và nhất quán
 
 ---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_CPK – Kế hoạch Chi phí khác năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_CPK** dùng để xác định **kế hoạch Chi phí khác của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ thực hiện Chi phí khác trong năm.
+
+* Là **cơ sở kế hoạch** cho các chỉ tiêu % hoàn thành Chi phí khác
+* Phục vụ báo cáo **quản trị – tài chính – ngân sách**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_CPK = Tổng kế hoạch Chi phí khác năm
+```
+
+Trong đó:
+
+* **Kế hoạch Chi phí khác năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Chi phí khác năm (KH_CPK)
+
+**Công thức:**
+
+$$
+KH_CPK = \sum \text{Kế hoạch Chi phí khác (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Chi phí khác”** từ bảng **KH_CP**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Phản ánh **tổng ngân sách Chi phí khác được phê duyệt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xác định **kế hoạch Chi phí khác ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm căn cứ so sánh, theo dõi và đánh giá mức độ thực hiện Chi phí khác.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_CPK cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh Chi phí khác thực tế
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Chi phí khác”** trong bảng **KH_CP** được chuẩn hóa
+* ⚠️ Đơn vị tính của kế hoạch cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_LNTT – Kế hoạch Lợi nhuận trước thuế năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_LNTT** dùng để xác định **kế hoạch Lợi nhuận trước thuế (LNTT) của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ hoàn thành kết quả kinh doanh trong năm.
+
+* Là **chỉ tiêu mục tiêu cốt lõi** trong kế hoạch kinh doanh
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu quả hoạt động**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_LNTT = Tổng kế hoạch Lợi nhuận trước thuế năm
+```
+
+Trong đó:
+
+* **Kế hoạch Lợi nhuận trước thuế năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Lợi nhuận trước thuế năm (KH_LNTT)
+
+**Công thức:**
+
+$$
+KH_LNTT = \sum \text{Kế hoạch Lợi nhuận trước thuế (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Tổng lợi nhuận trước thuế”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xây dựng **kế hoạch lợi nhuận trước thuế ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm mục tiêu điều hành, đồng thời là cơ sở so sánh để đánh giá mức độ hoàn thành kết quả kinh doanh.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_LNTT cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh lợi nhuận thực tế
+* ⚠️ Đơn vị tính (**tỷ đồng**) cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Tổng lợi nhuận trước thuế”** trong bảng **KQKD** được chuẩn hóa và nhất quán
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_TNLT – Kế hoạch Thu nhập lãi thuần năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_TNLT** dùng để xác định **kế hoạch Thu nhập lãi thuần (TNLT) của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ hoàn thành hoạt động kinh doanh cốt lõi của ngân hàng.
+
+* Là **chỉ tiêu trọng yếu** phản ánh hiệu quả hoạt động tín dụng và huy động vốn
+* Phục vụ báo cáo **điều hành, quản trị và kết quả kinh doanh**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_TNLT = Tổng kế hoạch Thu nhập lãi thuần năm
+```
+
+Trong đó:
+
+* **Kế hoạch Thu nhập lãi thuần năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Thu nhập lãi thuần năm (KH_TNLT)
+
+**Công thức:**
+
+$$
+KH_TNLT = \sum \text{Kế hoạch Thu nhập lãi thuần (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Thu nhập lãi thuần”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xây dựng **kế hoạch Thu nhập lãi thuần ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm mục tiêu điều hành và là cơ sở so sánh để đánh giá mức độ hoàn thành hoạt động kinh doanh cốt lõi.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_TNLT cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh Thu nhập lãi thuần thực tế
+* ⚠️ Đơn vị tính (**tỷ đồng**) cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Thu nhập lãi thuần”** trong bảng **KQKD** được chuẩn hóa và nhất quán
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_TNTDV – Kế hoạch Thu nhập từ hoạt động dịch vụ năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_TNTDV** dùng để xác định **kế hoạch Thu nhập từ hoạt động dịch vụ của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ hoàn thành các nguồn thu ngoài lãi của ngân hàng.
+
+* Phản ánh **mục tiêu phát triển thu nhập dịch vụ**
+* Phục vụ báo cáo **điều hành, quản trị và kết quả kinh doanh**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_TNTDV = Tổng kế hoạch Thu nhập từ hoạt động dịch vụ năm
+```
+
+Trong đó:
+
+* **Kế hoạch Thu nhập từ hoạt động dịch vụ năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Thu nhập từ hoạt động dịch vụ năm (KH_TNTDV)
+
+**Công thức:**
+
+$$
+KH_TNTDV = \sum \text{Kế hoạch Thu nhập từ hoạt động dịch vụ (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Thu nhập từ hoạt động dịch vụ”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xây dựng **kế hoạch Thu nhập từ hoạt động dịch vụ ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm mục tiêu điều hành và là cơ sở so sánh để đánh giá mức độ phát triển thu nhập dịch vụ.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_TNTDV cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh Thu nhập từ hoạt động dịch vụ thực tế
+* ⚠️ Đơn vị tính (**tỷ đồng**) cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Thu nhập từ hoạt động dịch vụ”** trong bảng **KQKD** được chuẩn hóa và nhất quán
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_TTK – Kế hoạch Lãi/Lỗ thuần từ hoạt động khác năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_TTK** dùng để xác định **kế hoạch lãi/lỗ thuần từ hoạt động khác của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ thực hiện các nguồn thu, chi ngoài hoạt động kinh doanh cốt lõi.
+
+* Phản ánh **mục tiêu thu nhập ngoài lãi và ngoài dịch vụ**
+* Phục vụ báo cáo **kết quả kinh doanh và điều hành**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_TTK = Tổng kế hoạch Lãi/Lỗ thuần từ hoạt động khác năm
+```
+
+Trong đó:
+
+* **Kế hoạch Lãi/Lỗ thuần từ hoạt động khác năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Lãi/Lỗ thuần từ hoạt động khác năm (KH_TTK)
+
+**Công thức:**
+
+$$
+KH_TTK = \sum \text{Kế hoạch Lãi/Lỗ thuần từ hoạt động khác (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Lãi/lỗ thuần từ hoạt động khác”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xây dựng **kế hoạch lãi/lỗ thuần từ hoạt động khác ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm mục tiêu điều hành và là cơ sở so sánh để đánh giá mức độ đóng góp của các hoạt động ngoài kinh doanh cốt lõi.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_TTK cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh lãi/lỗ thực tế từ hoạt động khác
+* ⚠️ Đơn vị tính (**tỷ đồng**) cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Lãi/lỗ thuần từ hoạt động khác”** trong bảng **KQKD** được chuẩn hóa và nhất quán
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**LN_CP % KH LNTT LK – Tỷ lệ Lợi nhuận trước thuế lũy kế so với Kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LN_CP % KH LNTT LK** dùng để đo lường **mức độ thực hiện lợi nhuận trước thuế (LNTT) lũy kế so với kế hoạch năm**.
+
+* Phản ánh **kết quả kinh doanh tổng thể** của đơn vị/ngân hàng
+* Phục vụ báo cáo **điều hành, quản trị và đánh giá hiệu quả**
+* So sánh giữa **Thực hiện lũy kế (TH)** và **Kế hoạch năm (KH)**
+
+---
+
+## 3. Công thức tính
+
+```
+LN_CP % KH LNTT LK = Lợi nhuận trước thuế lũy kế thực hiện / Lợi nhuận trước thuế kế hoạch
+```
+
+Trong đó:
+
+* **Lợi nhuận trước thuế lũy kế thực hiện (TH)**: Tổng lợi nhuận trước thuế thực tế phát sinh lũy kế đến kỳ báo cáo
+* **Lợi nhuận trước thuế kế hoạch (KH)**: Tổng lợi nhuận trước thuế kế hoạch năm (lấy tại tháng 1)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Lợi nhuận trước thuế kế hoạch (KH)
+
+**Công thức:**
+
+$$
+KH = \sum \text{Kế hoạch Lợi nhuận trước thuế (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Tổng lợi nhuận trước thuế”** từ bảng **KQKD**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+### 4.2. Lợi nhuận trước thuế lũy kế thực hiện (TH)
+
+**Công thức:**
+
+$$
+TH = \sum \text{Lợi nhuận trước thuế thực tế phát sinh lũy kế}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị thực tế (Value)** của khoản mục **“LNTT”** từ bảng **Data_LN_CP**
+* Tính **lũy kế đến kỳ báo cáo đang xem**
+* Phản ánh **kết quả lợi nhuận trước thuế thực tế** của đơn vị tại thời điểm báo cáo
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng sử dụng **kế hoạch lợi nhuận trước thuế năm (chốt tại tháng 1)** làm mục tiêu điều hành.
+> Chỉ tiêu thể hiện **tỷ lệ lợi nhuận trước thuế đã thực hiện lũy kế** so với **kế hoạch năm**, qua đó đánh giá mức độ hoàn thành kết quả kinh doanh trong năm tài chính.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **KH = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng hàm `DIVIDE`)
+* ⚠️ **KH cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ **TH là giá trị lũy kế**, phụ thuộc vào kỳ báo cáo (tháng / quý / năm)
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Tổng lợi nhuận trước thuế”** (KQKD) và **Attribute = “LNTT”** (Data_LN_CP) được chuẩn hóa và thống nhất về ý nghĩa nghiệp vụ
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**LNTT_Còn lại cần TH – Tỷ lệ Lợi nhuận trước thuế còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LNTT_Còn lại cần TH** dùng để xác định **phần tỷ lệ lợi nhuận trước thuế còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** để đạt kế hoạch lợi nhuận
+* Hỗ trợ theo dõi **tiến độ thực hiện lợi nhuận trước thuế**
+* Phục vụ báo cáo **điều hành và đánh giá kết quả kinh doanh**
+
+---
+
+## 3. Công thức tính
+
+```
+LNTT_Còn lại cần TH = Target – (LN_CP % KH LNTT LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH LNTT LK) > 0`
+* Nếu `LN_CP % KH LNTT LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH LNTT LK**: Tỷ lệ lợi nhuận trước thuế lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch lợi nhuận trước thuế**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ lợi nhuận trước thuế lũy kế so với kế hoạch
+
+(**LN_CP % KH LNTT LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ thực hiện lợi nhuận trước thuế lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu đạt **100% lợi nhuận trước thuế theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ thực hiện **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ lợi nhuận còn lại cần tiếp tục thực hiện**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH LNTT LK < 100%**
+* ⚠️ Khi **LN_CP % KH LNTT LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị lợi nhuận tuyệt đối
+
+---
+
+
+
+
+
+
+
 
 
 
