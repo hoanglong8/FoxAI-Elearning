@@ -724,6 +724,435 @@ $$
 * ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Chi phí dự phòng rủi ro tín dụng”** và **Attribute = “Chi phí dự phòng”** được chuẩn hóa và khớp nghĩa nghiệp vụ
 
 ---
+---
+
+## 1. Tên chỉ tiêu
+
+**CPDP_Còn lại cần TH – Tỷ lệ Chi phí dự phòng rủi ro tín dụng còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CPDP_Còn lại cần TH** dùng để xác định **phần tỷ lệ chi phí dự phòng rủi ro tín dụng còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** so với kế hoạch trích lập
+* Hỗ trợ theo dõi **tiến độ trích lập dự phòng rủi ro tín dụng**
+* Phục vụ báo cáo **quản trị rủi ro và điều hành tài chính**
+
+---
+
+## 3. Công thức tính
+
+```
+CPDP_Còn lại cần TH = Target – (LN_CP % KH CPDP LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH CPDP LK) > 0`
+* Nếu `LN_CP % KH CPDP LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH CPDP LK**: Tỷ lệ chi phí dự phòng rủi ro tín dụng lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch trích lập dự phòng**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ chi phí dự phòng rủi ro tín dụng lũy kế so với kế hoạch
+
+(**LN_CP % KH CPDP LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ trích lập dự phòng rủi ro tín dụng lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu trích lập **100% chi phí dự phòng rủi ro tín dụng theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ trích lập **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ còn lại cần tiếp tục trích lập**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH CPDP LK < 100%**
+* ⚠️ Khi **LN_CP % KH CPDP LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ trích lập**, không phản ánh giá trị chi phí tuyệt đối
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**LN_CP % KH CPHD LK – Tỷ lệ Chi phí hoạt động lũy kế so với Kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LN_CP % KH CPHD LK** dùng để đo lường **mức độ thực hiện chi phí hoạt động lũy kế so với kế hoạch năm**.
+
+* Phản ánh **tổng thể chi phí hoạt động** của ngân hàng
+* Phục vụ báo cáo **kết quả kinh doanh, quản trị chi phí**
+* So sánh giữa **Thực hiện lũy kế (TH)** và **Kế hoạch năm (KH)**
+
+---
+
+## 3. Công thức tính
+
+```
+LN_CP % KH CPHD LK = Chi phí hoạt động lũy kế thực hiện / Chi phí hoạt động kế hoạch
+```
+
+Trong đó:
+
+* **Chi phí hoạt động lũy kế thực hiện (TH)**: Tổng chi phí hoạt động thực tế phát sinh lũy kế đến kỳ báo cáo
+* **Chi phí hoạt động kế hoạch (KH)**: Tổng chi phí hoạt động kế hoạch năm (lấy tại tháng 1)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Chi phí hoạt động kế hoạch (KH)
+
+**Công thức:**
+
+$$
+KH = \sum \text{Kế hoạch Chi phí hoạt động (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Chi phí hoạt động”**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+### 4.2. Chi phí hoạt động lũy kế thực hiện (TH)
+
+**Công thức:**
+
+$$
+TH = \sum \text{Chi phí hoạt động thực tế phát sinh lũy kế}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị thực tế (Value)** từ các khoản mục cấu thành chi phí hoạt động, bao gồm:
+
+  * Chi phí khác
+  * Chi phí nhân viên
+  * Chi về tài sản
+  * Chi phí hoạt động quản lý và công cụ
+* Tính **lũy kế đến kỳ báo cáo đang xem**
+* Phản ánh **tổng chi phí hoạt động thực tế** của ngân hàng
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng sử dụng **chi phí hoạt động kế hoạch năm (chốt tại tháng 1)** làm cơ sở so sánh.
+> Chỉ tiêu thể hiện **tỷ lệ chi phí hoạt động đã thực hiện lũy kế** so với **kế hoạch năm**, giúp đánh giá mức độ kiểm soát và sử dụng chi phí hoạt động trong năm tài chính.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **KH = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng hàm `DIVIDE`)
+* ⚠️ **KH cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ **TH là giá trị lũy kế**, phụ thuộc vào kỳ báo cáo (tháng / quý / năm)
+* ⚠️ Cần đảm bảo dữ liệu:
+
+  * **Chỉ tiêu = “Chi phí hoạt động”** (bảng KQKD)
+  * **Attribute** thuộc nhóm chi phí hoạt động (bảng Data_LN_CP)
+    được **chuẩn hóa và khớp nghĩa nghiệp vụ**
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**CPDP_Còn lại cần TH – Tỷ lệ Chi phí dự phòng rủi ro tín dụng còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CPDP_Còn lại cần TH** dùng để xác định **phần tỷ lệ chi phí dự phòng rủi ro tín dụng còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** so với kế hoạch trích lập
+* Hỗ trợ theo dõi **tiến độ trích lập dự phòng rủi ro tín dụng**
+* Phục vụ báo cáo **quản trị rủi ro và điều hành tài chính**
+
+---
+
+## 3. Công thức tính
+
+```
+CPDP_Còn lại cần TH = Target – (LN_CP % KH CPDP LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH CPDP LK) > 0`
+* Nếu `LN_CP % KH CPDP LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH CPDP LK**: Tỷ lệ chi phí dự phòng rủi ro tín dụng lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch trích lập dự phòng**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ chi phí dự phòng rủi ro tín dụng lũy kế so với kế hoạch
+
+(**LN_CP % KH CPDP LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ trích lập dự phòng rủi ro tín dụng lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu trích lập **100% chi phí dự phòng rủi ro tín dụng theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ trích lập **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ còn lại cần tiếp tục trích lập**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH CPDP LK < 100%**
+* ⚠️ Khi **LN_CP % KH CPDP LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ trích lập**, không phản ánh giá trị chi phí tuyệt đối
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**LN_CP % KH CPHD LK – Tỷ lệ Chi phí hoạt động lũy kế so với Kế hoạch**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **LN_CP % KH CPHD LK** dùng để đo lường **mức độ thực hiện chi phí hoạt động lũy kế so với kế hoạch năm**.
+
+* Phản ánh **tổng thể chi phí hoạt động** của đơn vị/ngân hàng
+* Phục vụ báo cáo **kết quả kinh doanh và quản trị chi phí**
+* So sánh giữa **Thực hiện lũy kế (TH)** và **Kế hoạch năm (KH)**
+
+---
+
+## 3. Công thức tính
+
+```
+LN_CP % KH CPHD LK = Chi phí hoạt động lũy kế thực hiện / Chi phí hoạt động kế hoạch
+```
+
+Trong đó:
+
+* **Chi phí hoạt động lũy kế thực hiện (TH)**: Tổng chi phí hoạt động thực tế phát sinh lũy kế đến kỳ báo cáo
+* **Chi phí hoạt động kế hoạch (KH)**: Tổng chi phí hoạt động kế hoạch năm (lấy tại tháng 1)
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Chi phí hoạt động kế hoạch (KH)
+
+**Công thức:**
+
+$$
+KH = \sum \text{Kế hoạch Chi phí hoạt động (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Chi phí hoạt động”**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch)
+
+---
+
+### 4.2. Chi phí hoạt động lũy kế thực hiện (TH)
+
+**Công thức:**
+
+$$
+TH = \sum \text{Chi phí hoạt động thực tế phát sinh lũy kế}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị thực tế (Value)** từ các khoản mục cấu thành chi phí hoạt động, bao gồm:
+
+  * Chi phí khác
+  * Chi phí nhân viên
+  * Chi về tài sản
+  * Chi phí hoạt động quản lý và công cụ
+* Tính **lũy kế đến kỳ báo cáo đang xem**
+* Phản ánh **tổng chi phí hoạt động thực tế** của đơn vị
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng sử dụng **chi phí hoạt động kế hoạch năm (chốt tại tháng 1)** làm cơ sở so sánh.
+> Chỉ tiêu thể hiện **tỷ lệ chi phí hoạt động đã thực hiện lũy kế** so với **kế hoạch năm**, nhằm đánh giá mức độ kiểm soát và sử dụng chi phí hoạt động trong năm tài chính.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **KH = 0**, chỉ tiêu không xác định (đã được xử lý trong DAX bằng hàm `DIVIDE`)
+* ⚠️ **KH cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ **TH là giá trị lũy kế**, phụ thuộc vào kỳ báo cáo (tháng / quý / năm)
+* ⚠️ Cần đảm bảo dữ liệu:
+
+  * **Chỉ tiêu = “Chi phí hoạt động”** (bảng KQKD)
+  * **Attribute** thuộc nhóm chi phí hoạt động (bảng Data_LN_CP)
+    được **chuẩn hóa và thống nhất về ý nghĩa nghiệp vụ**
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**CPHĐ_Còn lại cần TH – Tỷ lệ Chi phí hoạt động còn lại cần thực hiện**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CPHĐ_Còn lại cần TH** dùng để xác định **phần tỷ lệ chi phí hoạt động còn thiếu so với mục tiêu kế hoạch năm**, trong trường hợp mức độ thực hiện hiện tại **chưa đạt mục tiêu**.
+
+* Phản ánh **khoảng cách còn lại** so với kế hoạch chi phí hoạt động
+* Hỗ trợ theo dõi **tiến độ thực hiện chi phí hoạt động**
+* Phục vụ báo cáo **quản trị điều hành và kiểm soát ngân sách**
+
+---
+
+## 3. Công thức tính
+
+```
+CPHĐ_Còn lại cần TH = Target – (LN_CP % KH CPHD LK)
+```
+
+**Điều kiện áp dụng:**
+
+* Chỉ tính khi `Target – (LN_CP % KH CPHD LK) > 0`
+* Nếu `LN_CP % KH CPHD LK ≥ Target` thì **không hiển thị giá trị**
+
+Trong đó:
+
+* **Target**: Mục tiêu hoàn thành (giá trị chuẩn = 1, tương ứng 100%)
+* **LN_CP % KH CPHD LK**: Tỷ lệ chi phí hoạt động lũy kế so với kế hoạch
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Mục tiêu hoàn thành (Target)
+
+**Giá trị:**
+
+```
+Target = 1
+```
+
+**Giải thích nghiệp vụ:**
+
+* Target = 1 tương đương **100% kế hoạch chi phí hoạt động**
+* Được sử dụng làm **ngưỡng chuẩn** để đánh giá mức độ hoàn thành
+* Giá trị cố định, không phụ thuộc kỳ báo cáo
+
+---
+
+### 4.2. Tỷ lệ chi phí hoạt động lũy kế so với kế hoạch
+
+(**LN_CP % KH CPHD LK**)
+
+**Giải thích nghiệp vụ:**
+
+* Là chỉ tiêu đã được tính toán trước đó
+* Phản ánh **mức độ chi phí hoạt động đã thực hiện lũy kế so với kế hoạch năm**
+* Thay đổi theo **kỳ báo cáo** (tháng / quý / năm)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng đặt mục tiêu thực hiện **100% chi phí hoạt động theo kế hoạch năm**.
+> Nếu tại thời điểm báo cáo, mức độ thực hiện **chưa đạt mục tiêu**, hệ thống xác định **phần tỷ lệ chi phí hoạt động còn lại cần tiếp tục thực hiện**.
+> Trường hợp đã đạt hoặc vượt kế hoạch, chỉ tiêu này **không hiển thị**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu **chỉ có giá trị khi LN_CP % KH CPHD LK < 100%**
+* ⚠️ Khi **LN_CP % KH CPHD LK ≥ Target**, hệ thống trả về **BLANK** (không hiển thị)
+* ⚠️ Target được giả định **luôn bằng 1 (100%)**
+* ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị chi phí tuyệt đối
+
+---
+
+
+
 
 
 
