@@ -1150,7 +1150,134 @@ Target = 1
 * ⚠️ Chỉ tiêu mang tính **theo dõi tiến độ**, không phản ánh giá trị chi phí tuyệt đối
 
 ---
+---
 
+## 1. Tên chỉ tiêu
+
+**KH_CP – Kế hoạch chi phí năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_CP** dùng để xác định **tổng kế hoạch chi phí năm**, được sử dụng làm **cơ sở so sánh** cho các chỉ tiêu đánh giá mức độ thực hiện chi phí.
+
+* Là **nền tảng kế hoạch** cho các chỉ tiêu %HT chi phí
+* Phục vụ báo cáo **ngân sách – quản trị – tài chính**
+* Không phụ thuộc vào kỳ báo cáo trong năm
+
+---
+
+## 3. Công thức tính
+
+```
+KH_CP = Tổng kế hoạch chi phí năm
+```
+
+Trong đó:
+
+* **Kế hoạch chi phí năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch chi phí năm (KH_CP)
+
+**Công thức:**
+
+$$
+KH_CP = \frac{\sum \text{Kế hoạch chi phí (tháng 1, cùng năm)}}{1.000}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **toàn bộ giá trị kế hoạch chi phí** từ bảng dữ liệu chi phí
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho cả năm**
+* Chia cho **1.000** để **quy đổi đơn vị** (ví dụ: từ đồng sang nghìn đồng)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xây dựng **kế hoạch chi phí năm ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng **xuyên suốt trong năm** làm cơ sở so sánh, đánh giá mức độ thực hiện và kiểm soát chi phí.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_CP cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Giá trị chỉ phản ánh **kế hoạch**, không phản ánh chi phí thực tế
+* ⚠️ Đảm bảo dữ liệu **Kế hoạch chi phí** được cập nhật đầy đủ và chuẩn hóa
+* ⚠️ Đơn vị đo lường cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+
+---
+---
+
+## 1. Tên chỉ tiêu
+
+**KH_CPDP – Kế hoạch Chi phí dự phòng rủi ro tín dụng năm**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **KH_CPDP** dùng để xác định **kế hoạch chi phí dự phòng rủi ro tín dụng của năm tài chính**, làm cơ sở so sánh và đánh giá mức độ trích lập dự phòng trong năm.
+
+* Là **cơ sở kế hoạch** cho các chỉ tiêu % thực hiện CPDP
+* Phục vụ báo cáo **kết quả kinh doanh và quản trị rủi ro**
+* Được sử dụng xuyên suốt trong năm tài chính
+
+---
+
+## 3. Công thức tính
+
+```
+KH_CPDP = Tổng kế hoạch Chi phí dự phòng rủi ro tín dụng năm
+```
+
+Trong đó:
+
+* **Kế hoạch Chi phí dự phòng rủi ro tín dụng năm** được lấy từ **kế hoạch tháng 1 của năm báo cáo**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Kế hoạch Chi phí dự phòng rủi ro tín dụng năm (KH_CPDP)
+
+**Công thức:**
+
+$$
+KH_CPDP = \sum \text{Kế hoạch Chi phí dự phòng rủi ro tín dụng (tháng 1, cùng năm)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy **giá trị kế hoạch** của chỉ tiêu **“Chi phí dự phòng rủi ro tín dụng”**
+* Chỉ sử dụng số liệu của **tháng 1** trong **năm báo cáo**
+* Kế hoạch tháng 1 được xem là **kế hoạch chuẩn cho toàn bộ năm**
+* Đơn vị tính theo **tỷ đồng** (theo dữ liệu kế hoạch KQKD)
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Ngân hàng xác định **kế hoạch trích lập chi phí dự phòng rủi ro tín dụng ngay từ đầu năm (tháng 1)**.
+> Giá trị kế hoạch này được sử dụng làm **ngưỡng so sánh** để theo dõi, đánh giá mức độ trích lập dự phòng thực tế trong suốt năm tài chính.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ **KH_CPDP cố định theo tháng 1**, không thay đổi theo bộ lọc thời gian
+* ⚠️ Chỉ tiêu phản ánh **kế hoạch**, không phản ánh chi phí dự phòng thực tế
+* ⚠️ Đơn vị tính (**tỷ đồng**) cần được thống nhất khi so sánh với các chỉ tiêu thực hiện
+* ⚠️ Cần đảm bảo dữ liệu **Chỉ tiêu = “Chi phí dự phòng rủi ro tín dụng”** trong bảng KQKD được chuẩn hóa và nhất quán
+
+---
 
 
 
