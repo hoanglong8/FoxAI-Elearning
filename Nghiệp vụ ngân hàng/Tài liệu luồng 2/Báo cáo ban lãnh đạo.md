@@ -3773,8 +3773,9 @@ $$
 **Công thức:**
 
 $$
-CP_KV_%\ HT\ KH = \frac{TH}{KH}
+\text{CP\_KV\_% HT KH} = \frac{\text{Chi phí thực hiện}}{\text{Chi phí kế hoạch}}
 $$
+
 
 **Giải thích nghiệp vụ:**
 
