@@ -3907,6 +3907,92 @@ $$
 * ⚠️ Không dùng để phân tích biến động chi phí **theo ngày trong tháng**
 
 ---
+---
+
+## 1. Tên chỉ tiêu
+
+**CP_KV_CK – Chi phí cùng kỳ năm trước theo khu vực**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CP_KV_CK** dùng để xác định **giá trị chi phí cùng kỳ năm trước của từng khu vực**, được sử dụng làm **cơ sở so sánh** cho các chỉ tiêu tăng/giảm và % tăng/giảm so với cùng kỳ.
+
+* Là **mẫu số nền** cho các chỉ tiêu so sánh cùng kỳ
+* Phục vụ phân tích **xu hướng biến động chi phí theo khu vực**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+CP_KV_CK =
+IF(
+    Ngày báo cáo là ngày cuối tháng,
+    Chi phí cùng kỳ năm trước của tháng hiện tại,
+    Chi phí cùng kỳ năm trước của tháng liền trước
+)
+```
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Chi phí cùng kỳ năm trước – tháng hiện tại (ThisM)
+
+**Công thức:**
+
+$$
+ThisM = \sum \text{Chi phí cùng kỳ năm trước (tháng hiện tại)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Cùng kỳ năm trước** từ bảng **CP_KV**
+* Phụ thuộc vào **tháng đang được chọn** trên báo cáo
+* Chỉ phản ánh đầy đủ khi **tháng đã kết thúc**
+
+---
+
+### 4.2. Chi phí cùng kỳ năm trước – tháng liền trước (LastM)
+
+**Công thức:**
+
+$$
+LastM = \sum \text{Chi phí cùng kỳ năm trước (tháng liền trước)}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Cùng kỳ năm trước** của **tháng liền trước**
+* Áp dụng khi tháng hiện tại **chưa kết thúc**
+* Đảm bảo số liệu hiển thị là **số đã được chốt**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo so sánh cùng kỳ theo khu vực, ngân hàng **chỉ sử dụng số liệu cùng kỳ năm trước đã được chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **chi phí cùng kỳ năm trước của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên giá trị của tháng trước**
+>
+> Cách tiếp cận này giúp các chỉ tiêu so sánh cùng kỳ (**Giá trị / % tăng giảm**) luôn **ổn định và nhất quán**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Chỉ tiêu phụ thuộc vào **ngày báo cáo (Date)** được chọn
+* ⚠️ Là **chỉ tiêu nền**, không dùng độc lập để đánh giá hiệu quả
+* ⚠️ Phù hợp cho **phân tích so sánh cùng kỳ theo khu vực**
+* ⚠️ Cần đảm bảo dữ liệu **Cùng kỳ năm trước** trong bảng **CP_KV** được cập nhật đầy đủ và chính xác
+
+---
+
 
 
 
