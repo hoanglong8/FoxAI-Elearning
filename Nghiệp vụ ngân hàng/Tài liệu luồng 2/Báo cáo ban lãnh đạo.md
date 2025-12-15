@@ -62,7 +62,7 @@ $$
 
 ---
 
-## 5. Logic nghiệp vụ (diễn giải cho người không biết DAX)
+## 5. Logic nghiệp vụ 
 
 > Ngân hàng sử dụng **chi phí khác kế hoạch được phê duyệt từ đầu năm (tháng 1)** làm cơ sở so sánh.
 > Tỷ lệ hoàn thành được xác định bằng cách so sánh **chi phí khác thực tế phát sinh** với **kế hoạch năm**, nhằm đánh giá mức độ kiểm soát chi phí.
@@ -142,7 +142,7 @@ Target = 1
 
 ---
 
-## 5. Logic nghiệp vụ (diễn giải cho người không biết DAX)
+## 5. Logic nghiệp vụ 
 
 > Ngân hàng đặt mục tiêu hoàn thành chi phí khác là **100% kế hoạch**.
 > Nếu tại thời điểm báo cáo, tỷ lệ hoàn thành vẫn **chưa đạt 100%**, hệ thống sẽ tính toán phần **tỷ lệ còn thiếu cần thực hiện thêm**.
@@ -224,7 +224,7 @@ $$
 
 ---
 
-## 5. Logic nghiệp vụ (diễn giải cho người không biết DAX)
+## 5. Logic nghiệp vụ 
 
 > Ngân hàng sử dụng **chi phí nhân viên kế hoạch được phê duyệt từ đầu năm (tháng 1)** làm cơ sở so sánh.
 > Tỷ lệ hoàn thành được xác định bằng cách so sánh **chi phí nhân viên thực tế phát sinh** với **kế hoạch năm**, nhằm đánh giá mức độ kiểm soát và sử dụng chi phí nhân sự.
