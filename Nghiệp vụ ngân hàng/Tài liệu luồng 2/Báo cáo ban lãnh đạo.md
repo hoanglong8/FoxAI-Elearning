@@ -3875,7 +3875,7 @@ $$
 **Công thức:**
 
 $$
-CP_KV_%\ Tăng\ giảm\ CK = \frac{\Delta CP}{CP_{CK}}
+\text{CP\_KV\_% Tăng giảm CK} = \frac{\Delta \text{Chi phí}}{\text{Chi phí cùng kỳ}}
 $$
 
 **Giải thích nghiệp vụ:**
