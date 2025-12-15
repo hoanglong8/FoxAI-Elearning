@@ -3804,6 +3804,109 @@ $$
 * ⚠️ Cần đảm bảo dữ liệu **Số thực hiện** và **Kế hoạch** trong bảng **CP_KV** được cập nhật đầy đủ, nhất quán
 
 ---
+---
+
+## 1. Tên chỉ tiêu
+
+**CP_KV_% Tăng giảm CK – Tỷ lệ % tăng/giảm chi phí theo khu vực so với cùng kỳ**
+
+---
+
+## 2. Mô tả chỉ tiêu
+
+Chỉ tiêu **CP_KV_% Tăng giảm CK** dùng để đo lường **mức độ biến động chi phí của từng khu vực so với cùng kỳ năm trước**, thể hiện dưới dạng **tỷ lệ phần trăm**.
+
+* Phản ánh **xu hướng tăng/giảm chi phí theo khu vực**
+* Phục vụ **phân tích so sánh cùng kỳ và kiểm soát chi phí**
+* Áp dụng logic **chốt số theo cuối tháng** để đảm bảo số liệu ổn định
+
+---
+
+## 3. Công thức tính
+
+```
+CP_KV_% Tăng giảm CK =
+(Tăng/giảm chi phí so với cùng kỳ) / (Chi phí cùng kỳ năm trước)
+```
+
+**Nguyên tắc áp dụng:**
+
+* Nếu đang ở **ngày cuối tháng** → sử dụng số liệu **tháng hiện tại**
+* Nếu **chưa đến ngày cuối tháng** → sử dụng số liệu **tháng liền trước**
+
+---
+
+## 4. Diễn giải chi tiết từng thành phần
+
+### 4.1. Giá trị tăng/giảm chi phí so với cùng kỳ
+
+**Công thức:**
+
+$$
+\Delta CP = \sum \text{Tăng/giảm chi phí so với cùng kỳ}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng chỉ tiêu **“Tăng/giảm so với cùng kỳ”** từ bảng **CP_KV**
+* Phản ánh **mức chênh lệch tuyệt đối** giữa chi phí kỳ hiện tại và cùng kỳ năm trước
+* Có thể mang giá trị **dương hoặc âm**
+
+---
+
+### 4.2. Chi phí cùng kỳ năm trước
+
+**Công thức:**
+
+$$
+CP_{CK} = \sum \text{Chi phí cùng kỳ năm trước}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Lấy tổng **Chi phí cùng kỳ năm trước** từ bảng **CP_KV**
+* Là **mẫu số** để tính tỷ lệ % tăng/giảm
+* Phản ánh **quy mô chi phí nền** để so sánh
+
+---
+
+### 4.3. Tỷ lệ % tăng/giảm chi phí so với cùng kỳ
+
+**Công thức:**
+
+$$
+CP_KV_%\ Tăng\ giảm\ CK = \frac{\Delta CP}{CP_{CK}}
+$$
+
+**Giải thích nghiệp vụ:**
+
+* Giá trị **> 0** → chi phí **tăng** so với cùng kỳ
+* Giá trị **< 0** → chi phí **giảm** so với cùng kỳ
+* Giá trị **= 0** → chi phí **không thay đổi**
+
+---
+
+## 5. Logic nghiệp vụ
+
+> Trong báo cáo điều hành theo khu vực, ngân hàng **chỉ đánh giá mức tăng/giảm chi phí so với cùng kỳ trên cơ sở số liệu đã chốt theo tháng**.
+> Do đó:
+>
+> * Tại **ngày cuối tháng**, chỉ tiêu phản ánh **tỷ lệ tăng/giảm của tháng hiện tại**
+> * Trong các ngày còn lại của tháng, chỉ tiêu **giữ nguyên tỷ lệ tăng/giảm của tháng trước**
+>
+> Cách tiếp cận này giúp phân tích xu hướng chi phí **ổn định và nhất quán giữa các khu vực**.
+
+---
+
+## 6. Lưu ý nghiệp vụ quan trọng
+
+* ⚠️ Trường hợp **Chi phí cùng kỳ năm trước = 0**, chỉ tiêu không xác định (đã được xử lý bằng `DIVIDE`)
+* ⚠️ Chỉ tiêu có thể **dương hoặc âm**
+* ⚠️ Phù hợp cho **phân tích xu hướng và so sánh khu vực**
+* ⚠️ Không dùng để phân tích biến động chi phí **theo ngày trong tháng**
+
+---
+
 
 
 
