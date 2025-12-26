@@ -1,0 +1,141 @@
+# KHUNG CHƯƠNG TRÌNH: AI-DRIVEN BUSINESS ANALYST
+
+Chương trình này được thiết kế theo tư duy **"Mindset First, Toolset Second"** (Tư duy đi trước, Công cụ theo sau), đảm bảo học viên không chỉ biết dùng công cụ mà còn hiểu tại sao và khi nào nên dùng.
+
+**"Làm chủ công nghệ - Nâng tầm tư duy - Tối ưu hiệu suất"**
+
+## 🎯 THÔNG TIN CHUNG
+
+* **Mục tiêu cốt lõi:** Chuyển đổi người làm BA từ trạng thái "thực thi thủ công" sang "điều phối thông minh". Học viên sẽ sử dụng AI một cách chủ động, có tư duy phản biện và hệ thống hóa.
+* **Đối tượng:** Business Analyst (mọi cấp độ), Product Owner, PM muốn tối ưu hóa quy trình làm việc.
+
+---
+
+## 📚 NỘI DUNG CHI TIẾT (Dự kiến: 6 - 8 Buổi)
+
+### MODLE 1: TƯ DUY NỀN TẢNG & KỸ THUẬT PROMPTING (Móng nhà)
+
+*Mục tiêu: Hiểu đúng về vị thế của AI và nắm vững "ngôn ngữ" để giao tiếp với AI.*
+
+1. **Định vị BA trong kỷ nguyên AI:**
+* Tại sao BA cần AI? (Tăng tốc độ, giảm sai sót, đáp ứng thị trường tuyển dụng).
+* **Tư duy cốt lõi:** Không phụ thuộc vào một công cụ cụ thể (ChatGPT, Gemini, Claude...). Học tư duy cốt lõi để thích nghi với mọi mô hình ngôn ngữ mới.
+* Nguyên tắc: AI là trợ lý (Co-pilot), BA là người ra quyết định (Pilot).
+
+
+2. **Kỹ thuật Prompt Engineering cho BA:**
+* Cấu trúc một Prompt hiệu quả: `Role (Vai trò) + Context (Bối cảnh) + Task (Nhiệm vụ) + Constraints (Ràng buộc) + Output Format (Định dạng đầu ra)`.
+* Kỹ thuật tinh chỉnh (Refinement): Làm sao để sửa khi AI trả lời sai hoặc chưa đủ sâu.
+
+
+3. **Phương pháp học tập hiệu quả trong khóa học:**
+* Cách thực hành: "Thử - Sai - Sửa" (Trial & Error).
+* Tư duy phản biện (Critical Thinking): Luôn kiểm chứng lại kết quả của AI (Fact-checking).
+
+
+
+### MODULE 2: KHÁM PHÁ & PHÂN TÍCH YÊU CẦU (Nghiên cứu & Đề xuất)
+
+*Mục tiêu: Biến AI thành chuyên gia tư vấn để chủ động đề xuất giải pháp, thay vì thụ động chờ khách hàng yêu cầu.*
+
+1. **Nghiên cứu & Đề xuất giải pháp chủ động:**
+* Tổng hợp thông tin đa chiều: Dùng AI quét thông tin thị trường, đối thủ cạnh tranh để gợi ý tính năng cho sản phẩm.
+* Thực hành tìm kiếm giải pháp kỹ thuật/nghiệp vụ cho các bài toán khó (VD: Giải pháp eKYC, Payment Gateway...).
+
+
+2. **Phân tích GAP (Gap Analysis):**
+* Sử dụng AI để so sánh `As-Is` (Hiện trạng) và `To-Be` (Mong muốn).
+* Đề xuất lộ trình chuyển đổi dựa trên phân tích khoảng cách.
+
+
+3. **Xác định Stakeholders:**
+* Prompt để AI liệt kê và phân loại các bên liên quan dựa trên ngữ cảnh dự án.
+* Xây dựng ma trận RACI dự kiến.
+
+
+4. **Khơi gợi yêu cầu (Elicitation):**
+* Xây dựng danh sách câu hỏi phỏng vấn (Interview Script) thông minh.
+* Prompt để xây dựng danh sách Yêu cầu chức năng (Functional Req) đầy đủ logic (tránh sót case).
+* Prompt gợi ý các Yêu cầu phi chức năng (Non-functional Req) quan trọng (Bảo mật, Hiệu năng, Khả năng mở rộng...).
+
+
+
+### MODULE 3: MÔ HÌNH HÓA QUY TRÌNH & UML (Trực quan hóa)
+
+*Mục tiêu: Chuyển đổi văn bản thành hình ảnh/sơ đồ chuẩn kỹ thuật.*
+
+1. **Quy trình nghiệp vụ (Business Process):**
+* Từ mô tả lời nói/văn bản -> Prompt tạo quy trình nghiệp vụ từng bước.
+* Hiểu tầm quan trọng của bảng mô tả chi tiết quy trình (Input, Output, Exception...).
+
+
+2. **Hỗ trợ vẽ BPMN chuẩn:**
+* Sử dụng AI để kiểm tra lỗi logic trong quy trình.
+* Sử dụng công cụ AI (như Chat2Diagram, Whimsical AI...) để vẽ đúng ký hiệu BPMN.
+
+
+3. **Biểu đồ UML (Unified Modeling Language):**
+* **Activity Diagram:** Chuyển đổi từ đặc tả Use Case (text) sang Activity Diagram (hình ảnh/code Mermaid).
+* **Use Case Diagram:** Xác định Actor và Use Case chính từ danh sách yêu cầu.
+* **Sequence Diagram:** Hướng dẫn AI vẽ luồng tương tác hệ thống (API, Database interaction).
+* **ERD (Entity Relationship Diagram):** Dùng AI xác định thực thể, thuộc tính và quan hệ (Logical Level).
+
+
+
+### MODULE 4: TÀI LIỆU HÓA & ĐẶC TẢ PHẦN MỀM (SRS Construction)
+
+*Mục tiêu: Tạo ra bộ tài liệu SRS chặt chẽ, logic và có tính liên kết.*
+
+1. **Cấu trúc SRS logic:**
+* Tư duy kết nối: Làm sao để User Story khớp với Sitemap và Wireframe.
+
+
+2. **Viết chi tiết từng phần:**
+* **User Story:** Prompt tạo User Story chuẩn cấu trúc (As a... I want to... So that...) + Acceptance Criteria (Tiêu chí chấp nhận).
+* **Use Case Specification:** Prompt tạo bảng đặc tả chi tiết (Pre-condition, Main Flow, Alternative Flow, Exception Flow).
+* **Sitemap:** Xây dựng cấu trúc cây chức năng (Information Architecture) logic và tối ưu UX.
+* **RTM (Requirement Traceability Matrix):** Tạo bảng ma trận truy vết để đảm bảo không bỏ sót yêu cầu nào khi test.
+
+
+
+### MODULE 5: PROTOTYPE & TRỰC QUAN HÓA DỮ LIỆU (Thiết kế & Data)
+
+*Mục tiêu: Hiện thực hóa ý tưởng thành sản phẩm nhìn thấy được.*
+
+1. **Xây dựng Prototype:**
+* Prompt mô tả UI/UX để AI (như Uizard, Galileo AI, hoặc ChatGPT Vision) tạo bản phác thảo giao diện.
+* Tư duy: Từ Prototype hình ảnh -> Chuyển sang Code (HTML/CSS cơ bản) để demo nhanh cho Dev (nếu cần).
+
+
+2. **Trực quan hóa dữ liệu (Dashboarding):**
+* Tư duy về dữ liệu cho BA.
+* Hướng dẫn dùng AI gợi ý các chỉ số (Metrics) cần theo dõi.
+* Tạo bố cục Dashboard mẫu để Developer/DA thực hiện.
+
+
+
+### MODULE 6: CÔNG CỤ MỞ RỘNG & TỐI ƯU HÓA CÔNG VIỆC (Năng suất)
+
+*Mục tiêu: Nâng cao hiệu suất cá nhân và quản lý tri thức.*
+
+1. **Soạn thảo nội dung trình bày:**
+* Xây dựng Slide thuyết trình giải pháp ấn tượng nhờ AI (Gamma, Beautiful.ai...).
+* Viết Ebook/Whitepaper nghiên cứu sâu về một miền nghiệp vụ (Domain Knowledge) để nâng cao thương hiệu cá nhân.
+
+
+2. **"Super App" AI cho BA:**
+* Giới thiệu cách xây dựng một "Second Brain" (Bộ não thứ 2).
+* Cách sử dụng các nền tảng tích hợp (Ví dụ: Notion AI, Lark Suite, hoặc Custom GPTs) để quản lý toàn bộ tài liệu, meeting notes, và task của dự án BA tại một nơi duy nhất.
+
+
+
+---
+
+## 💡 PHƯƠNG PHÁP ĐÁNH GIÁ & BÀI TẬP CUỐI KHÓA
+
+* **Thực hành xuyên suốt:** Mỗi module đều có bài tập nhỏ áp dụng ngay vào dự án thực tế của học viên.
+* **Capstone Project (Bài tập lớn):** Chọn một dự án giả định (hoặc thực tế).
+* *Yêu cầu:* Xây dựng trọn bộ từ Nghiên cứu -> Quy trình -> SRS -> Prototype -> Slide thuyết trình giải pháp.
+* *Tiêu chí chấm:* Tính logic, khả năng sử dụng AI để giải quyết các nút thắt (bottleneck), và chất lượng đầu ra cuối cùng.
+
+
