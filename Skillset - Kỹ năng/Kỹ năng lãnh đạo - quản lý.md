@@ -1,3 +1,5 @@
+Lưu ý: Thời hạn dùng mã free: trước ngày 2.1.2026
+
 # BUNDLE 1: LEADERSHIP & TEAM PERFORMANCE
 <img width="1080" height="526" alt="image" src="https://github.com/user-attachments/assets/4243d518-b8b5-489b-a3e2-dee28c110dce" />
 
