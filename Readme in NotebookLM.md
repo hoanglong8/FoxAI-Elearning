@@ -4,7 +4,7 @@ Cấu trúc đặt tên file theo nguyên tắc **"Từ lớn đến nhỏ"** (G
 
 ### Công thức đặt tên file chuẩn:
 
-> **`[PHÂN_LOẠI] - [ROLE] - [DOMAIN] - Tên Sách - Tác giả`**
+> **`[CATEGORY] - [ROLE] - [DOMAIN] - Tên Sách - Tác giả`**
 
 *(Nếu cuốn sách không thuộc Domain cụ thể, bạn có thể bỏ qua phần Domain)*
 
@@ -30,7 +30,7 @@ Cấu trúc đặt tên file theo nguyên tắc **"Từ lớn đến nhỏ"** (G
 
 **C. `[DOMAIN]` (Ứng dụng):** Dùng để biết sách áp dụng cho ngành nào.
 
-* `[FINTECH]`: Tài chính, Ngân hàng.
+* `[FIN]`: Tài chính, Ngân hàng.
 * `[GOV]`: Hành chính công (Government).
 * `[BUS]`: Doanh nghiệp (Business).
 * `[GEN]`: General (Chung, không cụ thể ngành nào).
