@@ -76,6 +76,7 @@ Tài liệu được chuẩn hóa tên theo định dạng:
 ---
 
 ## 2. Ví dụ áp dụng thực tế
+Link NotebookLM: https://notebooklm.google.com/notebook/6125fbc1-4999-43c5-9113-9cf645b8d4c1
 
 Với cuốn *Data Mining: Practical Machine Learning Tools and Techniques*, tên file chuẩn sẽ là:
 
