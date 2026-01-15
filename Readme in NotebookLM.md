@@ -1,18 +1,56 @@
-# Standardized Naming Convention - Nguyên tắc chuẩn hóa tên tài liệu
+# Standardized Naming Convention - Quy tắc chuẩn hóa tên tài liệu
 
 Cấu trúc đặt tên file theo nguyên tắc **"Từ lớn đến nhỏ"** (General to Specific) để dễ sắp xếp và tìm kiếm, giúp "bộ não thứ hai" NotebookLM của bạn hoạt động hiệu quả hơn, vì AI cũng dựa vào tên file để định vị ngữ cảnh (context).
 
-### Công thức đặt tên file chuẩn:
+```
+# 📚 FOXAI NATIVE KNOWLEDGE HUB
+Cấu trúc kho tài liệu học tập và nghiên cứu cho dự án FoxAI Native.
 
+## 📂 Sơ đồ tổ chức thư mục
+
+FOXAI-LIBRARY/
+│
+├── 01_FOUNDATIONS/                 # Kiến thức nền tảng (Toán, Xác suất, CS cơ bản)
+│   ├── [FOUNDATION] - [DS] - [GEN] - Mathematics for Machine Learning.pdf
+│   └── [FOUNDATION] - [DEV] - [GEN] - Introduction to Algorithms.pdf
+│
+├── 02_DATA_ENGINEERING/            # Kỹ thuật dữ liệu, Big Data, Cloud, Architecture
+│   ├── [DATA-ENG] - [DE] - [GEN] - Designing Data-Intensive Applications.pdf
+│   └── [DATA-ENG] - [DE] - [GEN] - The Data Warehouse Toolkit.pdf
+│
+├── 03_MACHINE_LEARNING_DL/         # Học máy cổ điển, Deep Learning, Data Mining
+│   ├── [ML-DL] - [DS] - [GEN] - Data Mining Practical Tools (Witten).pdf
+│   ├── [ML-DL] - [DS] - [GEN] - Pattern Recognition and Machine Learning.pdf
+│   └── [ML-DL] - [DS] - [FINTECH] - Credit Risk Analytics.pdf
+│
+├── 04_GENERATIVE_AI_LLM/           # AI tạo sinh, LLMs, RAG, Agents (Trọng tâm FoxAI)
+│   ├── [GEN-AI] - [DEV] - [GEN] - LangChain AI Application Development.pdf
+│   ├── [GEN-AI] - [BA-PO] - [GEN] - Prompt Engineering for Business.pdf
+│   └── [GEN-AI] - [DEV] - [GEN] - Building LLM Apps with CrewAI.pdf
+│
+├── 05_DOMAIN_KNOWLEDGE/            # Kiến thức nghiệp vụ chuyên ngành
+│   ├── FINTECH/
+│   │   └── [DOMAIN] - [BA] - [FINTECH] - Digital Banking Strategy.pdf
+│   ├── EDUTECH/
+│   │   └── [DOMAIN] - [PO] - [EDU] - AI in Education.pdf
+│   └── GOV_PUBLIC/
+│       └── [DOMAIN] - [BA] - [GOV] - Digital Transformation in Government.pdf
+│
+└── 06_MANAGEMENT_SOFT_SKILLS/      # Quản trị dự án, Product Management
+    ├── [SOFT-SKILL] - [PO] - [GEN] - User Story Mapping.pdf
+    └── [SOFT-SKILL] - [MGT] - [GEN] - Inspired: How to Create Tech Products.pdf
+```
+
+## 📝 Quy tắc đặt tên (Naming Convention)
+
+Tài liệu được chuẩn hóa tên theo định dạng:
 > **`[CATEGORY] - [ROLE] - [DOMAIN] - Tên Sách - Tác giả`**
 
 *(Nếu cuốn sách không thuộc Domain cụ thể, bạn có thể bỏ qua phần Domain)*
 
----
+## 1. Giải thích các thẻ (Tags)
 
-### 1. Chi tiết các thành phần trong tên file
-
-**A. `[PHÂN_LOẠI]` (Category/Level):** Dùng để gom nhóm theo tầng kiến thức.
+**A. `[CATEGORY]` (Phân loại):** Dùng để gom nhóm theo tầng kiến thức.
 
 * `[FOUNDATION]`: Kiến thức nền tảng (Toán, Xác suất, Basic CS).
 * `[ML-DL]`: Machine Learning, Deep Learning, Data Mining.
@@ -37,21 +75,23 @@ Cấu trúc đặt tên file theo nguyên tắc **"Từ lớn đến nhỏ"** (G
 
 ---
 
-### 2. Ví dụ áp dụng thực tế (với cuốn sách bạn vừa hỏi)
+## 2. Ví dụ áp dụng thực tế
 
 Với cuốn *Data Mining: Practical Machine Learning Tools and Techniques*, tên file chuẩn sẽ là:
 
 > **`[ML-DL] - [DS] - [GEN] - Data Mining Practical Tools - Ian Witten`**
 
+<img width="1913" height="909" alt="image" src="https://github.com/user-attachments/assets/18ec550f-e4c5-429f-afb6-704088649133" />
+
 **Giải thích:**
 
 * `[ML-DL]`: Vì nó nói về Data Mining và ML.
 * `[DS]`: Vì nó nặng về thuật toán, phù hợp cho Data Scientist.
-* `[GEN]`: Vì kiến thức này áp dụng chung cho mọi ngành, không riêng gì Bank hay Edu.
+* `[GEN]`: Vì kiến thức này áp dụng chung cho mọi ngành, không riêng gì Bank hay Gov.
 
 ---
 
-### 3. Một số ví dụ khác cho kho sách của bạn
+## 3. Một số ví dụ khác cho kho sách của bạn
 
 **Sách về chiến lược AI cho sếp:**
 
@@ -69,7 +109,7 @@ Với cuốn *Data Mining: Practical Machine Learning Tools and Techniques*, tê
 
 > `[GEN-AI] - [DEV] - [GEN] - Developing Apps with GPT-4 and ChatGPT - Olivier Caelen`
 
-### 4. Tại sao cách đặt tên này hiệu quả trên NotebookLM?
+## 4. Tại sao cách đặt tên này hiệu quả trên NotebookLM?
 
 1. **Dễ dàng lọc nguồn (Source Filtering):** Khi bạn vào NotebookLM, danh sách nguồn sẽ tự động sắp xếp theo thứ tự bảng chữ cái. Các file cùng nhóm `[ML-DL]` sẽ nằm cạnh nhau, giúp bạn dễ tick chọn các nguồn liên quan để query.
 2. **AI hiểu ngữ cảnh tốt hơn:** Khi bạn hỏi *"Đóng vai một chuyên gia Fintech, hãy tóm tắt..."*, NotebookLM sẽ ưu tiên nhìn vào các file có tag `[FINTECH]` trong tên để lấy thông tin chính xác hơn.
