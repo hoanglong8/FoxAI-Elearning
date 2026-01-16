@@ -1,5 +1,144 @@
+# KIẾN TRÚC DATA HỆ THỐNG FOX-MIS
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/8533231c-7db7-4c00-ae38-bd9c5e7871fb" />
 
+---
+```mermaid
+graph TD
+    %% Define Styles
+    classDef source fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef process fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    classDef memory fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef serving fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+    classDef govern fill:#ffebee,stroke:#c62828,stroke-width:2px;
+    classDef user fill:#e0f2f1,stroke:#00695c,stroke-width:2px;
 
+    %% L1: Data Sources
+    subgraph L1 ["L1: BANKING DATA SOURCES (Physical Layer)"]
+        Core[("Core Banking\n(T24/Finacle)")]:::source
+        Card[("Card System\n(CMS)")]:::source
+        Digital[("Digital App\n(Logs/NoSQL)")]:::source
+        Payment[("Payment Switch\n(ISO8583)")]:::source
+    end
+
+    %% The FOX-MIS System
+    subgraph FOX ["FOX-MIS: IN-MEMORY DATA LAKEHOUSE"]
+        
+        %% L2: Virtualization & Caching
+        subgraph L2 ["L2: VIRTUALIZATION & CACHING"]
+            CDC[("Real-time CDC\n(Kafka/Debezium)")]:::process
+            Virt["Data Virtualization Connectors\n(Push-down Logic)"]:::process
+            Cache[("Smart Cache Layer\n(Redis/Alluxio)")]:::process
+        end
+
+        %% L3: In-Memory Storage
+        subgraph L3 ["L3: IN-MEMORY COMPUTING CORE (Apache Arrow)"]
+            RAM_Bronze[("Transient Bronze\n(Raw Stream)")]:::memory
+            RAM_Silver[("In-Memory Silver\n(Cleaned/Joined)")]:::memory
+            RAM_Gold[("In-Memory Gold\n(Aggregated KPIs)")]:::memory
+        end
+
+        %% L4: Serving
+        subgraph L4 ["L4: SERVING & SEMANTIC"]
+            Engine{{"Federated MPP Engine\n(Trino/Spark In-Memory)"}}:::serving
+            Semantic["Virtual Semantic Layer\n(Business Logic Mapping)"]:::serving
+            Feature["Real-time Feature Store\n(Fraud Signals)"]:::serving
+        end
+
+        %% L0: Governance (Cross-cutting)
+        subgraph L0 ["L0: INTELLIGENCE & GOVERNANCE"]
+            Masking["Dynamic Masking\n(On-the-fly)"]:::govern
+            Lineage["Data Lineage\n(Traceability)"]:::govern
+            DQ["Real-time DQ Rules"]:::govern
+        end
+    end
+
+    %% L5: Consumption
+    subgraph L5 ["L5: CONSUMPTION LAYER"]
+        Dashboard["Real-time Dashboard\n(Exec/Ops)"]:::user
+        AI_Mod["AI Models\n(Fraud/Credit Scoring)"]:::user
+        Reg_Rep["Regulatory Reports\n(SBV/Compliance)"]:::user
+    end
+
+    %% Relationships
+    Core & Card & Digital & Payment -->|"Direct Query / CDC Stream"| Virt & CDC
+    CDC --> Cache
+    Virt --> Engine
+    Cache -.->|"Accelerate"| Engine
+
+    %% In-Memory Flow
+    Engine <==>|"Zero-Copy Read/Write"| RAM_Bronze
+    RAM_Bronze ==>|"Processing in RAM"| RAM_Silver
+    RAM_Silver ==>|"Processing in RAM"| RAM_Gold
+
+    %% Governance Interventions
+    Masking -.->|"Apply Policy"| Engine
+    DQ -.->|"Monitor"| RAM_Silver
+
+    %% Serving to Consumption
+    Engine --> Semantic
+    Semantic --> Dashboard & Reg_Rep
+    RAM_Silver --> Feature
+    Feature --> AI_Mod
+
+    %% Styling Logic Connections
+    linkStyle default stroke:#333,stroke-width:1px;
+```
+
+Kiến trúc **FOX-MIS In-Memory Data Lakehouse for Banking** này tập trung vào tính toán thời gian thực trong bộ nhớ (In-memory) và ảo hóa dữ liệu (Virtualize), do đó ưu tiên tốc độ xử lý và khả năng truy cập dữ liệu tức thì (near real-time) từ các hệ thống nguồn của ngân hàng, giảm thiểu lưu trữ vật lý trung gian.
+
+#### 1. L1: NGÂN HÀNG DATA SOURCE LAYER (HỆ THỐNG NGUỒN)
+
+Tầng này kết nối trực tiếp đến các hệ thống lõi của ngân hàng.
+
+* **Core Banking System (T24, Finacle...):** Chứa dữ liệu tài khoản, giao dịch, sổ cái.
+* **Card System (CMS):** Dữ liệu thẻ tín dụng, ghi nợ, giao dịch thẻ.
+* **Digital Banking (ebank, mobile app):** Logs hoạt động người dùng, nhật ký giao dịch điện tử.
+* **Loan Origination System (LOS):** Dữ liệu hồ sơ khoản vay, lịch trả nợ.
+* **Payment Gateway/Switch:** Dữ liệu giao dịch thanh toán thời gian thực.
+
+#### 2. L2: VIRTUAL INGESTION & CACHING LAYER (LỚP ẢO HÓA & ĐỆM)
+
+Thay thế cho mô hình ETL truyền thống, tầng này tập trung vào kết nối thời gian thực và bộ nhớ đệm thông minh.
+
+* **Real-time CDC (Change Data Capture):** Sử dụng công nghệ như Debezium kết hợp Kafka để bắt các thay đổi dữ liệu (ví dụ: một giao dịch mới vừa phát sinh) từ Core Banking ngay lập tức.
+* **Data Virtualization Service:** Một lớp phần mềm cho phép định nghĩa các "bảng ảo" ánh xạ trực tiếp đến dữ liệu tại nguồn (Core, Card...). Các truy vấn sẽ được đẩy (push-down) xuống hệ thống nguồn để thực thi bất cứ khi nào có thể.
+* **In-Memory Caching Layer (Alluxio/Redis):** Để giảm tải cho hệ thống Core Banking và tăng tốc độ phản hồi, các dữ liệu "nóng" (ví dụ: thông tin khách hàng VIP, số dư hiện tại) được lưu trữ tạm thời trên bộ nhớ RAM tốc độ cao.
+
+#### 3. L3: IN-MEMORY LAKEHOUSE STORAGE (LỚP LƯU TRỮ TRÊN RAM)
+
+Dữ liệu không được lưu trữ vĩnh viễn trên ổ cứng mà tồn tại chủ yếu trong bộ nhớ để xử lý.
+
+* **In-Memory Format (Apache Arrow):** Dữ liệu được chuyển đổi sang định dạng cột tối ưu cho việc tính toán trong RAM, giúp chia sẻ dữ liệu giữa các hệ thống mà không cần sao chép (Zero-Copy).
+* **Transient Bronze (Raw-in-RAM):** Dữ liệu thô từ nguồn được load lên RAM để xử lý nhanh.
+* **In-Memory Silver (Cleaned-in-RAM):** Dữ liệu đã được làm sạch, chuẩn hóa ngay trong bộ nhớ.
+* **In-Memory Gold (Aggregated-in-RAM):** Các chỉ số tổng hợp (ví dụ: Tổng giao dịch trong ngày của một chi nhánh) được tính toán và lưu trong RAM để phục vụ báo cáo tức thì.
+* *(Tùy chọn) Persisted Storage (Delta Lake trên S3/HDFS): Chỉ sử dụng để lưu trữ lâu dài (Cold Data) phục vụ mục đích lịch sử hoặc tuân thủ quy định (Compliance), không dùng cho truy vấn thời gian thực.*
+
+#### 4. L4: SERVING & SEMANTIC VIRTUALIZATION LAYER (LỚP PHỤC VỤ & NGỮ NGHĨA)
+
+Lớp này cung cấp giao diện thống nhất cho người dùng và ứng dụng truy cập dữ liệu.
+
+* **Federated MPP Query Engine (Trino/Presto trong chế độ In-Memory):** Đóng vai trò là "bộ não" xử lý truy vấn. Nó nhận yêu cầu từ người dùng, phân tách, gửi đến các nguồn hoặc cache, sau đó tổng hợp kết quả ngay trong RAM.
+* **Virtual Semantic Layer:** Định nghĩa các mô hình nghiệp vụ ngân hàng (ví dụ: "Khách hàng", "Tài khoản", "Giao dịch") và các chỉ số KPI (ví dụ: NIM, CASA, NPL) một cách thống nhất, bất kể dữ liệu vật lý nằm ở đâu.
+* **Real-time Feature Store (Redis/KeyDB):** Cung cấp các đặc trưng (features) được tính toán theo thời gian thực (ví dụ: số lần nhập sai PIN trong 5 phút qua) cho các mô hình AI phát hiện gian lận.
+
+#### 5. L0: FOX-INTELLIGENCE & GOVERNANCE LAYER (LỚP QUẢN TRỊ THÔNG MINH)
+
+Quản trị dữ liệu trong môi trường in-memory đòi hỏi kiểm soát chặt chẽ.
+
+* **Dynamic Data Masking:** Che giấu dữ liệu nhạy cảm (ví dụ: số thẻ, số CCCD) ngay tức thì (on-the-fly) dựa trên quyền của người truy vấn.
+* **Real-time Data Quality (DQ):** Giám sát chất lượng dữ liệu ngay khi nó chảy qua hệ thống (ví dụ: cảnh báo nếu có giao dịch với số tiền âm).
+* **Data Catalog & Lineage:** Theo dõi nguồn gốc dữ liệu từ báo cáo ngược trở lại hệ thống nguồn, ngay cả khi dữ liệu không được lưu trữ vật lý.
+
+#### 6. L5: CONSUMPTION LAYER (LỚP TIÊU DÙNG)
+
+Các ứng dụng đầu cuối sử dụng dữ liệu tốc độ cao.
+
+* **Real-time Exec Dashboards:** Các bảng điều khiển cho lãnh đạo ngân hàng thấy tình hình huy động vốn, cho vay theo thời gian thực (sử dụng chế độ DirectQuery).
+* **AI/ML Applications (Fraud Detection, Credit Scoring):** Sử dụng dữ liệu từ Feature Store để đưa ra quyết định phê duyệt khoản vay hoặc chặn giao dịch gian lận trong tích tắc.
+* **Regulatory Reporting:** Tạo các báo cáo tuân thủ (ví dụ: báo cáo Ngân hàng Nhà nước) trực tiếp từ dữ liệu nguồn được ảo hóa, đảm bảo tính chính xác và kịp thời.
+
+---
 ---
 
 # 🏗️ PHẦN 1: KHUNG NĂNG LỰC "MODERN DATA ENGINEER" (VIRTUALIZATION FOCUS)
